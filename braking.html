@@ -1,0 +1,91 @@
+<div>
+  <canvas id="myChart"></canvas>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="lib/interpolizer.js"></script>
+<script src="tARS.js"></script>
+
+<script>
+
+  let peregonLabels = [];
+  for (let i = 0; i < 17; i++) {
+     peregonLabels[i] = 10 + i * 5;
+  }
+
+  let datasets = [];
+
+  for (let u = -60; u <= 40; u += 20) {
+    let dataset = {};
+    dataset.label = `ПТЭ(${u})`;
+    dataset.borderWidth = 1;
+    dataset.borderColor = '#FF6384';
+    dataset.backgroundColor = '#FFB1C1';
+    let data = [];
+    for (let i = 0; i < 17; i++) {
+      let v = 10 + i * 5;
+      data[i] = Interpolizer(u, v, sp).result;
+    }
+    dataset.data = data;
+
+    datasets.push(dataset);
+  }
+
+  for (let u = -60; u <= 40; u += 20) {
+    let dataset = {};
+    dataset.label = `ЭПК(${u})`;
+    dataset.borderWidth = 1;
+    dataset.borderColor = '#6394FF';
+    dataset.backgroundColor = '#B1D1FF';
+    let data = [];
+    for (let i = 0; i < 17; i++) {
+      let v = 10 + i * 5;
+      data[i] = Interpolizer(u, v, ss).result;
+    }
+    dataset.data = data;
+
+    datasets.push(dataset);
+  }
+
+  for (let u = -60; u <= 40; u += 20) {
+    let dataset = {};
+    dataset.label = `РУД(${u})`;
+    dataset.borderWidth = 1;
+    dataset.borderColor = '#00CC88';
+    dataset.backgroundColor = '#00FFAA';
+    let data = [];
+    for (let i = 0; i < 17; i++) {
+      let v = 10 + i * 5;
+      // let a = 1.1 + u / 111.6;
+      let a = 1.1 + u / 100;
+      data[i] = (v / 3.6 * v / 3.6) / (2 * a);
+    }
+    dataset.data = data;
+
+    datasets.push(dataset);
+  }
+
+
+
+</script>
+
+<script>
+  const ctx = document.getElementById('myChart');
+
+  new Chart(ctx, {
+    type: 'line',
+    data: {
+      labels: peregonLabels,
+      datasets: datasets
+    },
+    options: {
+      scales: {
+        y: {
+          beginAtZero: true,
+        },
+      },
+      responsive: true,
+      maintainAspectRatio: true
+    }
+  });
+</script>

@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AB Graph</title>
+    <script type="text/javascript" src="lib/two.js"></script>
+    <script type="text/javascript" src="config.js"></script>
+    <!-- <script type="text/javascript" src="data/misc/trVl.js"></script> -->
+    <!-- <script type="text/javascript" src="data/misc/spSch.js"></script> -->
+    <!-- <script type="text/javascript" src="data/misc/zhlLp.js"></script> -->
+    <script type="text/javascript" src="data/neocrimson/1.js"></script>
+    <script type="text/javascript" src="data/neocrimson/2.js"></script>
+    <script type="text/javascript" src="src/tractionFunctions.js"></script>
+    <script type="text/javascript" src="src/tractionCalc.js"></script>
+    <script type="text/javascript" src="src/arsCalc.js"></script>
+    <script type="text/javascript" src="src/drawTrack.js"></script>
+    <script type="text/javascript" src="src/drawGraph.js"></script>
+    <script type="text/javascript" src="src/exporters/svgDownload.js"></script>
+    <script type="text/javascript" src="lib/interpolizer.js"></script>
+    <script type="text/javascript" src="src/brakeDistance.js"></script>
+    <script type="text/javascript" src="src/tARS.js"></script>
+</head>
+
+<body>
+</body>
+<script>
+    let query = Object.fromEntries(document.location.search.slice(1).split('&').map(el => el.split('=')));
+</script>
+<script>
+    let colors = {
+        red: '#f33',
+        yellow: '#fd0',
+        green: '#0c6',
+        blue: '0af',
+    };
+    // const peregon = brPn;
+    // const nextPeregon = pnLt;
+
+    const peregon = lines[query.line][query.track][Number(query.n) || 0];
+    const nextPeregon = lines[query.line][query.track][Number(query.n) + 1 || 1];
+
+    loadPeregon(peregon);
+    const peregonCalc = tractionCalc();
+
+    const K = 1;
+    const Ky = K*3;
+
+    const KKy = K * Ky;
+
+    const offsetX = 110;
+
+    const axisV = offsetX - 40;
+    const axisT = offsetX - 80;
+
+    let two = new Two({
+        // fullscreen: true,
+        // autostart: true,
+        width: (peregon.joints?.[peregon.joints.length - 1].x || trackLength) * K + offsetX * 2,
+        // height: window.innerHeight - 20
+        height: (peregonCalc[peregonCalc.length - 1].Tk + peregon.tStay + interval) * Ky + 270
+    }).appendTo(document.body);
+
+    let curvesWidth = 2;
+    let curvesY = two.height - 15;
+    let slopesWidth = 2;
+    let slopesY = two.height - 60;
+    let trackWidth = 2;
+    let trackY = two.height - 130;
+    let graphWidth = 2;
+    let graphY = two.height - 190;
+
+    drawPeregon().position.x = offsetX;
+
+    drawAxes();
+
+    setTimeout(() => {
+        drawVelocity(peregonCalc, trainHalf).position.x = offsetX;
+        two.update();
+    }, 0);
+
+    setTimeout(() => {
+        drawTime(peregonCalc, trainHalf).position.x = offsetX;
+        two.update();
+    }, 0);
+
+    setTimeout(() => {
+        drawTime(peregonCalc, -trainHalf).position.x = offsetX;
+        two.update();
+    }, 0);
+
+    setTimeout(() => {
+        drawTime(peregonCalc, trainHalf, interval).position.x = offsetX;
+        two.update();
+    }, 0);
+
+    let prevLeng = trackLength;
+    let prevTime = peregonCalc[peregonCalc.length - 1].Tk;
+
+
+    loadPeregon(nextPeregon);
+    const nextPeregonCalc = tractionCalc();
+
+    drawPeregon().position.x = offsetX + prevLeng * K;
+
+    setTimeout(() => {
+        drawVelocity(nextPeregonCalc, prevLeng - trainHalf).position.x = offsetX;
+        two.update();
+    }, 0);
+
+    setTimeout(() => {
+        drawTime(nextPeregonCalc, prevLeng - trainHalf, prevTime).position.x = offsetX;
+        two.update();
+    }, 0);
+
+    loadPeregon(peregon);
+
+    peregonConcat = concatPeregon();
+
+    drawModes();
+
+    calcArs();
+
+    drawJoints();
+    drawSignals();
+
+    // setTimeout(() => { 
+    //     for(let i = 10; i < 2000; i+=10) {
+    //         two.makeLine(offsetX + i * K, graphY, offsetX + i * K, graphY - V(i - trainHalf) * KKy).dashes = [KKy, KKy];
+    //     }
+    //     two.update();
+    // }, 0);
+
+    // loadPeregon(nextPeregon);
+
+
+    // drawRay(2362.5 + 6.53);
+
+    // for (let i = 10; i < peregon.trackLength; i += 10) {
+    //     let brakeCurve = brakeCalc(i);
+    //     drawVelocity(brakeCurve, trainHalf).position.x = offsetX; 
+    // }
+
+    two.update();
+
+    document.querySelectorAll('.signal').forEach(el => {
+        el.addEventListener('click', function(e){
+            this.style.opacity = '0.5';
+            let target = this;
+            setTimeout(() => {
+                target.style.opacity = '1';
+            }, 200);
+            
+            let signal = peregon.signals.find(el => el.name == this.id);
+            let joint = peregon.joints.findIndex(el => el.name == signal.joint);
+            let open = peregon.joints.findIndex(el => el.name == (signal.y ?? signal.yg ?? signal.g));
+            let result = peregon.joints.slice(joint, open + 1).map(el => 'rc'+el.name);
+            let resultText = "['" + result.join("', '") + "']";
+            console.log(resultText);
+            navigator.clipboard.writeText(resultText);
+        })
+    })
+
+</script>
+
+</html>
