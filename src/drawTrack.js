@@ -9,6 +9,16 @@ function drawPeregon() {
     return group.add(plan, slopes, track);
 }
 
+function findAutostop(signalI, ind) {
+    if (!peregon.signals[signalI]) return false;
+    if (!(ind in peregon.signals[signalI])) return false;
+
+    if (peregon.signals[signalI][ind].includes('NEXT'))
+        return findAutostop(signalI + 1, peregon.signals[signalI][ind].split('_')[1]);
+
+    return peregon.signals[signalI].autostop ? peregon.signals[signalI].autostop : 0;
+}
+
 function drawSignals() {
     let group = two.makeGroup();
 
@@ -35,7 +45,7 @@ function drawSignals() {
         let tPermit = 0;
         let xPermit = 0;
         let xPermitFull = 0;
-        let tG = 0;
+        let tG = tTop;
 
         if (peregon.signals[i].y || peregon.signals[i].yg || peregon.signals[i].g) {
 
@@ -46,7 +56,7 @@ function drawSignals() {
 
             if (findIndicationX(i, 'y')) {
                 let xJ = findIndicationX(i, 'y') + trainHalf;
-                let t = T(xJ) + autostop;
+                let t = T(xJ) + findAutostop(i, 'y');
                 let tS = T(xJ);
                 tPermit = t;
                 xPermit = xJ;
@@ -58,7 +68,7 @@ function drawSignals() {
             }
             if (findIndicationX(i, 'yg')) {
                 let xJ = findIndicationX(i, 'yg') + trainHalf;
-                let t = T(xJ) + autostop;
+                let t = T(xJ) + findAutostop(i, 'yg');
                 if (!tPermit) tPermit = t;
                 if (!xPermit) xPermit = xJ;
                 if (!xPermitFull) xPermitFull = findIndicationX(i, 'yg', true) + trainHalf;
@@ -74,7 +84,7 @@ function drawSignals() {
             }
             if (findIndicationX(i, 'g')) {
                 let xJ = findIndicationX(i, 'g') + trainHalf;
-                let t = T(xJ) + autostop;
+                let t = T(xJ) + findAutostop(i, 'g');
                 if (!tPermit) tPermit = t;
                 if (!xPermit) xPermit = xJ;
                 if (!xPermitFull) xPermitFull = findIndicationX(i, 'g', true) + trainHalf;
