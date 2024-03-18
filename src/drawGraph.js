@@ -89,11 +89,15 @@ function drawTime(trCalc, offset = 0, timeOffset = 0) {
 
     let group = two.makeGroup();
 
-    for (let segment of trCalc) {
-        let segm = two.makeLine((segment.Sn + offset) * K, graphY - (segment.Tn + timeOffset) * Ky, (segment.Sk + offset) * K, graphY - (segment.Tk + timeOffset) * Ky);
-        segm.linewidth = graphWidth;
-        group.add(segm);
-    }
+    const pathArray = trCalc.map(segment => new Two.Anchor((segment.Sn + offset) * K, graphY - (segment.Tn + timeOffset) * Ky));
+    segment = trCalc[trCalc.length - 1];
+    pathArray.push(new Two.Anchor((segment.Sk + offset) * K, graphY - (segment.Tk + timeOffset) * Ky));
+
+    const path = two.makePath(pathArray);
+    path.linewidth = graphWidth;
+    path.fill = 'transparent';
+    path.closed = false;
+    group.add(path);
 
     return group;
 }
@@ -102,11 +106,15 @@ function drawVelocity(trCalc, offset = 0) {
 
     let group = two.makeGroup();
 
-    for (let segment of trCalc) {
-        let segm = two.makeLine((segment.Sn + offset) * K, graphY - segment.Vn * Ky, (segment.Sk + offset) * K, graphY - segment.Vk * Ky);
-        segm.linewidth = graphWidth;
-        group.add(segm);
-    }
+    const pathArray = trCalc.map(segment => new Two.Anchor((segment.Sn + offset) * K, graphY - segment.Vn * Ky));
+    segment = trCalc[trCalc.length - 1];
+    pathArray.push(new Two.Anchor((segment.Sk + offset) * K, graphY - segment.Vk * Ky));
+    
+    const path = two.makePath(pathArray);
+    path.linewidth = graphWidth;
+    path.fill = 'transparent';
+    path.closed = false;
+    group.add(path);
 
     return group;
 }
