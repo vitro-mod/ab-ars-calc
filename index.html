@@ -58,7 +58,7 @@
     let two = new Two({
         // fullscreen: true,
         // autostart: true,
-        width: (peregon.joints?.[peregon.joints.length - 1].x || trackLength) * K + offsetX * 2,
+        width: (peregon.joints?.[peregon.joints.length - 1]?.x || trackLength) * K + offsetX * 2,
         // height: window.innerHeight - 20
         height: (peregonCalc[peregonCalc.length - 1].Tk + peregon.tStay + interval) * Ky + 270
     }).appendTo(document.body);
