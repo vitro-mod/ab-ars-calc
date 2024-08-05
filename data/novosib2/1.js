@@ -6,7 +6,7 @@ lines['novosib2']['1'] = [
     trackLength: 1740,
     arsDrawBreakpoint: 7,
     arsAllSteps: true,
-    tStay: 25,
+    tStay: 30,
     K: 1,
     curves: {
       0: 0,
@@ -26,7 +26,7 @@ lines['novosib2']['1'] = [
     trackLength: 1120,
     arsDrawBreakpoint: 9,
     arsAllSteps: true,
-    tStay: 25,
+    tStay: 30,
     K: 1,
     curves: {
       0: 0,
@@ -46,7 +46,7 @@ lines['novosib2']['1'] = [
     trackLength: 1156,
     arsAllSteps: true,
     arsDrawBreakpoint: 8,
-    tStay: 25,
+    tStay: 30,
     K: 1,
     curves: {
       0: 0
@@ -66,7 +66,7 @@ lines['novosib2']['1'] = [
     trackLength: 1617,
     arsAllSteps: true,
     arsDrawBreakpoint: 12,
-    tStay: 25,
+    tStay: 30,
     K: 1,
     curves: {
       0: 0,
@@ -87,7 +87,7 @@ lines['novosib2']['1'] = [
     trackLength: 81,
     arsAllSteps: true,
     arsDrawBreakpoint: 8,
-    tStay: 25,
+    tStay: 30,
     K: 1,
     curves: {
       0: 0,

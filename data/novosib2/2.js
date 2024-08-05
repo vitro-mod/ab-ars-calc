@@ -2,11 +2,11 @@ var lines = lines || {};
 lines['novosib2'] = lines['novosib2'] || {};
 lines['novosib2']['2'] = [
   {
-    name: 'Золотая Нива',
-    trackLength: 1740,
-    arsDrawBreakpoint: 7,
+    name: 'Пл. Гарина-Михайловского',
+    trackLength: 1531,
     arsAllSteps: true,
-    tStay: 25,
+    arsDrawBreakpoint: 8,
+    tStay: 30,
     K: 1,
     curves: {
       0: 0,
@@ -22,11 +22,11 @@ lines['novosib2']['2'] = [
     ],
   },
   {
-    name: 'Березовая роща',
-    trackLength: 1120,
+    name: 'Сибирская',
+    trackLength: 1093,
     arsDrawBreakpoint: 9,
     arsAllSteps: true,
-    tStay: 25,
+    tStay: 30,
     K: 1,
     curves: {
       0: 0,
@@ -43,10 +43,10 @@ lines['novosib2']['2'] = [
   },
   {
     name: 'Маршала Покрышкина',
-    trackLength: 1156,
+    trackLength: 1112,
     arsAllSteps: true,
     arsDrawBreakpoint: 8,
-    tStay: 25,
+    tStay: 30,
     K: 1,
     curves: {
       0: 0
@@ -62,11 +62,11 @@ lines['novosib2']['2'] = [
     ],
   },
   {
-    name: 'Сибирская',
-    trackLength: 1617,
+    name: 'Березовая роща',
+    trackLength: 1837,
     arsAllSteps: true,
     arsDrawBreakpoint: 12,
-    tStay: 25,
+    tStay: 30,
     K: 1,
     curves: {
       0: 0,
@@ -83,11 +83,11 @@ lines['novosib2']['2'] = [
     ],
   },
   {
-    name: 'Пл. Гарина-Михайловского',
-    trackLength: 81,
+    name: 'Золотая Нива',
+    trackLength: 65,
     arsAllSteps: true,
     arsDrawBreakpoint: 8,
-    tStay: 25,
+    tStay: 30,
     K: 1,
     curves: {
       0: 0,
