@@ -36,7 +36,7 @@
         red: '#f33',
         yellow: '#fd0',
         green: '#0c6',
-        blue: '0af',
+        blue: '#0af',
     };
     // const peregon = brPn;
     // const nextPeregon = pnLt;
@@ -48,7 +48,7 @@
     const peregonCalc = tractionCalc();
 
     const K = 1;
-    const Ky = K*3;
+    const Ky = K * 3;
 
     const KKy = K * Ky;
 
@@ -56,11 +56,13 @@
 
     const axisV = offsetX - 40;
     const axisT = offsetX - 80;
+    
+    const jointLength = peregon.joints?.[peregon.joints.length - 1]?.x ?? 0;
 
     let two = new Two({
         // fullscreen: true,
         // autostart: true,
-        width: (peregon.joints?.[peregon.joints.length - 1]?.x || trackLength) * K + offsetX * 2,
+        width: (jointLength > trackLength ? jointLength : trackLength) * K + offsetX * 2,
         // height: window.innerHeight - 20
         height: (peregonCalc[peregonCalc.length - 1].Tk + peregon.tStay + interval) * Ky + 270
     }).appendTo(document.body);
@@ -148,17 +150,17 @@
     two.update();
 
     document.querySelectorAll('.signal').forEach(el => {
-        el.addEventListener('click', function(e){
+        el.addEventListener('click', function (e) {
             this.style.opacity = '0.5';
             let target = this;
             setTimeout(() => {
                 target.style.opacity = '1';
             }, 200);
-            
+
             let signal = peregon.signals.find(el => el.name == this.id);
             let joint = peregon.joints.findIndex(el => el.name == signal.joint);
             let open = peregon.joints.findIndex(el => el.name == (signal.y ?? signal.yg ?? signal.g));
-            let result = peregon.joints.slice(joint, open + 1).map(el => 'rc'+el.name);
+            let result = peregon.joints.slice(joint, open + 1).map(el => 'rc' + el.name);
             let resultText = "['" + result.join("', '") + "']";
             console.log(resultText);
             navigator.clipboard.writeText(resultText);
