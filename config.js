@@ -1,7 +1,7 @@
 const stepLength = 1;
 
 const wagonLength = 19.16;
-const wagonCount = 4;
+const wagonCount = 5;
 
 const interval = 82;
 
