@@ -99,14 +99,8 @@ lines['novosib2']['1'] = [
 		1039: 'T',
     },
     joints: [
-	{ x: 0, name: '279' },
-    { x: 62.5, name: '311'},
-	{ x: 1057.5, name: '477' },
-    { x: 1120, name: '479'},
-	{ x: 1182.5, name: '511'},
     ],
     signals: [
-	{ joint: '479', name: '511', lenses: 'x' },
     ],
   },
   {
