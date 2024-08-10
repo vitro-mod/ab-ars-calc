@@ -225,6 +225,10 @@ function drawSignal(x, formula = 'x', name, isLeft) {
                 lense.fill = "white";
                 let lenseInner = two.makeCircle(offsetX + x * K + diam + diam * i, signalY, half);
                 break;
+            case 'Z':
+                two.makeLine(offsetX + x * K + diam * i + radius, signalY, offsetX + x * K + diam * i + radius * 3, signalY);
+                two.makeLine(offsetX + x * K + diam * i + radius * 2, signalY + radius, offsetX + x * K + diam * i + radius * 2, signalY - radius);
+                break;
             default:
                 lense.fill = "#00000000";
         }
