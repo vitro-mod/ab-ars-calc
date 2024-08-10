@@ -24,6 +24,7 @@
     <script type="text/javascript" src="lib/interpolizer.js"></script>
     <script type="text/javascript" src="src/brakeDistance.js"></script>
     <script type="text/javascript" src="src/tARS.js"></script>
+    <link rel="stylesheet" href="dark-theme.css">
 </head>
 
 <body>
@@ -43,6 +44,7 @@
 
     const peregon = lines[query.line][query.track][Number(query.n) || 0];
     const nextPeregon = lines[query.line][query.track][Number(query.n) + 1 || 1];
+    const prevPeregon = lines[query.line][query.track][Number(query.n) - 1];
 
     loadPeregon(peregon);
     const peregonCalc = tractionCalc();
@@ -129,6 +131,7 @@
 
     drawJoints();
     drawSignals();
+    drawSwitches();
 
     // setTimeout(() => { 
     //     for(let i = 10; i < 2000; i+=10) {

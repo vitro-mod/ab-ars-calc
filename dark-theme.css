@@ -1,0 +1,30 @@
+@media (prefers-color-scheme: dark) {
+    body {
+        background: black;
+    }
+
+    svg {
+        background: #222;
+    }
+
+    path[stroke="#000"] {
+        stroke: gray;
+    }
+
+    path[fill="#000"] {
+        fill: gray;
+    }
+
+    path[stroke="#00000033"],
+    path[stroke="#000"][stroke-dasharray] {
+        stroke: #555;
+    }
+
+    path[stroke-width="2"] {
+        stroke: darkgray;
+    }
+
+    text[fill="#000"] {
+        fill: darkgray;
+    }
+}
