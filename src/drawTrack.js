@@ -297,14 +297,23 @@ function drawJoints() {
                 arrow(offsetX + x * K, y, offsetX + nextJointX * K, y);
                 two.makeCircle(offsetX + x * K, y, 1.5).fill = '#000';
                 two.makeText(`${v}`, offsetX + x * K - 3, y - 6, { alignment: 'right' });
+                let farsText = false;
                 if (arsS[k].nextJointI != peregon.joints[i + 1].arsCalc[k].nextJointI) {
                     two.makeText(`${sObj.p}+${sObj.epk}+${sObj.r}=${sObj.full}`, offsetX + x * K + 6, y + 6, { size: 8, alignment: 'left' });
-                    two.makeText(`${factLength} Ф=${fars}с.`, offsetX + x * K + 6, y - 6, { size: 10, alignment: 'left' });
-                }
-                else {
-                    two.makeText(`Ф=${fars}с.`, offsetX + x * K + 6, y + 6, { size: 10, alignment: 'left' });
+                    farsText = two.makeText(!isNaN(fars) ? `${factLength} Ф=${fars}с.` : `${factLength}`, offsetX + x * K + 6, y - 6, { size: 10, alignment: 'left' });
+                } else if (!isNaN(fars)) {
+                    farsText = two.makeText(`Ф=${fars}с.`, offsetX + x * K + 6, y + 6, { size: 10, alignment: 'left' });
                 }
 
+                const prevVI = arsSteps.indexOf(v);
+                if (farsText && arsSteps[prevVI ? prevVI - 1 : prevVI] < Math.round(peregon.joints[i].vMax)) {
+                    if (fars < 15) {
+                        farsText.fill = 'orange';
+                    }
+                    if (fars < 5) {
+                        farsText.fill = 'red';
+                    }
+                }
             }
         }
     }
