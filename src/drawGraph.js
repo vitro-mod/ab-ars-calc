@@ -22,21 +22,27 @@ function drawModes() {
 
 function drawMode(x, mode) {
 
-    two.makeLine(offsetX + (x + trainHalf) * K, graphY - V(x) * Ky, offsetX + (x + trainHalf) * K, graphY - V(x) * Ky - 20);
+    const line = two.makeLine(offsetX + (x + trainHalf) * K, graphY - V(x) * Ky, offsetX + (x + trainHalf) * K, graphY - V(x) * Ky - 20);
+    let modeString = '';
+
     switch (mode) {
         case 'H':
-            two.makeText('Х', offsetX + (x + trainHalf) * K + 3, graphY - V(x) * Ky - 20, { alignment: 'left', size: 10 });
+            modeString = 'Х';
             break;
         case '0':
-            two.makeText('0', offsetX + (x + trainHalf) * K + 3, graphY - V(x) * Ky - 20, { alignment: 'left', size: 10 });
+            modeString = '0';
             break;
         case 'T':
-            two.makeText('Т', offsetX + (x + trainHalf) * K + 3, graphY - V(x) * Ky - 20, { alignment: 'left', size: 10 });
+            modeString ='Т';
             break;
         case 'P':
-            two.makeText('Т1', offsetX + (x + trainHalf) * K + 3, graphY - V(x) * Ky - 20, { alignment: 'left', size: 10 });
+            modeString = 'Т1';
             break;
     }
+
+    const text = two.makeText(modeString, offsetX + (x + trainHalf) * K + 3, graphY - V(x) * Ky - 20, { alignment: 'left', size: 10 });
+
+    return two.makeGroup(line, text);
 }
 
 function drawAxes() {
