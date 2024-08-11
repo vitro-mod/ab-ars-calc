@@ -28,11 +28,13 @@ function drawSignals() {
         let lenses = peregon.signals[i].lenses;
         let name = peregon.signals[i].name;
         let isLeft = peregon.signals[i].left;
+        let isBack = peregon.signals[i].back;
+        let row = peregon.signals[i].row;
         if ('joint' in peregon.signals[i]) {
             let joint = peregon.signals[i].joint;
             x = peregon.joints[peregon.joints.map(el => el.name).indexOf(joint)].x;
         }
-        drawSignal(x, lenses, name, isLeft);
+        drawSignal(x, lenses, name, isLeft, isBack, row);
 
         let autostop = peregon.signals[i].autostop ? peregon.signals[i].autostop : 0;
         let shift = peregon.signals[i].shift ? peregon.signals[i].shift : 0;
@@ -174,41 +176,53 @@ function drawAutostop(x, isClosed) {
         two.makeLine(offsetX + x * K + 10, signalY, offsetX + x * K + 14, signalY - 8).linewidth = 3;
 }
 
-function drawSignal(x, formula = 'x', name, isLeft) {
+function drawSignal(x, formula = 'x', name, isLeft, isBack, row = 0) {
 
     let group = two.makeGroup();
 
     const radius = 6;
     const diam = radius * 2;
-    const half = radius / 2;
-    const signalY = isLeft ? trackY - radius * 5 : trackY + radius * 5;
-    const textY = isLeft ? signalY - radius * 2.5 : signalY + radius * 2.5;
+    const half = isBack ? -radius / 2 : radius / 2;
 
-    nameText = two.makeText(name, offsetX + x * K, textY, { alignment: 'left' });
+    let signalY = isLeft ? trackY - radius * 5 : trackY + radius * 5;
+    signalY += isLeft ? row * diam * 1.5 : -row * diam * 1.5;
+
+    const textY = isLeft ? (isBack ? signalY + 1 : (signalY - radius * 2.5)) : (isBack ? signalY + 1 : (signalY + radius * 2.5));
+
+    nameText = two.makeText(name, offsetX + (isBack ? x + name.length * 10 + 5 : x) * K , textY, { alignment: isBack ? 'right' : 'left' });
     group.add(two.makeLine(offsetX + x * K, signalY - half, offsetX + x * K, signalY + half));
     group.add(two.makeLine(offsetX + x * K - half, signalY - half, offsetX + x * K, signalY - half));
     group.add(two.makeLine(offsetX + x * K - half, signalY + half, offsetX + x * K, signalY + half));
-    group.add(two.makeLine(offsetX + x * K, signalY, offsetX + x * K + radius, signalY));
+    group.add(two.makeLine(offsetX + x * K, signalY, offsetX + x * K + half * 2, signalY));
 
     let reversedFormula = formula.split('').reverse().join('');
     for (let i = formula.length - 1; i >= 0; i--) {
-        if (reversedFormula[i] == '-') {
-            group.add(two.makeLine(offsetX + x * K + diam + diam * i - radius, signalY, offsetX + x * K + diam + diam * i + radius, signalY));
-            continue;
+        drawLense(isBack ? (offsetX + x * K) - diam * (i + 2) : (offsetX + x * K) + diam * i, reversedFormula[i]);
+    }
+    group.className = 'signal';
+    group.id = name;
+    return group;
+
+    function drawLense(x, letter) {
+        const group = two.makeGroup();
+
+        if (letter == '-') {
+            group.add(two.makeLine(x + diam - radius, signalY, x + diam + radius, signalY));
+            return;
         }
-        switch (reversedFormula[i]) {
+        switch (letter) {
             case 'b':
             case 'y':
             case 'g':
             case 'r':
             case 'w':
-                group.add(two.makeLine(offsetX + x * K + diam + diam * i - radius, signalY - radius, offsetX + x * K + diam + diam * i + radius, signalY + radius));
-                group.add(two.makeLine(offsetX + x * K + diam + diam * i - radius, signalY + radius, offsetX + x * K + diam + diam * i + radius, signalY - radius));
+                group.add(two.makeLine(x + diam - radius, signalY - radius, x + diam + radius, signalY + radius));
+                group.add(two.makeLine(x + diam - radius, signalY + radius, x + diam + radius, signalY - radius));
                 break;
         }
-        let lense = two.makeCircle(offsetX + x * K + diam + diam * i, signalY, radius);
+        let lense = two.makeCircle(x + diam, signalY, radius);
         group.add(lense);
-        switch (reversedFormula[i].toUpperCase()) {
+        switch (letter.toUpperCase()) {
             case 'B':
                 lense.fill = colors.blue;
                 break;
@@ -223,19 +237,18 @@ function drawSignal(x, formula = 'x', name, isLeft) {
                 break;
             case 'W':
                 lense.fill = "white";
-                let lenseInner = two.makeCircle(offsetX + x * K + diam + diam * i, signalY, half);
+                let lenseInner = two.makeCircle(x + diam, signalY, half);
                 break;
             case 'Z':
-                two.makeLine(offsetX + x * K + diam * i + radius, signalY, offsetX + x * K + diam * i + radius * 3, signalY);
-                two.makeLine(offsetX + x * K + diam * i + radius * 2, signalY + radius, offsetX + x * K + diam * i + radius * 2, signalY - radius);
+                two.makeLine(x + radius, signalY, x + radius * 3, signalY);
+                two.makeLine(x + radius * 2, signalY + radius, x + radius * 2, signalY - radius);
                 break;
             default:
                 lense.fill = "#00000000";
         }
+
+        return group;
     }
-    group.className = 'signal';
-    group.id = name;
-    return group;
 }
 
 function drawJoints() {
@@ -471,6 +484,6 @@ function drawSwitch(switchObj) {
     const triangle = two.makePath(x, y, trailing ? x - 15 : x + 15, left ? y - 5.5 : y + 5.5, trailing ? x - 15 : x + 15, y);
     triangle.fill = '#000';
     const name = two.makeText(`${switchObj.name}`, trailing ? x - 35 : x + 35, left ? y - 5 : y + 7, { size: 12 });
-    
+
     return two.makeGroup(line, triangle, name);
 }
