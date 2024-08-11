@@ -38,7 +38,7 @@ lines['novosib2']['1'] = [
 		joints: [
 			{ x: -4.5 - 12.5, name: '279', limit: 60 },
 			{ x: 258 - 200, name: '311', limit: 60, later: { 60: 3 } },
-			{ x: 258 - 100, name: '313', limit: 70, later: { 40: 1 } },
+			{ x: 258 - 75, name: '313', limit: 70, later: { 40: 1 } },
 			{ x: 258, name: '315', limit: 70, later: { 40: 1 } },
 			{ x: 258 + 124, name: '317' },
 			{ x: 258 + 124 + 1387.5 - 2.5 - 35 - 75 - 75 - 75 - 150 - 150 - 275 - 275, name: '365' },
@@ -55,8 +55,10 @@ lines['novosib2']['1'] = [
 		],
 		signals: [
 			{ joint: '311', name: 'ЗН-311', lenses: 'BYG-Rw' },
+			{ joint: '311', name: 'В', lenses: 'BYWR', back: true, left: true },
 			{ joint: '315', name: 'ЗН-321', lenses: 'WBY-GRw', left: true },
 			{ joint: '373', name: 'БР-361', lenses: 'BYG-Rw', left: true },
+			{ joint: '373', name: 'ОП', lenses: 'R', left: true, back: true, row: 1 },
 			{ joint: '411', name: 'БР-411м', lenses: 'WBY-YYG-Rw' },
 		],
 		switches: [
@@ -166,12 +168,14 @@ lines['novosib2']['1'] = [
 			{ x: -3 + 75 + 75 + 75 + 75 + 850, name: '579', limit: 60 },
 			{ x: -3 + 75 + 75 + 75 + 75 + 850 + 75, name: '611', limit: 40 },
 			{ x: -3 + 75 + 75 + 75 + 75 + 850 + 75 + 75, name: '613', limit: 0 },
-			{ x: -3 + 75 + 75 + 75 + 75 + 850 + 75 + 75 + 75, name: '615', limit: 0 },
+			{ x: -3 + 75 + 75 + 75 + 75 + 850 + 75 + 75 + 99, name: '615', limit: 0 },
 		],
 		signals: [
 			{ joint: '511', name: '511м', lenses: 'YGR' },
 			{ joint: '573', name: 'CБ-561', lenses: 'BYG-Rw' },
+			{ joint: '573', name: 'ОП', lenses: 'R', left: true, back: true },
 			{ joint: '611', name: '611м', lenses: 'YGR' },
+			{ joint: '615', name: 'СБ-621м', lenses: 'WBY-GRw' },
 		],
 	},
 	{
@@ -239,8 +243,11 @@ lines['novosib2']['1'] = [
 		signals: [
 			{ joint: '611', name: '611м', lenses: 'YGR' },
 			{ joint: '615', name: 'СБ-621м', lenses: 'WBY-GRw' },
+			{ joint: '615', name: 'А', lenses: 'WBY-zRw', left: true, back: true },
 			{ joint: '665', name: 'СБ-631м', lenses: 'WBY-GRw' },
-			{ joint: '675', name: 'ГМ-661', lenses: 'BYX-Rw' },
+			{ joint: '667', name: 'Б', lenses: 'WBY-GRw', left: true, back: true },
+			{ joint: '675', name: 'ГМ-661', lenses: 'BYz-Rw' },
+			{ joint: '677', name: 'Дм', left: true, back: true, lenses: 'WBy-YYG-Rw' },
 		],
 		switches: [
 			{ x: 240 + 7, name: '1', left: true },
