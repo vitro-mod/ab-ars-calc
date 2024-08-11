@@ -54,7 +54,7 @@ lines['novosib2']['2'] = [
 		},
 		joints: [
 			{ x: -3, name: '780', limit: 0 },
-			{ x: 59.5, name: '612', limit: 60, later: { 60: 2 } },
+			{ x: 59.5, name: '612', limit: 60, later: { 60: 3 } },
 			{ x: 134.5, name: '614', limit: 70, later: { 40: 1 } },
 			{ x: 134.5 + 75, name: '616', limit: 70, later: { 40: 1 } },
 			{ x: 1317.3 - 75 - 150 - 250 - 250 - 250, name: '618', later: { 70: 1 } },
@@ -232,7 +232,7 @@ lines['novosib2']['2'] = [
 		},
 		joints: [
 			{ x: -4.6 + 12.5, name: '480', limit: 0 },
-			{ x: -4.6 + 12.5 + 75, name: '312', limit: 60, later: { 60: 2 } },
+			{ x: -4.6 + 12.5 + 75, name: '312', limit: 60, later: { 60: 3 } },
 			{ x: -4.6 + 12.5 + 75 + 75, name: '314', limit: 70, later: { 40: 1 } },
 			{ x: -4.6 + 12.5 + 75 + 75 + 75, name: '316', limit: 70, later: { 40: 1 } },
 			{ x: 1482.9 - 150 - 150 - 275 - 275 - 275, name: '362', limit: 80 },
