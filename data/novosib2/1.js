@@ -182,7 +182,7 @@ lines['novosib2']['1'] = [
 		name: 'Сибирская',
 		trackLength: 1617,
 		arsAllSteps: true,
-		arsDrawBreakpoint: 12,
+		arsDrawBreakpoint: 8,
 		tStay: 30,
 		K: 1,
 		curves: {
