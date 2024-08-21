@@ -131,7 +131,8 @@ lines['novosib2']['2'] = [
 			{ x: 1093 + 69.9 + 75 + 75, name: '416', limit: 0 },
 		],
 		signals: [
-			{ joint: '512', name: '512м', lenses: 'YGR' },
+			{ joint: '512', name: '512', lenses: 'YGR' },
+			{ joint: '574', name: '562', lenses: 'YGR' },
 			{ joint: '412', name: '412', lenses: 'YGR' },
 		],
 	},
