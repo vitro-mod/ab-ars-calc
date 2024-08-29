@@ -88,7 +88,7 @@ lines['novosib2']['2'] = [
 	{
 		name: 'Сибирская',
 		trackLength: 1093,
-		arsDrawBreakpoint: 8,
+		arsDrawBreakpoint: 6,
 		arsAllSteps: true,
 		tStay: 30,
 		K: 1,
@@ -115,8 +115,8 @@ lines['novosib2']['2'] = [
 			993: 'T',
 		},
 		joints: [
-			{ x: 0.4 - 12.5, name: '680', limit: 40 },
-			{ x: 0.4 + 75 - 12.5, name: '512', limit: 60, later: { 60: 2 } },
+			{ x: 0.4 - 12.5, name: '680', limit: 40, },
+			{ x: 0.4 + 75 - 12.5, name: '512', limit: 60, later: { 60: 1 } },
 			{ x: 0.4 + 75 - 12.5 + 62.5, name: '514', limit: 60 },
 			{ x: 0.4 + 75 - 12.5 + 62.5 + 75, name: '516', limit: 60 },
 			{ x: 0.4 + 75 - 12.5 + 62.5 + 75 + 62.5, name: '518', limit: 60 },
@@ -176,7 +176,7 @@ lines['novosib2']['2'] = [
 			{ x: 69.9, name: '412', limit: 60, later: { 60: 3 } },
 			{ x: 69.9 + 75, name: '414', limit: 70, later: { 40: 1 } },
 			{ x: 69.9 + 75 + 75, name: '416', limit: 70, later: { 40: 1 } },
-			{ x: 977.2 - 7.3 - 75 - 125 - 150 - 250, name: '468', later: { 80: 2 } },
+			{ x: 977.2 - 7.3 - 75 - 125 - 150 - 250, name: '468', limit: 70},
 			{ x: 977.2 - 7.3 - 75 - 125 - 150, name: '470', limit: 70, later: { 70: 1 } },
 			{ x: 977.2 - 7.3 - 75 - 125, name: '472', limit: 60 },
 			{ x: 977.2 - 7.3 - 75, name: '474', limit: 60 },
