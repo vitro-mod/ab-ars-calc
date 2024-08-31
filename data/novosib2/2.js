@@ -5,7 +5,7 @@ lines['novosib2']['2'] = [
 		name: 'Пл. Гарина-Михайловского',
 		trackLength: 1531,
 		arsAllSteps: true,
-		arsDrawBreakpoint: 8,
+		arsDrawBreakpoint: 6,
 		tStay: 30,
 		K: 1,
 		curves: {
@@ -54,9 +54,9 @@ lines['novosib2']['2'] = [
 		},
 		joints: [
 			{ x: -3, name: '780', limit: 0 },
-			{ x: 59.5, name: '612', limit: 60, later: { 60: 3 } },
-			{ x: 134.5, name: '614', limit: 60, later: { 40: 1 } },
-			{ x: 134.5 + 75, name: '616', limit: 60, later: { 40: 1 } },
+			{ x: 59.5, name: '612', limit: 60, later: { 60: 1 } },
+			{ x: 134.5, name: '614', limit: 60 },
+			{ x: 134.5 + 75, name: '616', limit: 60 },
 			{ x: 1317.3 - 75 - 150 - 250 - 250 - 250, name: '618', limit: 70, later: { 70: 1 } },
 			{ x: 1317.3 - 75 - 150 - 250 - 250, name: '666', later: { 80: 3 } },
 			{ x: 1317.3 - 75 - 150 - 250, name: '668', later: { 70: 2 } },
