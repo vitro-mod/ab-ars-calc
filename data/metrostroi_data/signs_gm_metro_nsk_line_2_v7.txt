@@ -1336,7 +1336,7 @@
 	"47": {
 		"Approve0": false,
 		"RouteNumberSetup": "",
-		"LensesStr": "WBY-YYG-RW-M",
+		"LensesStr": "WBY-GRW-M",
 		"RouteNumber": "",
 		"TwoToSix": false,
 		"Class": "gmod_track_signal",
