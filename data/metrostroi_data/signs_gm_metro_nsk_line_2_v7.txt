@@ -611,7 +611,7 @@
 	"22": {
 		"Approve0": false,
 		"RouteNumberSetup": "",
-		"LensesStr": "BYG-RW",
+		"LensesStr": "BYR-GW",
 		"RouteNumber": "",
 		"TwoToSix": false,
 		"Class": "gmod_track_signal",
@@ -628,7 +628,7 @@
 				"NextSignal": "*",
 				"ARSCodes": "04667",
 				"Repeater": false,
-				"Lights": "4",
+				"Lights": "3",
 				"Manual": false,
 				"Switches": "",
 				"RouteName": ""
