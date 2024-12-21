@@ -175,8 +175,7 @@ lines['novosib2']['1'] = [
 			{ joint: '511', name: '511м', lenses: 'YGR' },
 			{ joint: '573', name: 'CБ-561', lenses: 'BYG-Rw' },
 			{ joint: '573', name: 'ОП', lenses: 'R', left: true, back: true },
-			{ joint: '611', name: '611м', lenses: 'YGR' },
-			{ joint: '615', name: 'СБ-621м', lenses: 'WBY-GRw' },
+			{ joint: '611', name: 'СБ-611м', lenses: 'WBY-GRw' },
 		],
 	},
 	{
@@ -243,10 +242,9 @@ lines['novosib2']['1'] = [
 			{ x: 1525.8 + 75 + 75, name: '711', limit: 0 },
 		],
 		signals: [
-			{ joint: '611', name: '611м', lenses: 'YGR' },
-			{ joint: '615', name: 'СБ-621м', lenses: 'WBY-GRw' },
+			{ joint: '611', name: 'СБ-611м', lenses: 'WBY-GRw' },
 			{ joint: '617', name: 'А', lenses: 'WBY-zRw', left: true, back: true },
-			{ joint: '621', name: 'СБ-631м', lenses: 'WBY-GRw' },
+			{ joint: '621', name: 'СБ-621м', lenses: 'WBY-GRw' },
 			{ joint: '623', name: 'Б', lenses: 'WBY-GRw', left: true, back: true },
 			{ joint: '675', name: 'ГМ-661', lenses: 'BYz-Rw' },
 			{ joint: '677', name: 'Дм', left: true, back: true, lenses: 'BWy-YRw' },
