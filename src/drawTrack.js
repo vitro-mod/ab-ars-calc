@@ -197,7 +197,8 @@ function drawSignal(x, formula = 'x', name, isLeft, isBack, row = 0) {
 
     let reversedFormula = formula.split('').reverse().join('');
     for (let i = formula.length - 1; i >= 0; i--) {
-        drawLense(isBack ? (offsetX + x * K) - diam * (i + 2) : (offsetX + x * K) + diam * i, reversedFormula[i]);
+        const lense = drawLense(isBack ? (offsetX + x * K) - diam * (i + 2) : (offsetX + x * K) + diam * i, reversedFormula[i]);
+        group.add(lense);
     }
     group.className = 'signal';
     group.id = name;
