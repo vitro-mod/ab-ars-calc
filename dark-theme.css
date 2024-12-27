@@ -27,4 +27,8 @@
     text[fill="#000"] {
         fill: darkgray;
     }
+
+    path[stroke="#000088"] {
+        stroke: deepskyblue;
+    }
 }
