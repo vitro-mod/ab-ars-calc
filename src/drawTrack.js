@@ -253,9 +253,8 @@ function drawSignal(x, formula = 'x', name, isLeft, isBack, row = 0) {
 }
 
 function drawJoints() {
-    let group = two.makeGroup();
-
     for (let i = 0; i < peregon.joints.length; i++) {
+        const group = two.makeGroup();
 
         let x = peregon.joints[i].x;
         let joint;
@@ -291,7 +290,11 @@ function drawJoints() {
         let dash = two.makeLine(offsetX + x * K, graphY, offsetX + x * K, 0);
         dash.dashes = [Ky, Ky];
 
-        group.add(joint, text, lengText, dash);
+        const textGroup = two.makeGroup();
+        textGroup.add(text);
+        textGroup.className = 'rcname';
+
+        group.add(joint, textGroup, lengText, dash);
 
         let arsS = peregon.joints[i].arsCalc;
 
@@ -336,8 +339,6 @@ function drawJoints() {
             }
         }
     }
-
-    return group;
 }
 
 function drawRay(x) {
@@ -370,6 +371,7 @@ function drawJoint(x) {
 
     let group = two.makeGroup(joint, bottom, top);
     group.className = 'joint';
+
     return group;
 }
 
