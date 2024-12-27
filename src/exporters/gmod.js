@@ -109,6 +109,29 @@ function sectionsCopy() {
     // navigator.clipboard.writeText(resultText);
 }
 
+function arsCode(joint) {
+    let result = '';
+
+    let clearNum = 0;
+    let currentArs = 0;
+
+    for (let i = 0; i < joint.arsCalc.length; i++) {
+        if (joint.arsCalc[i].nextJointI - joint.arsCalc[i].jointI <= 0) continue;
+
+        currentArs = joint.arsCalc[i];
+        clearNum = currentArs.nextJointI - currentArs.jointI;
+
+        const currentDigit = i > 0 ? (joint.arsCalc[i - 1].v / 10) : 0;
+
+        result = result.padEnd(result.length > clearNum ? result.length + 1 : clearNum, currentDigit);
+    }
+
+    result = result.padEnd(clearNum + 1, currentArs.v / 10);
+
+    return result;
+}
+
+
 // document.querySelectorAll('.joint').forEach(el => {
 //     el.addEventListener('click', function (e) {
 //         console.log('joint');

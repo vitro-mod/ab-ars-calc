@@ -284,6 +284,7 @@ function drawJoints() {
         let leng = peregon.joints[i + 1].x - peregon.joints[i].x;
         let half = leng / 2;
         let text = two.makeText(peregon.joints[i].name, offsetX + (x + half) * K, trackY - 8);
+        let code = two.makeText(arsCode(peregon.joints[i]), offsetX + (x + half) * K, graphY - 5, { size: 10 });
         let lengText = two.makeText(`${leng % 1 > 0.05 ? leng.toFixed(1) : Math.floor(leng)} м.`, offsetX + (x + half) * K, trackY + 8, { size: 10 });
 
         let dash = two.makeLine(offsetX + x * K, graphY, offsetX + x * K, 0);
