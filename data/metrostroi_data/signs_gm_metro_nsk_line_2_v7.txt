@@ -357,7 +357,7 @@
 		"IsolateSwitches": false,
 		"SignalType": 0.0,
 		"Double": false,
-		"Name": "512M",
+		"Name": "512",
 		"ARSOnly": false,
 		"Angles": "{0 90 0}",
 		"Pos": "[-2749.9348 14689.3926 6061.1641]",
