@@ -197,7 +197,8 @@ function drawSignal(x, formula = 'x', name, isLeft, isBack, row = 0) {
 
     let reversedFormula = formula.split('').reverse().join('');
     for (let i = formula.length - 1; i >= 0; i--) {
-        drawLense(isBack ? (offsetX + x * K) - diam * (i + 2) : (offsetX + x * K) + diam * i, reversedFormula[i]);
+        const lense = drawLense(isBack ? (offsetX + x * K) - diam * (i + 2) : (offsetX + x * K) + diam * i, reversedFormula[i]);
+        group.add(lense);
     }
     group.className = 'signal';
     group.id = name;
@@ -252,9 +253,8 @@ function drawSignal(x, formula = 'x', name, isLeft, isBack, row = 0) {
 }
 
 function drawJoints() {
-    let group = two.makeGroup();
-
     for (let i = 0; i < peregon.joints.length; i++) {
+        const group = two.makeGroup();
 
         let x = peregon.joints[i].x;
         let joint;
@@ -284,12 +284,17 @@ function drawJoints() {
         let leng = peregon.joints[i + 1].x - peregon.joints[i].x;
         let half = leng / 2;
         let text = two.makeText(peregon.joints[i].name, offsetX + (x + half) * K, trackY - 8);
+        let code = two.makeText(arsCode(peregon.joints[i]), offsetX + (x + half) * K, graphY - 5, { size: 10 });
         let lengText = two.makeText(`${leng % 1 > 0.05 ? leng.toFixed(1) : Math.floor(leng)} м.`, offsetX + (x + half) * K, trackY + 8, { size: 10 });
 
         let dash = two.makeLine(offsetX + x * K, graphY, offsetX + x * K, 0);
         dash.dashes = [Ky, Ky];
 
-        group.add(joint, text, lengText, dash);
+        const textGroup = two.makeGroup();
+        textGroup.add(text);
+        textGroup.className = 'rcname';
+
+        group.add(joint, textGroup, lengText, dash);
 
         let arsS = peregon.joints[i].arsCalc;
 
@@ -334,8 +339,6 @@ function drawJoints() {
             }
         }
     }
-
-    return group;
 }
 
 function drawRay(x) {
@@ -368,6 +371,7 @@ function drawJoint(x) {
 
     let group = two.makeGroup(joint, bottom, top);
     group.className = 'joint';
+
     return group;
 }
 
