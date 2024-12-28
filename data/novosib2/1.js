@@ -101,7 +101,7 @@ lines['novosib2']['1'] = [
 			1039: 'T',
 		},
 		joints: [
-			{ x: 67 - 75, name: '379' },
+			{ x: 67 - 75, name: '379', limit: 60 },
 			{ x: 67, name: '411', limit: 60, later: { 60: 1 } },
 			{ x: 67 + 75, name: '413', limit: 70 },
 			{ x: 67 + 75 + 75, name: '415', limit: 70 },

@@ -53,7 +53,7 @@ lines['novosib2']['2'] = [
 			1433: 'T',
 		},
 		joints: [
-			{ x: -3, name: '780', limit: 0 },
+			{ x: -3, name: '780', limit: 60 },
 			{ x: 59.5, name: '612', limit: 60, later: { 60: 1 } },
 			{ x: 134.5, name: '614', limit: 60 },
 			{ x: 134.5 + 75, name: '616', limit: 60 },
@@ -115,7 +115,7 @@ lines['novosib2']['2'] = [
 			993: 'T',
 		},
 		joints: [
-			{ x: 0.4 - 12.5, name: '680', limit: 40, },
+			{ x: 0.4 - 12.5, name: '680', limit: 60, },
 			{ x: 0.4 + 75 - 12.5, name: '512', limit: 60, later: { 60: 1 } },
 			{ x: 0.4 + 75 - 12.5 + 62.5, name: '514', limit: 60 },
 			{ x: 0.4 + 75 - 12.5 + 62.5 + 75, name: '516', limit: 60 },
@@ -172,7 +172,7 @@ lines['novosib2']['2'] = [
 			1032: 'T',
 		},
 		joints: [
-			{ x: 69.9 - 75, name: '580' },
+			{ x: 69.9 - 75, name: '580', limit: 60 },
 			{ x: 69.9, name: '412', limit: 60, later: { 60: 1 } },
 			{ x: 69.9 + 75, name: '414', limit: 70 },
 			{ x: 69.9 + 75 + 75, name: '416', limit: 70 },
@@ -233,7 +233,7 @@ lines['novosib2']['2'] = [
 			1820: 'T',
 		},
 		joints: [
-			{ x: -4.6 + 12.5, name: '480', limit: 0 },
+			{ x: -4.6 + 12.5, name: '480', limit: 60 },
 			{ x: -4.6 + 12.5 + 75, name: '312', limit: 60, later: { 60: 1 } },
 			{ x: -4.6 + 12.5 + 75 + 75, name: '314', limit: 70 },
 			{ x: -4.6 + 12.5 + 75 + 75 + 75, name: '316', limit: 70 },
