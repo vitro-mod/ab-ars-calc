@@ -173,7 +173,7 @@ lines['novosib2']['1'] = [
 		],
 		signals: [
 			{ joint: '511', name: '511', lenses: 'YGR' },
-			{ joint: '573', name: 'CБ-561', lenses: 'BYG-Rw' },
+			{ joint: '573', name: 'СБ-561', lenses: 'BYG-Rw' },
 			{ joint: '573', name: 'ОП', lenses: 'R', left: true, back: true },
 			{ joint: '611', name: 'СБ-611м', lenses: 'WBY-GRw' },
 		],
