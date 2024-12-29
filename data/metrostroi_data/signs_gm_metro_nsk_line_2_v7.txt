@@ -1438,7 +1438,7 @@
 			{
 				"Emer": false,
 				"NextSignal": "*",
-				"ARSCodes": "046",
+				"ARSCodes": "0467",
 				"Repeater": false,
 				"Lights": "7-47-2",
 				"Switches": "",
@@ -1467,7 +1467,7 @@
 			{
 				"Emer": false,
 				"NextSignal": "*",
-				"ARSCodes": "0467",
+				"ARSCodes": "04667",
 				"Repeater": false,
 				"Lights": "7-47-2",
 				"Switches": "",
@@ -1496,7 +1496,7 @@
 			{
 				"Emer": false,
 				"NextSignal": "*",
-				"ARSCodes": "00467",
+				"ARSCodes": "0046",
 				"Repeater": false,
 				"Lights": "",
 				"Switches": "",
@@ -1728,7 +1728,7 @@
 			{
 				"Emer": false,
 				"NextSignal": "*",
-				"ARSCodes": "0467",
+				"ARSCodes": "04667",
 				"Repeater": false,
 				"Lights": "",
 				"Switches": "",
@@ -1902,7 +1902,7 @@
 			{
 				"Emer": false,
 				"NextSignal": "*",
-				"ARSCodes": "00446",
+				"ARSCodes": "004446",
 				"Repeater": false,
 				"Lights": "5",
 				"Switches": "",
@@ -1931,7 +1931,7 @@
 			{
 				"Emer": false,
 				"NextSignal": "*",
-				"ARSCodes": "00467",
+				"ARSCodes": "000467",
 				"Repeater": false,
 				"Lights": "",
 				"Switches": "",
@@ -2047,7 +2047,7 @@
 			{
 				"Emer": false,
 				"NextSignal": "*",
-				"ARSCodes": "04678",
+				"ARSCodes": "046778",
 				"Repeater": false,
 				"Lights": "5-35-2",
 				"Switches": "",
@@ -2076,7 +2076,7 @@
 			{
 				"Emer": false,
 				"NextSignal": "*",
-				"ARSCodes": "0467",
+				"ARSCodes": "04667",
 				"Repeater": false,
 				"Lights": "5-35-2",
 				"Switches": "",
@@ -2511,7 +2511,7 @@
 			{
 				"Emer": false,
 				"NextSignal": "*",
-				"ARSCodes": "0467",
+				"ARSCodes": "04467",
 				"Repeater": false,
 				"Lights": "7-47-2",
 				"Switches": "",
