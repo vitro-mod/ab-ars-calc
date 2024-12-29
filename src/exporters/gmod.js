@@ -1,6 +1,6 @@
 function sections() {
-    
-    return peregon.signals.map(el => {
+    return peregon.signals.filter(el => !el.back).map(el => {
+        if (el.back) return; 
         let sections = {};
         sections.nm = el.name.replace('-', '');
         sections.rc = 'rc' + el.joint;
@@ -103,7 +103,9 @@ function signalsJson() {
 function sectionsCopy() {
     let resultText = ``;
     for (section of sections()) {
-        resultText += `gmod[''].sections['${section.nm}'] = '${section.rc}';\n`
+        const signal = rtl(section.nm.toUpperCase());
+        const st = signal.slice(0,2);
+        resultText += `gmod['${st}'].sections['${signal}'] = '${section.rc}';\n`
     }
     console.log(resultText);
     // navigator.clipboard.writeText(resultText);
@@ -129,6 +131,56 @@ function arsCode(joint) {
     result = result.padEnd(clearNum + 1, currentArs.v / 10);
 
     return result;
+}
+
+function rtl(gmodRc) {
+    return gmodRc
+        .replaceAll('а', 'a')
+        .replaceAll('б', 'b')
+        .replaceAll('в', 'v')
+        .replaceAll('г', 'g')
+        .replaceAll('д', 'd')
+        .replaceAll('е', 'e')
+        .replaceAll('ж', 'j')
+        .replaceAll('з', 'z')
+        .replaceAll('и', 'i')
+        .replaceAll('к', 'k')
+        .replaceAll('л', 'l')
+        .replaceAll('м', 'm')
+        .replaceAll('н', 'n')
+        .replaceAll('о', 'o')
+        .replaceAll('п', 'p')
+        .replaceAll('р', 'r')
+        .replaceAll('с', 's')
+        .replaceAll('т', 't')
+        .replaceAll('у', 'u')
+        .replaceAll('ф', 'f')
+        .replaceAll('х', 'h')
+        .replaceAll('ц', 'c')
+        .replaceAll('ч', 'x')
+        .replaceAll('А', 'A')
+        .replaceAll('Б', 'B')
+        .replaceAll('В', 'V')
+        .replaceAll('Г', 'G')
+        .replaceAll('Д', 'D')
+        .replaceAll('Е', 'E')
+        .replaceAll('Ж', 'J')
+        .replaceAll('З', 'Z')
+        .replaceAll('И', 'I')
+        .replaceAll('К', 'K')
+        .replaceAll('Л', 'L')
+        .replaceAll('М', 'M')
+        .replaceAll('Н', 'N')
+        .replaceAll('О', 'O')
+        .replaceAll('П', 'P')
+        .replaceAll('Р', 'R')
+        .replaceAll('С', 'S')
+        .replaceAll('Т', 'T')
+        .replaceAll('У', 'U')
+        .replaceAll('Ф', 'F')
+        .replaceAll('Х', 'H')
+        .replaceAll('Ц', 'C')
+        .replaceAll('Ч', 'X');
 }
 
 
