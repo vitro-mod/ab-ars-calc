@@ -1438,7 +1438,7 @@
 			{
 				"Emer": false,
 				"NextSignal": "*",
-				"ARSCodes": "0467",
+				"ARSCodes": "046",
 				"Repeater": false,
 				"Lights": "7-47-2",
 				"Switches": "",
@@ -1496,7 +1496,7 @@
 			{
 				"Emer": false,
 				"NextSignal": "*",
-				"ARSCodes": "0046",
+				"ARSCodes": "00467",
 				"Repeater": false,
 				"Lights": "",
 				"Switches": "",
