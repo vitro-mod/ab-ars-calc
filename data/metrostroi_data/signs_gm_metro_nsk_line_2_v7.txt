@@ -1604,7 +1604,7 @@
 		"IsolateSwitches": false,
 		"SignalType": 0.0,
 		"Double": false,
-		"Name": "511M",
+		"Name": "511",
 		"ARSOnly": false,
 		"Angles": "{0 90 0}",
 		"Pos": "[4258.4863 -14974.207 5580.665]",
