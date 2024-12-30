@@ -4,6 +4,12 @@ function sections() {
         let sections = {};
         sections.nm = el.name.replace('-', '');
         sections.rc = 'rc' + el.joint;
+        
+        const jointI = Object.values(peregon.joints).findIndex(elem => elem.name == el.joint);
+        if (peregon.joints[jointI - 1]) {
+            sections.prev = 'rc' + peregon.joints[jointI - 1].name;
+        }
+
         return sections;
     });
 
@@ -109,6 +115,17 @@ function sectionsCopy() {
     }
     console.log(resultText);
     // navigator.clipboard.writeText(resultText);
+}
+
+function arsRcCopy() {
+    let resultText = ``;
+    for (section of sections()) {
+        if (!section.prev) continue;
+        const signal = rtl(section.nm.toUpperCase());
+        const st = signal.slice(0, 2);
+        resultText += `gmod['${st}'].arsRc['${section.prev}'] = '${signal}';\n`
+    }
+    console.log(resultText);
 }
 
 function arsCode(joint) {
