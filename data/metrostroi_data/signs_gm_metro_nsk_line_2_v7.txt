@@ -3786,7 +3786,7 @@
 		"Routes": [
 			{
 				"Emer": false,
-				"NextSignal": "315/",
+				"NextSignal": "TC315/",
 				"ARSCodes": "004",
 				"Repeater": true,
 				"Lights": "5-35-2",
@@ -3815,7 +3815,7 @@
 		"Routes": [
 			{
 				"Emer": false,
-				"NextSignal": "372/",
+				"NextSignal": "TC372/",
 				"ARSCodes": "004",
 				"Repeater": true,
 				"Lights": "5-35-2",
@@ -3873,7 +3873,7 @@
 		"Routes": [
 			{
 				"Emer": false,
-				"NextSignal": "411/",
+				"NextSignal": "TC411/",
 				"ARSCodes": "004",
 				"Repeater": true,
 				"Lights": "7-47-2",
@@ -3902,7 +3902,7 @@
 		"Routes": [
 			{
 				"Emer": false,
-				"NextSignal": "476/",
+				"NextSignal": "TC476/",
 				"ARSCodes": "000004",
 				"Repeater": true,
 				"Lights": "7-47-2",
@@ -4018,7 +4018,7 @@
 		"Routes": [
 			{
 				"Emer": false,
-				"NextSignal": "615///",
+				"NextSignal": "TC615///",
 				"ARSCodes": "04",
 				"Repeater": true,
 				"Lights": "3",
@@ -4279,7 +4279,7 @@
 		"Routes": [
 			{
 				"Emer": false,
-				"NextSignal": "621",
+				"NextSignal": "TC621",
 				"ARSCodes": "04",
 				"Repeater": true,
 				"Lights": "3",
@@ -4308,7 +4308,7 @@
 		"Routes": [
 			{
 				"Emer": false,
-				"NextSignal": "677",
+				"NextSignal": "TC677",
 				"ARSCodes": "04",
 				"Manual": false,
 				"Lights": "3",
@@ -4337,7 +4337,7 @@
 		"Routes": [
 			{
 				"Emer": false,
-				"NextSignal": "612",
+				"NextSignal": "TC612",
 				"ARSCodes": "04",
 				"Manual": false,
 				"Lights": "3",
