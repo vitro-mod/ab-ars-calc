@@ -2017,7 +2017,7 @@
 		"Routes": [
 			{
 				"Emer": false,
-				"NextSignal": "679",
+				"NextSignal": "TC679",
 				"ARSCodes": "0",
 				"Manual": false,
 				"Lights": "4-24-1",
@@ -2191,7 +2191,7 @@
 		"Routes": [
 			{
 				"Emer": false,
-				"NextSignal": "778",
+				"NextSignal": "TC778",
 				"ARSCodes": "0",
 				"Manual": false,
 				"Lights": "5",
@@ -3119,7 +3119,7 @@
 		"Routes": [
 			{
 				"Emer": false,
-				"NextSignal": "277/",
+				"NextSignal": "TC277/",
 				"ARSCodes": "0",
 				"Manual": false,
 				"Lights": "5-35-2",
@@ -3235,7 +3235,7 @@
 		"Routes": [
 			{
 				"Emer": false,
-				"NextSignal": "372",
+				"NextSignal": "TC372",
 				"ARSCodes": "0",
 				"Manual": false,
 				"Lights": "2",
@@ -3525,7 +3525,7 @@
 		"Routes": [
 			{
 				"Emer": false,
-				"NextSignal": "615/",
+				"NextSignal": "TC615/",
 				"ARSCodes": "004",
 				"Manual": false,
 				"Lights": "7-47-2",
