@@ -2097,7 +2097,7 @@
 		"IsolateSwitches": false,
 		"SignalType": 0.0,
 		"Double": false,
-		"Name": "VM",
+		"Name": "V ",
 		"ARSOnly": false,
 		"Angles": "{0 180 0}",
 		"Pos": "[11775.793 2178.7981 6144.6172]",

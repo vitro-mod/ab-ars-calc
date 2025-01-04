@@ -74,7 +74,7 @@ lines['novosib2']['2'] = [
 		],
 		signals: [
 			{ joint: '612', name: 'ГМ-612м', lenses: 'WBY-GRw' },
-			{ joint: '614', name: 'Вм', lenses: 'WB-Rw', left: true, back: true },
+			{ joint: '614', name: 'В', lenses: 'WB-Rw', left: true, back: true },
 			{ joint: '668', name: '652', lenses: 'YGR' },
 			{ joint: '512', name: '512м', lenses: 'YGR' },
 			{ joint: '672', name: 'СБ-662', lenses: 'BYG-Rw' },
