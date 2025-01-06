@@ -1829,7 +1829,7 @@
 	"64": {
 		"Approve0": false,
 		"RouteNumberSetup": "",
-		"LensesStr": "WBY-RGW-M",
+		"LensesStr": "BYW-RGW-M",
 		"RouteNumber": "",
 		"TwoToSix": false,
 		"Class": "gmod_track_signal",
