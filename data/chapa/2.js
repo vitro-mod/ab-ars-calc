@@ -139,4 +139,224 @@ lines['chapa']['2'] = [
         //     { joint: '98', name: '96', lenses: 'x', autostop: 3, guard: 35 },
         // ],
     },
+    {
+        name: 'Есенинская',
+        trackLength: 2414,
+        arsAllSteps: true,
+        tStay: 25,
+        K: 1,
+        arsDrawBreakpoint: 8,
+        curves: {
+          54: 500,
+          436: 0,
+        },
+        slopes: {
+          0: 0,
+          482:-53,
+          645:0,
+          1266:-53,
+          1437:0,
+        },
+        modes: {
+          0: 'H',
+          120: '0',
+          2294: 'T',
+        },
+        joints: [
+          { x: 58, name: '811', limit: 40 }, 
+          { x: 58 + 62.5, name: '813', limit: 60 },
+          { x: 58 + 62.5 + 75, name: '815', limit: 60 },  
+          { x: 2414 + 54 - 62.5 - 62.5 - 75 - 87.5 - 137.5 - 112.5 - 112.5 - 125 - 125 - 112.5 - 112.5 - 112.5 - 137.5 - 137.5 - 137.5 - 137.5 - 112.5 - 112.5 - 112.5, name: '843', limit: 60 },
+          { x: 2414 + 54 - 62.5 - 62.5 - 75 - 87.5 - 137.5 - 112.5 - 112.5 - 125 - 125 - 112.5 - 112.5 - 112.5 - 137.5 - 137.5 - 137.5 - 137.5 - 112.5 - 112.5, name: '845', limit: 60 },
+          { x: 2414 + 54 - 62.5 - 62.5 - 75 - 87.5 - 137.5 - 112.5 - 112.5 - 125 - 125 - 112.5 - 112.5 - 112.5 - 137.5 - 137.5 - 137.5 - 137.5 - 112.5, name: '847', limit: 60 },
+          { x: 2414 + 54 - 62.5 - 62.5 - 75 - 87.5 - 137.5 - 112.5 - 112.5 - 125 - 125 - 112.5 - 112.5 - 112.5 - 137.5 - 137.5 - 137.5 - 137.5, name: '849', limit: 80 },
+          { x: 2414 + 54 - 62.5 - 62.5 - 75 - 87.5 - 137.5 - 112.5 - 112.5 - 125 - 125 - 112.5 - 112.5 - 112.5 - 137.5 - 137.5 - 137.5, name: '851', limit: 80 },
+          { x: 2414 + 54 - 62.5 - 62.5 - 75 - 87.5 - 137.5 - 112.5 - 112.5 - 125 - 125 - 112.5 - 112.5 - 112.5 - 137.5 - 137.5, name: '853', limit: 80 },
+          { x: 2414 + 54 - 62.5 - 62.5 - 75 - 87.5 - 137.5 - 112.5 - 112.5 - 125 - 125 - 112.5 - 112.5 - 112.5 - 137.5, name: '855', limit: 80 },
+          { x: 2414 + 54 - 62.5 - 62.5 - 75 - 87.5 - 137.5 - 112.5 - 112.5 - 125 - 125 - 112.5 - 112.5 - 112.5, name: '857', limit: 80 },
+          { x: 2414 + 54 - 62.5 - 62.5 - 75 - 87.5 - 137.5 - 112.5 - 112.5 - 125 - 125 - 112.5 - 112.5, name: '859', limit: 80 },
+          { x: 2414 + 54 - 62.5 - 62.5 - 75 - 87.5 - 137.5 - 112.5 - 112.5 - 125 - 125 - 112.5, name: '861', limit: 80 },
+          { x: 2414 + 54 - 62.5 - 62.5 - 75 - 87.5 - 137.5 - 112.5 - 112.5 - 125 - 125, name: '863', limit: 80 },
+          { x: 2414 + 54 - 62.5 - 62.5 - 75 - 87.5 - 137.5 - 112.5 - 112.5 - 125, name: '865', limit: 80 },
+          { x: 2414 + 54 - 62.5 - 62.5 - 75 - 87.5 - 137.5 - 112.5 - 112.5, name: '867', limit: 80 },
+          { x: 2414 + 54 - 62.5 - 62.5 - 75 - 87.5 - 137.5 - 112.5, name: '869', limit: 80 },
+          { x: 2414 + 54 - 62.5 - 62.5 - 75 - 87.5 - 137.5, name: '871', limit: 80 },
+          { x: 2414 + 54 - 62.5 - 62.5 - 75 - 87.5, name: '873', limit: 70 },
+          { x: 2414 + 54 - 62.5 - 62.5 - 75, name: '875', limit: 70 },
+          { x: 2414 + 54 - 62.5 - 62.5, name: '877', limit: 60 },
+          { x: 2414 + 54 - 62.5, name: '879', limit: 60 },
+          { x: 2414 + 54, name: '911', limit: 40 },
+          { x: 2414 + 54 + 56, name: '913', limit: 0 }, 
+          { x: 2414 + 54 + 56 + 112.5, name: '915', limit: 0 }, 
+        ],
+        signals: [
+          { joint: '811', name: '811', lenses: 'YYGR', autostop: 1, guard: 35, y: '847', g: 'NEXT_y' },
+          { joint: '843', name: '861', lenses: 'YYGR', autostop: 1, guard: 80, y: '851', g: 'NEXT_y' },
+          { joint: '849', name: '863', lenses: 'YYGR', autostop: 1, guard: 80, y: '855', g: 'NEXT_y' },
+          { joint: '853', name: '865', lenses: 'YYGR', autostop: 1, guard: 80, y: '861', g: 'NEXT_y' },
+          { joint: '857', name: '867', lenses: 'YYGR', autostop: 1, guard: 80, y: '865', g: 'NEXT_y' },
+          { joint: '863', name: '869', lenses: 'YYGR', autostop: 1, guard: 80, y: '869', g: 'NEXT_y' },
+          { joint: '867', name: '871', lenses: 'YYGR', autostop: 1, guard: 80, y: '873', yg: 'NEXT_y', g: 'NEXT_yg' },
+          { joint: '871', name: 'КР-873', lenses: 'YYGRw', autostop: 1, guard: 80, y: '875', yg: 'NEXT_y', g: 'NEXT_yg' },
+          { joint: '873', name: 'КР-875', lenses: 'YYGRw', autostop: 1, guard: 69, y: '877', yg: 'NEXT_y', g: 'NEXT_g' },
+          { joint: '875', name: 'КР-877', lenses: 'YYGRw', autostop: 1, guard: 63, y: '879', g: 'NEXT_yg' },
+          { joint: '877', name: 'КР-879', lenses: 'YYGRw', autostop: 4, guard: 60, yg: '911' },
+          { joint: '877', name: 'ОП', lenses: 'R', left: true, back: true },
+          { joint: '911', name: 'КР-911', lenses: 'WRW', autostop: 1, guard: 35 },
+        ]
+      },
+    //   {
+    //     name: 'Куликовская',
+    //     trackLength: 2450,
+    //     arsAllSteps: true,
+    //     tStay: 25,
+    //     K: 1,
+    //     arsDrawBreakpoint: 8,
+    //     curves: {
+    //       0: 0,    
+    //     },
+    //     slopes: {
+    //       0: 0,
+    //       462: 45,
+    //       608: 0,
+    //       924: 45,
+    //       981: 0,
+    //     },
+    //     modes: {
+    //       0: 'H',
+    //       43: '0',
+    //     },
+    //     // joints: [
+    //     // ],
+    //     // signals: [
+    //     // ]
+    //   },
+      {
+        name: 'Перловская',
+        trackLength: 2317,
+        arsAllSteps: true,
+        tStay: 25,
+        K: 1,
+        arsDrawBreakpoint: 8,
+        curves: {
+          0: 0, 
+          1425: 60,
+          1716: 0,
+          1717: 60,
+          2230: 0,    
+        },
+        slopes: {
+          0: 0,
+          462: 45,
+          608: 0,
+          924: 45,
+          981: 0,
+        },
+        modes: {
+          0: 'H',
+          43: '0',
+        },
+        // joints: [
+        // ],
+        // signals: [
+        // ]
+      },
+      {
+        name: 'Ярославская',
+        trackLength: 1535,
+        arsAllSteps: true,
+        tStay: 25,
+        K: 1,
+        arsDrawBreakpoint: 8,
+        curves: {
+          0: 0,        
+        },
+        slopes: {
+          0: 0,
+          253: 45,
+          378: 0,
+          671: 45,
+          817: 0,
+        },
+        modes: {
+          0: 'H',
+          43: '0',
+        },
+        // joints: [
+        // ],
+        // signals: [
+        // ]
+      },
+      {
+        name: 'Чапаевский Парк',
+        trackLength: 1586,
+        arsAllSteps: true,
+        tStay: 25,
+        K: 1,
+        arsDrawBreakpoint: 8,
+        curves: {
+          0: 0,
+        },
+        slopes: {
+          0: 0,
+          78: 45,
+          233: 0,
+          794: 45,
+          936: 0,
+          1373: 45,
+          1518: 0,
+        },
+        modes: {
+          0: 'H',
+          43: '0',
+        },
+        // joints: [
+        // ],
+        // signals: [
+        // ]
+      },
+      {
+        name: 'Заря',
+        trackLength: 547,
+        arsAllSteps: true,
+        tStay: 25,
+        K: 1,
+        arsDrawBreakpoint: 8,
+        curves: {
+          0: 0,
+        },
+        slopes: {
+          0: 0,
+        },
+        modes: {
+          0: 'H',
+          43: '0',
+        },
+        // joints: [
+        // ],
+        // signals: [
+        // ]
+      },
+      {
+        name: 'Оборот Заря',
+        trackLength: 1000,
+        arsAllSteps: true,
+        tStay: 25,
+        K: 1,
+        arsDrawBreakpoint: 8,
+        curves: {
+          0: 0,
+        },
+        slopes: {
+          0: 0,
+        },
+        modes: {
+          0: 'H',
+          43: '0',
+        },
+        // joints: [
+        // ],
+        // signals: [
+        // ]
+      },
 ]
