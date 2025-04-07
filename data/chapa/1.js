@@ -22,7 +22,8 @@ lines['chapa']['1'] = [
       437: 'T',
     },
     joints: [
-      { x: 0, name: '3', limit: 40 },
+      { x: 0 - 25 - 50, name: '3a', limit: 40 },
+      { x: 0 - 25, name: '3', limit: 40 },
       { x: 62.5, name: '5', limit: 40 },
       { x: 62.5 + 50, name: '111', limit: 40 },
       { x: 533 - 62.5 - 62.5 - 62.5 - 62.5 - 62.5, name: '169', limit: 60 },
@@ -36,7 +37,9 @@ lines['chapa']['1'] = [
       { x: 533 + 62.5 + 62.5 + 66, name: '215', limit: 60 },
     ],
     signals: [
-      { joint: '5', name: 'ЗР-3', lenses: 'WRW', autostop: 4, guard: 35, g: '171' },
+      { joint: '3a', name: 'В1', lenses: 'X', left: true, back: true },
+      { joint: '3a', name: 'ЗР-1', lenses: 'YYGR', autostop: 1, guard: 40 },
+      { joint: '5', name: 'ЗР-3', lenses: 'WRW', autostop: 4, guard: 40, g: '171' },
       // { joint: '165', name: '167', lenses: 'YYGR', autostop: 1, guard: 60, y: '171', g: 'NEXT_y' },
       { joint: '169', name: '171', lenses: 'YYGR', autostop: 1, guard: 60, y: '173', yg: 'NEXT_y', g: 'NEXT_yg' },
       { joint: '171', name: '173', lenses: 'YYGR', autostop: 1, guard: 60, y: '175', yg: 'NEXT_y', g: 'NEXT_yg' },
@@ -440,7 +443,7 @@ lines['chapa']['1'] = [
       175: '0',
       1500: 'T',
       1520: '0',
-      2086: 'T',
+      2098: 'T',
     },
     joints: [
       { x: 57, name: '711', limit: 40 },
