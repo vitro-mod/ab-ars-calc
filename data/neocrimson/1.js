@@ -28,6 +28,7 @@ lines['neocrimson']['1'] = [
       993: 'T'
     },
     joints: [
+      { x: 0, name: '17', limit: 70 },
       { x: 66, name: '19', limit: 70 },
       { x: 103.5, name: '19а', limit: 70, later: { 70: 2 } },
       { x: 141, name: '21', limit: 70, later: { 70: 2 } },
