@@ -16,8 +16,6 @@ class App {
         const K = 1;
         const Ky = K * 3;
 
-        // const KKy = K * Ky;
-
         const offsetX = 110;
 
         const jointLength = peregon.joints?.[peregon.joints.length - 1]?.x ?? 0;
