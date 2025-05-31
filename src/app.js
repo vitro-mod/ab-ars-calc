@@ -5,7 +5,6 @@ class App {
 
         const peregon = lines[query.line][query.track][Number(query.n) || 0];
         const nextPeregon = lines[query.line][query.track][Number(query.n) + 1 || 1];
-        const prevPeregon = lines[query.line][query.track][Number(query.n) - 1];
 
         this.loadPeregon(peregon);
 
