@@ -123,6 +123,7 @@ class App {
         this.modes = modes;
         this.stepNum = Math.round(this.trackLength / stepLength);
         this.KS = peregon.K || 1;
+        KS = this.KS;
     }
 }
 
