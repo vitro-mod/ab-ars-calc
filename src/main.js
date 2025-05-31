@@ -1,13 +1,11 @@
 const query = Object.fromEntries(document.location.search.slice(1).split('&').map(el => el.split('=')));
 
-let colors = {
+const colors = {
     red: '#f33',
     yellow: '#fd0',
     green: '#0c6',
     blue: '#0af',
 };
-// const peregon = brPn;
-// const nextPeregon = pnLt;
 
 const peregon = lines[query.line][query.track][Number(query.n) || 0];
 const nextPeregon = lines[query.line][query.track][Number(query.n) + 1 || 1];
@@ -28,26 +26,23 @@ const axisT = offsetX - 80;
 
 const jointLength = peregon.joints?.[peregon.joints.length - 1]?.x ?? 0;
 
-let two = new Two({
-    // fullscreen: true,
-    // autostart: true,
+const two = new Two({
     width: (jointLength > trackLength ? jointLength : trackLength) * K + offsetX * 2,
-    // height: window.innerHeight - 20
     height: (peregonCalc[peregonCalc.length - 1].Tk + peregon.tStay + interval) * Ky + 270
 }).appendTo(document.body);
 
-let curvesWidth = 2;
-let curvesY = two.height - 15;
-let slopesWidth = 2;
-let slopesY = two.height - 60;
-let trackWidth = 2;
-let trackY = two.height - 130;
-let graphWidth = 2;
-let graphY = two.height - 190;
-
-drawPeregon().position.x = offsetX;
+const curvesWidth = 2;
+const curvesY = two.height - 15;
+const slopesWidth = 2;
+const slopesY = two.height - 60;
+const trackWidth = 2;
+const trackY = two.height - 130;
+const graphWidth = 2;
+const graphY = two.height - 190;
 
 drawAxes();
+
+drawPeregon().position.x = offsetX;
 
 setTimeout(() => {
     drawVelocity(peregonCalc, trainHalf).position.x = offsetX;
@@ -69,9 +64,8 @@ setTimeout(() => {
     two.update();
 }, 0);
 
-let prevLeng = trackLength;
-let prevTime = peregonCalc[peregonCalc.length - 1].Tk;
-
+const prevLeng = trackLength;
+const prevTime = peregonCalc[peregonCalc.length - 1].Tk;
 
 loadPeregon(nextPeregon);
 const nextPeregonCalc = tractionCalc();
@@ -100,69 +94,27 @@ drawJoints();
 drawSignals();
 drawSwitches();
 
-// setTimeout(() => { 
-//     for(let i = 10; i < 2000; i+=10) {
-//         two.makeLine(offsetX + i * K, graphY, offsetX + i * K, graphY - V(i - trainHalf) * KKy).dashes = [KKy, KKy];
-//     }
-//     two.update();
-// }, 0);
-
-// loadPeregon(nextPeregon);
-
-
-// drawRay(2362.5 + 6.53);
-
-// for (let i = 10; i < peregon.trackLength; i += 10) {
-//     let brakeCurve = brakeCalc(i);
-//     drawVelocity(brakeCurve, trainHalf).position.x = offsetX; 
-// }
-
 two.update();
 
-document.querySelectorAll('.signal').forEach(el => {
-    el.addEventListener('click', function (e) {
-        this.style.opacity = '0.5';
-        let target = this;
-        setTimeout(() => {
-            target.style.opacity = '1';
-        }, 200);
+setupSignalEvents();
 
-        let signal = peregon.signals.find(el => el.name == this.id);
-        let joint = peregon.joints.findIndex(el => el.name == signal.joint);
-        let open = peregon.joints.findIndex(el => el.name == (signal.y ?? signal.yg ?? signal.g));
-        let result = peregon.joints.slice(joint, open + 1).map(el => 'rc' + el.name);
-        let resultText = "['" + result.join("', '") + "']";
-        console.log(resultText);
-        navigator.clipboard.writeText(resultText);
-    })
-});
+// let trackLength, tStay, curves, slopes, modes, stepNum;
 
-document.querySelectorAll('.rcname').forEach(el => {
-    el.addEventListener('click', function (e) {
-        let name = el.querySelector('text');
+function concatPeregon() {
+    let nextPeregonCopy = JSON.parse(JSON.stringify(nextPeregonCalc));
+    let nextPeregonOffset = peregonCalc[peregonCalc.length - 1].Sk;
+    let nextPeregonTimeOffset = peregonCalc[peregonCalc.length - 1].Tk;
+    for (let i = 0; i < nextPeregonCopy.length; i++) {
+        nextPeregonCopy[i].Sn += nextPeregonOffset;
+        nextPeregonCopy[i].Sk += nextPeregonOffset;
+        nextPeregonCopy[i].Tn += nextPeregonTimeOffset;
+        nextPeregonCopy[i].Tk += nextPeregonTimeOffset;
+    }
+    return peregonCalc.concat(nextPeregonCopy);
+}
 
-        if (!window.rcStart) {
-            window.rcStart = name;
-            window.rcStart.style.fill = 'red';
-        } else {
-            window.rcStart.style.fill = '';
-            window.rcEnd = name;
-
-            const startI = Number(peregon.joints.findIndex(el => el.name == window.rcStart.innerHTML)) + 1;
-            const endI = Number(peregon.joints.findIndex(el => el.name == window.rcEnd.innerHTML)) + 2;
-
-            const result = [];
-            for (let i = startI; i < endI; i++) {
-                result.push(arsCode(peregon.joints[i]));
-            }
-
-            const resultText = "'" + result.join("', '") + "'";
-
-            console.log(resultText);
-            navigator.clipboard.writeText(resultText);
-
-            window.rcStart = null;
-            window.rcEnd = null;
-        }
-    });
-});
+function loadPeregon(peregon) {
+    ({ trackLength, tStay, curves, slopes, modes } = peregon);
+    stepNum = Math.round(trackLength / stepLength);
+    KS = peregon.K || 1;
+}

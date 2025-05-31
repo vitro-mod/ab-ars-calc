@@ -131,6 +131,8 @@ function arsRcCopy() {
 function arsCode(joint) {
     let result = '';
 
+    if (!joint.arsCalc) return result;
+
     let clearNum = 0;
     let currentArs = 0;
 

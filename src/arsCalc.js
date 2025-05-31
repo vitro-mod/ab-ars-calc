@@ -42,3 +42,14 @@ function calcArs() {
         }
     }
 }
+
+function findNextJoint(x, i = 0) {
+    let joint;
+    for (i; i < peregon.joints.length; i++) {
+        if (peregon.joints[i].x >= x) {
+            joint = peregon.joints[i];
+            break;
+        }
+    }
+    return { joint, i };
+}
