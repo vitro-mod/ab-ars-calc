@@ -77,6 +77,7 @@ class App {
 
         const peregonConcat = this.concatPeregon(peregonCalc, nextPeregonCalc);
         tractionCalculator.setPeregonConcat(peregonConcat);
+        tractionCalculator.setPeregon(peregon);
 
         drawGraph.setTractionCalculator(tractionCalculator);
         // drawGraph.drawModes();
