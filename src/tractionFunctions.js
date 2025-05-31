@@ -56,7 +56,8 @@ function conditions(x) {
 
 function F(x, v) {
     let { _modes, _slopes, _radius } = conditions(x);
-    switch (_modes) {
+    // console.log(_modes)
+    switch (_modes?.[0]) {
         case 'H':
             //Fy-slopes-Wcurve
             return Fy(v) - _slopes - Wcurve(_radius);
@@ -66,7 +67,8 @@ function F(x, v) {
         case 'P':
             //-122.65-slopes-Wcurve
             // return -111.6 * 0.21 - _slopes - Wcurve(_radius);
-            return -111.6 * 0.416 - _slopes - Wcurve(_radius);
+            const slope = Number(_modes.slice(1)) || -20;
+            return slope - _slopes - Wcurve(_radius);
         default:
             //W0-slopes-Wcurve
             return W0(v) - _slopes - Wcurve(_radius);

@@ -25,7 +25,7 @@ function drawMode(x, mode) {
     const line = two.makeLine(offsetX + (x + trainHalf) * K, graphY - V(x) * Ky, offsetX + (x + trainHalf) * K, graphY - V(x) * Ky - 20);
     let modeString = '';
 
-    switch (mode) {
+    switch (mode[0]) {
         case 'H':
             modeString = 'Х';
             break;
@@ -36,7 +36,7 @@ function drawMode(x, mode) {
             modeString ='Т';
             break;
         case 'P':
-            modeString = 'Т1';
+            modeString = `TP${mode.slice(1)}`;
             break;
     }
 
