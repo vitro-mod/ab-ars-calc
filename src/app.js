@@ -78,7 +78,7 @@ class App {
         tractionCalculator.setPeregon(peregon);
 
         drawGraph.setTractionCalculator(tractionCalculator);
-        // drawGraph.drawModes();
+        drawGraph.drawModes();
 
         const arsCalculator = new ArsCalculator(peregon, peregonConcat);
         arsCalculator.calcArs();
