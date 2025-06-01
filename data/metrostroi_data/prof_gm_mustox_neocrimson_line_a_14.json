@@ -1,0 +1,191 @@
+[
+	{
+		"ordinate": 0,
+		"endIndex": 89,
+		"length": 868.4145185302735,
+		"slope": 0.001,
+		"startIndex": 1
+	},
+	{
+		"ordinate": 868.4145185302735,
+		"endIndex": 144,
+		"length": 534.9152720443726,
+		"slope": -0.001,
+		"startIndex": 89
+	},
+	{
+		"ordinate": 1403.3297905746463,
+		"endIndex": 155,
+		"length": 108.3989299621582,
+		"slope": -0.032,
+		"startIndex": 144
+	},
+	{
+		"ordinate": 1511.7287205368045,
+		"endIndex": 166,
+		"length": 108.86860361938477,
+		"slope": -0.035,
+		"startIndex": 155
+	},
+	{
+		"ordinate": 1620.5973241561892,
+		"endIndex": 177,
+		"length": 99.45540260925293,
+		"slope": -0.006,
+		"startIndex": 166
+	},
+	{
+		"ordinate": 1720.052726765442,
+		"endIndex": 265,
+		"length": 868.6172515045167,
+		"slope": 0,
+		"startIndex": 177
+	},
+	{
+		"ordinate": 2588.669978269959,
+		"endIndex": 276,
+		"length": 109.04286856384277,
+		"slope": -0.027,
+		"startIndex": 265
+	},
+	{
+		"ordinate": 2697.7128468338014,
+		"endIndex": 287,
+		"length": 108.72092774963379,
+		"slope": -0.035,
+		"startIndex": 276
+	},
+	{
+		"ordinate": 2806.433774583435,
+		"endIndex": 298,
+		"length": 93.63665022125245,
+		"slope": -0.003,
+		"startIndex": 287
+	},
+	{
+		"ordinate": 2900.0704248046873,
+		"endIndex": 320,
+		"length": 216.54643457336425,
+		"slope": 0.001,
+		"startIndex": 298
+	},
+	{
+		"ordinate": 3116.6168593780517,
+		"endIndex": 331,
+		"length": 108.15692496643067,
+		"slope": -0.021,
+		"startIndex": 320
+	},
+	{
+		"ordinate": 3224.7737843444825,
+		"endIndex": 342,
+		"length": 108.36611568603516,
+		"slope": -0.032,
+		"startIndex": 331
+	},
+	{
+		"ordinate": 3333.1399000305178,
+		"endIndex": 408,
+		"length": 651.9247601486207,
+		"slope": 0,
+		"startIndex": 342
+	},
+	{
+		"ordinate": 3985.0646601791386,
+		"endIndex": 419,
+		"length": 109.11467697143556,
+		"slope": -0.022,
+		"startIndex": 408
+	},
+	{
+		"ordinate": 4094.179337150574,
+		"endIndex": 430,
+		"length": 108.75085964355469,
+		"slope": -0.031,
+		"startIndex": 419
+	},
+	{
+		"ordinate": 4202.930196794129,
+		"endIndex": 463,
+		"length": 325.57132749023435,
+		"slope": 0,
+		"startIndex": 430
+	},
+	{
+		"ordinate": 4528.501524284364,
+		"endIndex": 474,
+		"length": 108.6059580230713,
+		"slope": -0.017,
+		"startIndex": 463
+	},
+	{
+		"ordinate": 4637.107482307435,
+		"endIndex": 485,
+		"length": 108.67509740753174,
+		"slope": -0.035,
+		"startIndex": 474
+	},
+	{
+		"ordinate": 4745.782579714967,
+		"endIndex": 595,
+		"length": 1086.1413758193971,
+		"slope": 0,
+		"startIndex": 485
+	},
+	{
+		"ordinate": 5831.923955534365,
+		"endIndex": 606,
+		"length": 109.47968724975587,
+		"slope": -0.015,
+		"startIndex": 595
+	},
+	{
+		"ordinate": 5941.40364278412,
+		"endIndex": 617,
+		"length": 108.53501351623535,
+		"slope": -0.035,
+		"startIndex": 606
+	},
+	{
+		"ordinate": 6049.938656300355,
+		"endIndex": 628,
+		"length": 108.10392471313477,
+		"slope": -0.022,
+		"startIndex": 617
+	},
+	{
+		"ordinate": 6158.04258101349,
+		"endIndex": 694,
+		"length": 650.5943163574219,
+		"slope": 0,
+		"startIndex": 628
+	},
+	{
+		"ordinate": 6808.636897370912,
+		"endIndex": 705,
+		"length": 108.79810908508301,
+		"slope": -0.017,
+		"startIndex": 694
+	},
+	{
+		"ordinate": 6917.435006455995,
+		"endIndex": 716,
+		"length": 108.57093457946777,
+		"slope": -0.035,
+		"startIndex": 705
+	},
+	{
+		"ordinate": 7026.0059410354625,
+		"endIndex": 727,
+		"length": 108.6509041168213,
+		"slope": -0.019,
+		"startIndex": 716
+	},
+	{
+		"ordinate": 7134.6568451522835,
+		"endIndex": 865,
+		"length": 1359.4830646041871,
+		"slope": 0,
+		"startIndex": 727
+	}
+]

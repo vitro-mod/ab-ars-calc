@@ -1,10 +1,14 @@
 class App {
 
-    init() {
+    async init() {
         const query = Object.fromEntries(document.location.search.slice(1).split('&').map(el => el.split('=')));
 
         const peregon = lines[query.line][query.track][Number(query.n) || 0];
         const nextPeregon = lines[query.line][query.track][Number(query.n) + 1 || 1];
+
+        if (query.import) {
+            await importTrackPlanProfile(query.import, query.track, query.n, peregon, nextPeregon);
+        }
 
         this.loadPeregon(peregon);
 
