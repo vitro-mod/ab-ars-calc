@@ -8,8 +8,8 @@ let wagonCount = 6;
 let trainHalf = wagonLength * wagonCount / 2;
 
 const FT = -111.6 * 1.1;
-let KS = 1.5;
+let KS = 1;
 
-const abSteps = ['y','yg','g'];
-const arsSteps = [40,60,70,80];
+const abSteps = ['y', 'yg', 'g'];
+const arsSteps = [40, 60, 70, 80];
 // const arsSteps = [40];
