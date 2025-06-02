@@ -66,9 +66,8 @@ function F(peregon, x, v) {
             return FT - _slopes - Wcurve(_radius);
         case 'P':
             //-122.65-slopes-Wcurve
-            // return -111.6 * 0.21 - _slopes - Wcurve(_radius);
-            const slope = Number(_modes.slice(1)) || -20;
-            return slope - _slopes - Wcurve(_radius);
+            const slope = (Number(_modes.slice(1)) || 210) / 1000;
+            return -111.6 * slope - _slopes - Wcurve(_radius);
         default:
             //W0-slopes-Wcurve
             return W0(v) - _slopes - Wcurve(_radius);
