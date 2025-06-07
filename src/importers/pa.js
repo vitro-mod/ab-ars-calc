@@ -25,7 +25,7 @@ async function importTrackPlanProfile(name, track, n, peregon, nextPeregon) {
     const profRes = await fetch(`/data/metrostroi_data/prof_${name}_${gmTrack}.json`);
     const prof = await profRes.json();
     // console.log(plan);
-    console.log(prof);
+    // console.log(prof);
 
     const trackLength1 = Math.round(paths[track][Number(n) + 1].TrackX - paths[track][Number(n)].TrackX);
     const trackLength2 = paths[track][Number(n) + 2] ? Math.round(paths[track][Number(n) + 2].TrackX - paths[track][Number(n) + 1].TrackX) : 300;
@@ -66,7 +66,56 @@ async function importTrackPlanProfile(name, track, n, peregon, nextPeregon) {
     const nextPeregonProf = buildPeregonProf(prof, nextProfBegin, nextProfEnd, station2X);
     nextPeregon.slopes = nextPeregonProf;
 
+    filterSlopesSharp(peregon);
+    filterSlopesSharp(nextPeregon);
+
     return paths[track];
+}
+
+function filterSlopesSharp(peregon) {
+    const slopeKeys = Object.keys(peregon.slopes);
+
+    let lastSharpenedI = null;
+
+    for (let i = 0; i < slopeKeys.length; i++) {
+
+        let el = slopeKeys[i];
+        let arr = slopeKeys;
+
+        let start = Number(el);
+        let end = (i < arr.length - 1) ? Number(slopeKeys[i + 1]) : peregon.trackLength;
+
+        const prevSlope = peregon.slopes[slopeKeys[i - 1]];
+        const slope = peregon.slopes[el];
+        const nextSlope = peregon.slopes[slopeKeys[i + 1]];
+
+        if ((lastSharpenedI == null || i > lastSharpenedI + 1) && i > 0 && Math.abs(slope) > 2 && (end - start < 120) && (Math.abs(slope - prevSlope) > 5 || Math.abs(nextSlope - slope) > 5) && prevSlope < slope && slope < nextSlope && (prevSlope < 0 == nextSlope < 0 || prevSlope == 0 || nextSlope == 0)) {
+            lastSharpenedI = i;
+            const {x, y} = sharpProfile(prevSlope, slope, end - start, nextSlope);
+            const newX = Math.round(Number(slopeKeys[i + 1]) - y);
+            delete peregon.slopes[el];
+            delete peregon.slopes[slopeKeys[i + 1]];
+            peregon.slopes[newX] = nextSlope;
+        };
+
+        if ((lastSharpenedI == null || i > lastSharpenedI + 1) && i > 0 && Math.abs(slope) > 2 && (end - start < 120) && (Math.abs(slope - prevSlope) > 5 || Math.abs(nextSlope - slope) > 5) && prevSlope > slope && slope > nextSlope && (prevSlope < 0 == nextSlope < 0 || prevSlope == 0 || nextSlope == 0)) {
+            lastSharpenedI = i;
+            const { x, y } = sharpProfile(prevSlope, slope, end - start, nextSlope);
+            const newX = Math.round(Number(slopeKeys[i + 1]) - y);
+            delete peregon.slopes[el];
+            delete peregon.slopes[slopeKeys[i + 1]];
+            peregon.slopes[newX] = nextSlope;
+        }
+    }
+}
+
+function sharpProfile(i1, is, Ls, i2) {
+    const hs = Ls * is;
+
+    const x = (hs - Ls * i2) / (i1 - i2);
+    const y = Ls - x;
+
+    return { x, y };
 }
 
 function findBeginEnd(planOrProf, station1X, station2X) {
