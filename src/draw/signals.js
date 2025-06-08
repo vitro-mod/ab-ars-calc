@@ -20,16 +20,18 @@ class DrawSignals extends Draw {
         return this.peregon.signals[signalI].autostop ? this.peregon.signals[signalI].autostop : 0;
     }
 
-    drawAutostop(x, isClosed) {
+    drawAutostop(x, isClosed, isBack = false) {
 
-        const signalY = this.trackY + 20;
+        const signalY = this.trackY + (isBack ? -20 : 20);
+        const signalX = this.offsetX + x * this.K;
 
-        this.two.makeLine(this.offsetX + x * this.K, signalY + 4, this.offsetX + x * this.K, signalY - 4);
-        this.two.makeLine(this.offsetX + x * this.K, signalY, this.offsetX + x * this.K + 10, signalY);
-        if (isClosed)
-            this.two.makeLine(this.offsetX + x * this.K + 10, signalY, this.offsetX + x * this.K + 10, signalY - 9).linewidth = 3;
-        else
-            this.two.makeLine(this.offsetX + x * this.K + 10, signalY, this.offsetX + x * this.K + 14, signalY - 8).linewidth = 3;
+        const group = this.two.makeGroup();
+
+        const foot = this.two.makeLine(signalX, signalY + 4, signalX, signalY - 4);
+        const leg = this.two.makeLine(signalX, signalY, signalX + (isBack ? -10 : 10), signalY);
+        const arm = this.two.makeLine(signalX + (isBack ? -10 : 10), signalY, signalX + (isBack ? (isClosed ? -10 : -14) : (isClosed ? 10 : 14)), signalY - (isBack ? (isClosed ? -9 : -8) : (isClosed ? 9 : 8))).linewidth = 3;
+
+        group.add(foot, leg, arm);
     }
 
     drawSignal(x, formula = 'x', name, isLeft, isBack, row = 0) {
@@ -129,7 +131,7 @@ class DrawSignals extends Draw {
 
             let autostop = this.peregon.signals[i].autostop ? this.peregon.signals[i].autostop : 0;
             let shift = this.peregon.signals[i].shift ? this.peregon.signals[i].shift : 0;
-            if (autostop) this.drawAutostop(x - shift, !name[0].match(/[0-9]/));
+            if (autostop) this.drawAutostop(x - shift, !name[0].match(/[0-9]/), isBack);
 
 
             let tR = this.tractionCalculator.T(x - trainHalf);
