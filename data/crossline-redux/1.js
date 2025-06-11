@@ -121,7 +121,7 @@ lines['crossline-redux']['1'] = [
             { x: 1543 + 66.3 + 62.5 + 137.5 + 112.7, name: '291б', limit: 0 },
         ],
         signals: [
-            { joint: '263', name: 'ПТ265', lenses: 'BWYYGRw', left: true, guard: 80, autostop: 1, y: '265', yg: 'NEXT_y', g: 'NEXT_yg' },
+            { joint: '263', name: 'ПТ265', lenses: 'BWYGRw', left: true, guard: 80, autostop: 1, g: '265' },
             { joint: '263б', name: '267', lenses: 'YYGR', left: true, guard: 80, autostop: 1, y: '267', yg: 'NEXT_y', g: 'NEXT_yg' },
             { joint: '263в', name: '269', lenses: 'YYGR', left: true, guard: 80, autostop: 1, y: '269', yg: 'NEXT_y', g: 'NEXT_yg' },
             { joint: '265', name: '271', lenses: 'YYGR', left: true, guard: 80, autostop: 1, y: '271', yg: 'NEXT_y', g: 'NEXT_yg' },
