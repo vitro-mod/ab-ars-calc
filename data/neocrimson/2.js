@@ -359,7 +359,7 @@ lines['neocrimson']['2'] = [
             { joint: '36а', name: '32', lenses: 'YY-GR', autostop: 3, guard: 80, y: '32б', g: 'NEXT_y' },
             { joint: '32а', name: '30', lenses: 'YY-GR', autostop: 3, guard: 80, y: '30', g: 'NEXT_y' },
             { joint: '32б', name: '28', lenses: 'YY-GR', autostop: 3, guard: 80, y: '28', yg: 'NEXT_y', g: 'NEXT_y' },
-            { joint: '30', name: '26', lenses: 'YY-GR', autostop: 6, guard: 70, y: '26', yg: 'NEXT_y', g: 'NEXT_yg' },
+            { joint: '30', name: '26', lenses: 'YY-GR', autostop: 6, guard: 70, y: '26', yg: 'NEXT_y', g: 'NEXT_yg', service: 60 },
             { joint: '28', name: 'БР-24', lenses: 'YYG-Rw', autostop: 6, shift: 13, guard: 60, yg: '182' },
             { joint: '24', name: 'БР-22', lenses: 'YYY-YG-Rw', autostop: 6, guard: 60, y: '182' },
         ]
