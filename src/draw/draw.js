@@ -15,6 +15,10 @@ class Draw {
         this.Ky = Ky;
     }
 
+    x(x) {
+        return this.offsetX + x * this.K;
+    }
+
     setPeregon(peregon) {
         this.peregon = peregon;
     }
