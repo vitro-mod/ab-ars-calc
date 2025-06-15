@@ -8,8 +8,8 @@ class DrawSwitches extends Draw {
     }
 
     drawSwitch(switchObj) {
-        const x = offsetX + switchObj.x * this.K;
-        const y = curvesY;
+        const x = this.x(switchObj.x);
+        const y = this.curvesY;
         const left = switchObj.left;
         const trailing = switchObj.trailing;
 
