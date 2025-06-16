@@ -518,14 +518,5 @@
 		"length": 318.61985296325685,
 		"elementType": "straight",
 		"startIndex": 1190
-	},
-	{
-		"angle": 0.012895707174520736,
-		"endIndex": 1224,
-		"angleDeg": -0.7388695949366139,
-		"curveLen": 3.4790521774291996,
-		"startIndex": 1222,
-		"elementType": "right",
-		"ordinate": 12237.556142705158
 	}
 ]
