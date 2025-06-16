@@ -25,7 +25,7 @@ class App {
 
         const two = new Two({
             width: (jointLength > this.trackLength ? jointLength : this.trackLength) * K + offsetX * 2,
-            height: (peregonCalc[peregonCalc.length - 1].Tk + peregon.tStay + interval) * Ky + 270
+            height: (peregonCalc[peregonCalc.length - 1].Tk + peregon.tStay + peregon.interval) * Ky + 270
         }).appendTo(document.body);
 
         const drawGraph = new DrawGraph(two, peregon, offsetX, K, Ky);
@@ -50,7 +50,7 @@ class App {
         }, 0);
 
         setTimeout(() => {
-            drawGraph.drawTime(peregonCalc, trainHalf, interval).position.x = offsetX;
+            drawGraph.drawTime(peregonCalc, trainHalf, peregon.interval).position.x = offsetX;
             two.update();
         }, 0);
 
@@ -126,5 +126,7 @@ class App {
         this.stepNum = Math.round(this.trackLength / stepLength);
         this.KS = peregon.K || 1;
         KS = this.KS;
+
+        peregon.interval ??= interval;
     }
 }

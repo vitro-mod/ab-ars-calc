@@ -61,7 +61,7 @@ class DrawJoints extends Draw {
                 let factLength = (nextJointX - x) % 1 > 0.05 ? (nextJointX - x).toFixed(1) : Math.floor((nextJointX - x));
 
                 let tTransmit = this.tractionCalculator.T(nextJointX + trainHalf);
-                let tReceive = this.tractionCalculator.T(this.peregon.joints[i - 1].x - trainHalf) + interval;
+                let tReceive = this.tractionCalculator.T(this.peregon.joints[i - 1].x - trainHalf) + this.peregon.interval;
                 let fars = Math.trunc(tReceive - tTransmit);
 
                 this.drawArrow(this.offsetX + x * this.K, y, this.offsetX + nextJointX * this.K, y);
