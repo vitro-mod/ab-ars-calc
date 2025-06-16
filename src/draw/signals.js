@@ -137,7 +137,7 @@ class DrawSignals extends Draw {
 
 
             let tR = this.tractionCalculator.T(x - trainHalf);
-            let tTop = tR + interval;
+            let tTop = tR + this.peregon.interval;
 
             let tPermit = 0;
             let xPermit = 0;
@@ -208,8 +208,8 @@ class DrawSignals extends Draw {
                 let brakeLength = brakeCurve[0].Sn - brakeCurve[brakeCurve.length - 1].Sk;
                 let brakeX = brakeCurve[brakeCurve.length - 1].Sk;
                 let brakeV = brakeCurve[brakeCurve.length - 1].Vk;
-                let brakeT = this.tractionCalculator.T(brakeX) + interval - 2;
-                if (brakeV < 20) brakeT = interval - 2;
+                let brakeT = this.tractionCalculator.T(brakeX) + this.peregon.interval - 2;
+                if (brakeV < 20) brakeT = this.peregon.interval - 2;
                 if (brakeV < 20) brakeX = 0;
 
                 if (brakeV >= 20) {
