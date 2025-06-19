@@ -25,7 +25,7 @@ class App {
 
         const two = new Two({
             width: (jointLength > this.trackLength ? jointLength : this.trackLength) * K + offsetX * 2,
-            height: (peregonCalc[peregonCalc.length - 1].Tk + peregon.tStay + interval) * Ky + 270
+            height: (peregonCalc[peregonCalc.length - 1].Tk + peregon.tStay + this.interval) * Ky + 270
         }).appendTo(document.body);
 
         const drawGraph = new DrawGraph(two, peregon, offsetX, K, Ky);
@@ -50,7 +50,7 @@ class App {
         }, 0);
 
         setTimeout(() => {
-            drawGraph.drawTime(peregonCalc, trainHalf, interval).position.x = offsetX;
+            drawGraph.drawTime(peregonCalc, trainHalf, this.interval).position.x = offsetX;
             two.update();
         }, 0);
 
@@ -116,10 +116,10 @@ class App {
     }
 
     loadPeregon(peregon) {
-        let trackLength, tStay, curves, slopes, modes;
-        ({ trackLength, tStay, curves, slopes, modes } = peregon);
+        const { trackLength, tStay, curves, slopes, modes, interval } = peregon;
         this.trackLength = trackLength;
         this.tStay = tStay;
+        this.interval = Math.round(3600 / (interval || 40));
         this.curves = curves;
         this.slopes = slopes;
         this.modes = modes;
