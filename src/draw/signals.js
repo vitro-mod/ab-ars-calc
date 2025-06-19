@@ -1,5 +1,5 @@
 class DrawSignals extends Draw {
-    
+
     constructor(two, peregon, offsetX, K, Ky) {
         super(two, peregon, offsetX, K, Ky);
         this.colors = {
@@ -16,6 +16,9 @@ class DrawSignals extends Draw {
 
         if (this.peregon.signals[signalI][ind].includes('NEXT'))
             return this.findAutostop(signalI + 1, this.peregon.signals[signalI][ind].split('_')[1]);
+
+        if (this.peregon.signals[signalI][ind].includes('SECOND'))
+            return this.findAutostop(signalI + 2, this.peregon.signals[signalI][ind].split('_')[1]);
 
         return this.peregon.signals[signalI].autostop ? this.peregon.signals[signalI].autostop : 0;
     }
@@ -345,6 +348,9 @@ class DrawSignals extends Draw {
 
         if (this.peregon.signals[signalI][ind].includes('NEXT'))
             return this.findIndicationX(signalI + 1, this.peregon.signals[signalI][ind].split('_')[1], full);
+
+        if (this.peregon.signals[signalI][ind].includes('SECOND'))
+            return this.findIndicationX(signalI + 2, this.peregon.signals[signalI][ind].split('_')[1], full);
 
         return this.findJointX(this.peregon.signals[signalI][ind], full);
     }
