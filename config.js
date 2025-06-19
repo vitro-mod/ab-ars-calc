@@ -3,8 +3,6 @@ const stepLength = 1;
 const wagonLength = 19.16;
 const wagonCount = 6;
 
-const interval = Math.round(3600 / 44);
-
 const trainHalf = wagonLength * wagonCount / 2;
 
 const FT = -111.6 * 1.1;

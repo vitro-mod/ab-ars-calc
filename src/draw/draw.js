@@ -2,6 +2,7 @@ class Draw {
     constructor(two, peregon, offsetX, K, Ky) {
         this.two = two;
         this.peregon = peregon;
+        this.interval = Math.round(3600 / (this.peregon.interval || 40));
         this.curvesWidth = 2;
         this.curvesY = two.height - 15;
         this.slopesWidth = 2;
