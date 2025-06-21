@@ -533,7 +533,7 @@ lines['crossline-redux']['1'] = [
             { joint: '405а', name: 'МЛ-411', lenses: 'YYGRw', left: true, guard: 75, service: 35, autostop: 1, y: '411', yg: 'NEXT_y', g: 'NEXT_yg' },
             { joint: '407', name: 'МЛ-413', lenses: 'YYGRw', left: true, guard: 65, service: 35, autostop: 1, y: '413', yg: 'NEXT_y', g: 'NEXT_g' },
             { joint: '409', name: 'МЛ-415', lenses: 'BYYGRw', left: true, guard: 60, service: 35, autostop: 1, y: '415с', g: 'NEXT_yg' },
-            { joint: '413', name: 'МЛ-417', lenses: 'YYGRw', guard: 60, service: 35, autostop: 1, yg: '417с', shift: 12.5 },
+            { joint: '413', name: 'МЛ-417', lenses: 'YYGRw', wall: true, guard: 60, service: 35, autostop: 1, yg: '417с', shift: 12.5 },
             { joint: '417с', name: 'МЛ-419', lenses: 'x', guard: 35, autostop: 1 },
         ],
     },
