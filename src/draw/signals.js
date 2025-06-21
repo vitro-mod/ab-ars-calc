@@ -37,7 +37,7 @@ class DrawSignals extends Draw {
         group.add(foot, leg, arm);
     }
 
-    drawSignal(x, formula = 'x', name, isLeft, isBack, row = 0) {
+    drawSignal(x, formula = 'x', name, isLeft, isBack, row = 0, isWall = false) {
 
         let group = this.two.makeGroup();
 
@@ -52,7 +52,7 @@ class DrawSignals extends Draw {
 
         const nameText = this.two.makeText(name, this.x(isBack ? x + name.length * 10 + 5 : x), textY, { alignment: isBack ? 'right' : 'left' });
         group.add(this.two.makeLine(this.x(x), signalY - half, this.x(x), signalY + half));
-        group.add(this.two.makeLine(this.x(x) - half, signalY - half, this.x(x), signalY - half));
+        group.add(this.two.makeLine(this.x(x) - half, isWall ? signalY + half : signalY - half, this.x(x), signalY - half));
         group.add(this.two.makeLine(this.x(x) - half, signalY + half, this.x(x), signalY + half));
         group.add(this.two.makeLine(this.x(x), signalY, this.x(x) + half * 2, signalY));
 
@@ -121,21 +121,24 @@ class DrawSignals extends Draw {
         for (let i = 0; i < this.peregon.signals.length; i++) {
 
             const signal = this.peregon.signals[i];
-
+            
+            const lenses = signal.lenses;
+            const name = signal.name;
+            const isLeft = signal.left;
+            const isDouble = signal.double;
+            const isBack = signal.back;
+            const isWall = signal.wall;
+            const row = signal.row;
+            
             let x = signal.x;
-            let lenses = signal.lenses;
-            let name = signal.name;
-            let isLeft = signal.left;
-            let isDouble = signal.double;
-            let isBack = signal.back;
-            let row = signal.row;
             if ('joint' in signal) {
                 let joint = signal.joint;
                 x = this.peregon.joints[this.peregon.joints.map(el => el.name).indexOf(joint)].x;
             }
-            this.drawSignal(x, lenses, name, isLeft, isBack, row);
+
+            this.drawSignal(x, lenses, name, isLeft, isBack, row, isWall);
             if (isDouble) {
-                this.drawSignal(x, lenses, name, !isLeft, isBack);
+                this.drawSignal(x, lenses, name, !isLeft, isBack, row, isWall);
             }
 
             let autostop = signal.autostop ? signal.autostop : 0;
