@@ -126,6 +126,7 @@ class DrawSignals extends Draw {
             let lenses = signal.lenses;
             let name = signal.name;
             let isLeft = signal.left;
+            let isDouble = signal.double;
             let isBack = signal.back;
             let row = signal.row;
             if ('joint' in signal) {
@@ -133,6 +134,9 @@ class DrawSignals extends Draw {
                 x = this.peregon.joints[this.peregon.joints.map(el => el.name).indexOf(joint)].x;
             }
             this.drawSignal(x, lenses, name, isLeft, isBack, row);
+            if (isDouble) {
+                this.drawSignal(x, lenses, name, !isLeft, isBack);
+            }
 
             let autostop = signal.autostop ? signal.autostop : 0;
             let shift = signal.shift ? signal.shift : 0;
