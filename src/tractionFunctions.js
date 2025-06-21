@@ -77,26 +77,3 @@ function Ft(peregon, x, a = 1.1 / 1.15 / KS) {
     let { _modes, _slopes, _radius } = conditions(peregon, x);
     return -111.6 * a - _slopes - Wcurve(_radius);
 }
-
-function vks(peregon, i) {
-    let joint = peregon.joints[i];
-    if (!joint.vks) return false;
-    let x = joint.x;
-    let leng = peregon.joints[i + 1].x - x;
-
-    // let brakeCurve = brakeCalc(x + leng + trainHalf, 1.1, leng);
-    // drawVelocity(brakeCurve, -trainHalf).position.x = offsetX;
-
-    let { _modes, _slopes, _radius } = conditions(peregon, x);
-    let a = 1 / (3.6 * 3.6 * 2 * (1.1 - (_slopes / 100)));
-    let b = 0.247;
-    let c = -leng - 1.38;
-
-    let D = b * b - 4 * a * c;
-    if (D < 0) return false;
-    let v = Math.ceil((-b + Math.sqrt(D)) / (2 * a));
-    let l = b * v - 1.38;
-    let s = v * v * a;
-
-    return { v, l, s };
-}

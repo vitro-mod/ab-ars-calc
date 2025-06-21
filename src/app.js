@@ -83,8 +83,13 @@ class App {
         drawGraph.setTractionCalculator(tractionCalculator);
         drawGraph.drawModes();
 
+        const vksCalculator = new VksCalculator(peregon, peregonConcat);
+        vksCalculator.setTractionCalculator(tractionCalculator);
+        vksCalculator.calc();
+
         const arsCalculator = new ArsCalculator(peregon, peregonConcat);
-        arsCalculator.calcArs();
+        arsCalculator.setTractionCalculator(tractionCalculator);
+        arsCalculator.calc();
 
         const drawJoints = new DrawJoints(two, peregon, offsetX, K, Ky);
         drawJoints.setTractionCalculator(tractionCalculator);

@@ -3,9 +3,11 @@ class ArsCalculator {
     constructor(peregon, peregonConcat) {
         this.peregon = peregon;
         this.peregonConcat = peregonConcat;
+
+        this.tractionCalculator = null;
     }
 
-    calcArs() {
+    calc() {
         for (let i = 0; i < this.peregon.joints.length; i++) {
             let x = this.peregon.joints[i].x;
             let arsS = arsSteps.map(el => {
@@ -26,9 +28,17 @@ class ArsCalculator {
                     nextJointI = 0;
                 }
 
-                // if (i && this.peregon.arsAllSteps && nextJoint.i - i ==  )
+                const interval = Math.floor(3600 / (this.peregon.interval || 40));
 
-                return { jointI, nextJointX, nextJointI, v, sObj };
+                const vksCalc = this.peregon.joints[nextJointI - 1]?.vksCalc;
+
+                const tTransmit = this.tractionCalculator.T(nextJointX + trainHalf + (vksCalc ? -vksCalc.s : 0));
+                const tReceive = this.tractionCalculator.T(this.peregon.joints[i - 1]?.x - trainHalf) + interval;
+                const fArs = Math.trunc(tReceive - tTransmit);
+
+                const factLength = (nextJointX - x) % 1 > 0.05 ? (nextJointX - x).toFixed(1) : Math.floor((nextJointX - x));
+
+                return { jointI, nextJointX, nextJointI, v, sObj, fArs, factLength };
             });
 
             this.peregon.joints[i].arsCalc = arsS;
@@ -59,5 +69,9 @@ class ArsCalculator {
             }
         }
         return { joint, i };
+    }
+
+    setTractionCalculator(tractionCalculator) {
+        this.tractionCalculator = tractionCalculator;
     }
 }

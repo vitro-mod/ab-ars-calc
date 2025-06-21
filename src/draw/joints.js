@@ -9,79 +9,75 @@ class DrawJoints extends Draw {
 
             if (!this.peregon.joints[i].point) {
                 joint = this.drawJoint(x);
-            }
-            else {
+            } else {
                 joint = this.drawPoint(x);
             }
 
-            if (this.peregon.joints[i].vks) {
-                let { v, l, s } = vks(this.peregon, i);
-                this.drawRay(x + l);
-                let vf = Math.floor(this.tractionCalculator.V(x + trainHalf));
-                let y = vf;
-                let vksText1 = this.two.makeText(`Vф=${vf}км/ч`, this.offsetX + (x + l) * this.K + 4, this.graphY - y * this.Ky, { size: 10, alignment: 'left' });
-                let vksText2 = this.two.makeText(`Vр=${v}км/ч`, this.offsetX + (x + l) * this.K + 4, this.graphY + 12 - y * this.Ky, { size: 10, alignment: 'left' });
-                let vksText3 = this.two.makeText(`S=${l.toFixed(2)}+${s.toFixed(2)}=${Math.floor((l + s + 1.38))}`, this.offsetX + (x + l) * this.K + 4, this.graphY + 24 - y * this.Ky, { size: 10, alignment: 'left' });
-                let vksDash = this.two.makeLine(this.offsetX + (x + l) * this.K, this.graphY, this.offsetX + (x + l) * this.K, 0);
-                vksDash.dashes = [this.Ky, this.Ky];
-                this.peregon.joints[i].vksLength = l;
+            const vksCalc = this.peregon.joints[i].vksCalc;
+
+            if (vksCalc) {
+                this.drawVks(x, i);
             }
 
             if (i == this.peregon.joints.length - 1) continue;
 
-            let leng = this.peregon.joints[i + 1].x - this.peregon.joints[i].x;
-            let half = leng / 2;
-            let text = this.two.makeText(this.peregon.joints[i].name, this.offsetX + (x + half) * this.K, this.trackY - 8);
-            let code = this.two.makeText(arsCode(this.peregon.joints[i]), this.offsetX + (x + half) * this.K, this.graphY - 5, { size: 10 });
-            let lengText = this.two.makeText(`${leng % 1 > 0.05 ? leng.toFixed(1) : Math.floor(leng)} м.`, this.offsetX + (x + half) * this.K, this.trackY + 8, { size: 10 });
+            const name = this.peregon.joints[i].name;
+            const leng = this.peregon.joints[i + 1].x - this.peregon.joints[i].x;
+            const half = leng / 2;
 
-            let dash = this.two.makeLine(this.offsetX + x * this.K, this.graphY, this.offsetX + x * this.K, 0);
+            const textX = this.x(x + half + (vksCalc ? ((leng < 50) ? vksCalc.l : vksCalc.l / 2) : 0));
+
+            const text = this.two.makeText(name, textX, this.trackY - 8);
+            const code = this.two.makeText(arsCode(this.peregon.joints[i]), textX, this.graphY - 5, { size: 10 });
+            const lengText = this.two.makeText(`${leng % 1 > 0.05 ? leng.toFixed(1) : Math.floor(leng)} м`, textX, this.trackY + 8, { size: 10 });
+
+            const dash = this.two.makeLine(this.x(x), this.graphY, this.x(x), 0);
             dash.dashes = [this.Ky, this.Ky];
 
             const textGroup = this.two.makeGroup();
             textGroup.add(text);
             textGroup.className = 'rcname';
 
-            group.add(joint, textGroup, lengText, dash);
+            group.add(joint, textGroup, lengText, dash, code);
 
             let arsS = this.peregon.joints[i].arsCalc;
 
             if (!arsS) continue;
             for (let k = 0; k < arsS.length; k++) {
-                let { jointI, nextJointX, nextJointI, v, sObj } = arsS[k];
+                let { jointI, nextJointX, nextJointI, v, sObj, fArs, factLength } = arsS[k];
                 if (k < arsS.length - 1 && arsS[k + 1].nextJointI == arsS[k].nextJointI || arsS[k].nextJointI - i <= 0 || !i) continue;
 
                 let y;
-                let breakPoint = this.peregon.arsDrawBreakpoint || 12;
-                if (nextJointI < breakPoint)
+                const breakPoint = this.peregon.arsDrawBreakpoint || 12;
+                if (nextJointI < breakPoint) {
                     y = (this.graphY - 7.5 * nextJointI * this.Ky - 95 * this.Ky)
-                else
+                } else {
                     y = (this.graphY - 7.5 * (nextJointI - breakPoint + 1) * this.Ky);
+                }
 
-                let factLength = (nextJointX - x) % 1 > 0.05 ? (nextJointX - x).toFixed(1) : Math.floor((nextJointX - x));
+                if (this.peregon.joints[nextJointI - 1].vksCalc) {
+                    this.drawArsVksArrow(x, y, nextJointX, nextJointI);
+                } else {
+                    this.drawArrow(this.x(x), y, this.x(nextJointX), y);
+                }
 
-                let tTransmit = this.tractionCalculator.T(nextJointX + trainHalf);
-                let tReceive = this.tractionCalculator.T(this.peregon.joints[i - 1].x - trainHalf) + this.interval;
-                let fars = Math.trunc(tReceive - tTransmit);
-
-                this.drawArrow(this.offsetX + x * this.K, y, this.offsetX + nextJointX * this.K, y);
-                this.two.makeCircle(this.offsetX + x * this.K, y, 1.5).fill = '#000';
-                this.two.makeText(`${v}`, this.offsetX + x * this.K - 3, y - 6, { alignment: 'right' });
-                let farsText = false;
+                this.two.makeCircle(this.x(x), y, 1.5).fill = '#000';
+                this.two.makeText(`${v}`, this.x(x) - 3, y - 6, { alignment: 'right' });
+                let fArsText = false;
                 if (arsS[k].nextJointI != this.peregon.joints[i + 1].arsCalc[k].nextJointI) {
-                    this.two.makeText(`${sObj.p}+${sObj.epk}+${sObj.r}=${sObj.full}`, this.offsetX + x * this.K + 6, y + 6, { size: 8, alignment: 'left' });
-                    farsText = this.two.makeText(!isNaN(fars) ? `${factLength} Ф=${fars}с.` : `${factLength}`, this.offsetX + x * this.K + 6, y - 6, { size: 10, alignment: 'left' });
-                } else if (!isNaN(fars)) {
-                    farsText = this.two.makeText(`Ф=${fars}с.`, this.offsetX + x * this.K + 6, y + 6, { size: 10, alignment: 'left' });
+                    this.two.makeText(`${sObj.p}+${sObj.epk}+${sObj.r}=${sObj.full}`, this.x(x) + 6, y + 6, { size: 8, alignment: 'left' });
+                    fArsText = this.two.makeText(!isNaN(fArs) ? `${factLength} Ф=${fArs}с.` : `${factLength}`, this.x(x) + 6, y - 6, { size: 10, alignment: 'left' });
+                } else if (!isNaN(fArs)) {
+                    fArsText = this.two.makeText(`Ф=${fArs}с.`, this.x(x) + 6, y + 6, { size: 10, alignment: 'left' });
                 }
 
                 const prevVI = arsSteps.indexOf(v);
-                if (farsText && arsSteps[prevVI ? prevVI - 1 : prevVI] < Math.round(this.peregon.joints[i].vMax)) {
-                    if (fars < 15) {
-                        farsText.fill = 'orange';
+                if (fArsText && arsSteps[prevVI ? prevVI - 1 : prevVI] < Math.round(this.peregon.joints[i].vMax)) {
+                    if (fArs < 15) {
+                        fArsText.fill = 'orange';
                     }
-                    if (fars < 5) {
-                        farsText.fill = 'red';
+                    if (fArs < 5) {
+                        fArsText.fill = 'red';
                     }
                 }
             }
@@ -89,36 +85,60 @@ class DrawJoints extends Draw {
     }
 
     drawJoint(x) {
+        const joint = this.two.makeLine(this.x(x), this.trackY - 3, this.x(x), this.trackY + 3);
+        const bottom = this.two.makeLine(this.x(x) - 3, this.trackY + 3, this.x(x) + 3, this.trackY + 3);
+        const top = this.two.makeLine(this.x(x) - 3, this.trackY - 3, this.x(x) + 3, this.trackY - 3);
 
-        let joint = this.two.makeLine(this.offsetX + x * this.K, this.trackY - 3, this.offsetX + x * this.K, this.trackY + 3);
-        let bottom = this.two.makeLine(this.offsetX + x * this.K - 3, this.trackY + 3, this.offsetX + x * this.K + 3, this.trackY + 3);
-        let top = this.two.makeLine(this.offsetX + x * this.K - 3, this.trackY - 3, this.offsetX + x * this.K + 3, this.trackY - 3);
-
-        let group = this.two.makeGroup(joint, bottom, top);
+        const group = this.two.makeGroup(joint, bottom, top);
         group.className = 'joint';
 
         return group;
     }
 
     drawPoint(x) {
-
-        let point = this.two.makeCircle(this.offsetX + x * this.K, this.trackY, 2.5);
+        const point = this.two.makeCircle(this.x(x), this.trackY, 2.5);
         point.fill = '#000';
 
-        let group = this.two.makeGroup(point);
+        const group = this.two.makeGroup(point);
         group.className = 'point';
+
         return group;
     }
 
     drawRay(x) {
+        const point = this.two.makeCircle(this.x(x), this.trackY + 5, 2);
+        const arrow = this.two.makeLine(this.x(x), this.trackY - 3, this.x(x) + 3, this.trackY - 13);
+        const arrow1 = this.two.makeLine(this.x(x), this.trackY - 9, this.x(x), this.trackY - 3);
+        const arrow2 = this.two.makeLine(this.x(x) + 3.5, this.trackY - 8, this.x(x), this.trackY - 3);
 
-        let point = this.two.makeCircle(this.offsetX + x * this.K, this.trackY + 5, 2);
-        let arrow = this.two.makeLine(this.offsetX + x * this.K, this.trackY - 3, this.offsetX + x * this.K + 3, this.trackY - 13);
-        let arrow1 = this.two.makeLine(this.offsetX + x * this.K, this.trackY - 9, this.offsetX + x * this.K, this.trackY - 3);
-        let arrow2 = this.two.makeLine(this.offsetX + x * this.K + 3.5, this.trackY - 8, this.offsetX + x * this.K, this.trackY - 3);
-
-        let group = this.two.makeGroup(point, arrow, arrow1, arrow2);
+        const group = this.two.makeGroup(point, arrow, arrow1, arrow2);
         group.className = 'ray';
+
         return group;
+    }
+
+    drawVks(x, i) {
+        const { v, l, s, vf } = this.peregon.joints[i].vksCalc
+        const ray = this.drawRay(x + l);
+        const y = vf;
+        const vFactText = this.two.makeText(`Vф=${vf}км/ч`, this.x(x + l) + 4, this.graphY - y * this.Ky, { size: 10, alignment: 'left' });
+        const vAssumedText = this.two.makeText(`Vр=${v}км/ч`, this.x(x + l) + 4, this.graphY + 12 - y * this.Ky, { size: 10, alignment: 'left' });
+        const sText = this.two.makeText(`S=${l.toFixed(2)}+${s.toFixed(2)}=${Math.floor((l + s + 1.38))}`, this.x(x + l) + 4, this.graphY + 24 - y * this.Ky, { size: 10, alignment: 'left' });
+        const vksDash = this.two.makeLine(this.x(x + l), this.graphY, this.x(x + l), 0);
+        vksDash.dashes = [this.Ky, this.Ky];
+
+        return this.two.makeGroup(ray, vFactText, vAssumedText, sText, vksDash);
+    }
+
+    drawArsVksArrow(x, y, nextJointX, nextJointI) {
+        const vksCalc = this.peregon.joints[nextJointI - 1].vksCalc;
+        const line = this.two.makeLine(this.x(x), y, this.x(nextJointX - vksCalc.s), y);
+        const dashedLine = this.two.makeLine(this.x(nextJointX - vksCalc.s), y, this.x(nextJointX), y);
+        dashedLine.dashes = [this.Ky, this.Ky];
+        const circle = this.two.makeCircle(this.x(nextJointX - vksCalc.s), y, 1.5);
+        circle.fill = '#000';
+        const arrow = this.drawArrow(this.x(nextJointX), y, this.x(nextJointX), y);
+
+        return this.two.makeGroup(line, dashedLine, circle, arrow);
     }
 }

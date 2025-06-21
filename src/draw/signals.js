@@ -371,7 +371,7 @@ class DrawSignals extends Draw {
             }
             if (joint.name == name) {
                 found = true;
-                if (joint?.vksCalc?.l && !full) return joint.x + joint.vksLength;
+                if (joint?.vksCalc?.l && !full) return joint.x + joint.vksCalc.l;
             }
         }
         return false;
