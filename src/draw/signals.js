@@ -269,12 +269,15 @@ class DrawSignals extends Draw {
                 const serviceText = this.two.makeGroup();
                 const serviceArrow = this.drawArrow(this.x(x), this.graphY - serviceArrowY * this.Ky, this.x(nextSignalX), this.graphY - serviceArrowY * this.Ky);
                 const serviceDot = this.two.makeCircle(this.x(x), this.graphY - serviceArrowY * this.Ky, 1.5, 4);
-                const serviceVText = this.two.makeText(`${Math.floor(serviceV)}`, this.x(x) - 3, this.graphY - serviceArrowY * this.Ky - 6, { size: 10, alignment: 'right' });
-                const serviceSText = this.two.makeText(`${Math.ceil(serviceS)}`, this.x(nextSignalX) - 15, this.graphY - serviceArrowY * this.Ky + 6, { size: 10, alignment: 'right' });
-                const serviceFullSText = this.two.makeText(serviceFullS, this.x(nextSignalX) - 15, this.graphY - serviceArrowY * this.Ky - 6, { size: 10, alignment: 'right' });
+                const serviceVText = this.two.makeText(`${Math.floor(serviceV)}`, this.x(x) - 3, this.graphY - serviceArrowY * this.Ky + 6, { size: 10, alignment: 'right' });
+                const serviceSText = this.two.makeText(`${Math.ceil(serviceS)}`, this.x(nextSignalX) - 15 + 35, this.graphY - serviceArrowY * this.Ky + 6, { size: 10, alignment: 'right' });
+                const serviceFullSText = this.two.makeText(serviceFullS, this.x(nextSignalX) - 15 + 35, this.graphY - serviceArrowY * this.Ky - 6, { size: 10, alignment: 'right' });
 
                 serviceArrow.stroke = '#008800';
                 serviceDot.stroke = '#008800';
+                serviceVText.stroke = '#008800';
+                serviceSText.stroke = '#008800';
+                serviceFullSText.stroke = '#008800';
 
                 serviceText.add(serviceArrow, serviceDot, serviceVText, serviceSText, serviceFullSText);
                 if (serviceFullS < serviceS) {
@@ -364,7 +367,7 @@ class DrawSignals extends Draw {
             }
             if (joint.name == name) {
                 found = true;
-                if (joint.vksLength && !full) return joint.x + joint.vksLength;
+                if (joint?.vksCalc?.l && !full) return joint.x + joint.vksLength;
             }
         }
         return false;
