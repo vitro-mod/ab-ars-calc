@@ -1,6 +1,6 @@
 var lines = lines || {};
-lines['imagine_line'] = lines['imagine_line'] || {};
-lines['imagine_line']['1'] = [
+lines['imagine_line_2'] = lines['imagine_line_2'] || {};
+lines['imagine_line_']['1'] = [
     {
     name: 'Касторская',
     arsDrawBreakpoint: 9,
