@@ -132,10 +132,11 @@ class DrawJoints extends Draw {
 
     drawArsVksArrow(x, y, nextJointX, nextJointI) {
         const vksCalc = this.peregon.joints[nextJointI - 1].vksCalc;
-        const line = this.two.makeLine(this.x(x), y, this.x(nextJointX - vksCalc.s), y);
-        const dashedLine = this.two.makeLine(this.x(nextJointX - vksCalc.s), y, this.x(nextJointX), y);
+        const vksX = this.peregon.joints[nextJointI - 1].x;
+        const line = this.two.makeLine(this.x(x), y, this.x(vksX + vksCalc.l), y);
+        const dashedLine = this.two.makeLine(this.x(vksX + vksCalc.l), y, this.x(nextJointX), y);
         dashedLine.dashes = [this.Ky, this.Ky];
-        const circle = this.two.makeCircle(this.x(nextJointX - vksCalc.s), y, 1.5);
+        const circle = this.two.makeCircle(this.x(vksX + vksCalc.l), y, 1.5);
         circle.fill = '#000';
         const arrow = this.drawArrow(this.x(nextJointX), y, this.x(nextJointX), y);
 
