@@ -37,7 +37,14 @@ class DrawSignals extends Draw {
         group.add(foot, leg, arm);
     }
 
-    drawSignal(x, formula = 'x', name, isLeft, isBack, row = 0, isWall = false) {
+    drawSignal(x, signal, isLeft) {
+
+        const formula = signal.lenses || 'x';
+        const name = signal.name;
+        const isBack = signal.back;
+        const isWall = signal.wall || false;
+        const isMacht = signal.macht;
+        const row = signal.row || 0;
 
         let group = this.two.makeGroup();
 
@@ -51,9 +58,9 @@ class DrawSignals extends Draw {
         const textY = isLeft ? (isBack ? signalY + 1 : (signalY - radius * 2.5)) : (isBack ? signalY + 1 : (signalY + radius * 2.5));
 
         const nameText = this.two.makeText(name, this.x(isBack ? x + name.length * 10 + 5 : x), textY, { alignment: isBack ? 'right' : 'left' });
-        group.add(this.two.makeLine(this.x(x), signalY - half, this.x(x), signalY + half));
-        group.add(this.two.makeLine(this.x(x) - half, isWall ? signalY + half : signalY - half, this.x(x), signalY - half));
-        group.add(this.two.makeLine(this.x(x) - half, signalY + half, this.x(x), signalY + half));
+        group.add(this.two.makeLine(this.x(x), signalY - (isMacht ? half * 2 : half), this.x(x), signalY + (isMacht ? half * 2 : half)));
+        if (!isMacht) group.add(this.two.makeLine(this.x(x) - half, isWall ? signalY + half : signalY - half, this.x(x), signalY - half));
+        if (!isMacht) group.add(this.two.makeLine(this.x(x) - half, signalY + half, this.x(x), signalY + half));
         group.add(this.two.makeLine(this.x(x), signalY, this.x(x) + half * 2, signalY));
 
         let reversedFormula = formula.split('').reverse().join('');
@@ -122,13 +129,10 @@ class DrawSignals extends Draw {
 
             const signal = this.peregon.signals[i];
             
-            const lenses = signal.lenses;
             const name = signal.name;
             const isLeft = signal.left;
             const isDouble = signal.double;
             const isBack = signal.back;
-            const isWall = signal.wall;
-            const row = signal.row;
             
             let x = signal.x;
             if ('joint' in signal) {
@@ -136,15 +140,14 @@ class DrawSignals extends Draw {
                 x = this.peregon.joints[this.peregon.joints.map(el => el.name).indexOf(joint)].x;
             }
 
-            this.drawSignal(x, lenses, name, isLeft, isBack, row, isWall);
+            this.drawSignal(x, signal, isLeft);
             if (isDouble) {
-                this.drawSignal(x, lenses, name, !isLeft, isBack, row, isWall);
+                this.drawSignal(x, signal, isLeft);
             }
 
             let autostop = signal.autostop ? signal.autostop : 0;
             let shift = signal.shift ? signal.shift : 0;
             if (autostop) this.drawAutostop(x - shift, !name[0].match(/[0-9]/), isBack);
-
 
             let tR = this.tractionCalculator.T(x - trainHalf);
             let tTop = tR + this.interval;
@@ -238,7 +241,7 @@ class DrawSignals extends Draw {
             let guardNextUklon = stepFn(this.peregon.slopes, guardPerX + 1);
             let guardS = sPTE(guardV, guardUklon, guardNextUklon, guardPerX - x + trainHalf);
 
-            let guardArrowY = 7 * i + 155;
+            let guardArrowY = 7 * i + 200;
 
             let prevXPermit = this.peregon.signals[i - 1] ? this.peregon.signals[i - 1].xPermitFull - trainHalf : this.peregon.joints[1].x;
             prevXPermit = prevXPermit.toFixed(1);
