@@ -14,7 +14,7 @@ lines['crossline-redux']['1'] = [
             1377: 'T',
         },
         joints: [
-            // { x: -73.8 - 75, name: '211', limit: 60 },
+            { x: -73.8 - 37.5, name: '211', limit: 60 },
             { x: -73.8, name: '213', limit: 60 },
             { x: -73.8 + 75, name: '215', limit: 60 },
             { x: -73.8 + 75 + 75, name: '217', limit: 60, later: { 60: 1 } },
@@ -35,6 +35,7 @@ lines['crossline-redux']['1'] = [
             { x: 1447 + 70 + 75 + 75, name: '235а', limit: 0 },
         ],
         signals: [
+            { joint: '213', name: '217', lenses: 'YY-GR', service: 80, guard: 80, autostop: 1, yg: '217' },
             { joint: '217', name: '219м', lenses: 'YY-GR', service: 80, guard: 80, autostop: 3, y: '219б', g: 'NEXT_y' },
             { joint: '219б', name: '221', lenses: 'YY-GR', left: true, service: 80, guard: 80, autostop: 3, y: '221', g: 'NEXT_g' },
             { joint: '221', name: '223', lenses: 'YGR', left: true, service: 80, guard: 80, autostop: 3, g: '223а' },
@@ -434,7 +435,7 @@ lines['crossline-redux']['1'] = [
             { joint: '367', name: 'ОЛ-371', lenses: 'YYG-Rw', guard: 80, service: 35, autostop: 1, y: '371', yg: 'NEXT_y', g: 'NEXT_yg' },
             { joint: '367а', name: 'ОЛ-373', lenses: 'YYG-Rw', guard: 70, service: 35, shift: 20, autostop: 1, y: '373', yg: 'NEXT_y', g: 'NEXT_g' },
             { joint: '369', name: 'ОЛ-375', lenses: 'BYY-GRw', guard: 60, service: 35, shift: 20, autostop: 1, y: '375', g: 'NEXT_yg' },
-            { joint: '373', name: 'ОЛ-377', lenses: 'YYG-Rw', guard: 60, shift: 20, service: 35, autostop: 1, yg: '377' },
+            { joint: '373', name: 'ОЛ-377', lenses: 'YYG-Rw', wall: true, guard: 60, shift: 20, service: 35, autostop: 1, yg: '377' },
             { joint: '377', name: 'ОЛ-379', lenses: 'x', guard: 35, autostop: 1 },
         ],
     },
@@ -534,7 +535,7 @@ lines['crossline-redux']['1'] = [
             { joint: '407', name: 'МЛ-413', lenses: 'YYG-Rw', left: true, guard: 65, service: 35, autostop: 1, y: '413', yg: 'NEXT_y', g: 'NEXT_g' },
             { joint: '409', name: 'МЛ-415', lenses: 'BYY-GRw', left: true, guard: 60, service: 35, autostop: 1, y: '415с', g: 'NEXT_yg' },
             { joint: '413', name: 'МЛ-417', lenses: 'YYG-Rw', wall: true, guard: 60, service: 35, autostop: 1, yg: '417с', shift: 12.5 },
-            { joint: '417с', name: 'МЛ-419', lenses: 'x', guard: 35, autostop: 1 },
+            { joint: '417с', name: 'МЛ-419', lenses: 'BYW-Rw', guard: 35, autostop: 1 },
         ],
     },
     {
