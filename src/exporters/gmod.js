@@ -1,10 +1,10 @@
 function sections() {
     return peregon.signals.filter(el => !el.back).map(el => {
-        if (el.back) return; 
+        if (el.back) return;
         let sections = {};
         sections.nm = el.name.replace('-', '');
         sections.rc = 'rc' + el.joint;
-        
+
         const jointI = Object.values(peregon.joints).findIndex(elem => elem.name == el.joint);
         if (peregon.joints[jointI - 1]) {
             sections.prev = 'rc' + peregon.joints[jointI - 1].name;
@@ -110,7 +110,7 @@ function sectionsCopy() {
     let resultText = ``;
     for (section of sections()) {
         const signal = rtl(section.nm.toUpperCase());
-        const st = signal.slice(0,2);
+        const st = signal.slice(0, 2);
         resultText += `gmod['${st}'].sections['${signal}'] = '${section.rc}';\n`
     }
     console.log(resultText);
