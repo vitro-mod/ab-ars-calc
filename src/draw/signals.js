@@ -128,12 +128,12 @@ class DrawSignals extends Draw {
         for (let i = 0; i < this.peregon.signals.length; i++) {
 
             const signal = this.peregon.signals[i];
-            
+
             const name = signal.name;
             const isLeft = signal.left;
             const isDouble = signal.double;
             const isBack = signal.back;
-            
+
             let x = signal.x;
             if ('joint' in signal) {
                 let joint = signal.joint;
@@ -142,7 +142,7 @@ class DrawSignals extends Draw {
 
             this.drawSignal(x, signal, isLeft);
             if (isDouble) {
-                this.drawSignal(x, signal, isLeft);
+                this.drawSignal(x, signal, !isLeft);
             }
 
             let autostop = signal.autostop ? signal.autostop : 0;
@@ -157,24 +157,46 @@ class DrawSignals extends Draw {
             let xPermitFull = 0;
             let tG = tTop;
 
-            if (signal.y || signal.yg || signal.g) {
+            const indications = signal.calc?.indications;
 
+            if (indications.y || indications.yg || indications.g) {
                 let redLine = this.two.makeLine(this.x(x), this.graphY - tR * this.Ky, this.x(x), this.graphY - tTop * this.Ky);
                 redLine.linewidth = 6;
                 redLine.stroke = 'red';
+            }
 
+            if (indications.y) {
+                const indication = signal.calc.indications['y'];
+                const indLine = this.two.makeLine(this.x(x), this.graphY - indication.tPermit * this.Ky, this.x(x), this.graphY - signal.calc.tTop * this.Ky);
+                indLine.linewidth = 6;
+                indLine.stroke = this.colors.yellow;
+            }
 
+            if (indications.yg) {
+                const indication = signal.calc.indications['yg'];
+                const indLine = this.two.makeLine(this.x(x), this.graphY - indication.tPermit * this.Ky, this.x(x), this.graphY - signal.calc.tTop * this.Ky);
+                indLine.linewidth = 6;
+                indLine.stroke = this.colors.yellow;
+                const indLine2 = this.two.makeLine(this.x(x), this.graphY - indication.tPermit * this.Ky, this.x(x), this.graphY - signal.calc.tTop * this.Ky);
+                indLine2.linewidth = 6;
+                indLine2.stroke = this.colors.green;
+                indLine2.dashes = [this.Ky, this.Ky];
+            }
+
+            if (indications.g) {
+                const indication = signal.calc.indications['g'];
+                const indLine = this.two.makeLine(this.x(x), this.graphY - indication.tPermit * this.Ky, this.x(x), this.graphY - signal.calc.tTop * this.Ky);
+                indLine.linewidth = 6;
+                indLine.stroke = this.colors.green;
+            }
+
+            if (signal.y || signal.yg || signal.g) {
                 if (this.findIndicationX(i, 'y')) {
                     let xJ = this.findIndicationX(i, 'y') + trainHalf;
                     let t = this.tractionCalculator.T(xJ) + this.findAutostop(i, 'y');
-                    let tS = this.tractionCalculator.T(xJ);
                     tPermit = t;
                     xPermit = xJ;
                     xPermitFull = this.findIndicationX(i, 'y', true) + trainHalf;
-
-                    let indLine = this.two.makeLine(this.x(x), this.graphY - t * this.Ky, this.x(x), this.graphY - tTop * this.Ky);
-                    indLine.linewidth = 6;
-                    indLine.stroke = this.colors.yellow;
                 }
                 if (this.findIndicationX(i, 'yg')) {
                     let xJ = this.findIndicationX(i, 'yg') + trainHalf;
@@ -182,15 +204,6 @@ class DrawSignals extends Draw {
                     if (!tPermit) tPermit = t;
                     if (!xPermit) xPermit = xJ;
                     if (!xPermitFull) xPermitFull = this.findIndicationX(i, 'yg', true) + trainHalf;
-
-                    let indLine = this.two.makeLine(this.x(x), this.graphY - t * this.Ky, this.x(x), this.graphY - tTop * this.Ky);
-                    indLine.linewidth = 6;
-                    indLine.stroke = this.colors.yellow;
-                    let indLine2 = this.two.makeLine(this.x(x), this.graphY - t * this.Ky, this.x(x), this.graphY - tTop * this.Ky);
-                    indLine2.linewidth = 6;
-                    indLine2.stroke = this.colors.green;
-                    indLine2.dashes = [this.Ky, this.Ky];
-
                 }
                 if (this.findIndicationX(i, 'g')) {
                     let xJ = this.findIndicationX(i, 'g') + trainHalf;
@@ -209,30 +222,20 @@ class DrawSignals extends Draw {
                 signal.xPermit = xPermit;
                 signal.xPermitFull = xPermitFull;
 
-                let tsPermit = tPermit - autostop;
-
                 let horisontals = [];
-                horisontals.push(this.two.makeLine(this.x(x) + 9, this.graphY - tsPermit * this.Ky, this.x(xPermit - trainHalf), this.graphY - tsPermit * this.Ky));
-                horisontals.push(this.two.makeLine(this.x(x) + 3, this.graphY - tPermit * this.Ky, this.x(x) + 9 + 6, this.graphY - tPermit * this.Ky));
-                horisontals.push(this.two.makeLine(this.x(x) + 9, this.graphY - tPermit * this.Ky, this.x(x) + 9, this.graphY - tsPermit * this.Ky));
-                horisontals.push(this.two.makeLine(this.x(x) + 9 + 6, this.graphY - tPermit * this.Ky, this.x(x) + 9 + 6, this.graphY - tsPermit * this.Ky));
+                horisontals.push(this.two.makeLine(this.x(x) + 9, this.graphY - signal.calc.tsPermit * this.Ky, this.x(signal.calc.xPermit - trainHalf), this.graphY - signal.calc.tsPermit * this.Ky));
+                horisontals.push(this.two.makeLine(this.x(x) + 3, this.graphY - signal.calc.tPermit * this.Ky, this.x(x) + 9 + 6, this.graphY - signal.calc.tPermit * this.Ky));
+                horisontals.push(this.two.makeLine(this.x(x) + 9, this.graphY - signal.calc.tPermit * this.Ky, this.x(x) + 9, this.graphY - signal.calc.tsPermit * this.Ky));
+                horisontals.push(this.two.makeLine(this.x(x) + 9 + 6, this.graphY - signal.calc.tPermit * this.Ky, this.x(x) + 9 + 6, this.graphY - signal.calc.tsPermit * this.Ky));
 
-                let brakeCurve = this.tractionCalculator.serviceBrakeCalc(x - trainHalf);
-                let brakeLength = brakeCurve[0].Sn - brakeCurve[brakeCurve.length - 1].Sk;
-                let brakeX = brakeCurve[brakeCurve.length - 1].Sk;
-                let brakeV = brakeCurve[brakeCurve.length - 1].Vk;
-                let brakeT = this.tractionCalculator.T(brakeX) + this.interval - 2;
-                if (brakeV < 20) brakeT = this.interval - 2;
-                if (brakeV < 20) brakeX = 0;
-
-                if (brakeV >= 20) {
-                    this.drawArrow(this.x(brakeX + trainHalf), this.graphY - brakeT * this.Ky, this.x(x), this.graphY - brakeT * this.Ky).stroke = '#000088';
-                    this.two.makeLine(this.x(brakeX + trainHalf), this.graphY - brakeT * this.Ky, this.x(brakeX + trainHalf), this.graphY - (brakeT + 2) * this.Ky).stroke = '#000088';
-                    this.two.makeText(`${Math.floor(brakeV)}`, this.x(brakeX + trainHalf), this.graphY - brakeT * this.Ky + 6, { size: 10, alignment: 'right' });
-                    this.two.makeText(`${Math.floor(brakeLength)}`, this.x(x) - 15, this.graphY - brakeT * this.Ky + 6, { size: 10, alignment: 'right' });
+                if (signal.calc.brake.brakeV >= 20) {
+                    this.drawArrow(this.x(signal.calc.brake.brakeX + trainHalf), this.graphY - signal.calc.brake.brakeT * this.Ky, this.x(x), this.graphY - signal.calc.brake.brakeT * this.Ky).stroke = '#000088';
+                    this.two.makeLine(this.x(signal.calc.brake.brakeX + trainHalf), this.graphY - signal.calc.brake.brakeT * this.Ky, this.x(signal.calc.brake.brakeX + trainHalf), this.graphY - (signal.calc.brake.brakeT + 2) * this.Ky).stroke = '#000088';
+                    this.two.makeText(`${Math.floor(signal.calc.brake.brakeV)}`, this.x(signal.calc.brake.brakeX + trainHalf), this.graphY - signal.calc.brake.brakeT * this.Ky + 6, { size: 10, alignment: 'right' });
+                    this.two.makeText(`${Math.floor(signal.calc.brake.brakeLength)}`, this.x(x) - 15, this.graphY - signal.calc.brake.brakeT * this.Ky + 6, { size: 10, alignment: 'right' });
                 }
 
-                this.two.makeText(`Фаб=${Math.floor(brakeT - tPermit)}с. З=${Math.floor(tTop - tG)}с.`, this.x(x), this.graphY - tTop * this.Ky - 10, { size: 10 });
+                this.two.makeText(`Фаб=${Math.floor(signal.calc.brake.brakeT - signal.calc.tPermit)}с. З=${Math.floor(tTop - tG)}с.`, this.x(x), this.graphY - tTop * this.Ky - 10, { size: 10 });
             }
 
             let guardV = signal.guard;

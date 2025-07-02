@@ -6,6 +6,9 @@ class App {
         const peregon = lines[query.line][query.track][Number(query.n) || 0];
         const nextPeregon = lines[query.line][query.track][Number(query.n) + 1 || 1];
 
+        window.peregon = peregon;
+        window.nextPeregon = nextPeregon;
+
         if (query.import) {
             await importTrackPlanProfile(query.import, query.track, query.n, peregon, nextPeregon);
         }
@@ -90,6 +93,10 @@ class App {
         const arsCalculator = new ArsCalculator(peregon, peregonConcat);
         arsCalculator.setTractionCalculator(tractionCalculator);
         arsCalculator.calc();
+
+        const signalCalculator = new SignalCalculator(peregon, peregonConcat);
+        signalCalculator.setTractionCalculator(tractionCalculator);
+        signalCalculator.calc();
 
         const drawJoints = new DrawJoints(two, peregon, offsetX, K, Ky);
         drawJoints.setTractionCalculator(tractionCalculator);

@@ -43,6 +43,8 @@ async function importTrackPlanProfile(name, track, n, peregon, nextPeregon) {
     console.log(`Station 1X: ${station1X}`);
     console.log(`Station 2X: ${station2X}`);
     console.log(`X3: ${X3}`);
+    window.station1X = station1X;
+    window.station2X = station2X;
 
     const planBeginEnd = findBeginEnd(plan, station1X, station2X);
     const planBegin = planBeginEnd.begin;
