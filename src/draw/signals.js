@@ -228,14 +228,16 @@ class DrawSignals extends Draw {
                 horisontals.push(this.two.makeLine(this.x(x) + 9, this.graphY - signal.calc.tPermit * this.Ky, this.x(x) + 9, this.graphY - signal.calc.tsPermit * this.Ky));
                 horisontals.push(this.two.makeLine(this.x(x) + 9 + 6, this.graphY - signal.calc.tPermit * this.Ky, this.x(x) + 9 + 6, this.graphY - signal.calc.tsPermit * this.Ky));
 
-                if (signal.calc.brake.brakeV >= 20) {
-                    this.drawArrow(this.x(signal.calc.brake.brakeX + trainHalf), this.graphY - signal.calc.brake.brakeT * this.Ky, this.x(x), this.graphY - signal.calc.brake.brakeT * this.Ky).stroke = '#000088';
-                    this.two.makeLine(this.x(signal.calc.brake.brakeX + trainHalf), this.graphY - signal.calc.brake.brakeT * this.Ky, this.x(signal.calc.brake.brakeX + trainHalf), this.graphY - (signal.calc.brake.brakeT + 2) * this.Ky).stroke = '#000088';
-                    this.two.makeText(`${Math.floor(signal.calc.brake.brakeV)}`, this.x(signal.calc.brake.brakeX + trainHalf), this.graphY - signal.calc.brake.brakeT * this.Ky + 6, { size: 10, alignment: 'right' });
-                    this.two.makeText(`${Math.floor(signal.calc.brake.brakeLength)}`, this.x(x) - 15, this.graphY - signal.calc.brake.brakeT * this.Ky + 6, { size: 10, alignment: 'right' });
-                }
+                if (signal.calc.brake) {
+                    if (signal.calc.brake?.brakeV >= 20) {
+                        this.drawArrow(this.x(signal.calc.brake.brakeX + trainHalf), this.graphY - signal.calc.brake.brakeT * this.Ky, this.x(x), this.graphY - signal.calc.brake.brakeT * this.Ky).stroke = '#000088';
+                        this.two.makeLine(this.x(signal.calc.brake.brakeX + trainHalf), this.graphY - signal.calc.brake.brakeT * this.Ky, this.x(signal.calc.brake.brakeX + trainHalf), this.graphY - (signal.calc.brake.brakeT + 2) * this.Ky).stroke = '#000088';
+                        this.two.makeText(`${Math.floor(signal.calc.brake.brakeV)}`, this.x(signal.calc.brake.brakeX + trainHalf), this.graphY - signal.calc.brake.brakeT * this.Ky + 6, { size: 10, alignment: 'right' });
+                        this.two.makeText(`${Math.floor(signal.calc.brake.brakeLength)}`, this.x(x) - 15, this.graphY - signal.calc.brake.brakeT * this.Ky + 6, { size: 10, alignment: 'right' });
+                    }
 
-                this.two.makeText(`Фаб=${Math.floor(signal.calc.brake.brakeT - signal.calc.tPermit)}с. З=${Math.floor(tTop - tG)}с.`, this.x(x), this.graphY - tTop * this.Ky - 10, { size: 10 });
+                    this.two.makeText(`Фаб=${Math.floor(signal.calc.brake.brakeT - signal.calc.tPermit)}с. З=${Math.floor(tTop - tG)}с.`, this.x(x), this.graphY - tTop * this.Ky - 10, { size: 10 });
+                }
             }
 
             let guardV = signal.guard;

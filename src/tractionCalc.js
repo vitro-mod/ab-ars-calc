@@ -100,6 +100,11 @@ class TractionCalculator {
 
             // console.log(Math.abs(peregonCalc[vi].Vn - Vn), lastDv, vi)
 
+            if (!this.peregonConcat[vi - i]) {
+                console.warn('No peregonConcat at index', vi - i);
+                return false;
+            }
+
             if (tillIntersection && Math.abs(this.peregonConcat[vi - i].Vn - Vn) >= lastDv) break;
             lastDv = Math.abs(this.peregonConcat[vi - i].Vn - Vn);
 

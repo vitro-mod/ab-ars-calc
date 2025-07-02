@@ -55,14 +55,16 @@ class SignalCalculator {
             signal.calc.tsPermit = signal.calc.tPermit - signal.autostop;
 
             const brakeCurve = this.tractionCalculator.serviceBrakeCalc(x - trainHalf);
-            const brakeLength = brakeCurve[0].Sn - brakeCurve[brakeCurve.length - 1].Sk;
-            let brakeX = brakeCurve[brakeCurve.length - 1].Sk;
-            let brakeV = brakeCurve[brakeCurve.length - 1].Vk;
-            let brakeT = this.tractionCalculator.T(brakeX) + this.interval - 2;
-            if (brakeV < 20) brakeT = this.interval - 2;
-            if (brakeV < 20) brakeX = 0;
+            if (brakeCurve) {
+                const brakeLength = brakeCurve[0].Sn - brakeCurve[brakeCurve.length - 1].Sk;
+                let brakeX = brakeCurve[brakeCurve.length - 1].Sk;
+                let brakeV = brakeCurve[brakeCurve.length - 1].Vk;
+                let brakeT = this.tractionCalculator.T(brakeX) + this.interval - 2;
+                if (brakeV < 20) brakeT = this.interval - 2;
+                if (brakeV < 20) brakeX = 0;
 
-            signal.calc.brake = { brakeCurve, brakeLength, brakeX, brakeV, brakeT };
+                signal.calc.brake = { brakeCurve, brakeLength, brakeX, brakeV, brakeT };
+            }
         }
 
 
@@ -82,36 +84,6 @@ class SignalCalculator {
 
                 indication.permitJointI = this.findIndicationI(i, abStep);
             }
-
-            
-            let lastIndicationI = 0;
-            signal.calc.sequence = [];
-            const indications = signal.calc.indications;
-            let firstIndication = null;
-            for (const indication of Object.keys(indications)) {
-                if (!firstIndication) {
-                    firstIndication = indication;
-                }
-                const indicationI = indications[indication].permitJointI;
-                const I = indicationI - jointI + 2;
-                for (let j = 0; j < I - lastIndicationI; j++) {
-                    signal.calc.sequence.push(firstIndication === indication && j < I - lastIndicationI - 1 ? (j === 0 ? 'r' : 'yr') : indication);
-                }
-                lastIndicationI = I;
-            }
-
-            const ygrIndex = signal.lenses.replaceAll('-', '').toUpperCase().indexOf('YGR');
-
-            signal.calc.lightsArray = signal.calc.sequence.map((el) => {
-                if (el === 'r') return `${ygrIndex + 3}`;
-                if (el === 'yr') return `${ygrIndex + 1}${ygrIndex + 3}`;
-                if (el === 'y') return `${ygrIndex}`;
-                if (el === 'yg') return `${ygrIndex}${ygrIndex + 2}`;
-                if (el === 'g') return `${ygrIndex + 2}`;
-                return el;
-            });
-
-            signal.calc.lights = signal.calc.lightsArray.join('-');
         }
     }
 

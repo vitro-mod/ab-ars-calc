@@ -1,10 +1,10 @@
 function sections() {
     return peregon.signals.filter(el => !el.back).map(el => {
-        if (el.back) return; 
+        if (el.back) return;
         let sections = {};
         sections.nm = el.name.replace('-', '');
         sections.rc = 'rc' + el.joint;
-        
+
         const jointI = Object.values(peregon.joints).findIndex(elem => elem.name == el.joint);
         if (peregon.joints[jointI - 1]) {
             sections.prev = 'rc' + peregon.joints[jointI - 1].name;
@@ -110,7 +110,7 @@ function sectionsCopy() {
     let resultText = ``;
     for (section of sections()) {
         const signal = rtl(section.nm.toUpperCase());
-        const st = signal.slice(0,2);
+        const st = signal.slice(0, 2);
         resultText += `gmod['${st}'].sections['${signal}'] = '${section.rc}';\n`
     }
     console.log(resultText);
@@ -148,6 +148,113 @@ function arsCode(joint) {
     }
 
     result = result.padEnd(clearNum + 1, currentArs.v / 10);
+
+    return result;
+}
+
+function lightsCode(signal) {
+    let lastIndicationI = 0;
+    let lastIndication = 'r';
+    signal.calc.sequence = [];
+    const indications = signal.calc.indications;
+    let firstIndication = null;
+    for (const indication of Object.keys(indications)) {
+        if (!firstIndication) {
+            firstIndication = indication;
+        }
+        const indicationI = indications[indication].permitJointI;
+        const I = indicationI - signal.calc.jointI + 1;
+        for (let j = 0; j < I - lastIndicationI; j++) {
+            if (j > 0 && lastIndication === 'r') {
+                lastIndication = 'yr';
+            }
+            // signal.calc.sequence.push(firstIndication === indication && j < I - lastIndicationI - 1 ? (j === 0 ? 'r' : 'yr') : indication);
+            signal.calc.sequence.push(lastIndication);
+        }
+        lastIndicationI = I;
+        lastIndication = indication;
+    }
+
+    signal.calc.sequence.push(lastIndication);
+
+    const ygrIndex = signal.lenses.replaceAll('-', '').toUpperCase().indexOf('YGR');
+
+    signal.calc.lightsArray = signal.calc.sequence.map((el) => {
+        if (el === 'r') return `${ygrIndex + 3}`;
+        if (el === 'yr') return `${ygrIndex + 1}${ygrIndex + 3}`;
+        if (el === 'y') return `${ygrIndex}`;
+        if (el === 'yg') return `${ygrIndex}${ygrIndex + 2}`;
+        if (el === 'g') return `${ygrIndex + 2}`;
+        return el;
+    });
+
+    signal.calc.lights = signal.calc.lightsArray.join('-');
+
+    return signal.calc.lights;
+}
+
+function trackPeregon() {
+    const result = {};
+    peregon.joints.forEach((el, i, arr) => {
+        if (!i) return;
+        const x = station1X + el.x;
+        const ARSCode = arsCode(el);
+        const ARSCodes = ARSCode === 'N' ? '1' : ARSCode;
+        const origName = rtl(el.name);
+        const Name = ('TC' + rtl(arr[i - 1].name)).toUpperCase();
+        const ARSOnly = true;
+        const LensesStr = '';
+        const SignalType = 0;
+
+        result[origName] = { x, ARSCodes, Name, ARSOnly, LensesStr, SignalType };
+    });
+
+    peregon.signals.forEach((el, i, arr) => {
+        const joint = rtl(el.joint);
+        if (!result[joint]) return;
+        if (el.lenses === 'x') return;
+
+        const lenses = el.lenses.replaceAll('Z', 'X').toUpperCase().replaceAll('-', '');
+
+        if (el.back) {
+            result[joint + '_back'] = {
+                x: result[joint].x,
+                Name: rtl(el.name).replaceAll('-', '').toUpperCase(),
+                ARSOnly: false,
+                LensesStr: el.lenses.replaceAll('Z', 'X').toUpperCase(),
+                SignalType: el.macht ? 1 : 0,
+                Left: !el.left ? true : false,
+                Back: true,
+                Lights: lenses.indexOf('R') + 1,
+            };
+            return;
+        }
+
+        const redLense = lenses.indexOf('R') + 1;
+        const hasYR = lenses[redLense - 3] === 'Y';
+
+        result[joint].FrontArsName = result[joint].Name.slice(2);
+        result[joint].Name = rtl(el.name).replaceAll('-', '').toUpperCase();
+        result[joint].ARSOnly = false;
+        result[joint].LensesStr = el.lenses.replaceAll('Z', 'X').toUpperCase();
+        result[joint].SignalType = el.macht ? 1 : 0;
+        result[joint].Left = el.left ? true : false;
+        result[joint].Lights = ~lenses.indexOf('YGR') ? lightsCode(el) : (hasYR ? `${redLense}-${redLense}${redLense - 2}` : `${redLense}`);
+        result[joint].NonAutoStop = !el.autostop;
+        if (el.wall) {
+            result[joint].Invisible = true;
+        }
+
+        if (el.autostop && el.shift && el.shift > 0) {
+            result[joint].NonAutoStop = true;
+            result[joint + '_autostop'] = {
+                x: result[joint].x - el.shift,
+                Name: 'A' + result[joint].Name,
+                SignalName: result[joint].Name,
+                IsAutostop: true,
+            }
+        }
+    });
 
     return result;
 }
@@ -214,3 +321,27 @@ function rtl(gmodRc) {
 //         sectionsCopy();
 //     });
 // });
+
+function exportTrackSignals(line, track) {
+    const TIMEOUT = 250;
+
+    const count = lines[line][track].length;
+    const result = {};
+
+    function exportPeregonSignals(i) {
+        setTimeout(() => {
+            const a = new App();
+            a.init(line, track, i, 'gm_metro_crossline_r199h').then(() => {
+                Object.assign(result, trackPeregon());
+            })
+        }, i * TIMEOUT);
+    }
+
+    for (let i = 0; i < count - 1; i++) {
+        exportPeregonSignals(i);
+    }
+
+    setTimeout(() => {
+        console.log(JSON.stringify(result));
+    }, count * TIMEOUT);
+}

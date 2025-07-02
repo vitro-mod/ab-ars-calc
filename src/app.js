@@ -1,16 +1,14 @@
 class App {
 
-    async init() {
-        const query = Object.fromEntries(document.location.search.slice(1).split('&').map(el => el.split('=')));
-
-        const peregon = lines[query.line][query.track][Number(query.n) || 0];
-        const nextPeregon = lines[query.line][query.track][Number(query.n) + 1 || 1];
+    async init(line, track, n, paImport) {
+        const peregon = lines[line][track][Number(n) || 0];
+        const nextPeregon = lines[line][track][Number(n) + 1 || 1];
 
         window.peregon = peregon;
         window.nextPeregon = nextPeregon;
 
-        if (query.import) {
-            await importTrackPlanProfile(query.import, query.track, query.n, peregon, nextPeregon);
+        if (paImport) {
+            await importTrackPlanProfile(paImport, track, n, peregon, nextPeregon);
         }
 
         this.loadPeregon(peregon);
