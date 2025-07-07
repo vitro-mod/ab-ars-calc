@@ -246,6 +246,10 @@ function trackPeregon() {
             result[joint].Invisible = true;
         }
 
+        if (el.gmod) {
+            Object.assign(result[joint], el.gmod);
+        }
+
         if (el.autostop && el.shift && el.shift > 0) {
             result[joint].NonAutoStop = true;
             result[joint + '_autostop'] = {
