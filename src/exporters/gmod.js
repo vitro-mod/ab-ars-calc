@@ -210,6 +210,7 @@ function trackPeregon() {
     });
 
     peregon.signals.forEach((el, i, arr) => {
+        if (!el.joint) return;
         const joint = rtl(el.joint);
         if (!result[joint]) return;
         if (el.lenses === 'x') return;
