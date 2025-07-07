@@ -102,6 +102,9 @@ class App {
         const drawSwitches = new DrawSwitches(two, peregon, offsetX, K, Ky);
         drawSwitches.drawSwitches();
 
+        const drawMKs = new DrawMKs(two, peregon, offsetX, K, Ky);
+        drawMKs.drawMKs();
+
         two.update();
 
         setupSignalEvents();
