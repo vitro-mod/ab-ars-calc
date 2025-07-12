@@ -24,8 +24,8 @@ async function importTrackPlanProfile(name, track, n, peregon, nextPeregon) {
     const plan = await planRes.json();
     const profRes = await fetch(`/data/metrostroi_data/prof_${name}_${gmTrack}.json`);
     const prof = await profRes.json();
-    // console.log(plan);
-    // console.log(prof);
+    console.log(plan);
+    console.log(prof);
 
     const trackLength1 = Math.round(paths[track][Number(n) + 1].TrackX - paths[track][Number(n)].TrackX);
     const trackLength2 = paths[track][Number(n) + 2] ? Math.round(paths[track][Number(n) + 2].TrackX - paths[track][Number(n) + 1].TrackX) : 300;
@@ -156,6 +156,7 @@ function findBeginEnd(planOrProf, station1X, station2X) {
 }
 
 function buildPeregonPlan(plan, begin, end, station1X) {
+    if (begin < 0) begin = 0;
     const peregonPlan = {};
     for (let i = begin; i <= end; i++) {
         const x = Math.round(plan[i].ordinate - station1X > 0 ? plan[i].ordinate - station1X : 0);
@@ -168,6 +169,8 @@ function buildPeregonPlan(plan, begin, end, station1X) {
 }
 
 function buildPeregonProf(prof, begin, end, station1X) {
+
+    if (begin < 0) begin = 0;
     const peregonProf = {};
     for (let i = begin; i <= end; i++) {
         const x = Math.round(prof[i].ordinate - station1X > 0 ? prof[i].ordinate - station1X : 0);
