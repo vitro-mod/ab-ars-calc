@@ -216,6 +216,7 @@ function trackPeregon() {
         if (el.lenses === 'x') return;
 
         const lenses = el.lenses.replaceAll('Z', 'X').toUpperCase().replaceAll('-', '');
+        const redLense = lenses.lastIndexOf('R') + 1;
 
         if (el.back) {
             result[joint + '_back'] = {
@@ -226,12 +227,11 @@ function trackPeregon() {
                 SignalType: el.macht ? 1 : 0,
                 Left: !el.left ? true : false,
                 Back: true,
-                Lights: lenses.indexOf('R') + 1,
+                Lights: redLense,
             };
             return;
         }
 
-        const redLense = lenses.indexOf('R') + 1;
         const hasYR = lenses[redLense - 3] === 'Y';
 
         result[joint].FrontArsName = result[joint].Name.slice(2);
