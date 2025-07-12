@@ -37,7 +37,7 @@ lines['crossline-redux']['2'] = [
         ],
         signals: [
             { joint: '422', name: '418', lenses: 'YY-GR', guard: 80, autostop: 3, yg: '418' },
-            { joint: '418', name: '416', lenses: 'YY-GR', guard: 80, autostop: 3, y: '416б', g: 'NEXT_y' },
+            { joint: '418', name: '416', lenses: 'YY-GR', guard: 35, autostop: 3, y: '416б', g: 'NEXT_y' },
             { joint: '416б', name: '414', lenses: 'YY-GR', guard: 80, autostop: 3, y: '414', g: 'NEXT_y' },
             { joint: '414', name: '412', lenses: 'YY-GR', left: true, guard: 80, autostop: 3, y: '412', g: 'NEXT_y' },
             { joint: '412', name: '410', lenses: 'YY-GR', guard: 80, autostop: 3, y: '410а', g: 'NEXT_y' },
@@ -239,7 +239,7 @@ lines['crossline-redux']['2'] = [
             { joint: '338', name: 'ОК-334', lenses: 'BYY-GRw', guard: 60, service: 35, autostop: 1, y: '334', g: 'NEXT_yg' },
             { joint: '336', name: '332', lenses: 'YY-GR', double: true, guard: 60, autostop: 1, yg: '332' },
             { joint: '332', name: '330м', lenses: 'x', guard: 35, autostop: 3 },
-            { joint: '336', name: 'ОК-Дм', lenses: 'RBy-WY-Rw', row: -3, autostop: 3, back: true, left: true },
+            { joint: '336', name: 'ОК-Дм', lenses: 'RBy-WR-Yw', row: -3, autostop: 3, back: true, left: true },
         ],
         mks: [
             { x: 1454 - 56.2, name: '14МК' }
@@ -387,7 +387,7 @@ lines['crossline-redux']['2'] = [
             { joint: '292', name: 'ПТ-286', lenses: 'BYY-GRw', guard: 60, service: 25, autostop: 1, y: '286с', g: 'NEXT_yg', shift: 12.5 },
             { joint: '290', name: '284', lenses: 'YY-GR', guard: 60, service: 25, autostop: 1, yg: '284с', shift: 12.5 },
             { joint: '284с', name: '282м', lenses: 'x', macht: true, guard: 35, autostop: 1, shift: 12.5 },
-            { joint: '290', name: 'ОК-Дм', lenses: 'RBy-WY-Rw', row: -3, autostop: 3, back: true, left: true },
+            { joint: '290', name: 'ПТ-Дм', lenses: 'RBy-WR-Yw', row: -3, autostop: 3, back: true, left: true },
         ],
         mks: [
             { x: 1047.5 - 23.1, name: '8МК' }
@@ -418,7 +418,7 @@ lines['crossline-redux']['2'] = [
             { x: 2170.5 - 87.5 - 62.5 - 62.5 - 87.5 - 100 - 100 - 200 - 200 - 200 - 200 - 200, name: '280', limit: 70 },
             { x: 2170.5 - 87.5 - 62.5 - 62.5 - 87.5 - 100 - 100 - 200 - 200 - 200 - 200, name: '278', limit: 70 },
             { x: 2170.5 - 87.5 - 62.5 - 62.5 - 87.5 - 100 - 100 - 200 - 200 - 200, name: '276', limit: 70 },
-            { x: 2170.5 - 87.5 - 62.5 - 62.5 - 87.5 - 100 - 100 - 200 - 200, name: '274', limit: 70, later: { 70: 2 } },
+            { x: 2170.5 - 87.5 - 62.5 - 62.5 - 87.5 - 100 - 100 - 200 - 200, name: '274', limit: 70, later: { 70: 1 } },
             { x: 2170.5 - 87.5 - 62.5 - 62.5 - 87.5 - 100 - 100 - 200, name: '272', limit: 70, later: { 60: 1, 70: 2 } },
             { x: 2170.5 - 87.5 - 62.5 - 62.5 - 87.5 - 100 - 100 - 12.5, name: '270', limit: 70 },
             { x: 2170.5 - 87.5 - 62.5 - 62.5 - 87.5 - 100, name: '270а', limit: 70, later: { 40: 1 } },
@@ -480,10 +480,10 @@ lines['crossline-redux']['2'] = [
             { x: 1565 + 77.1 - 50 - 37.5 - 37.5 - 37.5 - 50 - 75 - 75 - 112.5 - 112.5 - 112.5 - 237.5 - 184.1 + 25, name: '252', limit: 80, later: { 80: 1 } },
             { x: 1565 + 77.1 - 50 - 37.5 - 37.5 - 37.5 - 50 - 75 - 75 - 112.5 - 112.5 - 112.5 - 237.5, name: '252а', limit: 80, later: { 60: 1 } },
             { x: 1565 + 77.1 - 50 - 37.5 - 37.5 - 37.5 - 50 - 75 - 75 - 112.5 - 112.5 - 112.5, name: '250', limit: 80, later: { 60: 1, 70: 1, 80: 1 } },
-            { x: 1565 + 77.1 - 50 - 37.5 - 37.5 - 37.5 - 50 - 75 - 75 - 112.5 - 112.5, name: '250а', limit: 80, later: { 80: 2 } },
+            { x: 1565 + 77.1 - 50 - 37.5 - 37.5 - 37.5 - 50 - 75 - 75 - 112.5 - 112.5, name: '250а', limit: 80, later: { 60: 1, 70: 1, 80: 2 } },
             { x: 1565 + 77.1 - 50 - 37.5 - 37.5 - 37.5 - 50 - 75 - 75 - 112.5, name: '250б', limit: 80, later: { 70: 1, 80: 1 } },
             { x: 1565 + 77.1 - 50 - 37.5 - 37.5 - 37.5 - 50 - 75 - 75, name: '248', limit: 80 },
-            { x: 1565 + 77.1 - 50 - 37.5 - 37.5 - 37.5 - 50 - 75, name: '248а', limit: 80 },
+            { x: 1565 + 77.1 - 50 - 37.5 - 37.5 - 37.5 - 50 - 75, name: '248а', limit: 80, later: { 40: 1 } },
             { x: 1565 + 77.1 - 50 - 37.5 - 37.5 - 37.5 - 50, name: '246', limit: 70, later: { 40: 1 } },
             { x: 1565 + 77.1 - 50 - 37.5 - 37.5 - 37.5, name: '244', limit: 60 },
             { x: 1565 + 77.1 - 50 - 37.5 - 37.5, name: '242', limit: 60 },
