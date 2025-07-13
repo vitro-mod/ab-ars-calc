@@ -266,20 +266,7 @@
 						12385.1008
 					]
 				],
-				"slope": [
-					[
-						12503.9712,
-						-9.7557
-					],
-					[
-						12513.744,
-						-9.6995
-					],
-					[
-						12523.5075,
-						-17.2387
-					]
-				],
+				"slopeCurrent": 1270,
 				"signals": [
 					[
 						"G",
@@ -595,6 +582,21 @@
 					]
 				],
 				"sensors": [],
+				"slope": [
+					[
+						12503.9712,
+						-9.7557
+					],
+					[
+						12513.744,
+						-9.6995
+					],
+					[
+						12523.5075,
+						-17.2387
+					]
+				],
+				"slopeLength": 28.7812,
 				"stations": [
 					{
 						"path": 1,
@@ -655,9 +657,7 @@
 						"name": "Речная",
 						"isLast": true
 					}
-				],
-				"slopeLength": 28.7812,
-				"slopeCurrent": 1270
+				]
 			},
 			12532.7524
 		],
@@ -878,72 +878,6 @@
 						0,
 						10245.3178
 					]
-				],
-				"slopeLength": 19.7222,
-				"sensors": [],
-				"stations": [
-					{
-						"dist_last_start": 262.1422,
-						"dist_last_end": 1201.1422,
-						"id": 116,
-						"rightDoors": true,
-						"pos": 177.1422,
-						"isHorlift": true,
-						"path": 2,
-						"name": "Речная",
-						"isLast": true
-					},
-					{
-						"dist_last_start": 1881.201,
-						"dist_last_end": 2026.201,
-						"id": 115,
-						"rightDoors": false,
-						"isInWrong": true,
-						"name_last": "Октябрьской",
-						"pos": 1776.201,
-						"path": 2,
-						"name": "Октябрьская",
-						"isLast": true
-					},
-					{
-						"path": 2,
-						"pos": 3240.1999,
-						"id": 114,
-						"name": "Нахимовская",
-						"rightDoors": false
-					},
-					{
-						"path": 2,
-						"pos": 5080.8285,
-						"id": 113,
-						"name": "Пр. Суворова",
-						"rightDoors": false
-					},
-					{
-						"path": 2,
-						"pos": 6681.865,
-						"hasSwitches": true,
-						"id": 112,
-						"name_last": "Политехническая",
-						"rightDoors": true,
-						"name": "Политехническая",
-						"isLast": false
-					},
-					{
-						"path": 2,
-						"pos": 8858.4773,
-						"name": "Парк Культуры",
-						"id": 111
-					},
-					{
-						"dist_last_start": 10528.6005,
-						"pos": 10423.6005,
-						"name_last": "Международной",
-						"path": 2,
-						"id": 110,
-						"name": "Международная",
-						"isLast": true
-					}
 				],
 				"signals": [
 					[
@@ -1259,6 +1193,7 @@
 						10605.1977
 					]
 				],
+				"sensors": [],
 				"slope": [
 					[
 						10642.8863,
@@ -1268,6 +1203,71 @@
 						10652.6561,
 						3.3777
 					]
+				],
+				"slopeLength": 19.7222,
+				"stations": [
+					{
+						"dist_last_start": 262.1422,
+						"dist_last_end": 1201.1422,
+						"id": 116,
+						"rightDoors": true,
+						"pos": 177.1422,
+						"isHorlift": true,
+						"path": 2,
+						"name": "Речная",
+						"isLast": true
+					},
+					{
+						"dist_last_start": 1881.201,
+						"dist_last_end": 2026.201,
+						"id": 115,
+						"rightDoors": false,
+						"isInWrong": true,
+						"name_last": "Октябрьской",
+						"pos": 1776.201,
+						"path": 2,
+						"name": "Октябрьская",
+						"isLast": true
+					},
+					{
+						"path": 2,
+						"pos": 3240.1999,
+						"id": 114,
+						"name": "Нахимовская",
+						"rightDoors": false
+					},
+					{
+						"path": 2,
+						"pos": 5080.8285,
+						"id": 113,
+						"name": "Пр. Суворова",
+						"rightDoors": false
+					},
+					{
+						"path": 2,
+						"pos": 6681.865,
+						"hasSwitches": true,
+						"id": 112,
+						"name_last": "Политехническая",
+						"rightDoors": true,
+						"name": "Политехническая",
+						"isLast": false
+					},
+					{
+						"path": 2,
+						"pos": 8858.4773,
+						"name": "Парк Культуры",
+						"id": 111
+					},
+					{
+						"dist_last_start": 10528.6005,
+						"pos": 10423.6005,
+						"name_last": "Международной",
+						"path": 2,
+						"id": 110,
+						"name": "Международная",
+						"isLast": true
+					}
 				]
 			},
 			10715.725
@@ -1535,7 +1535,7 @@
 			"PAWrongPath": true,
 			"TrackPath": 7,
 			"PAStationHasSwtiches": true,
-			"TrackX": 7788.7525930323245,
+			"TrackX": 7788.752593032324,
 			"PAStationRightDoors": true,
 			"PALastStation": true,
 			"PAStationID": 107,
@@ -1550,7 +1550,7 @@
 			"PAWrongPath": true,
 			"TrackPath": 7,
 			"PAStationHasSwtiches": true,
-			"TrackX": 9376.569917498955,
+			"TrackX": 9376.569917498957,
 			"PAStationRightDoors": false,
 			"PALastStation": true,
 			"PAStationID": 106,
@@ -1566,7 +1566,7 @@
 			"TrackPath": 7,
 			"PAStationHasSwtiches": false,
 			"PADeadlockEnd": false,
-			"TrackX": 10839.495057253085,
+			"TrackX": 10839.495057253083,
 			"PAStationRightDoors": false,
 			"PALastStation": false,
 			"PAStationID": 105,
@@ -1647,6 +1647,82 @@
 			"Pos": "[1360.0697 1323.1421 1854.0344]",
 			"PAType": 1,
 			"PALastStationName": "Международной"
+		},
+		{
+			"PAWrongPath": false,
+			"TrackPath": 5,
+			"PAStationHasSwtiches": false,
+			"PADeadlockEnd": false,
+			"TrackX": 1563.900412921105,
+			"PAStationRightDoors": false,
+			"PALastStation": false,
+			"PAStationID": 1106,
+			"PADeadlockStart": false,
+			"PALineChangeStationID": false,
+			"PAStationPath": 4,
+			"Angles": "{0.0534 359.9634 0}",
+			"PAStationName": "Е2м",
+			"Pos": "[-10601.0146 -954.3314 306.1477]",
+			"PAType": 1,
+			"PALineChange": false,
+			"PALineChangeStationPath": false
+		},
+		{
+			"PAWrongPath": false,
+			"TrackPath": 5,
+			"PAStationHasSwtiches": false,
+			"PADeadlockEnd": false,
+			"TrackX": 9.639668833876977,
+			"PAStationRightDoors": false,
+			"PALastStation": false,
+			"PAStationID": 1106,
+			"PADeadlockStart": false,
+			"PALineChangeStationID": false,
+			"PAStationPath": 4,
+			"Angles": "{359.9597 33.5621 0}",
+			"PAStationName": "ПРРСТ2",
+			"Pos": "[2749.1106 -3346.7871 -297.3499]",
+			"PAType": 1,
+			"PALineChange": false,
+			"PALineChangeStationPath": false
+		},
+		{
+			"PAWrongPath": false,
+			"TrackPath": 4,
+			"PAStationHasSwtiches": false,
+			"PADeadlockEnd": false,
+			"TrackX": 9.869607541409522,
+			"PAStationRightDoors": false,
+			"PALastStation": false,
+			"PAStationID": 1106,
+			"PADeadlockStart": false,
+			"PALineChangeStationID": false,
+			"PAStationPath": 3,
+			"Angles": "{0.0455 56.4167 0}",
+			"PAStationName": "ПРРСТ1",
+			"Pos": "[3138.5027 -3723.2395 -296.9957]",
+			"PAType": 1,
+			"PALineChange": false,
+			"PALineChangeStationPath": false
+		},
+		{
+			"PAWrongPath": false,
+			"TrackPath": 4,
+			"PAStationHasSwtiches": false,
+			"PADeadlockEnd": false,
+			"TrackX": 1537.9058422891908,
+			"PAStationRightDoors": false,
+			"PALastStation": false,
+			"PAStationID": 1106,
+			"PADeadlockStart": false,
+			"PALineChangeStationID": false,
+			"PAStationPath": 3,
+			"Angles": "{1.6798 358.7347 0}",
+			"PAStationName": "СТРР",
+			"Pos": "[-12216.293 -1165.2472 324.7037]",
+			"PAType": 1,
+			"PALineChange": false,
+			"PALineChangeStationPath": false
 		}
 	]
 }
