@@ -320,7 +320,7 @@ lines['crossline-redux']['1'] = [
             { x: 1653 + 80.9 + 62.5 + 75, name: '343а', limit: 0 },
         ],
         signals: [
-            { joint: '325', name: 'ОК-327мг', lenses: 'RBW-yYY-GRw', guard: 80, autostop: 3, g: '327б' },
+            { joint: '325', name: 'ОК-327мг', lenses: 'RBW-yYG-RYw', guard: 80, autostop: 3, g: '327б' },
             { joint: '327б', name: '329', lenses: 'YY-GR', guard: 80, autostop: 3, service: 80, g: '329а' },
             { joint: '329а', name: '331', lenses: 'YY-GR', guard: 80, autostop: 3, service: 80, g: '331в' },
             { joint: '331б', name: '333', lenses: 'YY-GR', guard: 75, autostop: 3, shift: 20, y: '333', yg: 'NEXT_y', g: 'NEXT_yg' },
