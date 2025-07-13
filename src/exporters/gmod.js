@@ -179,14 +179,24 @@ function lightsCode(signal) {
 
     const ygrIndex = signal.lenses.replaceAll('-', '').toUpperCase().indexOf('YGR');
 
-    signal.calc.lightsArray = signal.calc.sequence.map((el) => {
-        if (el === 'r') return `${ygrIndex + 3}`;
-        if (el === 'yr') return `${ygrIndex + 1}${ygrIndex + 3}`;
-        if (el === 'y') return `${ygrIndex}`;
-        if (el === 'yg') return `${ygrIndex}${ygrIndex + 2}`;
-        if (el === 'g') return `${ygrIndex + 2}`;
-        return el;
-    });
+    if (!signal.noRY) {
+        signal.calc.lightsArray = signal.calc.sequence.map((el) => {
+            if (el === 'r') return `${ygrIndex + 3}`;
+            if (el === 'yr') return `${ygrIndex + 1}${ygrIndex + 3}`;
+            if (el === 'y') return `${ygrIndex}`;
+            if (el === 'yg') return `${ygrIndex}${ygrIndex + 2}`;
+            if (el === 'g') return `${ygrIndex + 2}`;
+            return el;
+        });
+    } else {
+        signal.calc.lightsArray = signal.calc.sequence.map((el) => {
+            if (el === 'r') return `${ygrIndex + 3}`;
+            if (el === 'yr') return `${ygrIndex + 3}`;
+            if (el === 'y') return `${ygrIndex + 1}`;
+            if (el === 'yg') return `${ygrIndex + 1}${ygrIndex + 2}`;
+            if (el === 'g') return `${ygrIndex + 2}`;
+        });
+    }
 
     signal.calc.lights = signal.calc.lightsArray.join('-');
 
@@ -229,6 +239,18 @@ function trackPeregon() {
                 Back: true,
                 Lights: redLense,
             };
+
+            if (el.autostop && el.shift && Math.abs(el.shift) > 0) {
+                result[joint + '_back'].NonAutoStop = true;
+                result[joint + '_back' + '_autostop'] = {
+                    x: result[joint].x - el.shift,
+                    Name: 'A' + result[joint].Name,
+                    SignalName: result[joint].Name,
+                    IsAutostop: true,
+                    Back: true,
+                }
+            }
+
             return;
         }
 
@@ -250,7 +272,7 @@ function trackPeregon() {
             Object.assign(result[joint], el.gmod);
         }
 
-        if (el.autostop && el.shift && el.shift > 0) {
+        if (el.autostop && el.shift && Math.abs(el.shift) > 0) {
             result[joint].NonAutoStop = true;
             result[joint + '_autostop'] = {
                 x: result[joint].x - el.shift,
@@ -272,7 +294,7 @@ function rtl(gmodRc) {
         .replaceAll('г', 'g')
         .replaceAll('д', 'd')
         .replaceAll('е', 'e')
-        .replaceAll('ж', 'j')
+        .replaceAll('ж', ';')
         .replaceAll('з', 'z')
         .replaceAll('и', 'i')
         .replaceAll('к', 'k')
