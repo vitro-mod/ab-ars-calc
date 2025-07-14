@@ -19,6 +19,8 @@ async function importTrackPlanProfile(name, track, n, peregon, nextPeregon) {
         });
     }
 
+    console.log(paths[track]);
+
     const gmTrack = paths[track][0].TrackPath;
     const planRes = await fetch(`/data/metrostroi_data/plan_${name}_${gmTrack}.json`);
     const plan = await planRes.json();
@@ -37,7 +39,7 @@ async function importTrackPlanProfile(name, track, n, peregon, nextPeregon) {
 
     const station1X = paths[track][Number(n)].TrackX - trainHalf;
     const station2X = paths[track][Number(n) + 1].TrackX - trainHalf;
-    const X3 = station1X + peregon.joints.at(-1).x;
+    const X3 = station1X + (peregon.joints.at(-1)?.x || ((station2X - station1X) + 300));
     console.log(`Station 1X: ${station1X}`);
     console.log(`Station 2X: ${station2X}`);
     console.log(`X3: ${X3}`);
@@ -51,8 +53,10 @@ async function importTrackPlanProfile(name, track, n, peregon, nextPeregon) {
     const nextPlanBeginEnd = findBeginEnd(plan, station2X, X3);
     const nextPlanBegin = nextPlanBeginEnd.begin;
     const nextPlanEnd = nextPlanBeginEnd.end;
-    const nextPeregonPlan = buildPeregonPlan(plan, nextPlanBegin, nextPlanEnd, station2X);
-    nextPeregon.curves = nextPeregonPlan;
+    if (nextPlanBegin != null && nextPlanEnd != null) {
+        const nextPeregonPlan = buildPeregonPlan(plan, nextPlanBegin, nextPlanEnd, station2X);
+        nextPeregon.curves = nextPeregonPlan;
+    }
 
     const profBeginEnd = findBeginEnd(prof, station1X, station2X);
     const profBegin = profBeginEnd.begin;
@@ -63,8 +67,10 @@ async function importTrackPlanProfile(name, track, n, peregon, nextPeregon) {
     const nextProfBeginEnd = findBeginEnd(prof, station2X, X3);
     const nextProfBegin = nextProfBeginEnd.begin;
     const nextProfEnd = nextProfBeginEnd.end;
-    const nextPeregonProf = buildPeregonProf(prof, nextProfBegin, nextProfEnd, station2X);
-    nextPeregon.slopes = nextPeregonProf;
+    if (nextProfBegin != null && nextProfEnd != null) {
+        const nextPeregonProf = buildPeregonProf(prof, nextProfBegin, nextProfEnd, station2X);
+        nextPeregon.slopes = nextPeregonProf;
+    }
 
     filterSlopesSharp(peregon);
     filterSlopesSharp(nextPeregon);
@@ -176,7 +182,7 @@ function buildPeregonProf(prof, begin, end, station1X) {
         const x = Math.round(prof[i].ordinate - station1X > 0 ? prof[i].ordinate - station1X : 0);
         const slope = Math.round(prof[i].slope * 1000);
         peregonProf[x] = slope;
-        console.log(i, x, prof[i], slope);
+        // console.log(i, x, prof[i], slope);
     }
     return peregonProf;
 }
