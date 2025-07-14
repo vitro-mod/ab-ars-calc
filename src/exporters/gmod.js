@@ -348,3 +348,41 @@ function rtl(gmodRc) {
 //         sectionsCopy();
 //     });
 // });
+
+function exportTrackSignals(track) {
+    const TIMEOUT = 250;
+
+    const query = Object.fromEntries(document.location.search.slice(1).split('&').map(el => el.split('=')));
+    const line = query.line;
+    const map = query.import;
+
+    if (!line || !lines[line]) {
+        console.error('No line specified in "line" query field');
+        return;
+    }
+
+    if (!map) {
+        console.error('No map specified in "import" query field');
+        return;
+    }
+
+    const count = lines[line][track].length;
+    const result = {};
+
+    function exportPeregonSignals(i) {
+        setTimeout(() => {
+            const a = new App();
+            a.init(line, track, i, map).then(() => {
+                Object.assign(result, trackPeregon());
+            })
+        }, i * TIMEOUT);
+    }
+
+    for (let i = 0; i < count - 1; i++) {
+        exportPeregonSignals(i);
+    }
+
+    setTimeout(() => {
+        console.log(JSON.stringify(result));
+    }, count * TIMEOUT);
+}
