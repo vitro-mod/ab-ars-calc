@@ -384,5 +384,16 @@ function exportTrackSignals(track) {
 
     setTimeout(() => {
         console.log(JSON.stringify(result));
+        downloadJSON(result, `signals-${line}-${track}.json`);
     }, count * TIMEOUT);
+}
+
+function downloadJSON(data, filename) {
+    const blob = new Blob([JSON.stringify(data, null, 2)], { type: 'application/json' });
+    const a = document.createElement('a');
+    a.href = URL.createObjectURL(blob);
+    a.download = filename;
+    document.body.appendChild(a);
+    a.click();
+    document.body.removeChild(a);
 }
