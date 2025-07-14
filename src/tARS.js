@@ -1,3 +1,5 @@
+const tPrepare = IS_OLD_ARS ? 4.125 : 4.625;
+
 var ss = [
 	["null", 0, 20, 40, 60, 70, 80, 90],
 	[-60, 0, 72, 147, 299, 438, 559, 681],
@@ -57,7 +59,7 @@ function sPTE(v, uklon1, uklon2, sPer) {
 }
 function sARS(v, uklon1, uklon2, sPer) {
 	if (uklon1 != uklon2) {
-		var sP = (v / 3.6) * 4.625;
+		var sP = (v / 3.6) * tPrepare;
 		var sPerEnd = sPer + trainHalf - sP;
 		// sPerEnd -= sP;
 		if (sP < sPerEnd)
@@ -76,23 +78,23 @@ function sPte(v, u) {
 	return Interpolizer(u, v, sp).result;
 }
 function ars(v) {
-	return ((v / 3.6) * 4.625 + sUkl(v, 0)) * 1.1;
+	return ((v / 3.6) * tPrepare + sUkl(v, 0)) * 1.1;
 }
 function arsFull(v, uklon1, uklon2, sPer) {
 	var epk = sARS(v, uklon1, uklon2, sPer);
-	var sP = (v / 3.6) * 4.625;
+	var sP = (v / 3.6) * tPrepare;
 	var s = epk + sP;
 	return 1.1 * s;
 }
 function sArsObj(v, uklon1, uklon2, sPer) {
 	var epk = Math.ceil(sARS(v, uklon1, uklon2, sPer) * KS);
-	var p = Math.round((v / 3.6) * 4.625);
+	var p = Math.round((v / 3.6) * tPrepare);
 	var r = Math.round((p + epk) * 0.1);
 	var full = epk + p + r;
 	return {p, epk, r, full};
 }
 function sPo(v) {
-	var sP = (v / 3.6) * 4.625;
+	var sP = (v / 3.6) * tPrepare;
 	return sP;
 }
 function rc(arr, name) {
