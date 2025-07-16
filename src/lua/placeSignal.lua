@@ -154,3 +154,4 @@ end
 importSignalData("signals-crossline-redux-1.json", 6)
 importSignalData("signals-crossline-redux-2.json", 7)
 importSignalData("signals-crossline-redux-3.json", 4)
+importSignalData("signals-crossline-redux-4.json", 5)
