@@ -46,7 +46,7 @@ lines['crossline-redux']['3'] = [
             { x: 1528 + 80.3 + 96 + 60, name: '16СП', limit: 0 },
         ],
         signals: [
-            { joint: '3а', name: 'В1', lenses: 'BYY-GRw', autostop: 3, guard: 60, y: '7', g: 'NEXT_y' },
+            { joint: '3а', name: 'В1м', lenses: 'RBY-YG-Rw', autostop: 3, guard: 60, y: '7', g: 'NEXT_y' },
             { joint: '7', name: '9', lenses: 'YY-GR', autostop: 3, guard: 60, y: '9а', g: 'NEXT_g' },
             { joint: '9а', name: '11м', lenses: 'RY-GR', autostop: 3, guard: 60, g: '11а' },
             { joint: '11а', name: '13', lenses: 'YY-GR', autostop: 3, guard: 60, shift: 20, y: '13', g: 'NEXT_y' },
