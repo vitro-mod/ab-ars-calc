@@ -1,3 +1,5 @@
+R50_MODE = true
+
 function getSignalTrackRerailTrace(trackID, x, isBack)
     local downVector = Vector(0, 0, -300)
     local pos, dir = Metrostroi.GetTrackPosition(Metrostroi.Paths[trackID], x)
@@ -78,11 +80,13 @@ function placeSignal(position, angles, options)
         },
     }
 
-    ent.IsolateSwitches = {
-        FrontArsName = options.FrontArsName,
-    }
+    if R50_MODE then
+        ent.IsolateSwitches = {
+            FrontArsName = options.FrontArsName,
+        }
+    end
 
-    if options.Invisible then
+    if R50_MODE and options.Invisible then
         ent.IsolateSwitches.Invisible = true
         ent.IsolateSwitches.UnderHeadSign = true
         ent.IsolateSwitches.HeadsHeightOffset = -20
@@ -90,7 +94,7 @@ function placeSignal(position, angles, options)
         ent.IsolateSwitches.CenteredArsName = true
     end
 
-    if options.Back then
+    if R50_MODE and options.Back then
         ent.IsolateSwitches.HideDTM = true
     end
 
@@ -133,7 +137,7 @@ function importSignalData(fileName, trackID)
             continue
         end
 
-        if signal.IsAutostop then
+        if R50_MODE and signal.IsAutostop then
             local position, angles = getAutostopTrackPositionAngles(rerailTrace)
             placeAutostop(position, angles, signal)
         else
