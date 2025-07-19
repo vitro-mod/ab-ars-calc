@@ -155,6 +155,8 @@ function importSignalData(fileName, trackID)
     Metrostroi.PostSignalInitialize()
 end
 
-importSignalData("signals-crossline-redux-1.json", 6)
-importSignalData("signals-crossline-redux-2.json", 7)
-importSignalData("signals-crossline-redux-3.json", 4)
+concommand.Add( "metrostroi_signal_import", function(ply, args)
+    if IsValid(ply) and not ply:IsAdmin() then return end
+    importSignalData(args[1], tonumber(args[2]))
+end )
+
