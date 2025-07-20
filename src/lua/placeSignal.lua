@@ -84,9 +84,7 @@ function placeSignal(position, angles, options)
     }
 
     if R50_MODE then
-        ent.IsolateSwitches = {
-            FrontArsName = options.FrontArsName,
-        }
+        ent.IsolateSwitches.FrontArsName = options.FrontArsName
     end
 
     if R50_MODE and options.Invisible then
@@ -99,6 +97,10 @@ function placeSignal(position, angles, options)
 
     if R50_MODE and options.Back then
         ent.IsolateSwitches.HideDTM = true
+    end
+
+    if R50_MODE and options.SignalName then
+        ent.IsolateSwitches.SignalName = options.SignalName
     end
 
     ent.Lenses = string.Explode("-", ent.LensesStr)
