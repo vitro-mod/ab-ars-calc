@@ -14,7 +14,9 @@ lines['crossline-redux']['1'] = [
             1377: 'T',
         },
         joints: [
-            { x: -73.8 - 37.5, name: '211', limit: 60 },
+            { x: -73.8 - 50 - 115 - 115, name: '209', limit: 60 },
+            { x: -73.8 - 50 - 115, name: '209а', limit: 60 },
+            { x: -73.8 - 50, name: '211', limit: 60 },
             { x: -73.8, name: '213', limit: 60 },
             { x: -73.8 + 75, name: '215', limit: 60 },
             { x: -73.8 + 75 + 75, name: '217', limit: 60, later: { 60: 1 } },
@@ -35,7 +37,8 @@ lines['crossline-redux']['1'] = [
             { x: 1447 + 70 + 75 + 75, name: '235а', limit: 0 },
         ],
         signals: [
-            { joint: '213', name: '217', lenses: 'YY-GR', service: 80, guard: 80, autostop: 1, yg: '217' },
+            { joint: '211', name: 'Г', gmod: { name: 'МД-Г' }, lenses: 'BW-Rw', autostop: 3, guard: 60 },
+            { joint: '213', name: '217', lenses: 'YY-GR', guard: 80, autostop: 1, yg: '217' },
             { joint: '217', name: '219м', lenses: 'RYY-GR', service: 80, guard: 35, autostop: 3, y: '219б', g: 'NEXT_y' },
             { joint: '219б', name: '221', lenses: 'YY-GR', left: true, service: 80, guard: 80, autostop: 3, y: '221', g: 'NEXT_g' },
             { joint: '221', name: '223', lenses: 'YGR', left: true, service: 80, guard: 80, autostop: 3, g: '223а' },
@@ -45,7 +48,7 @@ lines['crossline-redux']['1'] = [
             { joint: '227', name: '231', lenses: 'YY-GR', left: true, guard: 65, service: 35, autostop: 1, y: '231', g: 'NEXT_yg' },
             { joint: '229', name: '233', lenses: 'YY-GR', guard: 65, service: 60, autostop: 1, yg: '233' },
             { joint: '233', name: '235м', lenses: 'x', guard: 35, autostop: 3 },
-            { joint: '213', name: 'МД-Д', lenses: 'BW-Rw', back: true, left: true },
+            { joint: '213', name: 'Д', gmod: { name: 'МД-Д' }, lenses: 'BW-Rw', back: true, left: true },
         ],
         mks: [
             { x: 1279.5 + 21, name: '11МК' },
