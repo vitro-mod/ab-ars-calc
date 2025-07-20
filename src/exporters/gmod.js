@@ -225,7 +225,7 @@ function trackPeregon() {
         if (!result[joint]) return;
         if (el.lenses === 'x') return;
 
-        const lenses = el.lenses.replaceAll('Z', 'X').toUpperCase().replaceAll('-', '');
+        const lenses = el.lenses.toUpperCase().replaceAll('Z', 'X').replaceAll('-', '');
         const redLense = lenses.lastIndexOf('R') + 1;
 
         if (el.back) {
@@ -233,7 +233,7 @@ function trackPeregon() {
                 x: result[joint].x,
                 Name: rtl(el.name).replaceAll('-', '').toUpperCase(),
                 ARSOnly: false,
-                LensesStr: el.lenses.replaceAll('Z', 'X').toUpperCase(),
+                LensesStr: el.lenses.toUpperCase().replaceAll('Z', 'X'),
                 SignalType: el.macht ? 1 : 0,
                 Left: !el.left ? true : false,
                 Back: true,
@@ -259,8 +259,8 @@ function trackPeregon() {
         result[joint].FrontArsName = result[joint].Name.slice(2);
         result[joint].Name = rtl(el.name).replaceAll('-', '').toUpperCase();
         result[joint].ARSOnly = false;
-        result[joint].LensesStr = el.lenses.replaceAll('Z', 'X').toUpperCase();
-        result[joint].SignalType = el.macht ? 1 : 0;
+        result[joint].LensesStr = el.lenses.toUpperCase().replaceAll('Z', 'X');
+        result[joint].SignalType = SignalType: el.macht ? (el.assembl ? 2 : 1) : (el.assembl ? 5 : 0);
         result[joint].Left = el.left ? true : false;
         result[joint].Lights = ~lenses.indexOf('YGR') ? lightsCode(el) : (hasYR ? `${redLense}-${redLense}${redLense - 2}` : `${redLense}`);
         result[joint].NonAutoStop = !el.autostop;
