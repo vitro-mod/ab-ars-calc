@@ -503,9 +503,10 @@ lines['crossline-redux']['2'] = [
             { joint: '248', name: 'МД-244', lenses: 'YYG-Rw', guard: 75, service: 35, autostop: 1, y: '244', yg: 'NEXT_y', g: 'NEXT_yg', shift: 10 },
             { joint: '248а', name: 'МД-242', lenses: 'YYG-Rw', guard: 68, service: 35, autostop: 1, y: '242', yg: 'NEXT_y', g: 'NEXT_g', shift: 20 },
             { joint: '246', name: 'МД-240', lenses: 'BYY-GRw', guard: 65, service: 35, autostop: 1, y: '240с', g: 'NEXT_yg', shift: 18.5 },
-            { joint: '242', name: 'МД-238', lenses: 'YYG-Rw', wall: true, guard: 65, service: 35, autostop: 1, yg: '238с', shift: 20 },
+            { joint: '242', name: 'МД-238', lenses: 'YYG-Rw', wall: true, guard: 65, service: 35, autostop: 1, yg: '238с', shift: 20, gmod: { HeadsXOffset: 25.5 } },
             { joint: '238с', name: 'МД-236Г', lenses: 'BYW-Rw', guard: 35, autostop: 1 },
-            { joint: '244', name: 'МД-ОП', lenses: 'ZR', back: true, left: true, guard: 35, autostop: 3 },
+            { joint: '244', name: 'ОП', lenses: 'ZR', back: true, left: true, autostop: 3, gmod: { name: 'МД-ОП' } },
+            { joint: '236', name: 'Е', lenses: 'BWR', back: true, left: true, autostop: 3, gmod: { name: 'МД-Е' } },
         ],
         mks: [
             { x: 95.5 + 64.9, name: '12МК' },
