@@ -2,7 +2,7 @@ function sections() {
     return peregon.signals.filter(el => !el.back).map(el => {
         if (el.back) return;
         let sections = {};
-        sections.nm = el.name.replace('-', '');
+        sections.nm = (el.gmod?.name ?? el.name).replace('-', '');
         sections.rc = 'rc' + el.joint;
 
         const jointI = Object.values(peregon.joints).findIndex(elem => elem.name == el.joint);
@@ -18,13 +18,13 @@ function sections() {
 function signals() {
     let signals = {};
     peregon.signals.forEach(el => {
-        let nm = el.name.replace('-', '');
+        let nm = el.name.replaceAll('-', '');
         let name = 'sig' + nm;
         if (el.lenses == 'x') return;
         signals[name] = {
-            name: rtl(nm.toUpperCase()),
+            name: rtl((el.gmod?.name ?? el.name).replaceAll('-', '').toUpperCase()),
         };
-        switch (el.lenses.replace('-', '')) {
+        switch (el.lenses.replaceAll('-', '')) {
             case 'RYYGR':
             case 'RYYGRw':
                 signals[name].def = '00000';
@@ -129,6 +129,14 @@ function signals() {
                 signals[name].ry = '0101';
                 signals[name].wo = '0010';
                 signals[name].bo = '1000';
+                break;
+            case 'BWR':
+            case 'BWRw':
+                signals[name].def = '000';
+                signals[name].ro = '001';
+                signals[name].wo = '010';
+                signals[name].bo = '100';
+                break;
         }
         if (el.lenses[el.lenses.length - 1] == 'w') {
             signals[name].ps = '';
@@ -248,7 +256,7 @@ function trackPeregon() {
         const x = station1X + el.x;
         const ARSCode = arsCode(el);
         const ARSCodes = ARSCode === 'N' ? '1' : ARSCode;
-        const origName = rtl(el.name);
+        const origName = rtl(el.gmod?.name ?? el.name);
         const Name = ('TC' + rtl(arr[i - 1].name)).toUpperCase();
         const ARSOnly = true;
         const LensesStr = '';
@@ -269,14 +277,19 @@ function trackPeregon() {
         if (el.back) {
             result[joint + '_back'] = {
                 x: result[joint].x,
-                Name: rtl(el.name).replaceAll('-', '').toUpperCase(),
+                Name: rtl(el.gmod?.name ?? el.name).replaceAll('-', '').toUpperCase(),
                 ARSOnly: false,
                 LensesStr: el.lenses.toUpperCase().replaceAll('Z', 'X'),
                 SignalType: el.macht ? 1 : 0,
                 Left: !el.left ? true : false,
                 Back: true,
                 Lights: redLense,
+                NonAutoStop: !el.autostop,
             };
+
+            if (el.gmod?.name) {
+                result[joint + '_back'].SignalName = rtl(el.name).replaceAll('-', '').toUpperCase();
+            }
 
             if (el.autostop && el.shift && Math.abs(el.shift) > 0) {
                 result[joint + '_back'].NonAutoStop = true;
@@ -295,7 +308,7 @@ function trackPeregon() {
         const hasYR = lenses[redLense - 3] === 'Y';
 
         result[joint].FrontArsName = result[joint].Name.slice(2);
-        result[joint].Name = rtl(el.name).replaceAll('-', '').toUpperCase();
+        result[joint].Name = rtl(el.gmod?.name ?? el.name).replaceAll('-', '').toUpperCase();
         result[joint].ARSOnly = false;
         result[joint].LensesStr = el.lenses.toUpperCase().replaceAll('Z', 'X');
         result[joint].SignalType = el.macht ? (el.assembl ? 2 : 1) : (el.assembl ? 5 : 0);
@@ -308,6 +321,9 @@ function trackPeregon() {
 
         if (el.gmod) {
             Object.assign(result[joint], el.gmod);
+            if (el.gmod.name) {
+                result[joint].SignalName = rtl(el.name).replaceAll('-', '').toUpperCase();
+            }
         }
 
         if (el.autostop && el.shift && Math.abs(el.shift) > 0) {
