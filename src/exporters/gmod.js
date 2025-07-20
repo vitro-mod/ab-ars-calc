@@ -137,6 +137,9 @@ function signals() {
                 signals[name].wo = '010';
                 signals[name].bo = '100';
                 break;
+            case 'ZR':
+                signals[name].ro = '01';
+                break;
         }
         if (el.lenses[el.lenses.length - 1] == 'w') {
             signals[name].ps = '';
