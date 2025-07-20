@@ -313,6 +313,11 @@ function trackPeregon() {
         result[joint].LensesStr = el.lenses.toUpperCase().replaceAll('Z', 'X');
         result[joint].SignalType = el.macht ? (el.assembl ? 2 : 1) : (el.assembl ? 5 : 0);
         result[joint].Left = el.left ? true : false;
+        result[joint].Double = el.double ? true : false;
+        result[joint].DoubleL = el.doubleL ? true : false;
+        if (el.double) {
+            result[joint].Name += el.doubleL ? '/' : '//';
+        }
         result[joint].Lights = ~lenses.indexOf('YGR') ? lightsCode(el) : (hasYR ? `${redLense}-${redLense}${redLense - 2}` : `${redLense}`);
         result[joint].NonAutoStop = !el.autostop;
         if (el.wall) {
