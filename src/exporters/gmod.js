@@ -233,7 +233,7 @@ function trackPeregon() {
                 x: result[joint].x,
                 Name: rtl(el.name).replaceAll('-', '').toUpperCase(),
                 ARSOnly: false,
-                LensesStr: el.replaceAll('Z', 'X').lenses.toUpperCase(),
+                LensesStr: el.lenses.toUpperCase().replaceAll('Z', 'X'),
                 SignalType: el.macht ? 1 : 0,
                 Left: !el.left ? true : false,
                 Back: true,
