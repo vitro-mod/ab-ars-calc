@@ -71,6 +71,9 @@ function placeSignal(position, angles, options)
     ent.ARSOnly = options.ARSOnly
     ent.Name = options.Name
     ent.Left = options.Left
+    ent.Double = options.Double
+    ent.DoubleL = options.DoubleL
+    ent.Left = options.Left
     ent.NonAutoStop = options.NonAutoStop
     ent.Routes = {
         {
