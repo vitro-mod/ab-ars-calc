@@ -22,9 +22,20 @@ function signals() {
         let name = 'sig' + nm;
         if (el.lenses == 'x') return;
         signals[name] = {
-            name: nm
+            name: rtl(nm.toUpperCase()),
         };
         switch (el.lenses.replace('-', '')) {
+            case 'RYYGR':
+            case 'RYYGRw':
+                signals[name].def = '00000';
+                signals[name].ro = '00001';
+                signals[name].rr = '10001';
+                signals[name].ry = '00101';
+                signals[name].ya = '00100';
+                signals[name].yo = '01000';
+                signals[name].yg = '01010';
+                signals[name].go = '00010';
+                break;
             case 'YYGR':
             case 'YYGRw':
                 signals[name].def = '0000';
@@ -34,6 +45,16 @@ function signals() {
                 signals[name].yo = '1000';
                 signals[name].yg = '1010';
                 signals[name].go = '0010';
+                break;
+            case 'BYYGRw':
+                signals[name].def = '00000';
+                signals[name].ro = '00001';
+                signals[name].ry = '00101';
+                signals[name].ya = '00100';
+                signals[name].yo = '01000';
+                signals[name].yg = '01010';
+                signals[name].go = '00010';
+                signals[name].bo = '10000';
                 break;
             case 'WYYGR':
             case 'WYYGRw':
@@ -55,6 +76,17 @@ function signals() {
                 signals[name].yo = '100';
                 signals[name].yg = '110';
                 signals[name].go = '010';
+                break;
+            case 'RYGR':
+            case 'RYGRw':
+                signals[name].def = '0000';
+                signals[name].ro = '0001';
+                signals[name].rr = '1001';
+                signals[name].ry = '0101';
+                signals[name].ya = '0100';
+                signals[name].yo = '0100';
+                signals[name].yg = '0110';
+                signals[name].go = '0010';
                 break;
             case 'WYGR':
             case 'WYGRw':
@@ -91,6 +123,12 @@ function signals() {
                 signals[name].yy = '100100';
                 signals[name].yfy = '200100';
                 break;
+            case 'BYWRw':
+                signals[name].def = '0000';
+                signals[name].ro = '0001';
+                signals[name].ry = '0101';
+                signals[name].wo = '0010';
+                signals[name].bo = '1000';
         }
         if (el.lenses[el.lenses.length - 1] == 'w') {
             signals[name].ps = '';
