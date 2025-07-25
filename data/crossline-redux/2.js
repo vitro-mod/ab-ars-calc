@@ -47,7 +47,7 @@ lines['crossline-redux']['2'] = [
             { joint: '406', name: '402', lenses: 'YY-GR', guard: 70, autostop: 1, y: '402', g: 'NEXT_yg', shift: 20 },
             { joint: '404', name: '400', lenses: 'YY-GR', guard: 70, autostop: 1, yg: '400', shift: 20 },
             { joint: '400', name: '398м', lenses: 'x', guard: 35, autostop: 3 },
-            { joint: '422', name: 'МЛ-Д', lenses: 'BW-Rw', back: true, left: true },
+            { joint: '422', name: 'Д', gmod: { name: 'МЛ-Д' }, lenses: 'BW-Rw', back: true, left: true },
         ],
     },
     {
@@ -93,7 +93,7 @@ lines['crossline-redux']['2'] = [
             { joint: '388', name: 'ОЛ-384', lenses: 'BYY-GRw', guard: 60, autostop: 1, y: '384', g: 'NEXT_yg', shift: 3 },
             { joint: '386', name: '382', lenses: 'YY-GR', guard: 60, autostop: 1, yg: '382', shift: 3 },
             { joint: '382', name: '380м', lenses: 'x', guard: 35, autostop: 3 },
-            { joint: '386', name: 'ОЛ-Д', lenses: 'BW-Rw', back: true, left: true },
+            { joint: '386', name: 'Д', gmod: { name: 'ОЛ-Д' }, lenses: 'BW-Rw', back: true, left: true },
         ],
         mks: [
             { x: 1706.6 - 42, name: '24МК' },
@@ -193,7 +193,7 @@ lines['crossline-redux']['2'] = [
             { joint: '356', name: 'РЧ-350', lenses: 'BYY-GRw', left: true, guard: 65, autostop: 1, y: '350', g: 'NEXT_yg', shift: 20 },
             { joint: '354', name: '348', lenses: 'YY-GR', guard: 65, autostop: 1, yg: '348', shift: 20 },
             { joint: '348', name: '346м', lenses: 'x', guard: 35, autostop: 3 },
-            { joint: '354', name: 'РЧ-Дм', lenses: 'RBy-RYw', row: -3, autostop: 3, back: true, left: true },
+            { joint: '354', name: 'Дм', gmod: { name: 'РЧ-Дм' }, lenses: 'RBy-RYw', row: -3, autostop: 3, back: true, left: true },
         ],
         mks: [
             { x: 1533.4 - 16, name: '16МК' },
@@ -237,9 +237,9 @@ lines['crossline-redux']['2'] = [
             { joint: '340а', name: 'ОК-338', lenses: 'YYG-Rw', left: true, guard: 80, service: 35, autostop: 3, y: '338', yg: 'NEXT_y', g: 'NEXT_yg' },
             { joint: '340в', name: 'ОК-336', lenses: 'YYG-Rw', guard: 60, service: 35, autostop: 1, y: '336', yg: 'NEXT_y', g: 'NEXT_g' },
             { joint: '338', name: 'ОК-334', lenses: 'BYY-GRw', guard: 60, service: 35, autostop: 1, y: '334', g: 'NEXT_yg' },
-            { joint: '336', name: '332', lenses: 'YY-GR', double: true, guard: 60, autostop: 1, yg: '332' },
+            { joint: '336', name: '332', lenses: 'YY-GR', double: true, doubleL: true, guard: 60, autostop: 1, yg: '332' },
             { joint: '332', name: '330м', lenses: 'x', guard: 35, autostop: 3 },
-            { joint: '336', name: 'ОК-Дм', lenses: 'RBW-yR-Yw', row: -3, autostop: 3, back: true, left: true },
+            { joint: '336', name: 'Дм', gmod: { name: 'ОК-Дм' }, lenses: 'RBW-yR-Yw', row: -3, autostop: 3, back: true },
         ],
         mks: [
             { x: 1454 - 56.2, name: '14МК' }
@@ -387,7 +387,7 @@ lines['crossline-redux']['2'] = [
             { joint: '292', name: 'ПТ-286', lenses: 'BYY-GRw', guard: 60, service: 25, autostop: 1, y: '286с', g: 'NEXT_yg', shift: 12.5 },
             { joint: '290', name: '284', lenses: 'YY-GR', guard: 60, service: 25, autostop: 1, yg: '284с', shift: 12.5 },
             { joint: '284с', name: '282м', lenses: 'x', macht: true, guard: 35, autostop: 1, shift: 12.5 },
-            { joint: '290', name: 'ПТ-Дм', lenses: 'RBy-WR-Yw', row: -3, autostop: 3, back: true, left: true },
+            { joint: '290', name: 'Дм', gmod: { name: 'ПТ-Дм' }, lenses: 'RBy-WR-Yw', row: -3, autostop: 3, back: true, left: true },
         ],
         mks: [
             { x: 1047.5 - 23.1, name: '8МК' }
@@ -505,8 +505,8 @@ lines['crossline-redux']['2'] = [
             { joint: '246', name: 'МД-240', lenses: 'BYY-GRw', guard: 65, service: 35, autostop: 1, y: '240с', g: 'NEXT_yg', shift: 18.5 },
             { joint: '242', name: 'МД-238', lenses: 'YYG-Rw', wall: true, guard: 65, service: 35, autostop: 1, yg: '238с', shift: 20, gmod: { HeadsXOffset: 25.5 } },
             { joint: '238с', name: 'МД-236Г', lenses: 'BYW-Rw', guard: 35, autostop: 1 },
-            { joint: '244', name: 'ОП', lenses: 'ZR', back: true, left: true, autostop: 3, gmod: { name: 'МД-ОП' } },
-            { joint: '236', name: 'Е', lenses: 'BWR', back: true, left: true, autostop: 3, gmod: { name: 'МД-Е' } },
+            { joint: '244', name: 'ОП', gmod: { name: 'МД-ОП' }, lenses: 'ZR', back: true, left: true, autostop: 3 },
+            { joint: '236', name: 'Е', gmod: { name: 'МД-Е' }, lenses: 'BWR', back: true, left: true, autostop: 3 },
         ],
         mks: [
             { x: 95.5 + 64.9, name: '12МК' },
