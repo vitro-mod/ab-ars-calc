@@ -118,7 +118,7 @@ lines['crossline-redux']['1'] = [
             { joint: '257', name: 'ПТ-263', lenses: 'YY-GR-w', macht: true, guard: 60, service: 50, autostop: 1, yg: '263са', shift: 12.5 },
             { joint: '263с', name: 'ПТ-265мг', left: true, lenses: 'x', left: true, guard: 35, autostop: 3 },
             { joint: '265', name: '267', lenses: 'x', autostop: 3 },
-            { joint: '257', name: 'ПТ-ОП', lenses: 'ZR', macht: true, autostop: 3, left: true, back: true, row: 0 },
+            { joint: '257', name: 'ОП', gmod: { name: 'ПТ-ОП' }, lenses: 'ZR', macht: true, autostop: 3, left: true, back: true, row: 0 },
         ],
         mks: [
             { x: 892.6 - 118, name: '9МК' },
@@ -183,7 +183,7 @@ lines['crossline-redux']['1'] = [
             { joint: '283', name: '289', lenses: 'YY-GR', left: true, guard: 60, service: 25, autostop: 1, shift: 13, yg: '289с' },
             { joint: '289с', name: '291м', lenses: 'x', guard: 35, autostop: 3 },
             { joint: '291в', name: '293', lenses: 'x', autostop: 3 },
-            { joint: '265', name: 'ПТ-В', lenses: 'BW-Rw', row: -1, autostop: 3, back: true, left: true },
+            { joint: '265', name: 'В', gmod: { name: 'ПТ-В' }, lenses: 'BW-Rw', row: -1, autostop: 3, back: true, left: true },
         ],
         mks: [
             { x: 634.3 - 50, name: '7МК' },
@@ -283,7 +283,7 @@ lines['crossline-redux']['1'] = [
             { joint: '319', name: 'ОК-323', lenses: 'BYY-GRw', guard: 65, service: 35, shift: 20, autostop: 1, y: '323', g: 'NEXT_yg' },
             { joint: '321', name: 'ОК-325', lenses: 'YYG-Rw', guard: 60, autostop: 1, yg: '325' },
             { joint: '325', name: 'ОК-327мг', lenses: 'x', guard: 35, autostop: 1 },
-            { x: 1493 - 6.25, name: 'ОК-ОП', lenses: 'ZR', autostop: 1, left: true, back: true, row: 0 },
+            { joint: '321', name: 'ОП', gmod: { name: 'ОК-ОП' }, lenses: 'ZR', autostop: 1, back: true, row: 4 },
         ],
         mks: [
             { x: 72.5 + 87.5 + 11, name: '3МК' },
@@ -383,7 +383,7 @@ lines['crossline-redux']['1'] = [
             { joint: '353', name: '357', lenses: 'YY-GR', guard: 60, autostop: 1, service: 35, y: '357', g: 'NEXT_yg' },
             { joint: '355', name: '359', lenses: 'YY-GR', guard: 60, autostop: 1, yg: '359' },
             { joint: '359', name: '361м', lenses: 'x', guard: 35, autostop: 1 },
-            { joint: '343', name: 'РЧ-В', lenses: 'BW-Rw', autostop: 3, back: true, left: true },
+            { joint: '343', name: 'В', gmod: { name: 'РЧ-В' }, lenses: 'BW-Rw', autostop: 3, back: true, left: true },
         ],
         mks: [
             { x: 447.5 - 47, name: '15МК' },
@@ -437,7 +437,7 @@ lines['crossline-redux']['1'] = [
             { joint: '369', name: 'ОЛ-375', lenses: 'BYY-GRw', guard: 65, service: 35, shift: 20, autostop: 1, y: '375', g: 'NEXT_yg' },
             { joint: '373', name: 'ОЛ-377', lenses: 'YYG-Rw', wall: true, guard: 60, shift: 20, service: 35, autostop: 1, yg: '377', gmod: { HeadsXOffset: 30.5 } },
             { joint: '377', name: 'ОЛ-379м', lenses: 'x', guard: 35, autostop: 1 },
-            { joint: '371', name: 'ОЛ-ОП', lenses: 'ZR', back: true, left: true, guard: 35, autostop: 3 },
+            { joint: '371', name: 'ОП', gmod: { name: 'ОЛ-ОП' }, lenses: 'ZR', back: true, left: true, guard: 35, autostop: 3 },
         ],
         mks: [
             { x: 569.9 + 61.5, name: '19МК' },
@@ -543,7 +543,7 @@ lines['crossline-redux']['1'] = [
             { joint: '409', name: 'МЛ-415', lenses: 'BYY-GRw', left: true, guard: 60, service: 35, autostop: 1, y: '415с', g: 'NEXT_yg' },
             { joint: '413', name: 'МЛ-417', lenses: 'YYG-Rw', wall: true, guard: 60, service: 35, autostop: 1, yg: '417с', shift: 12.5 },
             { joint: '417с', name: 'МЛ-419', lenses: 'BYW-Rw', guard: 35, autostop: 1 },
-            { joint: '411', name: 'МЛ-ОП', lenses: 'ZR', row: -3, back: true, left: true, guard: 35, autostop: 3 },
+            { joint: '411', name: 'ОП', gmod: { name: 'МЛ-ОП' }, lenses: 'ZR', row: -3, back: true, left: true, guard: 35, autostop: 3 },
         ],
     },
     {
