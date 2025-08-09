@@ -59,7 +59,7 @@ lines['crossline-redux']['3'] = [
             { joint: '11', name: '17', lenses: 'YY-GR', autostop: 1, left: true, back: true },
             { joint: '7', name: 'ОК-5', lenses: 'YYG-Rw', autostop: 1, shift: -20, back: true, row: -1 },
             { joint: '3б', name: 'ОК-3', lenses: 'BYG-Rw', autostop: 1, shift: -20, back: true, row: -1 },
-            { joint: '3', name: 'ОК-1', lenses: 'BW-Rw', autostop: 1, back: true },
+            { joint: '3', name: 'ОК-1', gmod: { RouteNumberSetup: '12' }, lenses: 'BW-Rw', autostop: 1, back: true },
         ],
         mks: [
             { x: 1528 - 384.7, name: '1МК' },
