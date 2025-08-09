@@ -61,6 +61,17 @@ function getAutostopTrackPositionAngles(rerailTrace)
     return position, angles
 end
 
+function getRayTrackPositionAngles(rerailTrace)
+    if not rerailTrace then
+        print("Rerail trace is nil")
+        return
+    end
+
+    local position = rerailTrace.centerpos
+    local angles = rerailTrace.forward:Angle()
+    return position, angles
+end
+
 function placeSignal(position, angles, options)
     local ent = ents.Create("gmod_track_signal")
     ent:SetPos(position)
@@ -75,6 +86,7 @@ function placeSignal(position, angles, options)
     ent.DoubleL = options.DoubleL
     ent.Left = options.Left
     ent.NonAutoStop = options.NonAutoStop
+    ent.RouteNumberSetup = options.RouteNumberSetup
     ent.Routes = {
         {
             NextSignal = "*",
@@ -85,6 +97,7 @@ function placeSignal(position, angles, options)
 
     if R50_MODE then
         ent.IsolateSwitches.FrontArsName = options.FrontArsName
+        ent.IsolateSwitches.SlowBlinking = true
     end
 
     if R50_MODE and options.Invisible then
@@ -121,6 +134,24 @@ function placeAutostop(position, angles, options)
     ent:Spawn()
 end
 
+function placeRay(position, angles, options, trackID, trackX)
+    local ent = ents.Create("gmod_vitromod_ray")
+    ent:SetPos(position)
+    ent:SetAngles(angles)
+    ent:SetName(options.Name or "")
+    ent:SetNW2String("Name", options.Name or "")
+    ent:SetTrackID(trackID)
+    ent:SetTrackX(trackX)
+    ent:SetAdjacentSignalName(options.AdjacentSignalName or "")
+    ent:SetRequiredSpeed(options.RequiredSpeed or 0)
+    -- ent:SetNW2String("Name", options.Name or "")
+    -- ent.config = {
+    --     Type = "ray",
+    --     SignalName = options.Name or "",
+    -- }
+    ent:Spawn()
+end
+
 function importSignalData(fileName, trackID)
     for k, v in pairs(ents.FindByClass("gmod_scb_autostop")) do
         local signal = v.Signal
@@ -129,6 +160,10 @@ function importSignalData(fileName, trackID)
 
     for k, v in pairs(ents.FindByClass("gmod_track_signal")) do
         if v.TrackPosition and v.TrackPosition.path.id == trackID then v:Remove() end
+    end
+
+    for k, v in pairs(ents.FindByClass("gmod_vitromod_ray")) do
+        if v.GetTrackID() == trackID then v:Remove() end
     end
 
     Metrostroi.UpdateSignalEntities()
@@ -145,6 +180,9 @@ function importSignalData(fileName, trackID)
         if R50_MODE and signal.IsAutostop then
             local position, angles = getAutostopTrackPositionAngles(rerailTrace)
             placeAutostop(position, angles, signal)
+        elseif signal.IsRay then
+            local position, angles = getRayTrackPositionAngles(rerailTrace)
+            placeRay(position, angles, signal, trackID, signal.x)
         else
             if signal.Invisible and not signal.HeadsXOffset then
                 local wallLength, wallTrace = getWallTraceLength(trackID, signal.x, signal.Back or false)
@@ -165,3 +203,7 @@ concommand.Add( "metrostroi_signal_import", function(ply, args)
     importSignalData(args[1], tonumber(args[2]))
 end )
 
+importSignalData("signals-crossline-redux-1.json", 6)
+importSignalData("signals-crossline-redux-2.json", 7)
+importSignalData("signals-crossline-redux-3.json", 4)
+importSignalData("signals-crossline-redux-4.json", 5)
