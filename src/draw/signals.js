@@ -114,6 +114,8 @@ class DrawSignals extends Draw {
                 this.two.makeLine(x + radius, signalY, x + radius * 3, signalY);
                 this.two.makeLine(x + radius * 2, signalY + radius, x + radius * 2, signalY - radius);
                 break;
+            case 'M':
+                this.two.makeText('И', x + radius * 2, signalY + 1, { alignment: 'center', size: 10 });
             default:
                 lense.fill = "#00000000";
         }

@@ -24,7 +24,7 @@ function signals() {
         signals[name] = {
             name: rtl((el.gmod?.name ?? el.name).replaceAll('-', '').toUpperCase()),
         };
-        switch (el.lenses.replaceAll('-', '')) {
+        switch (el.lenses.replaceAll('-', '').replaceAll('M', '')) {
             case 'RYYGR':
             case 'RYYGRw':
                 signals[name].def = '00000';
@@ -137,9 +137,36 @@ function signals() {
                 signals[name].wo = '010';
                 signals[name].bo = '100';
                 break;
+            case 'RBWYYGR':
+            case 'RBWYYGRw':
+                signals[name].def = '000000';
+                signals[name].ro = '000001';
+                signals[name].ry = '0000101';
+                signals[name].ya = '0000100';
+                signals[name].yo = '0001000';
+                signals[name].yg = '0001010';
+                signals[name].go = '0000010';
+                signals[name].wo = '0010000';
+                signals[name].bo = '0100000';
+                signals[name].rr = '1000001';
+                break;
+            case 'RByWRY':
+            case 'RByWRYw':
+                signals[name].def = '000000';
+                signals[name].ro = '000010';
+                signals[name].wo = '000100';
+                signals[name].bo = '010000';
+                signals[name].rr = '100010';
+                signals[name].yy = '001001';
+                signals[name].yfy = '002001';
+                break;
             case 'ZR':
                 signals[name].ro = '01';
                 break;
+            case 'Rw':
+                signals[name].ro = '1';
+                break;
+
         }
         if (el.lenses[el.lenses.length - 1] == 'w') {
             signals[name].ps = '';
@@ -173,6 +200,14 @@ function arsRcCopy() {
         const signal = rtl(section.nm.toUpperCase());
         const st = signal.slice(0, 2);
         resultText += `gmod['${st}'].arsRc['${section.prev}'] = '${signal}';\n`
+    }
+    console.log(resultText);
+}
+
+function signalsCopy() {
+    let resultText = ``;
+    for (const [name, signal] of Object.entries(signals())) {
+        resultText += `"${name}": ${JSON.stringify(signal)},\n`;
     }
     console.log(resultText);
 }
@@ -255,17 +290,44 @@ function lightsCode(signal) {
 function trackPeregon() {
     const result = {};
     peregon.joints.forEach((el, i, arr) => {
-        if (!i) return;
-        const x = station1X + el.x;
-        const ARSCode = arsCode(el);
-        const ARSCodes = ARSCode === 'N' ? '1' : ARSCode;
         const origName = rtl(el.gmod?.name ?? el.name);
-        const Name = ('TC' + rtl(arr[i - 1].name)).toUpperCase();
-        const ARSOnly = true;
-        const LensesStr = '';
-        const SignalType = 0;
+        const x = station1X + el.x;
+        if (i) {
+            const ARSCode = arsCode(el);
+            const ARSCodes = ARSCode === 'N' ? '1' : ARSCode;
+            const Name = ('TC' + rtl(arr[i - 1].name)).toUpperCase();
+            const ARSOnly = true;
+            const LensesStr = '';
+            const SignalType = 0;
 
-        result[origName] = { x, ARSCodes, Name, ARSOnly, LensesStr, SignalType };
+            result[origName] = { x, ARSCodes, Name, ARSOnly, LensesStr, SignalType };
+        }
+
+        if (el.vksCalc && i) {
+            result[origName + '_ray'] = {
+                IsRay: true,
+                x: x + el.vksCalc.l,
+                Name: ('FS' + rtl(el.name)).toUpperCase(),
+                AdjacentSignalName: ('TC' + rtl(arr[i - 1].name)).toUpperCase(),
+                RequiredSpeed: el.vksCalc.v,
+            }
+        }
+
+        if (el.bothDirections || el.back) {
+            if (i && el.back) {
+                // delete result[origName];
+            }
+            const isOdd = Number(el.name.replace(/\D/g, '')) % 2 === 1;
+            result[origName + '_back'] = {
+                x: x,
+                Name: (`TC${rtl(el.name)}${isOdd ? 'CH' : 'N'}`).toUpperCase(),
+                ARSOnly: true,
+                LensesStr: '',
+                SignalType: 0,
+                Back: true,
+                Left: true,
+            }
+        }
     });
 
     peregon.signals.forEach((el, i, arr) => {
@@ -290,8 +352,11 @@ function trackPeregon() {
                 NonAutoStop: !el.autostop,
             };
 
-            if (el.gmod?.name) {
-                result[joint + '_back'].SignalName = rtl(el.name).replaceAll('-', '').toUpperCase();
+            if (el.gmod) {
+                Object.assign(result[joint + '_back'], el.gmod);
+                if (el.gmod.name) {
+                    result[joint + '_back'].SignalName = rtl(el.name).replaceAll('-', '').toUpperCase();
+                }
             }
 
             if (el.autostop && el.shift && Math.abs(el.shift) > 0) {
@@ -343,6 +408,15 @@ function trackPeregon() {
                 IsAutostop: true,
             }
         }
+    });
+
+    peregon.signals.forEach((el, i, arr) => {
+        if (!el.joint) return;
+        const joint = rtl(el.joint);
+        if (!result[joint]) return;
+        if (!result[joint + '_ray']) return;
+        console.log(result[joint]);
+        result[joint + '_ray'].AdjacentSignalName = result[joint].Name;
     });
 
     return result;
