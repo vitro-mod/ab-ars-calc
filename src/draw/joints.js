@@ -25,7 +25,7 @@ class DrawJoints extends Draw {
             const leng = this.peregon.joints[i + 1].x - this.peregon.joints[i].x;
             const half = leng / 2;
 
-            const textX = this.x(x + half + (vksCalc ? ((leng < 50) ? vksCalc.l : vksCalc.l / 2) : 0));
+            const textX = this.x(x + half + (vksCalc ? ((leng < 50) ? (!vksCalc.prev ? vksCalc.l : vksCalc.l + leng) : vksCalc.l / 2) : 0));
 
             const text = this.two.makeText(name, textX, this.trackY - 8);
             const code = this.two.makeText(arsCode(this.peregon.joints[i]), textX, this.graphY - 5, { size: 10 });
@@ -118,7 +118,8 @@ class DrawJoints extends Draw {
     }
 
     drawVks(x, i) {
-        const { v, l, s, vf } = this.peregon.joints[i].vksCalc
+        const { v, l, s, vf, prev } = this.peregon.joints[i].vksCalc;
+        if (prev) return;
         const ray = this.drawRay(x + l);
         const y = vf;
         const vFactText = this.two.makeText(`Vф=${vf}км/ч`, this.x(x + l) + 4, this.graphY - y * this.Ky, { size: 10, alignment: 'left' });

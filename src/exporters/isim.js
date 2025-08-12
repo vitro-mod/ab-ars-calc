@@ -13,7 +13,10 @@ function iSignals() {
     for (let i = 0; i < peregon.signals.length; i++) {
         const signal = peregon.signals[i];
         let nextSignal = peregon.signals[i + 1];
-        if (nextSignal?.back) return result;
+        if (nextSignal?.back) {
+            console.log(result);
+            return result;
+        }
 
         let aspectsNum = 2;
         if (signal.y) aspectsNum = 3;

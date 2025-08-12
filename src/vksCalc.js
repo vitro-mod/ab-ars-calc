@@ -10,7 +10,17 @@ class VksCalculator {
         for (let i = 0; i < this.peregon.joints.length; i++) {
             const joint = this.peregon.joints[i];
             if (!joint?.vks) continue;
-            const nextJoint = this.peregon.joints[i + 1];
+            if (joint.vks.prev) {
+                const prevJoint = this.peregon.joints[i - 1];
+                if (prevJoint) {
+                    joint.vksCalc = { ...prevJoint.vksCalc };
+                    joint.vksCalc.l -= joint.x - prevJoint.x;
+                    joint.vksCalc.prev = true;
+                    continue;
+                }
+            }
+            const numJoints = joint.vks.numJoints ?? 1;
+            const nextJoint = this.peregon.joints[i + numJoints];
             const x = joint.x;
 
             const vksLength = nextJoint.x - joint.x;
