@@ -269,9 +269,9 @@ lines['crossline-redux']['1'] = [
             { x: 1552 + 66 - 50 - 50 - 12.5 - 12.5, name: '321', limit: 60 },
             { x: 1552 + 66 - 50 - 12.5, name: '323', limit: 60 },
             { x: 1552 + 66, name: '325', limit: 40 },
-            { x: 1552 + 66 + 62.5, name: '327', limit: 0 },
-            { x: 1552 + 66 + 62.5 + 62.5, name: '329', limit: 0 },
-            { x: 1880.5, name: '329а', limit: 0 },
+            { x: 1552 + 66 + 75, name: '327', limit: 0 },
+            { x: 1552 + 66 + 75 + 87.5, name: '327а', limit: 0 },
+            { x: 1552 + 66 + 75 + 87.5 + 100, name: '329а', limit: 0 },
         ],
         signals: [
             { joint: '307', name: '309м', lenses: 'RYY-GR', guard: 35, autostop: 3, y: '309б', g: 'NEXT_y' },
@@ -325,8 +325,8 @@ lines['crossline-redux']['1'] = [
         ],
         signals: [
             { joint: '325', name: 'ОК-327мГ', gmod: { RouteNumberSetup: '134DK' }, lenses: 'RBW-yYG-RYw', guard: 80, autostop: 3, g: '327б' },
-            { joint: '327б', name: '329', lenses: 'YY-GR', guard: 80, autostop: 3, service: 80, g: '329а' },
-            { joint: '329а', name: '331', lenses: 'YY-GR', guard: 80, autostop: 3, service: 80, g: '331в' },
+            { joint: '327б', name: '329', lenses: 'YGR', guard: 80, autostop: 3, service: 80, g: '329а' },
+            { joint: '329а', name: '331', lenses: 'YY-GR', guard: 80, autostop: 3, service: 80, y: '331в', g: 'NEXT_y' },
             { joint: '331б', name: '333', lenses: 'YY-GR', guard: 75, autostop: 3, shift: 20, y: '333', yg: 'NEXT_y', g: 'NEXT_yg' },
             { joint: '331в', name: '335', lenses: 'YY-GR', guard: 70, service: 35, shift: 20, autostop: 3, y: '335', yg: 'NEXT_y', g: 'NEXT_yg' },
             { joint: '333', name: '337', lenses: 'YY-GR', guard: 65, service: 35, shift: 20, autostop: 1, y: '337', yg: 'NEXT_y', g: 'NEXT_g' },
