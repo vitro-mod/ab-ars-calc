@@ -278,7 +278,7 @@ lines['crossline-redux']['1'] = [
             { joint: '309б', name: '311', lenses: 'YY-GR', guard: 80, service: 80, autostop: 3, y: '311', g: 'NEXT_y' },
             { joint: '311', name: '313', lenses: 'YY-GR', guard: 80, service: 80, autostop: 3, y: '313б', g: 'NEXT_y' },
             // { joint: '313', name: '315', lenses: 'YY-GR', guard: 80, service: 35, autostop: 3, y: '315', yg: 'NEXT_y', g: 'NEXT_yg' },
-            { joint: '313', name: 'ОК-317', lenses: 'YYG-Rw', guard: 80, service: 35, autostop: 3, y: '317', yg: 'NEXT_y', g: 'NEXT_yg' },
+            { joint: '313', name: '317', lenses: 'YY-GR', guard: 80, service: 35, autostop: 3, y: '317', yg: 'NEXT_y', g: 'NEXT_yg' },
             { joint: '313б', name: 'ОК-319', lenses: 'YYG-Rw', guard: 68, service: 35, shift: 20, autostop: 1, y: '319', yg: 'NEXT_y', g: 'NEXT_yg' },
             { joint: '317', name: 'ОК-321', lenses: 'YYG-Rw', guard: 65, service: 35, shift: 20, autostop: 1, y: '321', yg: 'NEXT_y', g: 'NEXT_g' },
             { joint: '319', name: 'ОК-323', lenses: 'BYY-GRw', guard: 65, service: 35, shift: 20, autostop: 1, y: '323', g: 'NEXT_yg' },
