@@ -10,13 +10,11 @@ function signalRcs(signalName) {
 function iSignals() {
     let result = '';
 
-    for (let i = 0; i < peregon.signals.length; i++) {
-        const signal = peregon.signals[i];
-        let nextSignal = peregon.signals[i + 1];
-        if (nextSignal?.back) {
-            console.log(result);
-            return result;
-        }
+    const signals = peregon.signals.filter(el => !el.back);
+
+    for (let i = 0; i < signals.length; i++) {
+        const signal = signals[i];
+        let nextSignal = signals[i + 1];
 
         let aspectsNum = 2;
         if (signal.y) aspectsNum = 3;
