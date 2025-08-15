@@ -356,6 +356,9 @@ function trackPeregon() {
                 Object.assign(result[joint + '_back'], el.gmod);
                 if (el.gmod.name) {
                     result[joint + '_back'].SignalName = rtl(el.name).replaceAll('-', '').toUpperCase();
+                    if (result[joint + '_back'].SignalName === 'DOP') {
+                        result[joint + '_back'].Lights = '';
+                    }
                 }
             }
 
