@@ -20,6 +20,8 @@ function signals() {
     peregon.signals.forEach(el => {
         let nm = el.name.replaceAll('-', '');
         let name = 'sig' + nm;
+        if (el.double && el.doubleL) name += '/';
+        if (el.double && !el.doubleL) name += '//';
         if (el.lenses == 'x') return;
         signals[name] = {
             name: rtl((el.gmod?.name ?? el.name).replaceAll('-', '').toUpperCase()),
@@ -36,8 +38,21 @@ function signals() {
                 signals[name].yg = '01010';
                 signals[name].go = '00010';
                 break;
+            case 'RBYYGR':
+            case 'RBYYGRw':
+                signals[name].def = '000000';
+                signals[name].ro =  '000001';
+                signals[name].rr =  '100001';
+                signals[name].ry =  '000101';
+                signals[name].ya =  '000100';
+                signals[name].yo =  '001000';
+                signals[name].yg =  '001010';
+                signals[name].go =  '000010';
+                signals[name].bo =  '010000';
+                break;
             case 'YYGR':
             case 'YYGRw':
+            case 'YYGRZ':
                 signals[name].def = '0000';
                 signals[name].ro = '0001';
                 signals[name].ry = '0101';
@@ -55,6 +70,15 @@ function signals() {
                 signals[name].yg = '01010';
                 signals[name].go = '00010';
                 signals[name].bo = '10000';
+                break;
+            case 'ZYYGRZ':
+                signals[name].def = '00000';
+                signals[name].ro = '00001';
+                signals[name].ry = '00101';
+                signals[name].ya = '00100';
+                signals[name].yo = '01000';
+                signals[name].yg = '01010';
+                signals[name].go = '00010';
                 break;
             case 'WYYGR':
             case 'WYYGRw':
@@ -76,6 +100,17 @@ function signals() {
                 signals[name].yo = '100';
                 signals[name].yg = '110';
                 signals[name].go = '010';
+                break
+            case 'BYGR':
+            case 'BYGRw':
+                signals[name].def = '0000';
+                signals[name].ro = '0001';
+                signals[name].ry = '0101';
+                signals[name].ya = '0100';
+                signals[name].yo = '0100';
+                signals[name].yg = '0110';
+                signals[name].go = '0010';
+                signals[name].bo = '1000';
                 break;
             case 'RYGR':
             case 'RYGRw':
@@ -150,6 +185,30 @@ function signals() {
                 signals[name].bo = '0100000';
                 signals[name].rr = '1000001';
                 break;
+            case 'RBWyYGRYw':
+                signals[name].def = '00000000';
+                signals[name].ro = '00000010';
+                signals[name].ry = '00001010';
+                signals[name].ya = '00001000';
+                signals[name].yo = '00001000';
+                signals[name].yg = '00001100';
+                signals[name].go = '00000100';
+                signals[name].wo = '00100000';
+                signals[name].bo = '01000000';
+                signals[name].rr = '10000010';
+                signals[name].yy = '00010001';
+                signals[name].yfy = '00020001';
+                break;
+            case 'RZZYYGRZ':
+                signals[name].def = '000000';
+                signals[name].ro = '000001';
+                signals[name].ry = '0000101';
+                signals[name].ya = '0000100';
+                signals[name].yo = '0001000';
+                signals[name].yg = '0001010';
+                signals[name].go = '0000010';
+                signals[name].rr = '1000001';
+                break;
             case 'RByWRY':
             case 'RByWRYw':
                 signals[name].def = '000000';
@@ -160,8 +219,21 @@ function signals() {
                 signals[name].yy = '001001';
                 signals[name].yfy = '002001';
                 break;
+            case 'BWyYYR':
+            case 'BWyYYRw':
+                signals[name].def = '000000';
+                signals[name].ro = '000001';
+                signals[name].ry = '000101';
+                signals[name].wo = '010000';
+                signals[name].bo = '100000';
+                signals[name].yy = '001010';
+                signals[name].yfy = '002010';
+                break;
             case 'ZR':
                 signals[name].ro = '01';
+                break;
+            case 'Zr':
+                signals[name].rf = '02';
                 break;
             case 'Rw':
                 signals[name].ro = '1';
