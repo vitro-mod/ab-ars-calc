@@ -290,7 +290,7 @@ lines['crossline-redux']['1'] = [
             { joint: '319', name: 'ОК-325', lenses: 'YYG-Rw', guard: 60, autostop: 1, yg: '325' },
             { joint: '325', name: 'ОК-327мГ', gmod: { RouteNumberSetup: '134DK' }, lenses: 'x', guard: 35, autostop: 1 },
             { joint: '319', name: 'ОП', gmod: { name: 'ОК-ОП' }, lenses: 'ZR', autostop: 1, back: true, row: 4 },
-            { joint: '327', name: 'ДОП', gmod: { name: 'ОК-ДОП' }, lenses: 'Zr', back: true, row: 4 },
+            { joint: '327', name: 'ДОП', gmod: { name: 'ОК-ДОП' }, lenses: 'ZZr', back: true, row: 4 },
         ],
         mks: [
             { x: 72.5 + 87.5 + 11, name: '3МК' },
@@ -340,6 +340,7 @@ lines['crossline-redux']['1'] = [
             { joint: '335', name: '339', lenses: 'YY-GR', guard: 65, service: 35, shift: 20, autostop: 1, y: '339', g: 'NEXT_yg' },
             { joint: '337', name: 'РЧ-341', lenses: 'BYY-GRw', guard: 65, autostop: 1, yg: '341', shift: 11 },
             { joint: '341', name: 'РЧ-343м', gmod: { RouteNumberSetup: '1V' }, lenses: 'x', guard: 35, autostop: 1 },
+            { joint: '327', name: 'ДОП', gmod: { name: 'ОК-ДОП' }, lenses: 'ZZr', back: true, row: 4 },
         ],
         mks: [
             { x: 194.7, name: '13МК' },
