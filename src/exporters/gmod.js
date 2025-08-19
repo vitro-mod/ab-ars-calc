@@ -385,6 +385,10 @@ function trackPeregon() {
             }
         }
 
+        if (el.left) {
+            result[origName].Left = true;
+        }
+
         if (el.bothDirections || el.back) {
             if (i && el.back) {
                 // delete result[origName];
@@ -397,7 +401,7 @@ function trackPeregon() {
                 LensesStr: '',
                 SignalType: 0,
                 Back: true,
-                Left: true,
+                Left: !el.left,
             }
         }
     });
