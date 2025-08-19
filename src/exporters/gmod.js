@@ -438,8 +438,8 @@ function trackPeregon() {
                 result[joint + '_back'].NonAutoStop = true;
                 result[joint + '_back' + '_autostop'] = {
                     x: result[joint].x - el.shift,
-                    Name: 'A' + result[joint].Name,
-                    SignalName: result[joint].Name,
+                    Name: 'A' + result[joint + '_back'].Name,
+                    SignalName: result[joint + '_back'].Name,
                     IsAutostop: true,
                     Back: true,
                 }
