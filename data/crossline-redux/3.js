@@ -29,7 +29,8 @@ lines['crossline-redux']['3'] = [
             1520: '0',
         },
         joints: [
-            { x: 105 - 62.5, name: '5', limit: 40 },
+            { x: 105 - 47.58 - 100, name: '325/', limit: 40 },
+            { x: 105 - 47.58, name: '5', limit: 40, bothDirections: true, left: true },
             { x: 105, name: '3', limit: 40 },
             { x: 105 + 150, name: '7', limit: 60 },
             { x: 105 + 150 + 162.5, name: '9а', limit: 60 },
