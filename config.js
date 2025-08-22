@@ -3,7 +3,7 @@ const IS_OLD_ARS = true;
 const stepLength = 1;
 
 const wagonLength = 19.16;
-const wagonCount = 5;
+const wagonCount = 4;
 
 const trainHalf = wagonLength * wagonCount / 2;
 
