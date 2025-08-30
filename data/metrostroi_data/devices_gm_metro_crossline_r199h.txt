@@ -1,0 +1,592 @@
+[
+	{
+		"Pos": "[-14293.6904 -2824.5911 -193.0389]",
+		"Type": "Autostop",
+		"Angles": "{0.0834 180.3938 0}",
+		"Name": "A333",
+		"Config": {
+			"Type": "electric",
+			"SignalName": "333"
+		}
+	},
+	{
+		"Pos": "[-12722.4121 -342.9765 -1173.2343]",
+		"Type": "Autostop",
+		"Angles": "{0 135 0}",
+		"Name": "A367",
+		"Config": {
+			"Type": "electric",
+			"SignalName": "367"
+		}
+	},
+	{
+		"Pos": "[-14244.3779 -12841.3301 -389.0468]",
+		"Type": "Autostop",
+		"Angles": "{355.3244 220.743 0}",
+		"Name": "AOK317",
+		"Config": {
+			"Type": "electric",
+			"SignalName": "OK317"
+		}
+	},
+	{
+		"Pos": "[-8241.3516 -14360.3525 -398.9142]",
+		"Type": "Autostop",
+		"Angles": "{360 287.0969 0}",
+		"Name": "AOK321",
+		"Config": {
+			"Type": "electric",
+			"SignalName": "OK321"
+		}
+	},
+	{
+		"Pos": "[10253.8145 -9227.2715 847.5093]",
+		"Type": "Autostop",
+		"Angles": "{-0 360 0}",
+		"Name": "A305",
+		"Config": {
+			"Type": "electric",
+			"SignalName": "305"
+		}
+	},
+	{
+		"Pos": "[-11478.584 -14480.4629 -398.7924]",
+		"Type": "Autostop",
+		"Angles": "{356.0366 256.4389 0}",
+		"Name": "AOK319",
+		"Config": {
+			"Type": "electric",
+			"SignalName": "OK319"
+		}
+	},
+	{
+		"Pos": "[-5485.7656 -12657.6816 -398.9876]",
+		"Type": "Autostop",
+		"Angles": "{-0 315 0}",
+		"Name": "AOK323",
+		"Config": {
+			"Type": "electric",
+			"SignalName": "OK323"
+		}
+	},
+	{
+		"Pos": "[-14390.5107 -11011.7832 -1259.9807]",
+		"Type": "Autostop",
+		"Angles": "{358.3933 217.5289 0}",
+		"Name": "AOL371",
+		"Config": {
+			"Type": "electric",
+			"SignalName": "OL371"
+		}
+	},
+	{
+		"Pos": "[-1796.2319 -12630.5664 -1523.2947]",
+		"Type": "Autostop",
+		"Angles": "{-0 306 0}",
+		"Name": "AOL377",
+		"Config": {
+			"Type": "electric",
+			"SignalName": "OL377"
+		}
+	},
+	{
+		"Pos": "[12136.1553 13274.2354 2877.1177]",
+		"Type": "Autostop",
+		"Angles": "{3.501 226.3678 0}",
+		"Name": "APT259",
+		"Config": {
+			"Type": "electric",
+			"SignalName": "PT259"
+		}
+	},
+	{
+		"Pos": "[-12710.8711 -3089.5415 -2526.2346]",
+		"Type": "Autostop",
+		"Angles": "{-0 330 0}",
+		"Name": "AML417",
+		"Config": {
+			"Type": "electric",
+			"SignalName": "ML417"
+		}
+	},
+	{
+		"Pos": "[-9809.8945 -8636.0527 29.2085]",
+		"Type": "Autostop",
+		"Angles": "{358.0518 248.533 0}",
+		"Name": "A337",
+		"Config": {
+			"Type": "electric",
+			"SignalName": "337"
+		}
+	},
+	{
+		"Pos": "[-6334.2876 -15034.2852 -1433.3978]",
+		"Type": "Autostop",
+		"Angles": "{355.8437 280.0869 0}",
+		"Name": "AOL375",
+		"Config": {
+			"Type": "electric",
+			"SignalName": "OL375"
+		}
+	},
+	{
+		"Pos": "[-11083.1533 -14162.9775 -1302.4786]",
+		"Type": "Autostop",
+		"Angles": "{355.9292 240.0852 0}",
+		"Name": "AOL373",
+		"Config": {
+			"Type": "electric",
+			"SignalName": "OL373"
+		}
+	},
+	{
+		"Pos": "[-3205.2979 -11046.4062 246.0227]",
+		"Type": "Autostop",
+		"Angles": "{0 250 0}",
+		"Name": "ARX341",
+		"Config": {
+			"Type": "electric",
+			"SignalName": "RX341"
+		}
+	},
+	{
+		"Pos": "[-6731.1309 -9763.1455 144.2226]",
+		"Type": "Autostop",
+		"Angles": "{359.4007 249.9791 0}",
+		"Name": "A339",
+		"Config": {
+			"Type": "electric",
+			"SignalName": "339"
+		}
+	},
+	{
+		"Pos": "[-12589.9473 -6957.2583 -110.2872]",
+		"Type": "Autostop",
+		"Angles": "{359.1011 224.3838 0}",
+		"Name": "A335",
+		"Config": {
+			"Type": "electric",
+			"SignalName": "335"
+		}
+	},
+	{
+		"Pos": "[-968.4236 11554.457 1673.0656]",
+		"Type": "Autostop",
+		"Angles": "{4 218.1266 0}",
+		"Name": "A289",
+		"Config": {
+			"Type": "electric",
+			"SignalName": "289"
+		}
+	},
+	{
+		"Pos": "[14294.8906 7269.0513 2876.8213]",
+		"Type": "Autostop",
+		"Angles": "{0 180.4945 0}",
+		"Name": "APT263",
+		"Config": {
+			"Type": "electric",
+			"SignalName": "PT263"
+		}
+	},
+	{
+		"Pos": "[14578.9531 1432.0841 -1679.7683]",
+		"Type": "Autostop",
+		"Angles": "{0.1576 156.9331 0}",
+		"Name": "AOL388",
+		"Config": {
+			"Type": "electric",
+			"SignalName": "OL388"
+		}
+	},
+	{
+		"Pos": "[14315.9922 -9915.4551 2879.9814]",
+		"Type": "Autostop",
+		"Angles": "{357.4002 348.0213 0}",
+		"Name": "APT288",
+		"Config": {
+			"Type": "electric",
+			"SignalName": "PT288"
+		}
+	},
+	{
+		"Pos": "[-8663.9395 13032.4062 -1541.8948]",
+		"Type": "Autostop",
+		"Angles": "{354.9984 115.0033 0}",
+		"Name": "A402",
+		"Config": {
+			"Type": "electric",
+			"SignalName": "402"
+		}
+	},
+	{
+		"Pos": "[12081.2637 13613.7002 -1891.1418]",
+		"Type": "Autostop",
+		"Angles": "{5.1302 248.4921 0}",
+		"Name": "A390M",
+		"Config": {
+			"Type": "electric",
+			"SignalName": "390M"
+		}
+	},
+	{
+		"Pos": "[14565.6055 -5995.4976 2877.2944]",
+		"Type": "Autostop",
+		"Angles": "{-0 360 0}",
+		"Name": "APT286",
+		"Config": {
+			"Type": "electric",
+			"SignalName": "PT286"
+		}
+	},
+	{
+		"Pos": "[-11153.3945 10119.9189 -1544.8483]",
+		"Type": "Autostop",
+		"Angles": "{356.6733 161.2663 0}",
+		"Name": "A400",
+		"Config": {
+			"Type": "electric",
+			"SignalName": "400"
+		}
+	},
+	{
+		"Pos": "[5925.4146 11049.1133 -1531.4081]",
+		"Type": "Autostop",
+		"Angles": "{360 90 0}",
+		"Name": "A408",
+		"Config": {
+			"Type": "electric",
+			"SignalName": "408"
+		}
+	},
+	{
+		"Pos": "[9195.833 -15154.0771 272.6107]",
+		"Type": "Autostop",
+		"Angles": "{0.0373 81.9244 0}",
+		"Name": "ARX350",
+		"Config": {
+			"Type": "electric",
+			"SignalName": "RX350"
+		}
+	},
+	{
+		"Pos": "[15257.2529 -2509.0474 2330.7983]",
+		"Type": "Autostop",
+		"Angles": "{357.5968 346.4054 0}",
+		"Name": "A266",
+		"Config": {
+			"Type": "electric",
+			"SignalName": "266"
+		}
+	},
+	{
+		"Pos": "[5457.9985 -13951.1631 258.6194]",
+		"Type": "Autostop",
+		"Angles": "{-0 70 0}",
+		"Name": "A348",
+		"Config": {
+			"Type": "electric",
+			"SignalName": "348"
+		}
+	},
+	{
+		"Pos": "[-1082.1006 12368.1367 -1541.7256]",
+		"Type": "Autostop",
+		"Angles": "{-0 70 0}",
+		"Name": "A406",
+		"Config": {
+			"Type": "electric",
+			"SignalName": "406"
+		}
+	},
+	{
+		"Pos": "[6664.9023 -5599.3936 -1540.751]",
+		"Type": "Autostop",
+		"Angles": "{358.0811 125.9765 0}",
+		"Name": "AOL384",
+		"Config": {
+			"Type": "electric",
+			"SignalName": "OL384"
+		}
+	},
+	{
+		"Pos": "[10572.1562 -2761.238 -1582.8589]",
+		"Type": "Autostop",
+		"Angles": "{0 126 0}",
+		"Name": "AOL386",
+		"Config": {
+			"Type": "electric",
+			"SignalName": "OL386"
+		}
+	},
+	{
+		"Pos": "[-4822.3799 13566.3955 -1541.7842]",
+		"Type": "Autostop",
+		"Angles": "{360 81.4222 0}",
+		"Name": "A404",
+		"Config": {
+			"Type": "electric",
+			"SignalName": "404"
+		}
+	},
+	{
+		"Pos": "[6019.583 -3336.8477 1751.9944]",
+		"Type": "Autostop",
+		"Angles": "{-0 45 0}",
+		"Name": "AMD238",
+		"Config": {
+			"Type": "electric",
+			"SignalName": "MD238"
+		}
+	},
+	{
+		"Pos": "[8656.3984 -6933.6899 1758.8572]",
+		"Type": "Autostop",
+		"Angles": "{359.9572 20.0971 0}",
+		"Name": "AMD240",
+		"Config": {
+			"Type": "electric",
+			"SignalName": "MD240"
+		}
+	},
+	{
+		"Pos": "[8853.3975 -10882.4727 1793.2834]",
+		"Type": "Autostop",
+		"Angles": "{359.9266 346.5635 0}",
+		"Name": "AMD242",
+		"Config": {
+			"Type": "electric",
+			"SignalName": "MD242"
+		}
+	},
+	{
+		"Pos": "[7286.3828 -13869.1191 1822.603]",
+		"Type": "Autostop",
+		"Angles": "{359.9266 316.5635 0}",
+		"Name": "AMD244",
+		"Config": {
+			"Type": "electric",
+			"SignalName": "MD244"
+		}
+	},
+	{
+		"Pos": "[1793.9498 -16198.1514 1875.8483]",
+		"Type": "Autostop",
+		"Angles": "{359.9266 267.5635 0}",
+		"Name": "AMD246",
+		"Config": {
+			"Type": "electric",
+			"SignalName": "MD246"
+		}
+	},
+	{
+		"Pos": "[-4109.5586 -16119.8125 1927.0988]",
+		"Type": "Autostop",
+		"Angles": "{0 270 0}",
+		"Name": "A248",
+		"Config": {
+			"Type": "electric",
+			"SignalName": "248"
+		}
+	},
+	{
+		"Pos": "[6976.1128 14978.207 2063.1443]",
+		"Type": "Autostop",
+		"Angles": "{-0 90 0}",
+		"Name": "A256M",
+		"Config": {
+			"Type": "electric",
+			"SignalName": "256M"
+		}
+	},
+	{
+		"Pos": "[10232.5947 14669.5762 2077.9473]",
+		"Type": "Autostop",
+		"Angles": "{357.5968 76.4054 0}",
+		"Name": "A258",
+		"Config": {
+			"Type": "electric",
+			"SignalName": "258"
+		}
+	},
+	{
+		"Pos": "[13631.9238 12805.5957 2080.8057]",
+		"Type": "Autostop",
+		"Angles": "{356.2921 43.6125 0}",
+		"Name": "A260",
+		"Config": {
+			"Type": "electric",
+			"SignalName": "260"
+		}
+	},
+	{
+		"Pos": "[15435.4619 8667.2031 2123.5474]",
+		"Type": "Autostop",
+		"Angles": "{358.8197 7.5329 0}",
+		"Name": "A262",
+		"Config": {
+			"Type": "electric",
+			"SignalName": "262"
+		}
+	},
+	{
+		"Pos": "[15557.4121 3424.9902 2226.3855]",
+		"Type": "Autostop",
+		"Angles": "{0 0 0}",
+		"Name": "A264",
+		"Config": {
+			"Type": "electric",
+			"SignalName": "264"
+		}
+	},
+	{
+		"Pos": "[7024.3916 15748.207 2877.2988]",
+		"Type": "Autostop",
+		"Angles": "{359.3085 87.4382 0}",
+		"Name": "A278",
+		"Config": {
+			"Type": "electric",
+			"SignalName": "278"
+		}
+	},
+	{
+		"Pos": "[14563.707 6495.8818 2877.0945]",
+		"Type": "Autostop",
+		"Angles": "{0 360 0}",
+		"Name": "A282M",
+		"Config": {
+			"Type": "electric",
+			"SignalName": "282M"
+		}
+	},
+	{
+		"Pos": "[14556.0088 -2713.9585 2866]",
+		"Type": "Autostop",
+		"Angles": "{-0 354.6191 0}",
+		"Name": "A284",
+		"Config": {
+			"Type": "electric",
+			"SignalName": "284"
+		}
+	},
+	{
+		"Pos": "[12127.9736 -13854.0566 2864.3213]",
+		"Type": "Autostop",
+		"Angles": "{356.2033 310.8755 0}",
+		"Name": "APT290",
+		"Config": {
+			"Type": "electric",
+			"SignalName": "PT290"
+		}
+	},
+	{
+		"Pos": "[15293.0205 -12100.915 -1000.6648]",
+		"Type": "Autostop",
+		"Angles": "{5.0014 161.1536 0}",
+		"Name": "A370",
+		"Config": {
+			"Type": "electric",
+			"SignalName": "370"
+		}
+	},
+	{
+		"Pos": "[3479.2024 -7912.8213 -1523.2947]",
+		"Type": "Autostop",
+		"Angles": "{-0 125.9994 0}",
+		"Name": "A382",
+		"Config": {
+			"Type": "electric",
+			"SignalName": "382"
+		}
+	},
+	{
+		"Pos": "[13034.2852 -14593.1836 369.1843]",
+		"Type": "Autostop",
+		"Angles": "{5.8608 115.3866 0}",
+		"Name": "ARX352",
+		"Config": {
+			"Type": "electric",
+			"SignalName": "RX352"
+		}
+	},
+	{
+		"Pos": "[-5493.1768 -7424.833 -249.7426]",
+		"Type": "Autostop",
+		"Angles": "{-0 165 0}",
+		"Name": "A15",
+		"Config": {
+			"Type": "electric",
+			"SignalName": "15"
+		}
+	},
+	{
+		"Pos": "[-9886.5723 -12732.5586 -68.6678]",
+		"Type": "Autostop",
+		"Angles": "{3.421 76.913 0}",
+		"Name": "A17",
+		"Config": {
+			"Type": "electric",
+			"SignalName": "17"
+		}
+	},
+	{
+		"Pos": "[-15234.4648 -6750.6055 44.7191]",
+		"Type": "Autostop",
+		"Angles": "{0.1709 7.1008 0}",
+		"Name": "AA1",
+		"Config": {
+			"Type": "electric",
+			"SignalName": "A1"
+		}
+	},
+	{
+		"Pos": "[11219.2783 4303.2134 -313.6814]",
+		"Type": "Autostop",
+		"Angles": "{360 135 0}",
+		"Name": "AOK3",
+		"Config": {
+			"Type": "electric",
+			"SignalName": "OK3"
+		}
+	},
+	{
+		"Pos": "[13554.1641 11972.6768 -226.5334]",
+		"Type": "Autostop",
+		"Angles": "{4.8117 198.2653 0}",
+		"Name": "AOK5",
+		"Config": {
+			"Type": "electric",
+			"SignalName": "OK5"
+		}
+	},
+	{
+		"Pos": "[-4919.6416 -8543.2012 -200.7252]",
+		"Type": "Autostop",
+		"Angles": "{360 165 0}",
+		"Name": "A16",
+		"Config": {
+			"Type": "electric",
+			"SignalName": "16"
+		}
+	},
+	{
+		"Pos": "[-15630.1064 -7720.5737 44.6637]",
+		"Type": "Autostop",
+		"Angles": "{0.0428 17.098 0}",
+		"Name": "AA2",
+		"Config": {
+			"Type": "electric",
+			"SignalName": "A2"
+		}
+	},
+	{
+		"Pos": "[-9313.0342 -13928.9697 42.2463]",
+		"Type": "Autostop",
+		"Angles": "{2.9112 76.9118 0}",
+		"Name": "A18",
+		"Config": {
+			"Type": "electric",
+			"SignalName": "18"
+		}
+	}
+]
