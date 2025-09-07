@@ -497,6 +497,7 @@ lines['crossline-redux']['1'] = [
             { joint: '391', name: '395', lenses: 'YY-GR', left: true, guard: 70, service: 35, autostop: 1, y: '395', g: 'NEXT_yg' },
             { joint: '393', name: '397', lenses: 'YY-GR', guard: 70, service: 35, autostop: 1, yg: '397' },
             { joint: '397', name: '399', lenses: 'x', guard: 35, autostop: 1 },
+            { joint: '379', name: 'ДОП', gmod: { name: 'ОЛ-ДОП' }, lenses: 'ZZr', back: true, row: 4 },
         ],
         mks: [
             { x: 231.9 + 44, name: '21МК' },
