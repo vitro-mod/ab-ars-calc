@@ -93,7 +93,7 @@ lines['crossline-redux']['2'] = [
             { joint: '388', name: 'ОЛ-384', lenses: 'BYY-GRw', guard: 60, autostop: 1, y: '384', g: 'NEXT_yg', shift: 3 },
             { joint: '386', name: '382', lenses: 'YY-GR', guard: 60, autostop: 1, yg: '382', shift: 3 },
             { joint: '382', name: '380м', lenses: 'x', guard: 35, autostop: 3 },
-            { joint: '386', name: 'Д', gmod: { name: 'ОЛ-Д', RouteNumberSetup: '23' }, lenses: 'BW-Rw', back: true, left: true },
+            { joint: '386', name: 'Д', gmod: { name: 'ОЛ-Д' }, lenses: 'BW-Rw', back: true, left: true },
         ],
         mks: [
             { x: 1706.6 - 42, name: '24МК' },
