@@ -19,11 +19,11 @@
 				"Emer": false,
 				"NextSignal": "",
 				"ARSCodes": "",
-				"Repeater": false,
+				"Manual": false,
 				"Lights": "",
-				"Switches": "",
 				"RouteName": "",
-				"Manual": false
+				"Switches": "",
+				"Repeater": false
 			}
 		],
 		"NonAutoStop": true,
@@ -49,11 +49,11 @@
 				"Emer": false,
 				"NextSignal": "",
 				"ARSCodes": "",
-				"Repeater": false,
+				"Manual": false,
 				"Lights": "",
-				"Switches": "",
 				"RouteName": "",
-				"Manual": false
+				"Switches": "",
+				"Repeater": false
 			}
 		],
 		"NonAutoStop": true,
@@ -79,11 +79,11 @@
 				"Emer": false,
 				"NextSignal": "",
 				"ARSCodes": "2",
-				"Repeater": false,
+				"Manual": false,
 				"Lights": "1",
-				"Switches": "",
 				"RouteName": "",
-				"Manual": false
+				"Switches": "",
+				"Repeater": false
 			}
 		],
 		"NonAutoStop": true,
@@ -109,11 +109,11 @@
 				"Emer": false,
 				"NextSignal": "",
 				"ARSCodes": "",
-				"Repeater": false,
+				"Manual": false,
 				"Lights": "",
-				"Switches": "",
 				"RouteName": "",
-				"Manual": false
+				"Switches": "",
+				"Repeater": false
 			}
 		],
 		"NonAutoStop": true,
@@ -140,9 +140,9 @@
 				"NextSignal": "*",
 				"ARSCodes": "04",
 				"Manual": true,
-				"Switches": "",
-				"Lights": "2-1",
 				"RouteName": "PT1-3",
+				"Lights": "2-1",
+				"Switches": "",
 				"Repeater": false
 			}
 		],
@@ -169,11 +169,11 @@
 				"Emer": false,
 				"NextSignal": "",
 				"ARSCodes": "",
-				"Manual": false,
-				"Lights": "",
 				"Repeater": false,
-				"RouteName": "",
-				"Switches": ""
+				"Lights": "",
+				"Manual": false,
+				"Switches": "",
+				"RouteName": ""
 			}
 		],
 		"NonAutoStop": true,
@@ -200,9 +200,9 @@
 				"NextSignal": "*",
 				"ARSCodes": "1",
 				"Manual": true,
-				"Switches": "",
-				"Lights": "2-1",
 				"RouteName": "",
+				"Lights": "2-1",
+				"Switches": "",
 				"Repeater": false
 			}
 		],
@@ -229,11 +229,11 @@
 				"Emer": false,
 				"NextSignal": "",
 				"ARSCodes": "0",
-				"Repeater": false,
+				"Manual": false,
 				"Lights": "3",
-				"Switches": "",
 				"RouteName": "",
-				"Manual": false
+				"Switches": "",
+				"Repeater": false
 			}
 		],
 		"NonAutoStop": false,
@@ -259,11 +259,11 @@
 				"Emer": false,
 				"NextSignal": "",
 				"ARSCodes": "1",
-				"Manual": false,
+				"Repeater": false,
 				"Lights": "2",
-				"RouteName": "",
 				"Switches": "",
-				"Repeater": false
+				"RouteName": "",
+				"Manual": false
 			}
 		],
 		"NonAutoStop": true,
@@ -289,11 +289,11 @@
 				"Emer": false,
 				"NextSignal": "",
 				"ARSCodes": "1",
-				"Repeater": false,
-				"Lights": "2",
 				"Manual": false,
-				"Switches": "",
-				"RouteName": ""
+				"Lights": "2",
+				"Repeater": false,
+				"RouteName": "",
+				"Switches": ""
 			}
 		],
 		"NonAutoStop": true,
@@ -319,11 +319,11 @@
 				"Emer": false,
 				"NextSignal": "",
 				"ARSCodes": "1",
-				"Repeater": false,
-				"Lights": "2",
 				"Manual": false,
-				"Switches": "",
-				"RouteName": ""
+				"Lights": "2",
+				"Repeater": false,
+				"RouteName": "",
+				"Switches": ""
 			}
 		],
 		"NonAutoStop": true,
@@ -349,11 +349,11 @@
 				"Emer": false,
 				"NextSignal": "",
 				"ARSCodes": "1",
-				"Repeater": false,
-				"Lights": "2",
 				"Manual": false,
-				"Switches": "",
-				"RouteName": ""
+				"Lights": "2",
+				"Repeater": false,
+				"RouteName": "",
+				"Switches": ""
 			}
 		],
 		"NonAutoStop": true,
@@ -379,11 +379,11 @@
 				"Emer": false,
 				"NextSignal": "",
 				"ARSCodes": "1",
-				"Repeater": false,
-				"Lights": "2",
 				"Manual": false,
-				"Switches": "",
-				"RouteName": ""
+				"Lights": "2",
+				"Repeater": false,
+				"RouteName": "",
+				"Switches": ""
 			}
 		],
 		"NonAutoStop": true,
@@ -409,11 +409,11 @@
 				"Emer": false,
 				"NextSignal": "",
 				"ARSCodes": "1",
-				"Repeater": false,
-				"Lights": "2",
 				"Manual": false,
-				"Switches": "",
-				"RouteName": ""
+				"Lights": "2",
+				"Repeater": false,
+				"RouteName": "",
+				"Switches": ""
 			}
 		],
 		"NonAutoStop": true,
@@ -439,11 +439,11 @@
 				"Emer": false,
 				"NextSignal": "",
 				"ARSCodes": "1",
-				"Repeater": false,
-				"Lights": "2",
 				"Manual": false,
-				"RouteName": "",
-				"Switches": ""
+				"Lights": "2",
+				"Repeater": false,
+				"Switches": "",
+				"RouteName": ""
 			}
 		],
 		"NonAutoStop": true,
@@ -469,11 +469,11 @@
 				"Emer": false,
 				"NextSignal": "",
 				"ARSCodes": "1",
-				"Repeater": false,
-				"Lights": "2",
 				"Manual": false,
-				"Switches": "",
-				"RouteName": ""
+				"Lights": "2",
+				"Repeater": false,
+				"RouteName": "",
+				"Switches": ""
 			}
 		],
 		"NonAutoStop": true,
@@ -499,11 +499,11 @@
 				"Emer": false,
 				"NextSignal": "",
 				"ARSCodes": "1",
-				"Repeater": false,
-				"Lights": "2",
 				"Manual": false,
-				"Switches": "",
-				"RouteName": ""
+				"Lights": "2",
+				"Repeater": false,
+				"RouteName": "",
+				"Switches": ""
 			}
 		],
 		"NonAutoStop": true,
@@ -531,11 +531,11 @@
 				"Emer": false,
 				"NextSignal": "",
 				"ARSCodes": "1",
-				"Repeater": false,
-				"Lights": "3",
 				"Manual": false,
-				"RouteName": "",
-				"Switches": ""
+				"Lights": "3",
+				"Repeater": false,
+				"Switches": "",
+				"RouteName": ""
 			}
 		],
 		"NonAutoStop": false,
@@ -604,14 +604,14 @@
 	"21": {
 		"Approve0": false,
 		"RouteNumberSetup": "12",
-		"LensesStr": "WY-RW",
+		"LensesStr": "BW-RW",
 		"RouteNumber": "",
 		"TwoToSix": false,
 		"Class": "gmod_track_signal",
 		"IsolateSwitches": [],
 		"SignalType": 0,
 		"PassOcc": false,
-		"Name": "OL3",
+		"Name": "OL1",
 		"ARSOnly": false,
 		"Angles": "{0 306 0}",
 		"Pos": "[7547.7651 -5398.8115 -1532.7947]",
@@ -621,7 +621,6 @@
 				"NextSignal": "",
 				"ARSCodes": "0",
 				"Repeater": false,
-				"EnRou": false,
 				"Lights": "3",
 				"Switches": "",
 				"RouteName": "",
@@ -684,28 +683,8 @@
 				"Manual": true,
 				"Repeater": false,
 				"Lights": "2-13",
-				"Switches": "D2+,D4+,D6+,D8-,D5-,D7+,D9+,D11-",
-				"RouteName": "D1-OK4"
-			},
-			{
-				"Emer": false,
-				"NextSignal": "E2M",
-				"ARSCodes": "1",
-				"Repeater": false,
-				"Lights": "2-13",
-				"Manual": true,
-				"Switches": "D2+,D4+,D6+,D8-,D5-,D7+,D9-,D14+",
-				"RouteName": "D2-OK4"
-			},
-			{
-				"Emer": false,
-				"NextSignal": "E2M",
-				"ARSCodes": "1",
-				"Repeater": false,
-				"Lights": "2-13",
-				"Manual": true,
-				"Switches": "D2+,D4+,D6+,D8-,D5-,D7+,D9-,D14-",
-				"RouteName": "D3-OK4"
+				"RouteName": "D1-OK4",
+				"Switches": "D2+,D4+,D6+,D8-,D5-,D7+,D9+,D11-"
 			},
 			{
 				"Emer": false,
@@ -714,8 +693,18 @@
 				"Manual": true,
 				"Lights": "2-13",
 				"Repeater": false,
-				"Switches": "D2+,D4+,D6+,D8-,D5-,D7-,D12-",
-				"RouteName": "D4-OK4"
+				"RouteName": "D2-OK4",
+				"Switches": "D2+,D4+,D6+,D8-,D5-,D7+,D9-,D14+"
+			},
+			{
+				"Emer": false,
+				"NextSignal": "E2M",
+				"ARSCodes": "1",
+				"Manual": true,
+				"Lights": "2-13",
+				"Repeater": false,
+				"RouteName": "D3-OK4",
+				"Switches": "D2+,D4+,D6+,D8-,D5-,D7+,D9-,D14-"
 			},
 			{
 				"Emer": false,
@@ -724,8 +713,18 @@
 				"Repeater": false,
 				"Lights": "2-13",
 				"Manual": true,
-				"Switches": "D2+,D4+,D6+,D8-,D5-,D7-,D12+",
-				"RouteName": "D5-OK4"
+				"RouteName": "D4-OK4",
+				"Switches": "D2+,D4+,D6+,D8-,D5-,D7-,D12-"
+			},
+			{
+				"Emer": false,
+				"NextSignal": "E2M",
+				"ARSCodes": "1",
+				"Manual": true,
+				"Lights": "2-13",
+				"Repeater": false,
+				"RouteName": "D5-OK4",
+				"Switches": "D2+,D4+,D6+,D8-,D5-,D7-,D12+"
 			}
 		],
 		"NonAutoStop": true,
@@ -753,21 +752,11 @@
 				"Emer": false,
 				"NextSignal": "",
 				"ARSCodes": "1",
-				"Manual": false,
+				"Repeater": false,
 				"Lights": "2",
-				"RouteName": "",
 				"Switches": "",
-				"Repeater": false
-			},
-			{
-				"Emer": false,
-				"NextSignal": "E2M",
-				"ARSCodes": "1",
-				"Repeater": false,
-				"Lights": "2-13",
-				"Manual": true,
-				"Switches": "D2+,D4+,D6-,D3-,D16-,D17+,D18-",
-				"RouteName": "D11-OK4"
+				"RouteName": "",
+				"Manual": false
 			},
 			{
 				"Emer": false,
@@ -776,38 +765,48 @@
 				"Manual": true,
 				"Lights": "2-13",
 				"Repeater": false,
-				"Switches": "D2+,D4+,D6-,D3-,D16-,D17+,D18+",
-				"RouteName": "D12-OK4"
+				"RouteName": "D11-OK4",
+				"Switches": "D2+,D4+,D6-,D3-,D16-,D17+,D18-"
 			},
 			{
 				"Emer": false,
 				"NextSignal": "E2M",
 				"ARSCodes": "1",
-				"Manual": true,
-				"Lights": "2-13",
 				"Repeater": false,
-				"Switches": "D2+,D4+,D6-,D3-,D16-,D17-,D19-,D20-",
-				"RouteName": "D13-OK4"
+				"Lights": "2-13",
+				"Manual": true,
+				"RouteName": "D12-OK4",
+				"Switches": "D2+,D4+,D6-,D3-,D16-,D17+,D18+"
 			},
 			{
 				"Emer": false,
 				"NextSignal": "E2M",
 				"ARSCodes": "1",
-				"Manual": true,
-				"Lights": "2-13",
 				"Repeater": false,
-				"Switches": "D2+,D4+,D6-,D3-,D16-,D17-,D19-,D20+",
-				"RouteName": "D14-OK4"
+				"Lights": "2-13",
+				"Manual": true,
+				"RouteName": "D13-OK4",
+				"Switches": "D2+,D4+,D6-,D3-,D16-,D17-,D19-,D20-"
 			},
 			{
 				"Emer": false,
 				"NextSignal": "E2M",
 				"ARSCodes": "1",
-				"Manual": true,
-				"Lights": "2-13",
 				"Repeater": false,
-				"Switches": "D2+,D4+,D6-,D3-,D16-,D17-,D19+",
-				"RouteName": "D15-OK4"
+				"Lights": "2-13",
+				"Manual": true,
+				"RouteName": "D14-OK4",
+				"Switches": "D2+,D4+,D6-,D3-,D16-,D17-,D19-,D20+"
+			},
+			{
+				"Emer": false,
+				"NextSignal": "E2M",
+				"ARSCodes": "1",
+				"Repeater": false,
+				"Lights": "2-13",
+				"Manual": true,
+				"RouteName": "D15-OK4",
+				"Switches": "D2+,D4+,D6-,D3-,D16-,D17-,D19+"
 			}
 		],
 		"NonAutoStop": true,
@@ -833,11 +832,11 @@
 				"Emer": false,
 				"NextSignal": "PTS",
 				"ARSCodes": "1",
-				"Repeater": false,
+				"Manual": false,
 				"Lights": "2-1",
-				"Switches": "",
 				"RouteName": "",
-				"Manual": false
+				"Switches": "",
+				"Repeater": false
 			}
 		],
 		"NonAutoStop": true,
@@ -863,21 +862,11 @@
 				"Emer": false,
 				"NextSignal": "",
 				"ARSCodes": "1",
-				"Manual": false,
+				"Repeater": false,
 				"Lights": "2",
-				"Switches": "",
 				"RouteName": "",
-				"Repeater": false
-			},
-			{
-				"Emer": false,
-				"NextSignal": "PA",
-				"ARSCodes": "1",
-				"Manual": true,
-				"Lights": "2-1",
-				"Switches": "D1-,D2-,D4+,D6+,D8-,D5-,D7+,D9+,D11-",
-				"RouteName": "A1-D1",
-				"Repeater": false
+				"Switches": "",
+				"Manual": false
 			},
 			{
 				"Emer": false,
@@ -885,8 +874,8 @@
 				"ARSCodes": "1",
 				"Repeater": false,
 				"Lights": "2-1",
-				"Switches": "D1-,D2-,D4+,D6+,D8-,D5-,D7+,D9-,D14+",
-				"RouteName": "A1-D2",
+				"RouteName": "A1-D1",
+				"Switches": "D1-,D2-,D4+,D6+,D8-,D5-,D7+,D9+,D11-",
 				"Manual": true
 			},
 			{
@@ -895,29 +884,39 @@
 				"ARSCodes": "1",
 				"Manual": true,
 				"Lights": "2-1",
-				"Switches": "D1-,D2-,D4+,D6+,D8-,D5-,D7+,D9-,D14-",
+				"RouteName": "A1-D2",
+				"Switches": "D1-,D2-,D4+,D6+,D8-,D5-,D7+,D9-,D14+",
+				"Repeater": false
+			},
+			{
+				"Emer": false,
+				"NextSignal": "PA",
+				"ARSCodes": "1",
+				"Repeater": false,
+				"Lights": "2-1",
 				"RouteName": "A1-D3",
-				"Repeater": false
+				"Switches": "D1-,D2-,D4+,D6+,D8-,D5-,D7+,D9-,D14-",
+				"Manual": true
 			},
 			{
 				"Emer": false,
 				"NextSignal": "PA",
 				"ARSCodes": "1",
-				"Manual": true,
+				"Repeater": false,
 				"Lights": "2-1",
-				"Switches": "D1-,D2-,D4+,D6+,D8-,D5-,D7-,D12-",
 				"RouteName": "A1-D4",
-				"Repeater": false
+				"Switches": "D1-,D2-,D4+,D6+,D8-,D5-,D7-,D12-",
+				"Manual": true
 			},
 			{
 				"Emer": false,
 				"NextSignal": "PA",
 				"ARSCodes": "1",
-				"Manual": true,
+				"Repeater": false,
 				"Lights": "2-1",
-				"Switches": "D1-,D2-,D4+,D6+,D8-,D5-,D7-,D12+",
 				"RouteName": "A1-D5",
-				"Repeater": false
+				"Switches": "D1-,D2-,D4+,D6+,D8-,D5-,D7-,D12+",
+				"Manual": true
 			}
 		],
 		"NonAutoStop": true,
@@ -943,61 +942,61 @@
 				"Emer": false,
 				"NextSignal": "",
 				"ARSCodes": "1",
-				"Manual": false,
+				"Repeater": false,
 				"Lights": "2",
-				"Switches": "",
 				"RouteName": "",
-				"Repeater": false
+				"Switches": "",
+				"Manual": false
 			},
 			{
 				"Emer": false,
 				"NextSignal": "PB",
 				"ARSCodes": "1",
-				"Manual": true,
+				"Repeater": false,
 				"Lights": "2-1",
-				"Switches": "D1-,D2-,D4+,D6+,D8+,D10+,D13-,D15+",
 				"RouteName": "A1-D6",
-				"Repeater": false
+				"Switches": "D1-,D2-,D4+,D6+,D8+,D10+,D13-,D15+",
+				"Manual": true
 			},
 			{
 				"Emer": false,
 				"NextSignal": "PB",
 				"ARSCodes": "1",
-				"Manual": true,
+				"Repeater": false,
 				"Lights": "2-1",
-				"Switches": "D1-,D2-,D4+,D6+,D8+,D10+,D13-,D15-",
 				"RouteName": "A1-D7",
-				"Repeater": false
+				"Switches": "D1-,D2-,D4+,D6+,D8+,D10+,D13-,D15-",
+				"Manual": true
 			},
 			{
 				"Emer": false,
 				"NextSignal": "PB",
 				"ARSCodes": "1",
-				"Manual": true,
+				"Repeater": false,
 				"Lights": "2-1",
-				"Switches": "D1-,D2-,D4+,D6+,D8+,D10+,D13+,D14-",
 				"RouteName": "A1-D8",
-				"Repeater": false
+				"Switches": "D1-,D2-,D4+,D6+,D8+,D10+,D13+,D14-",
+				"Manual": true
 			},
 			{
 				"Emer": false,
 				"NextSignal": "PB",
 				"ARSCodes": "1",
-				"Manual": true,
+				"Repeater": false,
 				"Lights": "2-1",
-				"Switches": "D1-,D2-,D4+,D6+,D8+,D10+,D13+,D14+",
 				"RouteName": "A1-D9",
-				"Repeater": false
+				"Switches": "D1-,D2-,D4+,D6+,D8+,D10+,D13+,D14+",
+				"Manual": true
 			},
 			{
 				"Emer": false,
 				"NextSignal": "PB",
 				"ARSCodes": "1",
-				"Manual": true,
+				"Repeater": false,
 				"Lights": "2-1",
-				"Switches": "D1-,D2-,D4+,D6+,D8+,D10-",
 				"RouteName": "A1-D10",
-				"Repeater": false
+				"Switches": "D1-,D2-,D4+,D6+,D8+,D10-",
+				"Manual": true
 			}
 		],
 		"NonAutoStop": true,
@@ -1023,40 +1022,50 @@
 				"Emer": false,
 				"NextSignal": "",
 				"ARSCodes": "1",
-				"Manual": false,
+				"Repeater": false,
 				"Lights": "2",
-				"Switches": "",
 				"RouteName": "",
-				"Repeater": false
+				"Switches": "",
+				"Manual": false
 			},
 			{
 				"Emer": false,
 				"NextSignal": "PV",
 				"ARSCodes": "1",
-				"Manual": true,
+				"Repeater": false,
 				"Lights": "2-1",
-				"Switches": "D1+,D3+,D16-,D17+,D18-",
 				"RouteName": "A1-D11",
-				"Repeater": false
+				"Switches": "D1+,D3+,D16-,D17+,D18-",
+				"Manual": true
 			},
 			{
 				"Emer": false,
 				"NextSignal": "PV",
 				"ARSCodes": "1",
-				"Manual": true,
+				"Repeater": false,
 				"Lights": "2-1",
-				"Switches": "D1+,D3+,D16-,D17+,D18+",
 				"RouteName": "A1-D12",
-				"Repeater": false
+				"Switches": "D1+,D3+,D16-,D17+,D18+",
+				"Manual": true
 			},
 			{
 				"Emer": false,
 				"NextSignal": "PV",
 				"ARSCodes": "1",
+				"Manual": true,
+				"Lights": "2-1",
+				"RouteName": "A1-D13",
+				"Switches": "D1+,D3+,D16-,D17-,D19-,D20-",
+				"Repeater": false
+			},
+			{
+				"Emer": false,
+				"NextSignal": "PB",
+				"ARSCodes": "1",
 				"Repeater": false,
 				"Lights": "2-1",
-				"Switches": "D1+,D3+,D16-,D17-,D19-,D20-",
-				"RouteName": "A1-D13",
+				"RouteName": "A1-D14",
+				"Switches": "D1+,D3+,D16-,D17-,D19-,D20+",
 				"Manual": true
 			},
 			{
@@ -1065,19 +1074,9 @@
 				"ARSCodes": "1",
 				"Manual": true,
 				"Lights": "2-1",
-				"Switches": "D1+,D3+,D16-,D17-,D19-,D20+",
-				"RouteName": "A1-D14",
-				"Repeater": false
-			},
-			{
-				"Emer": false,
-				"NextSignal": "PB",
-				"ARSCodes": "1",
-				"Repeater": false,
-				"Lights": "2-1",
-				"Switches": "D1+,D3+,D16-,D17-,D19+",
 				"RouteName": "A1-D15",
-				"Manual": true
+				"Switches": "D1+,D3+,D16-,D17-,D19+",
+				"Repeater": false
 			}
 		],
 		"NonAutoStop": true,
@@ -1349,17 +1348,734 @@
 				"Emer": false,
 				"NextSignal": "",
 				"ARSCodes": "1",
-				"Repeater": false,
+				"Manual": false,
 				"Lights": "2",
-				"Switches": "",
 				"RouteName": "",
-				"Manual": false
+				"Switches": "",
+				"Repeater": false
 			}
 		],
 		"NonAutoStop": true,
 		"Left": false
 	},
 	"37": {
+		"Approve0": false,
+		"RouteNumberSetup": "",
+		"LensesStr": "WR-W",
+		"RouteNumber": "",
+		"TwoToSix": false,
+		"Class": "gmod_track_signal",
+		"IsolateSwitches": [],
+		"SignalType": 1,
+		"PassOcc": false,
+		"Double": false,
+		"Name": "I",
+		"ARSOnly": false,
+		"Angles": "{0 90 0}",
+		"Pos": "[-5970.0181 -1171.4597 193.4154]",
+		"Routes": [
+			{
+				"Emer": false,
+				"NextSignal": "",
+				"ARSCodes": "1",
+				"Manual": false,
+				"Lights": "2",
+				"RouteName": "",
+				"Switches": "",
+				"Repeater": false
+			}
+		],
+		"NonAutoStop": true,
+		"Left": false
+	},
+	"38": {
+		"RouteNumberSetup": "",
+		"LensesStr": "",
+		"Class": "gmod_track_signal",
+		"IsolateSwitches": {
+			"HideDTM": false,
+			"FrontArsName": "3",
+			"SlowBlinking": false
+		},
+		"SignalType": 0,
+		"Name": "MD3T",
+		"ARSOnly": true,
+		"Angles": "{-0 224.9999 0}",
+		"Pos": "[-8570.4375 10353.6387 1742.0844]",
+		"Routes": [
+			{
+				"NextSignal": "*"
+			}
+		],
+		"Left": true
+	},
+	"39": {
+		"RouteNumberSetup": "",
+		"LensesStr": "",
+		"Class": "gmod_track_signal",
+		"IsolateSwitches": {
+			"HideDTM": false,
+			"FrontArsName": "4",
+			"SlowBlinking": false
+		},
+		"SignalType": 0,
+		"Name": "MD4T",
+		"ARSOnly": true,
+		"Angles": "{-0 224.9999 0}",
+		"Pos": "[-8373.7529 10530.542 1742.0844]",
+		"Routes": [
+			{
+				"NextSignal": "*"
+			}
+		],
+		"Left": false
+	},
+	"40": {
+		"RouteNumberSetup": "",
+		"LensesStr": "",
+		"Class": "gmod_track_signal",
+		"IsolateSwitches": {
+			"FrontArsName": "5",
+			"HideDTM": false,
+			"SlowBlinking": false
+		},
+		"SignalType": 0,
+		"Name": "TCMD5N",
+		"ARSOnly": true,
+		"Angles": "{0 33 0}",
+		"Pos": "[-1119.9404 2683.689 1742.1583]",
+		"Routes": [
+			{
+				"NextSignal": "*"
+			}
+		],
+		"Left": true
+	},
+	"41": {
+		"RouteNumberSetup": "",
+		"LensesStr": "",
+		"Class": "gmod_track_signal",
+		"IsolateSwitches": {
+			"HideDTM": true,
+			"FrontArsName": "211",
+			"SlowBlinking": false
+		},
+		"SignalType": 0,
+		"Name": "TC211/",
+		"ARSOnly": true,
+		"Angles": "{0 213 0}",
+		"Pos": "[-1119.8831 2683.6006 1742.1583]",
+		"Routes": [
+			{
+				"NextSignal": "*"
+			}
+		],
+		"Left": false
+	},
+	"42": {
+		"RouteNumberSetup": "",
+		"LensesStr": "",
+		"Class": "gmod_track_signal",
+		"IsolateSwitches": {
+			"HideDTM": true,
+			"FrontArsName": "238S",
+			"SlowBlinking": false
+		},
+		"SignalType": 0,
+		"Name": "TC238S/",
+		"ARSOnly": true,
+		"Angles": "{0 237 0}",
+		"Pos": "[-728.2886 3099.9512 1742.0844]",
+		"Routes": [
+			{
+				"NextSignal": "*"
+			}
+		],
+		"Left": true
+	},
+	"43": {
+		"RouteNumberSetup": "",
+		"LensesStr": "",
+		"Class": "gmod_track_signal",
+		"IsolateSwitches": {
+			"HideDTM": false,
+			"FrontArsName": "6",
+			"SlowBlinking": false
+		},
+		"SignalType": 0,
+		"Name": "TCMD6N",
+		"ARSOnly": true,
+		"Angles": "{-0 57 0}",
+		"Pos": "[-728.0984 3099.8276 1742.0844]",
+		"Routes": [
+			{
+				"NextSignal": "*"
+			}
+		],
+		"Left": false
+	},
+	"44": {
+		"RouteNumberSetup": "",
+		"LensesStr": "",
+		"Class": "gmod_track_signal",
+		"IsolateSwitches": {
+			"FrontArsName": "5",
+			"HideDTM": true,
+			"SlowBlinking": false
+		},
+		"SignalType": 0,
+		"Name": "TCMD5CH",
+		"ARSOnly": true,
+		"Angles": "{-0 225 0}",
+		"Pos": "[-2868.0425 4650.8438 1742.0844]",
+		"Routes": [
+			{
+				"NextSignal": "*"
+			}
+		],
+		"Left": true
+	},
+	"45": {
+		"Approve0": false,
+		"RouteNumberSetup": "12",
+		"LensesStr": "BW-RW",
+		"RouteNumber": "",
+		"TwoToSix": false,
+		"Class": "gmod_track_signal",
+		"IsolateSwitches": {
+			"FrontArsName": "4",
+			"HideDTM": true,
+			"SlowBlinking": true
+		},
+		"SignalType": 0,
+		"PassOcc": false,
+		"Name": "MD2",
+		"ARSOnly": false,
+		"Angles": "{0 45 0}",
+		"Pos": "[-2632.0757 4788.8086 1742.0844]",
+		"Routes": [
+			{
+				"Emer": false,
+				"NextSignal": "",
+				"ARSCodes": "1",
+				"Manual": false,
+				"Lights": "3",
+				"Repeater": false,
+				"Switches": "",
+				"RouteName": ""
+			}
+		],
+		"NonAutoStop": false,
+		"Left": false
+	},
+	"46": {
+		"RouteNumberSetup": "",
+		"LensesStr": "",
+		"Class": "gmod_track_signal",
+		"IsolateSwitches": {
+			"FrontArsName": "6",
+			"HideDTM": false,
+			"SlowBlinking": false
+		},
+		"SignalType": 0,
+		"Name": "TCMD6CH",
+		"ARSOnly": true,
+		"Angles": "{-0 225 0}",
+		"Pos": "[-2680.0527 4836.7856 1742.0844]",
+		"Routes": [
+			{
+				"NextSignal": "*"
+			}
+		],
+		"Left": false
+	},
+	"47": {
+		"RouteNumberSetup": "",
+		"LensesStr": "",
+		"Class": "gmod_track_signal",
+		"IsolateSwitches": {
+			"HideDTM": true,
+			"SlowBlinking": false
+		},
+		"SignalType": 0,
+		"Name": "TCMD5REP",
+		"ARSOnly": true,
+		"Angles": "{-0 32.9999 0}",
+		"Pos": "[-857.1956 2278.7944 1742.5564]",
+		"Routes": [
+			{
+				"Manual": false,
+				"Emer": false,
+				"Repeater": true,
+				"NextSignal": "217"
+			}
+		],
+		"Left": true
+	},
+	"48": {
+		"RouteNumberSetup": "",
+		"LensesStr": "",
+		"Class": "gmod_track_signal",
+		"IsolateSwitches": {
+			"HideDTM": true,
+			"SlowBlinking": false
+		},
+		"SignalType": 0,
+		"Name": "TCMD6REP",
+		"ARSOnly": true,
+		"Angles": "{0 56.9999 0}",
+		"Pos": "[-302.7404 2823.7578 1742.0844]",
+		"Routes": [
+			{
+				"Manual": false,
+				"Emer": false,
+				"Repeater": true,
+				"NextSignal": "TC238SN"
+			}
+		],
+		"Left": false
+	},
+	"49": {
+		"RouteNumberSetup": "",
+		"LensesStr": "WR",
+		"Class": "gmod_track_signal",
+		"IsolateSwitches": {
+			"HideDTM": false,
+			"SlowBlinking": false
+		},
+		"SignalType": 3,
+		"Name": "D6",
+		"ARSOnly": false,
+		"Angles": "{0 273.6135 0}",
+		"Pos": "[3894.6877 160.4554 193.2138]",
+		"Routes": [
+			{
+				"Manual": false,
+				"Repeater": true,
+				"Emer": false,
+				"Lights": "2",
+				"NextSignal": ""
+			}
+		],
+		"NonAutoStop": true,
+		"Left": false
+	},
+	"50": {
+		"RouteNumberSetup": "",
+		"LensesStr": "WR",
+		"Class": "gmod_track_signal",
+		"IsolateSwitches": {
+			"HideDTM": false,
+			"SlowBlinking": false
+		},
+		"SignalType": 3,
+		"Name": "D7",
+		"ARSOnly": false,
+		"Angles": "{-0 270 0}",
+		"Pos": "[3907 -109.3458 193.3304]",
+		"Routes": [
+			{
+				"Manual": false,
+				"Repeater": true,
+				"Emer": false,
+				"Lights": "2",
+				"NextSignal": ""
+			}
+		],
+		"NonAutoStop": true,
+		"Left": false
+	},
+	"51": {
+		"RouteNumberSetup": "",
+		"LensesStr": "WR",
+		"Class": "gmod_track_signal",
+		"IsolateSwitches": {
+			"HideDTM": false,
+			"SlowBlinking": false
+		},
+		"SignalType": 3,
+		"Name": "D8",
+		"ARSOnly": false,
+		"Angles": "{-0 270 0}",
+		"Pos": "[3907 -380.1703 193.1114]",
+		"Routes": [
+			{
+				"Manual": false,
+				"Repeater": true,
+				"Emer": false,
+				"Lights": "2",
+				"NextSignal": ""
+			}
+		],
+		"NonAutoStop": true,
+		"Left": false
+	},
+	"52": {
+		"RouteNumberSetup": "",
+		"LensesStr": "WR",
+		"Class": "gmod_track_signal",
+		"IsolateSwitches": {
+			"HideDTM": false,
+			"SlowBlinking": false
+		},
+		"SignalType": 3,
+		"Name": "D9",
+		"ARSOnly": false,
+		"Angles": "{0 270 0}",
+		"Pos": "[3907 -643.9938 193.3304]",
+		"Routes": [
+			{
+				"Manual": false,
+				"Repeater": true,
+				"Emer": false,
+				"Lights": "2",
+				"NextSignal": ""
+			}
+		],
+		"NonAutoStop": true,
+		"Left": false
+	},
+	"53": {
+		"RouteNumberSetup": "",
+		"LensesStr": "WR",
+		"Class": "gmod_track_signal",
+		"IsolateSwitches": {
+			"HideDTM": false,
+			"SlowBlinking": false
+		},
+		"SignalType": 3,
+		"Name": "D10",
+		"ARSOnly": false,
+		"Angles": "{0 270 0}",
+		"Pos": "[3907 -908.9938 193.3594]",
+		"Routes": [
+			{
+				"Manual": false,
+				"Repeater": true,
+				"Emer": false,
+				"Lights": "2",
+				"NextSignal": ""
+			}
+		],
+		"NonAutoStop": true,
+		"Left": false
+	},
+	"54": {
+		"RouteNumberSetup": "",
+		"LensesStr": "WR",
+		"Class": "gmod_track_signal",
+		"IsolateSwitches": {
+			"SlowBlinking": false,
+			"HideDTM": false
+		},
+		"SignalType": 3,
+		"Name": "D11",
+		"ARSOnly": false,
+		"Angles": "{-0 270 0}",
+		"Pos": "[3907 -1403.0062 193.1784]",
+		"Routes": [
+			{
+				"Repeater": true,
+				"Manual": false,
+				"Emer": false,
+				"Lights": "2",
+				"NextSignal": ""
+			}
+		],
+		"NonAutoStop": true,
+		"Left": false
+	},
+	"55": {
+		"RouteNumberSetup": "",
+		"LensesStr": "WR",
+		"Class": "gmod_track_signal",
+		"IsolateSwitches": {
+			"SlowBlinking": false,
+			"HideDTM": false
+		},
+		"SignalType": 3,
+		"Name": "D12",
+		"ARSOnly": false,
+		"Angles": "{-0 270 0}",
+		"Pos": "[3907 -1665.9938 193.1784]",
+		"Routes": [
+			{
+				"Repeater": true,
+				"Manual": false,
+				"Emer": false,
+				"Lights": "2",
+				"NextSignal": ""
+			}
+		],
+		"NonAutoStop": true,
+		"Left": false
+	},
+	"56": {
+		"RouteNumberSetup": "",
+		"LensesStr": "WR",
+		"Class": "gmod_track_signal",
+		"IsolateSwitches": {
+			"SlowBlinking": false,
+			"HideDTM": false
+		},
+		"SignalType": 3,
+		"Name": "D13",
+		"ARSOnly": false,
+		"Angles": "{-0 270 0}",
+		"Pos": "[3907 -1928.9814 193.0667]",
+		"Routes": [
+			{
+				"Repeater": true,
+				"Manual": false,
+				"Emer": false,
+				"Lights": "2",
+				"NextSignal": ""
+			}
+		],
+		"NonAutoStop": true,
+		"Left": false
+	},
+	"57": {
+		"RouteNumberSetup": "",
+		"LensesStr": "WR",
+		"Class": "gmod_track_signal",
+		"IsolateSwitches": {
+			"SlowBlinking": false,
+			"HideDTM": false
+		},
+		"SignalType": 3,
+		"Name": "D14",
+		"ARSOnly": false,
+		"Angles": "{-0 270 0}",
+		"Pos": "[3907 -2195.0193 193.3304]",
+		"Routes": [
+			{
+				"Repeater": true,
+				"Manual": false,
+				"Emer": false,
+				"Lights": "2",
+				"NextSignal": ""
+			}
+		],
+		"NonAutoStop": true,
+		"Left": false
+	},
+	"58": {
+		"RouteNumberSetup": "",
+		"LensesStr": "WR",
+		"Class": "gmod_track_signal",
+		"IsolateSwitches": {
+			"SlowBlinking": false,
+			"HideDTM": false
+		},
+		"SignalType": 3,
+		"Name": "D15",
+		"ARSOnly": false,
+		"Angles": "{0 270 0}",
+		"Pos": "[3907 -2459.8862 193.3305]",
+		"Routes": [
+			{
+				"Repeater": true,
+				"Manual": false,
+				"Emer": false,
+				"Lights": "2",
+				"NextSignal": ""
+			}
+		],
+		"NonAutoStop": true,
+		"Left": false
+	},
+	"59": {
+		"RouteNumberSetup": "",
+		"LensesStr": "WR",
+		"Class": "gmod_track_signal",
+		"IsolateSwitches": {
+			"SlowBlinking": false,
+			"HideDTM": false
+		},
+		"SignalType": 3,
+		"Name": "D16",
+		"ARSOnly": false,
+		"Angles": "{0 270 0}",
+		"Pos": "[3907 -3008.0063 193.3304]",
+		"Routes": [
+			{
+				"Repeater": true,
+				"Manual": false,
+				"Emer": false,
+				"Lights": "2",
+				"NextSignal": ""
+			}
+		],
+		"NonAutoStop": true,
+		"Left": false
+	},
+	"60": {
+		"RouteNumberSetup": "",
+		"LensesStr": "WR",
+		"Class": "gmod_track_signal",
+		"IsolateSwitches": {
+			"HideDTM": false,
+			"SlowBlinking": false
+		},
+		"SignalType": 3,
+		"Name": "D1",
+		"ARSOnly": false,
+		"Angles": "{0.3189 269.9994 0}",
+		"Pos": "[2929 1961.2222 193.1685]",
+		"Routes": [
+			{
+				"Manual": false,
+				"Repeater": true,
+				"Emer": false,
+				"Lights": "2",
+				"NextSignal": ""
+			}
+		],
+		"NonAutoStop": true,
+		"Left": false
+	},
+	"61": {
+		"RouteNumberSetup": "",
+		"LensesStr": "WR",
+		"Class": "gmod_track_signal",
+		"IsolateSwitches": {
+			"HideDTM": false,
+			"SlowBlinking": false
+		},
+		"SignalType": 3,
+		"Name": "D2",
+		"ARSOnly": false,
+		"Angles": "{0.3189 269.9994 0}",
+		"Pos": "[2929 1694.6196 193.4845]",
+		"Routes": [
+			{
+				"Manual": false,
+				"Repeater": true,
+				"Emer": false,
+				"Lights": "2",
+				"NextSignal": ""
+			}
+		],
+		"NonAutoStop": true,
+		"Left": false
+	},
+	"62": {
+		"RouteNumberSetup": "",
+		"LensesStr": "WR",
+		"Class": "gmod_track_signal",
+		"IsolateSwitches": {
+			"HideDTM": false,
+			"SlowBlinking": false
+		},
+		"SignalType": 3,
+		"Name": "D3",
+		"ARSOnly": false,
+		"Angles": "{0 270 0}",
+		"Pos": "[2929 1427.6763 193.3304]",
+		"Routes": [
+			{
+				"Manual": false,
+				"Repeater": true,
+				"Emer": false,
+				"Lights": "2",
+				"NextSignal": ""
+			}
+		],
+		"NonAutoStop": true,
+		"Left": false
+	},
+	"63": {
+		"RouteNumberSetup": "",
+		"LensesStr": "WR",
+		"Class": "gmod_track_signal",
+		"IsolateSwitches": {
+			"HideDTM": false,
+			"SlowBlinking": false
+		},
+		"SignalType": 3,
+		"Name": "D4",
+		"ARSOnly": false,
+		"Angles": "{359.9208 270 0}",
+		"Pos": "[2929 1159.8599 192.7514]",
+		"Routes": [
+			{
+				"Manual": false,
+				"Repeater": true,
+				"Emer": false,
+				"Lights": "2",
+				"NextSignal": ""
+			}
+		],
+		"NonAutoStop": true,
+		"Left": false
+	},
+	"64": {
+		"RouteNumberSetup": "",
+		"LensesStr": "WR",
+		"Class": "gmod_track_signal",
+		"IsolateSwitches": {
+			"HideDTM": false,
+			"SlowBlinking": false
+		},
+		"SignalType": 3,
+		"Name": "D5",
+		"ARSOnly": false,
+		"Angles": "{0 270 0}",
+		"Pos": "[2929 896.0063 193.3304]",
+		"Routes": [
+			{
+				"Manual": false,
+				"Repeater": true,
+				"Emer": false,
+				"Lights": "2",
+				"NextSignal": ""
+			}
+		],
+		"NonAutoStop": true,
+		"Left": false
+	},
+	"65": {
+		"LensesStr": "",
+		"Class": "gmod_track_signal",
+		"IsolateSwitches": {
+			"SlowBlinking": true,
+			"FrontArsName": "263SA"
+		},
+		"SignalType": 0,
+		"Name": "TC263SA/",
+		"ARSOnly": true,
+		"Angles": "{0 347.5 0}",
+		"Pos": "[14069.1152 -6005.5508 2867.6243]",
+		"Routes": [
+			{
+				"NextSignal": "*",
+				"ARSCodes": "1"
+			}
+		]
+	},
+	"66": {
+		"LensesStr": "",
+		"Class": "gmod_track_signal",
+		"IsolateSwitches": {
+			"HideDTM": true,
+			"FrontArsName": "516",
+			"SlowBlinking": true
+		},
+		"SignalType": 0,
+		"Name": "TC516/",
+		"ARSOnly": true,
+		"Angles": "{0 167.5 0}",
+		"Pos": "[14069.0957 -6005.6406 2867.6243]",
+		"Routes": [
+			{
+				"NextSignal": "*",
+				"ARSCodes": "1"
+			}
+		],
+		"Left": true
+	},
+	"67": {
 		"LensesStr": "",
 		"Class": "gmod_track_signal",
 		"IsolateSwitches": {
@@ -1377,7 +2093,7 @@
 			}
 		]
 	},
-	"38": {
+	"68": {
 		"LensesStr": "YY-GR",
 		"Class": "gmod_track_signal",
 		"IsolateSwitches": {
@@ -1401,7 +2117,7 @@
 		"NonAutoStop": false,
 		"Left": true
 	},
-	"39": {
+	"69": {
 		"LensesStr": "",
 		"Class": "gmod_track_signal",
 		"IsolateSwitches": {
@@ -1419,7 +2135,7 @@
 			}
 		]
 	},
-	"40": {
+	"70": {
 		"LensesStr": "YY-GR",
 		"Class": "gmod_track_signal",
 		"IsolateSwitches": {
@@ -1443,7 +2159,7 @@
 		"NonAutoStop": false,
 		"Left": true
 	},
-	"41": {
+	"71": {
 		"LensesStr": "YY-GR",
 		"Class": "gmod_track_signal",
 		"IsolateSwitches": {
@@ -1467,7 +2183,7 @@
 		"NonAutoStop": false,
 		"Left": true
 	},
-	"42": {
+	"72": {
 		"LensesStr": "YY-GR",
 		"Class": "gmod_track_signal",
 		"IsolateSwitches": {
@@ -1491,7 +2207,7 @@
 		"NonAutoStop": false,
 		"Left": true
 	},
-	"43": {
+	"73": {
 		"LensesStr": "YY-GR-W",
 		"Class": "gmod_track_signal",
 		"IsolateSwitches": {
@@ -1515,7 +2231,7 @@
 		"NonAutoStop": true,
 		"Left": true
 	},
-	"44": {
+	"74": {
 		"LensesStr": "BYY-GR-W",
 		"Class": "gmod_track_signal",
 		"IsolateSwitches": {
@@ -1539,7 +2255,7 @@
 		"NonAutoStop": false,
 		"Left": false
 	},
-	"45": {
+	"75": {
 		"LensesStr": "YY-GR-W",
 		"Class": "gmod_track_signal",
 		"IsolateSwitches": {
@@ -1563,7 +2279,7 @@
 		"NonAutoStop": false,
 		"Left": true
 	},
-	"46": {
+	"76": {
 		"LensesStr": "YY-GR",
 		"Class": "gmod_track_signal",
 		"IsolateSwitches": {
@@ -1587,7 +2303,7 @@
 		"NonAutoStop": false,
 		"Left": false
 	},
-	"47": {
+	"77": {
 		"LensesStr": "YY-GR",
 		"Class": "gmod_track_signal",
 		"IsolateSwitches": {
@@ -1611,7 +2327,7 @@
 		"NonAutoStop": false,
 		"Left": true
 	},
-	"48": {
+	"78": {
 		"LensesStr": "YY-GR-W",
 		"Class": "gmod_track_signal",
 		"IsolateSwitches": {
@@ -1635,7 +2351,7 @@
 		"NonAutoStop": false,
 		"Left": true
 	},
-	"49": {
+	"79": {
 		"LensesStr": "YY-GR",
 		"Class": "gmod_track_signal",
 		"IsolateSwitches": {
@@ -1659,7 +2375,7 @@
 		"NonAutoStop": false,
 		"Left": true
 	},
-	"50": {
+	"80": {
 		"LensesStr": "YY-GR",
 		"Class": "gmod_track_signal",
 		"IsolateSwitches": {
@@ -1683,7 +2399,7 @@
 		"NonAutoStop": false,
 		"Left": true
 	},
-	"51": {
+	"81": {
 		"LensesStr": "YY-GR",
 		"Class": "gmod_track_signal",
 		"IsolateSwitches": {
@@ -1707,7 +2423,7 @@
 		"NonAutoStop": false,
 		"Left": true
 	},
-	"52": {
+	"82": {
 		"RouteNumberSetup": "134",
 		"LensesStr": "BW-RW",
 		"Class": "gmod_track_signal",
@@ -1730,7 +2446,7 @@
 		"NonAutoStop": true,
 		"Left": true
 	},
-	"53": {
+	"83": {
 		"LensesStr": "",
 		"Class": "gmod_track_signal",
 		"IsolateSwitches": {
@@ -1748,7 +2464,7 @@
 			}
 		]
 	},
-	"54": {
+	"84": {
 		"LensesStr": "YY-GR",
 		"Class": "gmod_track_signal",
 		"IsolateSwitches": {
@@ -1772,7 +2488,7 @@
 		"NonAutoStop": false,
 		"Left": false
 	},
-	"55": {
+	"85": {
 		"LensesStr": "",
 		"Class": "gmod_track_signal",
 		"IsolateSwitches": {
@@ -1790,7 +2506,7 @@
 			}
 		]
 	},
-	"56": {
+	"86": {
 		"LensesStr": "YYG-RW",
 		"Class": "gmod_track_signal",
 		"IsolateSwitches": {
@@ -1814,7 +2530,7 @@
 		"NonAutoStop": false,
 		"Left": true
 	},
-	"57": {
+	"87": {
 		"LensesStr": "YYG-RW",
 		"Class": "gmod_track_signal",
 		"IsolateSwitches": {
@@ -1838,7 +2554,7 @@
 		"NonAutoStop": false,
 		"Left": true
 	},
-	"58": {
+	"88": {
 		"LensesStr": "YY-GR",
 		"Class": "gmod_track_signal",
 		"IsolateSwitches": {
@@ -1862,7 +2578,7 @@
 		"NonAutoStop": false,
 		"Left": true
 	},
-	"59": {
+	"89": {
 		"LensesStr": "YY-GR",
 		"Class": "gmod_track_signal",
 		"IsolateSwitches": {
@@ -1886,7 +2602,7 @@
 		"NonAutoStop": false,
 		"Left": false
 	},
-	"60": {
+	"90": {
 		"RouteNumberSetup": "134",
 		"LensesStr": "BYW-RW",
 		"Class": "gmod_track_signal",
@@ -1911,7 +2627,7 @@
 		"NonAutoStop": false,
 		"Left": false
 	},
-	"61": {
+	"91": {
 		"LensesStr": "YYG-RW",
 		"Class": "gmod_track_signal",
 		"IsolateSwitches": {
@@ -1940,7 +2656,7 @@
 		"NonAutoStop": true,
 		"Left": false
 	},
-	"62": {
+	"92": {
 		"LensesStr": "",
 		"Class": "gmod_track_signal",
 		"IsolateSwitches": {
@@ -1958,7 +2674,7 @@
 			}
 		]
 	},
-	"63": {
+	"93": {
 		"LensesStr": "",
 		"Class": "gmod_track_signal",
 		"IsolateSwitches": {
@@ -1977,7 +2693,7 @@
 		],
 		"Left": true
 	},
-	"64": {
+	"94": {
 		"LensesStr": "",
 		"Class": "gmod_track_signal",
 		"IsolateSwitches": {
@@ -1995,7 +2711,7 @@
 			}
 		]
 	},
-	"65": {
+	"95": {
 		"LensesStr": "",
 		"Class": "gmod_track_signal",
 		"IsolateSwitches": {
@@ -2013,7 +2729,7 @@
 			}
 		]
 	},
-	"66": {
+	"96": {
 		"LensesStr": "YY-GR",
 		"Class": "gmod_track_signal",
 		"IsolateSwitches": {
@@ -2037,7 +2753,7 @@
 		"NonAutoStop": false,
 		"Left": false
 	},
-	"67": {
+	"97": {
 		"LensesStr": "",
 		"Class": "gmod_track_signal",
 		"IsolateSwitches": {
@@ -2055,7 +2771,7 @@
 			}
 		]
 	},
-	"68": {
+	"98": {
 		"LensesStr": "YY-GR",
 		"Class": "gmod_track_signal",
 		"IsolateSwitches": {
@@ -2079,7 +2795,7 @@
 		"NonAutoStop": false,
 		"Left": false
 	},
-	"69": {
+	"99": {
 		"LensesStr": "",
 		"Class": "gmod_track_signal",
 		"IsolateSwitches": {
@@ -2097,7 +2813,7 @@
 			}
 		]
 	},
-	"70": {
+	"100": {
 		"LensesStr": "YGR",
 		"Class": "gmod_track_signal",
 		"IsolateSwitches": {
@@ -2121,7 +2837,7 @@
 		"NonAutoStop": false,
 		"Left": false
 	},
-	"71": {
+	"101": {
 		"LensesStr": "BW-RW",
 		"Class": "gmod_track_signal",
 		"IsolateSwitches": {
@@ -2146,7 +2862,7 @@
 		"NonAutoStop": false,
 		"Left": false
 	},
-	"72": {
+	"102": {
 		"LensesStr": "",
 		"Class": "gmod_track_signal",
 		"IsolateSwitches": {
@@ -2165,7 +2881,7 @@
 		],
 		"Left": true
 	},
-	"73": {
+	"103": {
 		"LensesStr": "YGR",
 		"Class": "gmod_track_signal",
 		"IsolateSwitches": {
@@ -2189,7 +2905,7 @@
 		"NonAutoStop": false,
 		"Left": true
 	},
-	"74": {
+	"104": {
 		"LensesStr": "YY-GR",
 		"Class": "gmod_track_signal",
 		"IsolateSwitches": {
@@ -2213,7 +2929,7 @@
 		"NonAutoStop": true,
 		"Left": false
 	},
-	"75": {
+	"105": {
 		"LensesStr": "YY-GR",
 		"Class": "gmod_track_signal",
 		"IsolateSwitches": {
@@ -2237,7 +2953,7 @@
 		"NonAutoStop": false,
 		"Left": false
 	},
-	"76": {
+	"106": {
 		"LensesStr": "RYY-GR",
 		"Class": "gmod_track_signal",
 		"IsolateSwitches": {
@@ -2261,7 +2977,7 @@
 		"NonAutoStop": false,
 		"Left": false
 	},
-	"77": {
+	"107": {
 		"LensesStr": "",
 		"Class": "gmod_track_signal",
 		"IsolateSwitches": {
@@ -2279,7 +2995,7 @@
 			}
 		]
 	},
-	"78": {
+	"108": {
 		"LensesStr": "",
 		"Class": "gmod_track_signal",
 		"IsolateSwitches": {
@@ -2297,7 +3013,7 @@
 			}
 		]
 	},
-	"79": {
+	"109": {
 		"RouteNumberSetup": "134DK",
 		"LensesStr": "RBW-YYG-RYW",
 		"Class": "gmod_track_signal",
@@ -2322,7 +3038,7 @@
 		"NonAutoStop": false,
 		"Left": false
 	},
-	"80": {
+	"110": {
 		"LensesStr": "",
 		"Class": "gmod_track_signal",
 		"IsolateSwitches": {
@@ -2340,7 +3056,7 @@
 			}
 		]
 	},
-	"81": {
+	"111": {
 		"LensesStr": "YY-GR",
 		"Class": "gmod_track_signal",
 		"IsolateSwitches": {
@@ -2364,7 +3080,7 @@
 		"NonAutoStop": false,
 		"Left": false
 	},
-	"82": {
+	"112": {
 		"LensesStr": "",
 		"Class": "gmod_track_signal",
 		"IsolateSwitches": {
@@ -2382,7 +3098,7 @@
 			}
 		]
 	},
-	"83": {
+	"113": {
 		"LensesStr": "YY-GR",
 		"Class": "gmod_track_signal",
 		"IsolateSwitches": {
@@ -2406,7 +3122,7 @@
 		"NonAutoStop": true,
 		"Left": false
 	},
-	"84": {
+	"114": {
 		"LensesStr": "YY-GR",
 		"Class": "gmod_track_signal",
 		"IsolateSwitches": {
@@ -2430,25 +3146,7 @@
 		"NonAutoStop": true,
 		"Left": false
 	},
-	"85": {
-		"LensesStr": "",
-		"Class": "gmod_track_signal",
-		"IsolateSwitches": {
-			"SlowBlinking": true
-		},
-		"SignalType": 0,
-		"Name": "TC329",
-		"ARSOnly": true,
-		"Angles": "{2.9559 315.8392 0}",
-		"Pos": "[-12267.9668 9427.0986 -254.051]",
-		"Routes": [
-			{
-				"NextSignal": "*",
-				"ARSCodes": "04668"
-			}
-		]
-	},
-	"86": {
+	"115": {
 		"LensesStr": "XR",
 		"Class": "gmod_track_signal",
 		"IsolateSwitches": {
@@ -2470,7 +3168,25 @@
 		"NonAutoStop": false,
 		"Left": false
 	},
-	"87": {
+	"116": {
+		"LensesStr": "",
+		"Class": "gmod_track_signal",
+		"IsolateSwitches": {
+			"SlowBlinking": true
+		},
+		"SignalType": 0,
+		"Name": "TC329",
+		"ARSOnly": true,
+		"Angles": "{2.9559 315.8392 0}",
+		"Pos": "[-12267.9668 9427.0986 -254.051]",
+		"Routes": [
+			{
+				"NextSignal": "*",
+				"ARSCodes": "04668"
+			}
+		]
+	},
+	"117": {
 		"LensesStr": "YY-GR",
 		"Class": "gmod_track_signal",
 		"IsolateSwitches": {
@@ -2494,25 +3210,7 @@
 		"NonAutoStop": false,
 		"Left": false
 	},
-	"88": {
-		"LensesStr": "",
-		"Class": "gmod_track_signal",
-		"IsolateSwitches": {
-			"SlowBlinking": true
-		},
-		"SignalType": 0,
-		"Name": "TC341",
-		"ARSOnly": true,
-		"Angles": "{-0 70 0}",
-		"Pos": "[7835.6899 -15063.4648 249.1154]",
-		"Routes": [
-			{
-				"NextSignal": "*",
-				"ARSCodes": "0007"
-			}
-		]
-	},
-	"89": {
+	"118": {
 		"LensesStr": "",
 		"Class": "gmod_track_signal",
 		"IsolateSwitches": {
@@ -2530,7 +3228,43 @@
 			}
 		]
 	},
-	"90": {
+	"119": {
+		"LensesStr": "",
+		"Class": "gmod_track_signal",
+		"IsolateSwitches": {
+			"SlowBlinking": true
+		},
+		"SignalType": 0,
+		"Name": "TC341",
+		"ARSOnly": true,
+		"Angles": "{-0 70 0}",
+		"Pos": "[7835.6899 -15063.4648 249.1154]",
+		"Routes": [
+			{
+				"NextSignal": "*",
+				"ARSCodes": "0007"
+			}
+		]
+	},
+	"120": {
+		"LensesStr": "",
+		"Class": "gmod_track_signal",
+		"IsolateSwitches": {
+			"SlowBlinking": true
+		},
+		"SignalType": 0,
+		"Name": "TC419",
+		"ARSOnly": true,
+		"Angles": "{0 150 0}",
+		"Pos": "[-6149.1963 8275.6123 -2535.8186]",
+		"Routes": [
+			{
+				"NextSignal": "*",
+				"ARSCodes": "1"
+			}
+		]
+	},
+	"121": {
 		"RouteNumberSetup": "1V",
 		"LensesStr": "RBW-YYG-RW",
 		"Class": "gmod_track_signal",
@@ -2555,7 +3289,7 @@
 		"NonAutoStop": false,
 		"Left": false
 	},
-	"91": {
+	"122": {
 		"LensesStr": "YY-GR",
 		"Class": "gmod_track_signal",
 		"IsolateSwitches": {
@@ -2579,7 +3313,7 @@
 		"NonAutoStop": false,
 		"Left": true
 	},
-	"92": {
+	"123": {
 		"LensesStr": "",
 		"Class": "gmod_track_signal",
 		"IsolateSwitches": {
@@ -2597,7 +3331,7 @@
 			}
 		]
 	},
-	"93": {
+	"124": {
 		"LensesStr": "",
 		"Class": "gmod_track_signal",
 		"IsolateSwitches": {
@@ -2615,7 +3349,7 @@
 			}
 		]
 	},
-	"94": {
+	"125": {
 		"LensesStr": "BYY-GRW",
 		"Class": "gmod_track_signal",
 		"IsolateSwitches": {
@@ -2639,25 +3373,7 @@
 		"NonAutoStop": true,
 		"Left": false
 	},
-	"95": {
-		"LensesStr": "",
-		"Class": "gmod_track_signal",
-		"IsolateSwitches": {
-			"SlowBlinking": true
-		},
-		"SignalType": 0,
-		"Name": "TC419",
-		"ARSOnly": true,
-		"Angles": "{0 150 0}",
-		"Pos": "[-6149.1963 8275.6123 -2535.8186]",
-		"Routes": [
-			{
-				"NextSignal": "*",
-				"ARSCodes": "1"
-			}
-		]
-	},
-	"96": {
+	"126": {
 		"LensesStr": "YY-GR",
 		"Class": "gmod_track_signal",
 		"IsolateSwitches": {
@@ -2681,7 +3397,7 @@
 		"NonAutoStop": false,
 		"Left": false
 	},
-	"97": {
+	"127": {
 		"LensesStr": "",
 		"Class": "gmod_track_signal",
 		"IsolateSwitches": {
@@ -2699,91 +3415,7 @@
 			}
 		]
 	},
-	"98": {
-		"LensesStr": "YY-GR",
-		"Class": "gmod_track_signal",
-		"IsolateSwitches": {
-			"FrontArsName": "345",
-			"SlowBlinking": true
-		},
-		"SignalType": 0,
-		"Double": false,
-		"Name": "349",
-		"ARSOnly": false,
-		"Angles": "{0 290 0}",
-		"Pos": "[-2491.2361 11815.29 72.7148]",
-		"DoubleL": false,
-		"Routes": [
-			{
-				"Lights": "4-24-24-1-13-3",
-				"NextSignal": "*",
-				"ARSCodes": "068"
-			}
-		],
-		"NonAutoStop": false,
-		"Left": false
-	},
-	"99": {
-		"LensesStr": "",
-		"Class": "gmod_track_signal",
-		"IsolateSwitches": {
-			"SlowBlinking": true
-		},
-		"SignalType": 0,
-		"Name": "TC309",
-		"ARSOnly": true,
-		"Angles": "{2.7505 208.5266 0}",
-		"Pos": "[9177.0117 12390.6836 680.4066]",
-		"Routes": [
-			{
-				"NextSignal": "*",
-				"ARSCodes": "007"
-			}
-		]
-	},
-	"100": {
-		"LensesStr": "RYY-GR",
-		"Class": "gmod_track_signal",
-		"IsolateSwitches": {
-			"FrontArsName": "343V",
-			"SlowBlinking": true
-		},
-		"SignalType": 0,
-		"Double": false,
-		"Name": "347M",
-		"ARSOnly": false,
-		"Angles": "{0 209.1126 0}",
-		"Pos": "[13871.4814 12134.001 154.6248]",
-		"DoubleL": false,
-		"Routes": [
-			{
-				"Lights": "5-35-2-2-4",
-				"NextSignal": "*",
-				"ARSCodes": "078"
-			}
-		],
-		"NonAutoStop": false,
-		"Left": false
-	},
-	"101": {
-		"LensesStr": "",
-		"Class": "gmod_track_signal",
-		"IsolateSwitches": {
-			"SlowBlinking": true
-		},
-		"SignalType": 0,
-		"Name": "TC355",
-		"ARSOnly": true,
-		"Angles": "{0 90 0}",
-		"Pos": "[4252.686 -16213.7939 -1005.2506]",
-		"Routes": [
-			{
-				"NextSignal": "*",
-				"ARSCodes": "0046"
-			}
-		]
-	},
-	"102": {
+	"128": {
 		"LensesStr": "YYG-RW",
 		"Class": "gmod_track_signal",
 		"IsolateSwitches": {
@@ -2807,7 +3439,115 @@
 		"NonAutoStop": false,
 		"Left": true
 	},
-	"103": {
+	"129": {
+		"LensesStr": "YY-GR",
+		"Class": "gmod_track_signal",
+		"IsolateSwitches": {
+			"FrontArsName": "345",
+			"SlowBlinking": true
+		},
+		"SignalType": 0,
+		"Double": false,
+		"Name": "349",
+		"ARSOnly": false,
+		"Angles": "{0 290 0}",
+		"Pos": "[-2491.2361 11815.29 72.7148]",
+		"DoubleL": false,
+		"Routes": [
+			{
+				"Lights": "4-24-24-1-13-3",
+				"NextSignal": "*",
+				"ARSCodes": "068"
+			}
+		],
+		"NonAutoStop": false,
+		"Left": false
+	},
+	"130": {
+		"LensesStr": "",
+		"Class": "gmod_track_signal",
+		"IsolateSwitches": {
+			"SlowBlinking": true
+		},
+		"SignalType": 0,
+		"Name": "TC309",
+		"ARSOnly": true,
+		"Angles": "{2.7505 208.5266 0}",
+		"Pos": "[9177.0117 12390.6836 680.4066]",
+		"Routes": [
+			{
+				"NextSignal": "*",
+				"ARSCodes": "007"
+			}
+		]
+	},
+	"131": {
+		"LensesStr": "RYY-GR",
+		"Class": "gmod_track_signal",
+		"IsolateSwitches": {
+			"FrontArsName": "343B",
+			"SlowBlinking": true
+		},
+		"SignalType": 0,
+		"Double": false,
+		"Name": "347M",
+		"ARSOnly": false,
+		"Angles": "{0 209.1126 0}",
+		"Pos": "[13871.4814 12134.001 154.6248]",
+		"DoubleL": false,
+		"Routes": [
+			{
+				"Lights": "5-35-2-2-4",
+				"NextSignal": "*",
+				"ARSCodes": "078"
+			}
+		],
+		"NonAutoStop": false,
+		"Left": false
+	},
+	"132": {
+		"LensesStr": "",
+		"Class": "gmod_track_signal",
+		"IsolateSwitches": {
+			"SlowBlinking": true
+		},
+		"SignalType": 0,
+		"Name": "TC355",
+		"ARSOnly": true,
+		"Angles": "{0 90 0}",
+		"Pos": "[4252.686 -16213.7939 -1005.2506]",
+		"Routes": [
+			{
+				"NextSignal": "*",
+				"ARSCodes": "0046"
+			}
+		]
+	},
+	"133": {
+		"LensesStr": "YY-GR",
+		"Class": "gmod_track_signal",
+		"IsolateSwitches": {
+			"FrontArsName": "399A",
+			"SlowBlinking": true
+		},
+		"SignalType": 0,
+		"Double": false,
+		"Name": "401",
+		"ARSOnly": false,
+		"Angles": "{360 90 0}",
+		"Pos": "[6090.8428 10500.7871 -1571.4518]",
+		"DoubleL": false,
+		"Routes": [
+			{
+				"Lights": "4-24-1-1-3",
+				"NextSignal": "*",
+				"ARSCodes": "068"
+			}
+		],
+		"NonAutoStop": false,
+		"Left": false
+	},
+	"134": {
 		"LensesStr": "RXY-GRX",
 		"Class": "gmod_track_signal",
 		"IsolateSwitches": {
@@ -2831,7 +3571,7 @@
 		"NonAutoStop": false,
 		"Left": false
 	},
-	"104": {
+	"135": {
 		"LensesStr": "",
 		"Class": "gmod_track_signal",
 		"IsolateSwitches": {
@@ -2849,7 +3589,7 @@
 			}
 		]
 	},
-	"105": {
+	"136": {
 		"LensesStr": "YY-GR",
 		"Class": "gmod_track_signal",
 		"IsolateSwitches": {
@@ -2873,7 +3613,7 @@
 		"NonAutoStop": false,
 		"Left": false
 	},
-	"106": {
+	"137": {
 		"LensesStr": "YY-GR",
 		"Class": "gmod_track_signal",
 		"IsolateSwitches": {
@@ -2897,7 +3637,7 @@
 		"NonAutoStop": false,
 		"Left": false
 	},
-	"107": {
+	"138": {
 		"LensesStr": "YGR",
 		"Class": "gmod_track_signal",
 		"IsolateSwitches": {
@@ -2921,7 +3661,7 @@
 		"NonAutoStop": false,
 		"Left": false
 	},
-	"108": {
+	"139": {
 		"LensesStr": "",
 		"Class": "gmod_track_signal",
 		"IsolateSwitches": {
@@ -2939,7 +3679,7 @@
 			}
 		]
 	},
-	"109": {
+	"140": {
 		"LensesStr": "XR",
 		"Class": "gmod_track_signal",
 		"IsolateSwitches": {
@@ -2961,7 +3701,7 @@
 		"NonAutoStop": false,
 		"Left": false
 	},
-	"110": {
+	"141": {
 		"LensesStr": "YYG-RW",
 		"Class": "gmod_track_signal",
 		"IsolateSwitches": {
@@ -2985,7 +3725,7 @@
 		"NonAutoStop": true,
 		"Left": false
 	},
-	"111": {
+	"142": {
 		"LensesStr": "XR",
 		"Class": "gmod_track_signal",
 		"IsolateSwitches": {
@@ -3007,7 +3747,7 @@
 		"NonAutoStop": false,
 		"Left": false
 	},
-	"112": {
+	"143": {
 		"LensesStr": "",
 		"Class": "gmod_track_signal",
 		"IsolateSwitches": {
@@ -3025,7 +3765,7 @@
 			}
 		]
 	},
-	"113": {
+	"144": {
 		"LensesStr": "",
 		"Class": "gmod_track_signal",
 		"IsolateSwitches": {
@@ -3043,7 +3783,7 @@
 			}
 		]
 	},
-	"114": {
+	"145": {
 		"LensesStr": "YYG-RW",
 		"Class": "gmod_track_signal",
 		"IsolateSwitches": {
@@ -3072,7 +3812,7 @@
 		"NonAutoStop": true,
 		"Left": false
 	},
-	"115": {
+	"146": {
 		"LensesStr": "",
 		"Class": "gmod_track_signal",
 		"IsolateSwitches": {
@@ -3090,7 +3830,7 @@
 			}
 		]
 	},
-	"116": {
+	"147": {
 		"LensesStr": "YYG-RW",
 		"Class": "gmod_track_signal",
 		"IsolateSwitches": {
@@ -3114,7 +3854,7 @@
 		"NonAutoStop": true,
 		"Left": false
 	},
-	"117": {
+	"148": {
 		"LensesStr": "BYY-GRW",
 		"Class": "gmod_track_signal",
 		"IsolateSwitches": {
@@ -3138,7 +3878,7 @@
 		"NonAutoStop": true,
 		"Left": false
 	},
-	"118": {
+	"149": {
 		"LensesStr": "YYG-RW",
 		"Class": "gmod_track_signal",
 		"IsolateSwitches": {
@@ -3162,7 +3902,7 @@
 		"NonAutoStop": false,
 		"Left": false
 	},
-	"119": {
+	"150": {
 		"LensesStr": "",
 		"Class": "gmod_track_signal",
 		"IsolateSwitches": {
@@ -3180,7 +3920,7 @@
 			}
 		]
 	},
-	"120": {
+	"151": {
 		"LensesStr": "YGR",
 		"Class": "gmod_track_signal",
 		"IsolateSwitches": {
@@ -3204,7 +3944,7 @@
 		"NonAutoStop": false,
 		"Left": false
 	},
-	"121": {
+	"152": {
 		"LensesStr": "YY-GR",
 		"Class": "gmod_track_signal",
 		"IsolateSwitches": {
@@ -3228,7 +3968,7 @@
 		"NonAutoStop": false,
 		"Left": false
 	},
-	"122": {
+	"153": {
 		"LensesStr": "",
 		"Class": "gmod_track_signal",
 		"IsolateSwitches": {
@@ -3247,7 +3987,7 @@
 		],
 		"Left": true
 	},
-	"123": {
+	"154": {
 		"LensesStr": "YY-GR",
 		"Class": "gmod_track_signal",
 		"IsolateSwitches": {
@@ -3271,7 +4011,7 @@
 		"NonAutoStop": false,
 		"Left": false
 	},
-	"124": {
+	"155": {
 		"LensesStr": "BW-RW",
 		"Class": "gmod_track_signal",
 		"IsolateSwitches": {
@@ -3293,7 +4033,7 @@
 		"NonAutoStop": false,
 		"Left": false
 	},
-	"125": {
+	"156": {
 		"RouteNumberSetup": "13",
 		"LensesStr": "RBW-YG-RW",
 		"Class": "gmod_track_signal",
@@ -3306,7 +4046,7 @@
 		"Name": "OL379M",
 		"ARSOnly": false,
 		"Angles": "{0 126 0}",
-		"Pos": "[3878.8193 -8507.4014 -1532.7947]",
+		"Pos": "[4409.6689 -8121.7168 -1532.7947]",
 		"DoubleL": false,
 		"Routes": [
 			{
@@ -3318,7 +4058,7 @@
 		"NonAutoStop": false,
 		"Left": false
 	},
-	"126": {
+	"157": {
 		"LensesStr": "",
 		"Class": "gmod_track_signal",
 		"IsolateSwitches": {
@@ -3336,7 +4076,7 @@
 			}
 		]
 	},
-	"127": {
+	"158": {
 		"LensesStr": "XR",
 		"Class": "gmod_track_signal",
 		"IsolateSwitches": {
@@ -3358,7 +4098,7 @@
 		"NonAutoStop": false,
 		"Left": true
 	},
-	"128": {
+	"159": {
 		"LensesStr": "",
 		"Class": "gmod_track_signal",
 		"IsolateSwitches": {
@@ -3376,31 +4116,25 @@
 			}
 		]
 	},
-	"129": {
-		"LensesStr": "YY-GR",
+	"160": {
+		"LensesStr": "",
 		"Class": "gmod_track_signal",
 		"IsolateSwitches": {
-			"FrontArsName": "265B",
 			"SlowBlinking": true
 		},
 		"SignalType": 0,
-		"Double": false,
-		"Name": "269",
-		"ARSOnly": false,
+		"Name": "TC265B",
+		"ARSOnly": true,
 		"Angles": "{357.7722 283.6125 0}",
-		"Pos": "[9162.5342 -15028.834 2815.9763]",
-		"DoubleL": false,
+		"Pos": "[9141.2666 -15033.9922 2815.8245]",
 		"Routes": [
 			{
-				"Lights": "4-24-24-24-1-13-3",
 				"NextSignal": "*",
-				"ARSCodes": "0046778"
+				"ARSCodes": "1"
 			}
-		],
-		"NonAutoStop": false,
-		"Left": true
+		]
 	},
-	"130": {
+	"161": {
 		"LensesStr": "YY-GR",
 		"Class": "gmod_track_signal",
 		"IsolateSwitches": {
@@ -3424,7 +4158,7 @@
 		"NonAutoStop": false,
 		"Left": false
 	},
-	"131": {
+	"162": {
 		"RouteNumberSetup": "12",
 		"LensesStr": "BW-RW",
 		"Class": "gmod_track_signal",
@@ -3447,7 +4181,7 @@
 		"NonAutoStop": false,
 		"Left": false
 	},
-	"132": {
+	"163": {
 		"LensesStr": "YY-GR",
 		"Class": "gmod_track_signal",
 		"IsolateSwitches": {
@@ -3471,7 +4205,7 @@
 		"NonAutoStop": false,
 		"Left": true
 	},
-	"133": {
+	"164": {
 		"LensesStr": "YY-GR",
 		"Class": "gmod_track_signal",
 		"IsolateSwitches": {
@@ -3495,7 +4229,7 @@
 		"NonAutoStop": false,
 		"Left": true
 	},
-	"134": {
+	"165": {
 		"LensesStr": "YY-GR",
 		"Class": "gmod_track_signal",
 		"IsolateSwitches": {
@@ -3519,7 +4253,7 @@
 		"NonAutoStop": false,
 		"Left": true
 	},
-	"135": {
+	"166": {
 		"LensesStr": "",
 		"Class": "gmod_track_signal",
 		"IsolateSwitches": {
@@ -3537,7 +4271,7 @@
 			}
 		]
 	},
-	"136": {
+	"167": {
 		"LensesStr": "YY-GR-W",
 		"Class": "gmod_track_signal",
 		"IsolateSwitches": {
@@ -3561,7 +4295,7 @@
 		"NonAutoStop": true,
 		"Left": false
 	},
-	"137": {
+	"168": {
 		"LensesStr": "",
 		"Class": "gmod_track_signal",
 		"IsolateSwitches": {
@@ -3579,7 +4313,7 @@
 			}
 		]
 	},
-	"138": {
+	"169": {
 		"LensesStr": "",
 		"Class": "gmod_track_signal",
 		"IsolateSwitches": {
@@ -3597,7 +4331,7 @@
 			}
 		]
 	},
-	"139": {
+	"170": {
 		"LensesStr": "YY-GR",
 		"Class": "gmod_track_signal",
 		"IsolateSwitches": {
@@ -3621,7 +4355,7 @@
 		"NonAutoStop": true,
 		"Left": false
 	},
-	"140": {
+	"171": {
 		"LensesStr": "YY-GR",
 		"Class": "gmod_track_signal",
 		"IsolateSwitches": {
@@ -3645,7 +4379,7 @@
 		"NonAutoStop": true,
 		"Left": false
 	},
-	"141": {
+	"172": {
 		"LensesStr": "",
 		"Class": "gmod_track_signal",
 		"IsolateSwitches": {
@@ -3663,31 +4397,29 @@
 			}
 		]
 	},
-	"142": {
-		"LensesStr": "YY-GR",
+	"173": {
+		"LensesStr": "XXR",
 		"Class": "gmod_track_signal",
 		"IsolateSwitches": {
-			"FrontArsName": "399A",
+			"SignalName": "DOP",
+			"HideDTM": true,
 			"SlowBlinking": true
 		},
 		"SignalType": 0,
-		"Double": false,
-		"Name": "401",
+		"Name": "OLDOP",
 		"ARSOnly": false,
-		"Angles": "{360 90 0}",
-		"Pos": "[6090.8428 10500.7871 -1571.4518]",
-		"DoubleL": false,
+		"Angles": "{0.9598 305.9922 0}",
+		"Pos": "[7063.3071 -6192.4902 -1538.885]",
 		"Routes": [
 			{
-				"Lights": "4-24-1-1-3",
-				"NextSignal": "*",
-				"ARSCodes": "068"
+				"Lights": "",
+				"NextSignal": "*"
 			}
 		],
-		"NonAutoStop": false,
-		"Left": false
+		"NonAutoStop": true,
+		"Left": true
 	},
-	"143": {
+	"174": {
 		"LensesStr": "YY-GR",
 		"Class": "gmod_track_signal",
 		"IsolateSwitches": {
@@ -3711,7 +4443,7 @@
 		"NonAutoStop": false,
 		"Left": true
 	},
-	"144": {
+	"175": {
 		"LensesStr": "",
 		"Class": "gmod_track_signal",
 		"IsolateSwitches": {
@@ -3729,7 +4461,7 @@
 			}
 		]
 	},
-	"145": {
+	"176": {
 		"LensesStr": "YY-GR",
 		"Class": "gmod_track_signal",
 		"IsolateSwitches": {
@@ -3753,7 +4485,7 @@
 		"NonAutoStop": true,
 		"Left": true
 	},
-	"146": {
+	"177": {
 		"LensesStr": "",
 		"Class": "gmod_track_signal",
 		"IsolateSwitches": {
@@ -3772,7 +4504,7 @@
 		],
 		"Left": true
 	},
-	"147": {
+	"178": {
 		"LensesStr": "",
 		"Class": "gmod_track_signal",
 		"IsolateSwitches": {
@@ -3790,8 +4522,8 @@
 			}
 		]
 	},
-	"148": {
-		"LensesStr": "XR",
+	"179": {
+		"LensesStr": "XXR",
 		"Class": "gmod_track_signal",
 		"IsolateSwitches": {
 			"SignalName": "DOP",
@@ -3802,7 +4534,7 @@
 		"Name": "OKDOP",
 		"ARSOnly": false,
 		"Angles": "{0 312.499 0}",
-		"Pos": "[4080.6064 -3108.4712 -408.2382]",
+		"Pos": "[4077.7324 -3111.1045 -408.2382]",
 		"Routes": [
 			{
 				"Lights": "",
@@ -3812,7 +4544,7 @@
 		"NonAutoStop": true,
 		"Left": true
 	},
-	"149": {
+	"180": {
 		"LensesStr": "YY-GR",
 		"Class": "gmod_track_signal",
 		"IsolateSwitches": {
@@ -3836,7 +4568,7 @@
 		"NonAutoStop": false,
 		"Left": true
 	},
-	"150": {
+	"181": {
 		"LensesStr": "",
 		"Class": "gmod_track_signal",
 		"IsolateSwitches": {
@@ -3854,7 +4586,7 @@
 			}
 		]
 	},
-	"151": {
+	"182": {
 		"LensesStr": "YY-GR",
 		"Class": "gmod_track_signal",
 		"IsolateSwitches": {
@@ -3878,7 +4610,7 @@
 		"NonAutoStop": false,
 		"Left": false
 	},
-	"152": {
+	"183": {
 		"LensesStr": "YYG-RW",
 		"Class": "gmod_track_signal",
 		"IsolateSwitches": {
@@ -3902,7 +4634,7 @@
 		"NonAutoStop": true,
 		"Left": false
 	},
-	"153": {
+	"184": {
 		"LensesStr": "YY-GR",
 		"Class": "gmod_track_signal",
 		"IsolateSwitches": {
@@ -3926,7 +4658,7 @@
 		"NonAutoStop": false,
 		"Left": true
 	},
-	"154": {
+	"185": {
 		"LensesStr": "",
 		"Class": "gmod_track_signal",
 		"IsolateSwitches": {
@@ -3945,7 +4677,7 @@
 		],
 		"Left": true
 	},
-	"155": {
+	"186": {
 		"LensesStr": "YY-GR",
 		"Class": "gmod_track_signal",
 		"IsolateSwitches": {
@@ -3969,7 +4701,7 @@
 		"NonAutoStop": false,
 		"Left": true
 	},
-	"156": {
+	"187": {
 		"LensesStr": "YYG-RW",
 		"Class": "gmod_track_signal",
 		"IsolateSwitches": {
@@ -3993,7 +4725,7 @@
 		"NonAutoStop": true,
 		"Left": false
 	},
-	"157": {
+	"188": {
 		"LensesStr": "YY-GR",
 		"Class": "gmod_track_signal",
 		"IsolateSwitches": {
@@ -4017,7 +4749,7 @@
 		"NonAutoStop": false,
 		"Left": true
 	},
-	"158": {
+	"189": {
 		"LensesStr": "RYY-GR",
 		"Class": "gmod_track_signal",
 		"IsolateSwitches": {
@@ -4041,7 +4773,7 @@
 		"NonAutoStop": false,
 		"Left": false
 	},
-	"159": {
+	"190": {
 		"LensesStr": "YY-GR",
 		"Class": "gmod_track_signal",
 		"IsolateSwitches": {
@@ -4065,7 +4797,7 @@
 		"NonAutoStop": false,
 		"Left": false
 	},
-	"160": {
+	"191": {
 		"LensesStr": "YY-GR",
 		"Class": "gmod_track_signal",
 		"IsolateSwitches": {
@@ -4089,7 +4821,7 @@
 		"NonAutoStop": false,
 		"Left": false
 	},
-	"161": {
+	"192": {
 		"LensesStr": "YYG-RX",
 		"Class": "gmod_track_signal",
 		"IsolateSwitches": {
@@ -4113,7 +4845,7 @@
 		"NonAutoStop": false,
 		"Left": false
 	},
-	"162": {
+	"193": {
 		"LensesStr": "",
 		"Class": "gmod_track_signal",
 		"IsolateSwitches": {
@@ -4131,7 +4863,7 @@
 			}
 		]
 	},
-	"163": {
+	"194": {
 		"LensesStr": "",
 		"Class": "gmod_track_signal",
 		"IsolateSwitches": {
@@ -4149,7 +4881,7 @@
 			}
 		]
 	},
-	"164": {
+	"195": {
 		"LensesStr": "YY-GR",
 		"Class": "gmod_track_signal",
 		"IsolateSwitches": {
@@ -4173,7 +4905,7 @@
 		"NonAutoStop": false,
 		"Left": false
 	},
-	"165": {
+	"196": {
 		"LensesStr": "YY-GR",
 		"Class": "gmod_track_signal",
 		"IsolateSwitches": {
@@ -4197,7 +4929,7 @@
 		"NonAutoStop": false,
 		"Left": false
 	},
-	"166": {
+	"197": {
 		"LensesStr": "",
 		"Class": "gmod_track_signal",
 		"IsolateSwitches": {
@@ -4215,7 +4947,7 @@
 			}
 		]
 	},
-	"167": {
+	"198": {
 		"LensesStr": "XYY-GRX",
 		"Class": "gmod_track_signal",
 		"IsolateSwitches": {
@@ -4239,7 +4971,7 @@
 		"NonAutoStop": true,
 		"Left": false
 	},
-	"168": {
+	"199": {
 		"LensesStr": "XYY-GRX",
 		"Class": "gmod_track_signal",
 		"IsolateSwitches": {
@@ -4263,7 +4995,7 @@
 		"NonAutoStop": false,
 		"Left": false
 	},
-	"169": {
+	"200": {
 		"LensesStr": "",
 		"Class": "gmod_track_signal",
 		"IsolateSwitches": {
@@ -4281,7 +5013,7 @@
 			}
 		]
 	},
-	"170": {
+	"201": {
 		"LensesStr": "YYG-RX",
 		"Class": "gmod_track_signal",
 		"IsolateSwitches": {
@@ -4305,7 +5037,7 @@
 		"NonAutoStop": false,
 		"Left": true
 	},
-	"171": {
+	"202": {
 		"LensesStr": "YGR",
 		"Class": "gmod_track_signal",
 		"IsolateSwitches": {
@@ -4329,7 +5061,7 @@
 		"NonAutoStop": false,
 		"Left": false
 	},
-	"172": {
+	"203": {
 		"LensesStr": "",
 		"Class": "gmod_track_signal",
 		"IsolateSwitches": {
@@ -4347,7 +5079,7 @@
 			}
 		]
 	},
-	"173": {
+	"204": {
 		"LensesStr": "",
 		"Class": "gmod_track_signal",
 		"IsolateSwitches": {
@@ -4365,7 +5097,7 @@
 			}
 		]
 	},
-	"174": {
+	"205": {
 		"LensesStr": "RYY-GR",
 		"Class": "gmod_track_signal",
 		"IsolateSwitches": {
@@ -4389,7 +5121,7 @@
 		"NonAutoStop": false,
 		"Left": false
 	},
-	"175": {
+	"206": {
 		"LensesStr": "RYY-GR",
 		"Class": "gmod_track_signal",
 		"IsolateSwitches": {
@@ -4413,7 +5145,7 @@
 		"NonAutoStop": false,
 		"Left": false
 	},
-	"176": {
+	"207": {
 		"LensesStr": "",
 		"Class": "gmod_track_signal",
 		"IsolateSwitches": {
@@ -4431,7 +5163,7 @@
 			}
 		]
 	},
-	"177": {
+	"208": {
 		"LensesStr": "",
 		"Class": "gmod_track_signal",
 		"IsolateSwitches": {
@@ -4449,7 +5181,7 @@
 			}
 		]
 	},
-	"178": {
+	"209": {
 		"LensesStr": "YYG-RW",
 		"Class": "gmod_track_signal",
 		"IsolateSwitches": {
@@ -4473,7 +5205,7 @@
 		"NonAutoStop": false,
 		"Left": false
 	},
-	"179": {
+	"210": {
 		"LensesStr": "",
 		"Class": "gmod_track_signal",
 		"IsolateSwitches": {
@@ -4491,7 +5223,7 @@
 			}
 		]
 	},
-	"180": {
+	"211": {
 		"LensesStr": "BYY-GRW",
 		"Class": "gmod_track_signal",
 		"IsolateSwitches": {
@@ -4515,31 +5247,31 @@
 		"NonAutoStop": true,
 		"Left": false
 	},
-	"181": {
+	"212": {
 		"LensesStr": "YY-GR",
 		"Class": "gmod_track_signal",
 		"IsolateSwitches": {
-			"FrontArsName": "343A",
+			"FrontArsName": "265B",
 			"SlowBlinking": true
 		},
 		"SignalType": 0,
 		"Double": false,
-		"Name": "345",
+		"Name": "269",
 		"ARSOnly": false,
-		"Angles": "{0 180 0}",
-		"Pos": "[16225.0059 -5814.6777 408.7014]",
+		"Angles": "{357.7722 283.6125 0}",
+		"Pos": "[9162.5342 -15028.834 2815.9763]",
 		"DoubleL": false,
 		"Routes": [
 			{
-				"Lights": "4-24-1-3",
+				"Lights": "4-24-24-24-1-13-3",
 				"NextSignal": "*",
-				"ARSCodes": "078"
+				"ARSCodes": "0046778"
 			}
 		],
 		"NonAutoStop": false,
-		"Left": false
+		"Left": true
 	},
-	"182": {
+	"213": {
 		"LensesStr": "YYG-RW",
 		"Class": "gmod_track_signal",
 		"IsolateSwitches": {
@@ -4563,7 +5295,7 @@
 		"NonAutoStop": true,
 		"Left": false
 	},
-	"183": {
+	"214": {
 		"RouteNumberSetup": "1VGK",
 		"LensesStr": "RBW-YYG-RW",
 		"Class": "gmod_track_signal",
@@ -4588,7 +5320,7 @@
 		"NonAutoStop": false,
 		"Left": true
 	},
-	"184": {
+	"215": {
 		"LensesStr": "YY-GR",
 		"Class": "gmod_track_signal",
 		"IsolateSwitches": {
@@ -4612,25 +5344,31 @@
 		"NonAutoStop": false,
 		"Left": false
 	},
-	"185": {
-		"LensesStr": "",
+	"216": {
+		"LensesStr": "YY-GR",
 		"Class": "gmod_track_signal",
 		"IsolateSwitches": {
+			"FrontArsName": "343A",
 			"SlowBlinking": true
 		},
 		"SignalType": 0,
-		"Name": "TC265B",
-		"ARSOnly": true,
-		"Angles": "{357.7722 283.6125 0}",
-		"Pos": "[9141.2666 -15033.9922 2815.8245]",
+		"Double": false,
+		"Name": "345",
+		"ARSOnly": false,
+		"Angles": "{0 180 0}",
+		"Pos": "[16225.0059 -5814.6777 408.7014]",
+		"DoubleL": false,
 		"Routes": [
 			{
+				"Lights": "4-24-1-3",
 				"NextSignal": "*",
-				"ARSCodes": "1"
+				"ARSCodes": "078"
 			}
-		]
+		],
+		"NonAutoStop": false,
+		"Left": false
 	},
-	"186": {
+	"217": {
 		"LensesStr": "YY-GR",
 		"Class": "gmod_track_signal",
 		"IsolateSwitches": {
@@ -4654,7 +5392,7 @@
 		"NonAutoStop": false,
 		"Left": false
 	},
-	"187": {
+	"218": {
 		"LensesStr": "RYY-GR",
 		"Class": "gmod_track_signal",
 		"IsolateSwitches": {
@@ -4678,7 +5416,7 @@
 		"NonAutoStop": false,
 		"Left": true
 	},
-	"188": {
+	"219": {
 		"LensesStr": "",
 		"Class": "gmod_track_signal",
 		"IsolateSwitches": {
@@ -4696,7 +5434,7 @@
 			}
 		]
 	},
-	"189": {
+	"220": {
 		"LensesStr": "",
 		"Class": "gmod_track_signal",
 		"IsolateSwitches": {
@@ -4715,7 +5453,7 @@
 		],
 		"Left": true
 	},
-	"190": {
+	"221": {
 		"LensesStr": "",
 		"Class": "gmod_track_signal",
 		"IsolateSwitches": {
@@ -4733,7 +5471,7 @@
 			}
 		]
 	},
-	"191": {
+	"222": {
 		"LensesStr": "",
 		"Class": "gmod_track_signal",
 		"IsolateSwitches": {
@@ -4751,7 +5489,7 @@
 			}
 		]
 	},
-	"192": {
+	"223": {
 		"LensesStr": "YY-GR",
 		"Class": "gmod_track_signal",
 		"IsolateSwitches": {
@@ -4775,7 +5513,7 @@
 		"NonAutoStop": false,
 		"Left": true
 	},
-	"193": {
+	"224": {
 		"LensesStr": "YY-GR",
 		"Class": "gmod_track_signal",
 		"IsolateSwitches": {
@@ -4799,7 +5537,7 @@
 		"NonAutoStop": false,
 		"Left": false
 	},
-	"194": {
+	"225": {
 		"LensesStr": "",
 		"Class": "gmod_track_signal",
 		"IsolateSwitches": {
@@ -4818,7 +5556,7 @@
 		],
 		"Left": true
 	},
-	"195": {
+	"226": {
 		"LensesStr": "YY-GR",
 		"Class": "gmod_track_signal",
 		"IsolateSwitches": {
@@ -4842,7 +5580,7 @@
 		"NonAutoStop": false,
 		"Left": true
 	},
-	"196": {
+	"227": {
 		"LensesStr": "YY-GR",
 		"Class": "gmod_track_signal",
 		"IsolateSwitches": {
@@ -4866,7 +5604,7 @@
 		"NonAutoStop": false,
 		"Left": true
 	},
-	"197": {
+	"228": {
 		"LensesStr": "YY-GR",
 		"Class": "gmod_track_signal",
 		"IsolateSwitches": {
@@ -4890,7 +5628,7 @@
 		"NonAutoStop": false,
 		"Left": false
 	},
-	"198": {
+	"229": {
 		"LensesStr": "YY-GR",
 		"Class": "gmod_track_signal",
 		"IsolateSwitches": {
@@ -4914,7 +5652,7 @@
 		"NonAutoStop": false,
 		"Left": false
 	},
-	"199": {
+	"230": {
 		"LensesStr": "",
 		"Class": "gmod_track_signal",
 		"IsolateSwitches": {
@@ -4933,7 +5671,7 @@
 		],
 		"Left": true
 	},
-	"200": {
+	"231": {
 		"LensesStr": "YY-GR",
 		"Class": "gmod_track_signal",
 		"IsolateSwitches": {
@@ -4957,7 +5695,7 @@
 		"NonAutoStop": false,
 		"Left": true
 	},
-	"201": {
+	"232": {
 		"LensesStr": "",
 		"Class": "gmod_track_signal",
 		"IsolateSwitches": {
@@ -4976,7 +5714,7 @@
 		],
 		"Left": true
 	},
-	"202": {
+	"233": {
 		"LensesStr": "",
 		"Class": "gmod_track_signal",
 		"IsolateSwitches": {
@@ -4994,7 +5732,7 @@
 			}
 		]
 	},
-	"203": {
+	"234": {
 		"LensesStr": "YY-GR",
 		"Class": "gmod_track_signal",
 		"IsolateSwitches": {
@@ -5018,7 +5756,7 @@
 		"NonAutoStop": false,
 		"Left": true
 	},
-	"204": {
+	"235": {
 		"LensesStr": "RW",
 		"Class": "gmod_track_signal",
 		"IsolateSwitches": {
@@ -5042,7 +5780,7 @@
 		"NonAutoStop": true,
 		"Left": false
 	},
-	"205": {
+	"236": {
 		"LensesStr": "",
 		"Class": "gmod_track_signal",
 		"IsolateSwitches": {
@@ -5060,7 +5798,7 @@
 			}
 		]
 	},
-	"206": {
+	"237": {
 		"LensesStr": "RYY-GR",
 		"Class": "gmod_track_signal",
 		"IsolateSwitches": {
@@ -5084,7 +5822,7 @@
 		"NonAutoStop": false,
 		"Left": true
 	},
-	"207": {
+	"238": {
 		"LensesStr": "YY-GR",
 		"Class": "gmod_track_signal",
 		"IsolateSwitches": {
@@ -5108,7 +5846,7 @@
 		"NonAutoStop": false,
 		"Left": true
 	},
-	"208": {
+	"239": {
 		"LensesStr": "RYY-GR",
 		"Class": "gmod_track_signal",
 		"IsolateSwitches": {
@@ -5132,7 +5870,7 @@
 		"NonAutoStop": false,
 		"Left": false
 	},
-	"209": {
+	"240": {
 		"LensesStr": "",
 		"Class": "gmod_track_signal",
 		"IsolateSwitches": {
@@ -5151,7 +5889,7 @@
 		],
 		"Left": true
 	},
-	"210": {
+	"241": {
 		"LensesStr": "BYY-GRW",
 		"Class": "gmod_track_signal",
 		"IsolateSwitches": {
@@ -5175,7 +5913,7 @@
 		"NonAutoStop": false,
 		"Left": true
 	},
-	"211": {
+	"242": {
 		"LensesStr": "",
 		"Class": "gmod_track_signal",
 		"IsolateSwitches": {
@@ -5193,7 +5931,7 @@
 			}
 		]
 	},
-	"212": {
+	"243": {
 		"LensesStr": "YYG-RW",
 		"Class": "gmod_track_signal",
 		"IsolateSwitches": {
@@ -5217,7 +5955,7 @@
 		"NonAutoStop": true,
 		"Left": true
 	},
-	"213": {
+	"244": {
 		"LensesStr": "BYY-GRW",
 		"Class": "gmod_track_signal",
 		"IsolateSwitches": {
@@ -5241,7 +5979,7 @@
 		"NonAutoStop": true,
 		"Left": false
 	},
-	"214": {
+	"245": {
 		"LensesStr": "",
 		"Class": "gmod_track_signal",
 		"IsolateSwitches": {
@@ -5259,7 +5997,7 @@
 			}
 		]
 	},
-	"215": {
+	"246": {
 		"LensesStr": "",
 		"Class": "gmod_track_signal",
 		"IsolateSwitches": {
@@ -5277,7 +6015,7 @@
 			}
 		]
 	},
-	"216": {
+	"247": {
 		"LensesStr": "RBY-RYW",
 		"Class": "gmod_track_signal",
 		"IsolateSwitches": {
@@ -5299,7 +6037,7 @@
 		"NonAutoStop": false,
 		"Left": true
 	},
-	"217": {
+	"248": {
 		"LensesStr": "",
 		"Class": "gmod_track_signal",
 		"IsolateSwitches": {
@@ -5317,7 +6055,7 @@
 			}
 		]
 	},
-	"218": {
+	"249": {
 		"LensesStr": "",
 		"Class": "gmod_track_signal",
 		"IsolateSwitches": {
@@ -5335,7 +6073,7 @@
 			}
 		]
 	},
-	"219": {
+	"250": {
 		"LensesStr": "YY-GR",
 		"Class": "gmod_track_signal",
 		"IsolateSwitches": {
@@ -5359,7 +6097,7 @@
 		"NonAutoStop": false,
 		"Left": false
 	},
-	"220": {
+	"251": {
 		"LensesStr": "YYG-RW",
 		"Class": "gmod_track_signal",
 		"IsolateSwitches": {
@@ -5383,7 +6121,7 @@
 		"NonAutoStop": true,
 		"Left": false
 	},
-	"221": {
+	"252": {
 		"LensesStr": "",
 		"Class": "gmod_track_signal",
 		"IsolateSwitches": {
@@ -5401,7 +6139,7 @@
 			}
 		]
 	},
-	"222": {
+	"253": {
 		"LensesStr": "YYG-RW",
 		"Class": "gmod_track_signal",
 		"IsolateSwitches": {
@@ -5425,7 +6163,7 @@
 		"NonAutoStop": true,
 		"Left": true
 	},
-	"223": {
+	"254": {
 		"LensesStr": "",
 		"Class": "gmod_track_signal",
 		"IsolateSwitches": {
@@ -5443,7 +6181,7 @@
 			}
 		]
 	},
-	"224": {
+	"255": {
 		"LensesStr": "",
 		"Class": "gmod_track_signal",
 		"IsolateSwitches": {
@@ -5461,7 +6199,7 @@
 			}
 		]
 	},
-	"225": {
+	"256": {
 		"LensesStr": "YY-GR",
 		"Class": "gmod_track_signal",
 		"IsolateSwitches": {
@@ -5485,7 +6223,7 @@
 		"NonAutoStop": true,
 		"Left": false
 	},
-	"226": {
+	"257": {
 		"LensesStr": "YGR",
 		"Class": "gmod_track_signal",
 		"IsolateSwitches": {
@@ -5509,7 +6247,7 @@
 		"NonAutoStop": false,
 		"Left": false
 	},
-	"227": {
+	"258": {
 		"LensesStr": "",
 		"Class": "gmod_track_signal",
 		"IsolateSwitches": {
@@ -5527,7 +6265,7 @@
 			}
 		]
 	},
-	"228": {
+	"259": {
 		"LensesStr": "RYY-GR",
 		"Class": "gmod_track_signal",
 		"IsolateSwitches": {
@@ -5551,7 +6289,7 @@
 		"NonAutoStop": true,
 		"Left": true
 	},
-	"229": {
+	"260": {
 		"LensesStr": "YY-GR",
 		"Class": "gmod_track_signal",
 		"IsolateSwitches": {
@@ -5575,7 +6313,7 @@
 		"NonAutoStop": false,
 		"Left": false
 	},
-	"230": {
+	"261": {
 		"RouteNumberSetup": "234K",
 		"LensesStr": "BYW-RW",
 		"Class": "gmod_track_signal",
@@ -5600,7 +6338,7 @@
 		"NonAutoStop": false,
 		"Left": false
 	},
-	"231": {
+	"262": {
 		"LensesStr": "YY-GR",
 		"Class": "gmod_track_signal",
 		"IsolateSwitches": {
@@ -5624,7 +6362,7 @@
 		"NonAutoStop": true,
 		"Left": false
 	},
-	"232": {
+	"263": {
 		"LensesStr": "RYY-GR",
 		"Class": "gmod_track_signal",
 		"IsolateSwitches": {
@@ -5648,7 +6386,7 @@
 		"NonAutoStop": false,
 		"Left": false
 	},
-	"233": {
+	"264": {
 		"LensesStr": "",
 		"Class": "gmod_track_signal",
 		"IsolateSwitches": {
@@ -5666,7 +6404,7 @@
 			}
 		]
 	},
-	"234": {
+	"265": {
 		"LensesStr": "YY-GR",
 		"Class": "gmod_track_signal",
 		"IsolateSwitches": {
@@ -5690,7 +6428,7 @@
 		"NonAutoStop": false,
 		"Left": false
 	},
-	"235": {
+	"266": {
 		"LensesStr": "YY-GR",
 		"Class": "gmod_track_signal",
 		"IsolateSwitches": {
@@ -5714,7 +6452,7 @@
 		"NonAutoStop": false,
 		"Left": true
 	},
-	"236": {
+	"267": {
 		"LensesStr": "YY-GR",
 		"Class": "gmod_track_signal",
 		"IsolateSwitches": {
@@ -5738,7 +6476,7 @@
 		"NonAutoStop": true,
 		"Left": false
 	},
-	"237": {
+	"268": {
 		"LensesStr": "YY-GR",
 		"Class": "gmod_track_signal",
 		"IsolateSwitches": {
@@ -5762,7 +6500,7 @@
 		"NonAutoStop": true,
 		"Left": false
 	},
-	"238": {
+	"269": {
 		"LensesStr": "YY-GR",
 		"Class": "gmod_track_signal",
 		"IsolateSwitches": {
@@ -5786,7 +6524,7 @@
 		"NonAutoStop": false,
 		"Left": false
 	},
-	"239": {
+	"270": {
 		"LensesStr": "",
 		"Class": "gmod_track_signal",
 		"IsolateSwitches": {
@@ -5804,7 +6542,7 @@
 			}
 		]
 	},
-	"240": {
+	"271": {
 		"LensesStr": "",
 		"Class": "gmod_track_signal",
 		"IsolateSwitches": {
@@ -5822,7 +6560,7 @@
 			}
 		]
 	},
-	"241": {
+	"272": {
 		"LensesStr": "YY-GR",
 		"Class": "gmod_track_signal",
 		"IsolateSwitches": {
@@ -5846,7 +6584,7 @@
 		"NonAutoStop": false,
 		"Left": false
 	},
-	"242": {
+	"273": {
 		"LensesStr": "YY-GR",
 		"Class": "gmod_track_signal",
 		"IsolateSwitches": {
@@ -5870,7 +6608,7 @@
 		"NonAutoStop": false,
 		"Left": false
 	},
-	"243": {
+	"274": {
 		"LensesStr": "",
 		"Class": "gmod_track_signal",
 		"IsolateSwitches": {
@@ -5888,7 +6626,7 @@
 			}
 		]
 	},
-	"244": {
+	"275": {
 		"LensesStr": "",
 		"Class": "gmod_track_signal",
 		"IsolateSwitches": {
@@ -5906,7 +6644,7 @@
 			}
 		]
 	},
-	"245": {
+	"276": {
 		"LensesStr": "YYG-RW",
 		"Class": "gmod_track_signal",
 		"IsolateSwitches": {
@@ -5930,7 +6668,7 @@
 		"NonAutoStop": false,
 		"Left": true
 	},
-	"246": {
+	"277": {
 		"LensesStr": "YYG-RW",
 		"Class": "gmod_track_signal",
 		"IsolateSwitches": {
@@ -5954,7 +6692,44 @@
 		"NonAutoStop": false,
 		"Left": false
 	},
-	"247": {
+	"278": {
+		"LensesStr": "",
+		"Class": "gmod_track_signal",
+		"IsolateSwitches": {
+			"SlowBlinking": true,
+			"HideDTM": true
+		},
+		"SignalType": 0,
+		"Name": "TC238SN",
+		"ARSOnly": true,
+		"Angles": "{0 45 0}",
+		"Pos": "[636.7158 2044.6304 1742.6573]",
+		"Routes": [
+			{
+				"NextSignal": "*"
+			}
+		],
+		"Left": true
+	},
+	"279": {
+		"LensesStr": "",
+		"Class": "gmod_track_signal",
+		"IsolateSwitches": {
+			"SlowBlinking": true
+		},
+		"SignalType": 0,
+		"Name": "TC380",
+		"ARSOnly": true,
+		"Angles": "{355.9746 254.2615 0}",
+		"Pos": "[-9220.4746 -13956.6855 -1334.5054]",
+		"Routes": [
+			{
+				"NextSignal": "*",
+				"ARSCodes": "07"
+			}
+		]
+	},
+	"280": {
 		"LensesStr": "YGR",
 		"Class": "gmod_track_signal",
 		"IsolateSwitches": {
@@ -5978,43 +6753,7 @@
 		"NonAutoStop": false,
 		"Left": true
 	},
-	"248": {
-		"LensesStr": "",
-		"Class": "gmod_track_signal",
-		"IsolateSwitches": {
-			"SlowBlinking": true
-		},
-		"SignalType": 0,
-		"Name": "TC380",
-		"ARSOnly": true,
-		"Angles": "{355.9746 254.2615 0}",
-		"Pos": "[-9220.4746 -13956.6855 -1334.5054]",
-		"Routes": [
-			{
-				"NextSignal": "*",
-				"ARSCodes": "07"
-			}
-		]
-	},
-	"249": {
-		"LensesStr": "",
-		"Class": "gmod_track_signal",
-		"IsolateSwitches": {
-			"SlowBlinking": true
-		},
-		"SignalType": 0,
-		"Name": "TC300",
-		"ARSOnly": true,
-		"Angles": "{0 270 0}",
-		"Pos": "[-5441.4639 14792.8125 1671.4944]",
-		"Routes": [
-			{
-				"NextSignal": "*",
-				"ARSCodes": "007"
-			}
-		]
-	},
-	"250": {
+	"281": {
 		"LensesStr": "",
 		"Class": "gmod_track_signal",
 		"IsolateSwitches": {
@@ -6032,7 +6771,7 @@
 			}
 		]
 	},
-	"251": {
+	"282": {
 		"LensesStr": "YY-GR",
 		"Class": "gmod_track_signal",
 		"IsolateSwitches": {
@@ -6056,7 +6795,7 @@
 		"NonAutoStop": false,
 		"Left": true
 	},
-	"252": {
+	"283": {
 		"LensesStr": "YY-GR",
 		"Class": "gmod_track_signal",
 		"IsolateSwitches": {
@@ -6080,7 +6819,7 @@
 		"NonAutoStop": false,
 		"Left": false
 	},
-	"253": {
+	"284": {
 		"LensesStr": "",
 		"Class": "gmod_track_signal",
 		"IsolateSwitches": {
@@ -6098,7 +6837,7 @@
 			}
 		]
 	},
-	"254": {
+	"285": {
 		"LensesStr": "",
 		"Class": "gmod_track_signal",
 		"IsolateSwitches": {
@@ -6116,7 +6855,7 @@
 			}
 		]
 	},
-	"255": {
+	"286": {
 		"LensesStr": "RYY-GR",
 		"Class": "gmod_track_signal",
 		"IsolateSwitches": {
@@ -6140,7 +6879,7 @@
 		"NonAutoStop": false,
 		"Left": false
 	},
-	"256": {
+	"287": {
 		"LensesStr": "",
 		"Class": "gmod_track_signal",
 		"IsolateSwitches": {
@@ -6158,7 +6897,7 @@
 			}
 		]
 	},
-	"257": {
+	"288": {
 		"LensesStr": "RY-GR",
 		"Class": "gmod_track_signal",
 		"IsolateSwitches": {
@@ -6182,7 +6921,7 @@
 		"NonAutoStop": false,
 		"Left": true
 	},
-	"258": {
+	"289": {
 		"LensesStr": "RYY-GR",
 		"Class": "gmod_track_signal",
 		"IsolateSwitches": {
@@ -6206,7 +6945,7 @@
 		"NonAutoStop": false,
 		"Left": false
 	},
-	"259": {
+	"290": {
 		"LensesStr": "YY-GR",
 		"Class": "gmod_track_signal",
 		"IsolateSwitches": {
@@ -6230,7 +6969,7 @@
 		"NonAutoStop": false,
 		"Left": false
 	},
-	"260": {
+	"291": {
 		"LensesStr": "BYY-GRW",
 		"Class": "gmod_track_signal",
 		"IsolateSwitches": {
@@ -6254,7 +6993,7 @@
 		"NonAutoStop": false,
 		"Left": false
 	},
-	"261": {
+	"292": {
 		"LensesStr": "YY-GR",
 		"Class": "gmod_track_signal",
 		"IsolateSwitches": {
@@ -6278,7 +7017,7 @@
 		"NonAutoStop": false,
 		"Left": false
 	},
-	"262": {
+	"293": {
 		"LensesStr": "RW",
 		"Class": "gmod_track_signal",
 		"IsolateSwitches": {
@@ -6299,7 +7038,7 @@
 		"NonAutoStop": true,
 		"Left": false
 	},
-	"263": {
+	"294": {
 		"LensesStr": "",
 		"Class": "gmod_track_signal",
 		"IsolateSwitches": {
@@ -6317,7 +7056,7 @@
 			}
 		]
 	},
-	"264": {
+	"295": {
 		"LensesStr": "XYG-RX",
 		"Class": "gmod_track_signal",
 		"IsolateSwitches": {
@@ -6341,7 +7080,7 @@
 		"NonAutoStop": false,
 		"Left": true
 	},
-	"265": {
+	"296": {
 		"LensesStr": "RY-GR",
 		"Class": "gmod_track_signal",
 		"IsolateSwitches": {
@@ -6365,7 +7104,7 @@
 		"NonAutoStop": false,
 		"Left": false
 	},
-	"266": {
+	"297": {
 		"LensesStr": "YY-GR",
 		"Class": "gmod_track_signal",
 		"IsolateSwitches": {
@@ -6389,7 +7128,7 @@
 		"NonAutoStop": true,
 		"Left": false
 	},
-	"267": {
+	"298": {
 		"LensesStr": "",
 		"Class": "gmod_track_signal",
 		"IsolateSwitches": {
@@ -6403,11 +7142,11 @@
 		"Routes": [
 			{
 				"NextSignal": "*",
-				"ARSCodes": "006"
+				"ARSCodes": "007"
 			}
 		]
 	},
-	"268": {
+	"299": {
 		"LensesStr": "XR",
 		"Class": "gmod_track_signal",
 		"IsolateSwitches": {
@@ -6429,7 +7168,7 @@
 		"NonAutoStop": false,
 		"Left": false
 	},
-	"269": {
+	"300": {
 		"LensesStr": "YY-GR",
 		"Class": "gmod_track_signal",
 		"IsolateSwitches": {
@@ -6453,7 +7192,7 @@
 		"NonAutoStop": false,
 		"Left": false
 	},
-	"270": {
+	"301": {
 		"RouteNumberSetup": "D",
 		"LensesStr": "BYY-GRW",
 		"Class": "gmod_track_signal",
@@ -6478,7 +7217,7 @@
 		"NonAutoStop": true,
 		"Left": true
 	},
-	"271": {
+	"302": {
 		"LensesStr": "YYG-RW",
 		"Class": "gmod_track_signal",
 		"IsolateSwitches": {
@@ -6502,7 +7241,7 @@
 		"NonAutoStop": false,
 		"Left": false
 	},
-	"272": {
+	"303": {
 		"LensesStr": "YYG-RW",
 		"Class": "gmod_track_signal",
 		"IsolateSwitches": {
@@ -6526,7 +7265,7 @@
 		"NonAutoStop": true,
 		"Left": false
 	},
-	"273": {
+	"304": {
 		"LensesStr": "",
 		"Class": "gmod_track_signal",
 		"IsolateSwitches": {
@@ -6544,7 +7283,7 @@
 			}
 		]
 	},
-	"274": {
+	"305": {
 		"LensesStr": "YY-GR",
 		"Class": "gmod_track_signal",
 		"IsolateSwitches": {
@@ -6568,7 +7307,7 @@
 		"NonAutoStop": true,
 		"Left": false
 	},
-	"275": {
+	"306": {
 		"LensesStr": "YGR",
 		"Class": "gmod_track_signal",
 		"IsolateSwitches": {
@@ -6592,7 +7331,7 @@
 		"NonAutoStop": false,
 		"Left": true
 	},
-	"276": {
+	"307": {
 		"LensesStr": "YY-GR",
 		"Class": "gmod_track_signal",
 		"IsolateSwitches": {
@@ -6616,7 +7355,7 @@
 		"NonAutoStop": true,
 		"Left": true
 	},
-	"277": {
+	"308": {
 		"LensesStr": "YY-GR",
 		"Class": "gmod_track_signal",
 		"IsolateSwitches": {
@@ -6640,7 +7379,7 @@
 		"NonAutoStop": true,
 		"Left": false
 	},
-	"278": {
+	"309": {
 		"LensesStr": "",
 		"Class": "gmod_track_signal",
 		"IsolateSwitches": {
@@ -6658,7 +7397,7 @@
 			}
 		]
 	},
-	"279": {
+	"310": {
 		"LensesStr": "",
 		"Class": "gmod_track_signal",
 		"IsolateSwitches": {
@@ -6676,7 +7415,7 @@
 			}
 		]
 	},
-	"280": {
+	"311": {
 		"LensesStr": "",
 		"Class": "gmod_track_signal",
 		"IsolateSwitches": {
@@ -6694,7 +7433,7 @@
 			}
 		]
 	},
-	"281": {
+	"312": {
 		"LensesStr": "YY-GR",
 		"Class": "gmod_track_signal",
 		"IsolateSwitches": {
@@ -6718,7 +7457,7 @@
 		"NonAutoStop": false,
 		"Left": true
 	},
-	"282": {
+	"313": {
 		"LensesStr": "YY-GR",
 		"Class": "gmod_track_signal",
 		"IsolateSwitches": {
@@ -6742,7 +7481,7 @@
 		"NonAutoStop": false,
 		"Left": false
 	},
-	"283": {
+	"314": {
 		"LensesStr": "",
 		"Class": "gmod_track_signal",
 		"IsolateSwitches": {
@@ -6760,7 +7499,7 @@
 			}
 		]
 	},
-	"284": {
+	"315": {
 		"LensesStr": "",
 		"Class": "gmod_track_signal",
 		"IsolateSwitches": {
@@ -6779,7 +7518,7 @@
 		],
 		"Left": true
 	},
-	"285": {
+	"316": {
 		"LensesStr": "",
 		"Class": "gmod_track_signal",
 		"IsolateSwitches": {
@@ -6797,7 +7536,7 @@
 			}
 		]
 	},
-	"286": {
+	"317": {
 		"LensesStr": "",
 		"Class": "gmod_track_signal",
 		"IsolateSwitches": {
@@ -6805,10 +7544,10 @@
 			"HideDTM": true
 		},
 		"SignalType": 0,
-		"Name": "TC238SN",
+		"Name": "TC240SN",
 		"ARSOnly": true,
 		"Angles": "{0 45 0}",
-		"Pos": "[636.7158 2044.6304 1742.6573]",
+		"Pos": "[2029.397 653.4308 1742.6573]",
 		"Routes": [
 			{
 				"NextSignal": "*"
@@ -6816,7 +7555,7 @@
 		],
 		"Left": true
 	},
-	"287": {
+	"318": {
 		"LensesStr": "YY-GR",
 		"Class": "gmod_track_signal",
 		"IsolateSwitches": {
@@ -6840,26 +7579,7 @@
 		"NonAutoStop": false,
 		"Left": true
 	},
-	"288": {
-		"LensesStr": "",
-		"Class": "gmod_track_signal",
-		"IsolateSwitches": {
-			"SlowBlinking": true,
-			"HideDTM": true
-		},
-		"SignalType": 0,
-		"Name": "TC240SN",
-		"ARSOnly": true,
-		"Angles": "{0 45 0}",
-		"Pos": "[2029.397 653.4308 1742.6573]",
-		"Routes": [
-			{
-				"NextSignal": "*"
-			}
-		],
-		"Left": true
-	},
-	"289": {
+	"319": {
 		"LensesStr": "",
 		"Class": "gmod_track_signal",
 		"IsolateSwitches": {
@@ -6877,7 +7597,25 @@
 			}
 		]
 	},
-	"290": {
+	"320": {
+		"LensesStr": "",
+		"Class": "gmod_track_signal",
+		"IsolateSwitches": {
+			"SlowBlinking": true
+		},
+		"SignalType": 0,
+		"Name": "TC240",
+		"ARSOnly": true,
+		"Angles": "{-0 225 0}",
+		"Pos": "[2029.397 653.4308 1742.6573]",
+		"Routes": [
+			{
+				"NextSignal": "*",
+				"ARSCodes": "0004"
+			}
+		]
+	},
+	"321": {
 		"LensesStr": "RYY-GR",
 		"Class": "gmod_track_signal",
 		"IsolateSwitches": {
@@ -6901,7 +7639,7 @@
 		"NonAutoStop": false,
 		"Left": false
 	},
-	"291": {
+	"322": {
 		"RouteNumberSetup": "234",
 		"LensesStr": "BW-RW",
 		"Class": "gmod_track_signal",
@@ -6924,7 +7662,7 @@
 		"NonAutoStop": true,
 		"Left": false
 	},
-	"292": {
+	"323": {
 		"LensesStr": "",
 		"Class": "gmod_track_signal",
 		"IsolateSwitches": {
@@ -6942,92 +7680,7 @@
 			}
 		]
 	},
-	"293": {
-		"LensesStr": "",
-		"Class": "gmod_track_signal",
-		"IsolateSwitches": {
-			"SlowBlinking": true
-		},
-		"SignalType": 0,
-		"Name": "TC240",
-		"ARSOnly": true,
-		"Angles": "{-0 225 0}",
-		"Pos": "[2029.397 653.4308 1742.6573]",
-		"Routes": [
-			{
-				"NextSignal": "*",
-				"ARSCodes": "0004"
-			}
-		]
-	},
-	"294": {
-		"LensesStr": "RYY-GRX",
-		"Class": "gmod_track_signal",
-		"IsolateSwitches": {
-			"FrontArsName": "380V",
-			"SlowBlinking": true
-		},
-		"SignalType": 0,
-		"Double": false,
-		"Name": "376M",
-		"ARSOnly": false,
-		"Angles": "{360 135 0}",
-		"Pos": "[-2051.6079 9695.3164 -1047.8617]",
-		"DoubleL": false,
-		"Routes": [
-			{
-				"Lights": "5-35-35-2-2-2-4",
-				"NextSignal": "*",
-				"ARSCodes": "068"
-			}
-		],
-		"NonAutoStop": false,
-		"Left": false
-	},
-	"295": {
-		"LensesStr": "",
-		"Class": "gmod_track_signal",
-		"IsolateSwitches": {
-			"SlowBlinking": true,
-			"HideDTM": true
-		},
-		"SignalType": 0,
-		"Name": "TC284SN",
-		"ARSOnly": true,
-		"Angles": "{0 360 0}",
-		"Pos": "[14563.707 7127.8428 2867.5945]",
-		"Routes": [
-			{
-				"NextSignal": "*"
-			}
-		],
-		"Left": true
-	},
-	"296": {
-		"LensesStr": "YY-GR",
-		"Class": "gmod_track_signal",
-		"IsolateSwitches": {
-			"FrontArsName": "266",
-			"SlowBlinking": true
-		},
-		"SignalType": 0,
-		"Double": false,
-		"Name": "258",
-		"ARSOnly": false,
-		"Angles": "{2.0189 259.6348 0}",
-		"Pos": "[9590.415 14801.9883 2062.8176]",
-		"DoubleL": false,
-		"Routes": [
-			{
-				"Lights": "4-24-24-24-24-1-3",
-				"NextSignal": "*",
-				"ARSCodes": "00004467"
-			}
-		],
-		"NonAutoStop": true,
-		"Left": false
-	},
-	"297": {
+	"324": {
 		"LensesStr": "RY-GR",
 		"Class": "gmod_track_signal",
 		"IsolateSwitches": {
@@ -7051,7 +7704,93 @@
 		"NonAutoStop": false,
 		"Left": false
 	},
-	"298": {
+	"325": {
+		"LensesStr": "RYY-GRX",
+		"Class": "gmod_track_signal",
+		"IsolateSwitches": {
+			"FrontArsName": "380B",
+			"SlowBlinking": true
+		},
+		"SignalType": 0,
+		"Double": false,
+		"Name": "376M",
+		"ARSOnly": false,
+		"Angles": "{360 135 0}",
+		"Pos": "[-2051.6079 9695.3164 -1047.8617]",
+		"DoubleL": false,
+		"Routes": [
+			{
+				"Lights": "5-35-35-2-2-2-4",
+				"NextSignal": "*",
+				"ARSCodes": "068"
+			}
+		],
+		"NonAutoStop": false,
+		"Left": false
+	},
+	"326": {
+		"LensesStr": "",
+		"Class": "gmod_track_signal",
+		"IsolateSwitches": {
+			"SlowBlinking": true,
+			"HideDTM": true
+		},
+		"SignalType": 0,
+		"Name": "TC284SN",
+		"ARSOnly": true,
+		"Angles": "{0 360 0}",
+		"Pos": "[14563.707 7127.8428 2867.5945]",
+		"Routes": [
+			{
+				"NextSignal": "*"
+			}
+		],
+		"Left": true
+	},
+	"327": {
+		"LensesStr": "YY-GR",
+		"Class": "gmod_track_signal",
+		"IsolateSwitches": {
+			"FrontArsName": "266",
+			"SlowBlinking": true
+		},
+		"SignalType": 0,
+		"Double": false,
+		"Name": "258",
+		"ARSOnly": false,
+		"Angles": "{2.0189 259.6348 0}",
+		"Pos": "[9590.415 14801.9883 2062.8176]",
+		"DoubleL": false,
+		"Routes": [
+			{
+				"Lights": "4-24-24-24-24-1-3",
+				"NextSignal": "*",
+				"ARSCodes": "00004467"
+			}
+		],
+		"NonAutoStop": true,
+		"Left": false
+	},
+	"328": {
+		"LensesStr": "",
+		"Class": "gmod_track_signal",
+		"IsolateSwitches": {
+			"SlowBlinking": true,
+			"HideDTM": true
+		},
+		"SignalType": 0,
+		"Name": "TC242N",
+		"ARSOnly": true,
+		"Angles": "{0 45 0}",
+		"Pos": "[5277.2603 -2594.4326 1742.6573]",
+		"Routes": [
+			{
+				"NextSignal": "*"
+			}
+		],
+		"Left": true
+	},
+	"329": {
 		"LensesStr": "YY-GR",
 		"Class": "gmod_track_signal",
 		"IsolateSwitches": {
@@ -7075,7 +7814,7 @@
 		"NonAutoStop": true,
 		"Left": false
 	},
-	"299": {
+	"330": {
 		"LensesStr": "",
 		"Class": "gmod_track_signal",
 		"IsolateSwitches": {
@@ -7093,7 +7832,7 @@
 			}
 		]
 	},
-	"300": {
+	"331": {
 		"LensesStr": "YY-GR",
 		"Class": "gmod_track_signal",
 		"IsolateSwitches": {
@@ -7117,26 +7856,31 @@
 		"NonAutoStop": true,
 		"Left": false
 	},
-	"301": {
-		"LensesStr": "",
+	"332": {
+		"LensesStr": "YYG-RW",
 		"Class": "gmod_track_signal",
 		"IsolateSwitches": {
-			"SlowBlinking": true,
-			"HideDTM": true
+			"FrontArsName": "390",
+			"SlowBlinking": true
 		},
 		"SignalType": 0,
-		"Name": "TC242N",
-		"ARSOnly": true,
-		"Angles": "{0 45 0}",
-		"Pos": "[5277.2603 -2594.4326 1742.6573]",
+		"Double": false,
+		"Name": "OL386",
+		"ARSOnly": false,
+		"Angles": "{360 306 0}",
+		"Pos": "[9722.7598 -3378.3586 -1583.2277]",
+		"DoubleL": false,
 		"Routes": [
 			{
-				"NextSignal": "*"
+				"Lights": "4-24-24-1-13-3",
+				"NextSignal": "*",
+				"ARSCodes": "004678"
 			}
 		],
+		"NonAutoStop": true,
 		"Left": true
 	},
-	"302": {
+	"333": {
 		"LensesStr": "YY-GR",
 		"Class": "gmod_track_signal",
 		"IsolateSwitches": {
@@ -7160,7 +7904,7 @@
 		"NonAutoStop": true,
 		"Left": false
 	},
-	"303": {
+	"334": {
 		"LensesStr": "YYG-RW",
 		"Class": "gmod_track_signal",
 		"IsolateSwitches": {
@@ -7184,31 +7928,7 @@
 		"NonAutoStop": true,
 		"Left": false
 	},
-	"304": {
-		"LensesStr": "YY-GR",
-		"Class": "gmod_track_signal",
-		"IsolateSwitches": {
-			"FrontArsName": "282A",
-			"SlowBlinking": true
-		},
-		"SignalType": 1,
-		"Double": false,
-		"Name": "280",
-		"ARSOnly": false,
-		"Angles": "{2.7529 250.8303 0}",
-		"Pos": "[10186.2412 15170.9062 2867.5918]",
-		"DoubleL": false,
-		"Routes": [
-			{
-				"Lights": "4-24-24-24-1-13-3",
-				"NextSignal": "*",
-				"ARSCodes": "004678"
-			}
-		],
-		"NonAutoStop": false,
-		"Left": false
-	},
-	"305": {
+	"335": {
 		"LensesStr": "",
 		"Class": "gmod_track_signal",
 		"IsolateSwitches": {
@@ -7226,7 +7946,7 @@
 			}
 		]
 	},
-	"306": {
+	"336": {
 		"LensesStr": "",
 		"Class": "gmod_track_signal",
 		"IsolateSwitches": {
@@ -7245,7 +7965,7 @@
 		],
 		"Left": true
 	},
-	"307": {
+	"337": {
 		"LensesStr": "RYY-GR",
 		"Class": "gmod_track_signal",
 		"IsolateSwitches": {
@@ -7269,7 +7989,7 @@
 		"NonAutoStop": true,
 		"Left": false
 	},
-	"308": {
+	"338": {
 		"LensesStr": "YY-GR",
 		"Class": "gmod_track_signal",
 		"IsolateSwitches": {
@@ -7293,7 +8013,7 @@
 		"NonAutoStop": false,
 		"Left": false
 	},
-	"309": {
+	"339": {
 		"LensesStr": "",
 		"Class": "gmod_track_signal",
 		"IsolateSwitches": {
@@ -7311,7 +8031,7 @@
 			}
 		]
 	},
-	"310": {
+	"340": {
 		"LensesStr": "YGR",
 		"Class": "gmod_track_signal",
 		"IsolateSwitches": {
@@ -7335,25 +8055,7 @@
 		"NonAutoStop": false,
 		"Left": false
 	},
-	"311": {
-		"LensesStr": "",
-		"Class": "gmod_track_signal",
-		"IsolateSwitches": {
-			"SlowBlinking": true
-		},
-		"SignalType": 0,
-		"Name": "TC416",
-		"ARSOnly": true,
-		"Angles": "{5.2076 9.9233 0}",
-		"Pos": "[-15284.2764 -11279.7676 -2624.8235]",
-		"Routes": [
-			{
-				"NextSignal": "*",
-				"ARSCodes": "007"
-			}
-		]
-	},
-	"312": {
+	"341": {
 		"LensesStr": "YY-GR",
 		"Class": "gmod_track_signal",
 		"IsolateSwitches": {
@@ -7377,31 +8079,25 @@
 		"NonAutoStop": false,
 		"Left": true
 	},
-	"313": {
-		"LensesStr": "YY-GR",
+	"342": {
+		"LensesStr": "",
 		"Class": "gmod_track_signal",
 		"IsolateSwitches": {
-			"FrontArsName": "274",
 			"SlowBlinking": true
 		},
 		"SignalType": 0,
-		"Double": false,
-		"Name": "268",
-		"ARSOnly": false,
-		"Angles": "{0.9547 94.9056 0}",
-		"Pos": "[8674.2393 -7803.8965 2279.7764]",
-		"DoubleL": false,
+		"Name": "TC416",
+		"ARSOnly": true,
+		"Angles": "{5.2076 9.9233 0}",
+		"Pos": "[-15284.2764 -11279.7676 -2624.8235]",
 		"Routes": [
 			{
-				"Lights": "4-24-24-24-1-13-3",
 				"NextSignal": "*",
-				"ARSCodes": "04466778"
+				"ARSCodes": "007"
 			}
-		],
-		"NonAutoStop": false,
-		"Left": false
+		]
 	},
-	"314": {
+	"343": {
 		"LensesStr": "RYY-GR",
 		"Class": "gmod_track_signal",
 		"IsolateSwitches": {
@@ -7425,7 +8121,55 @@
 		"NonAutoStop": false,
 		"Left": false
 	},
-	"315": {
+	"344": {
+		"LensesStr": "YY-GR",
+		"Class": "gmod_track_signal",
+		"IsolateSwitches": {
+			"FrontArsName": "274",
+			"SlowBlinking": true
+		},
+		"SignalType": 0,
+		"Double": false,
+		"Name": "268",
+		"ARSOnly": false,
+		"Angles": "{0.9547 94.9056 0}",
+		"Pos": "[8674.2393 -7803.8965 2279.7764]",
+		"DoubleL": false,
+		"Routes": [
+			{
+				"Lights": "4-24-24-24-1-13-3",
+				"NextSignal": "*",
+				"ARSCodes": "04466778"
+			}
+		],
+		"NonAutoStop": false,
+		"Left": false
+	},
+	"345": {
+		"LensesStr": "YYG-RW",
+		"Class": "gmod_track_signal",
+		"IsolateSwitches": {
+			"FrontArsName": "358",
+			"SlowBlinking": true
+		},
+		"SignalType": 0,
+		"Double": false,
+		"Name": "RX354",
+		"ARSOnly": false,
+		"Angles": "{355.9503 343.3317 0}",
+		"Pos": "[15610.8564 -11432.5654 411.6602]",
+		"DoubleL": false,
+		"Routes": [
+			{
+				"Lights": "4-24-24-24-1-13-3",
+				"NextSignal": "*",
+				"ARSCodes": "00466778"
+			}
+		],
+		"NonAutoStop": false,
+		"Left": true
+	},
+	"346": {
 		"LensesStr": "YY-GR",
 		"Class": "gmod_track_signal",
 		"IsolateSwitches": {
@@ -7449,31 +8193,30 @@
 		"NonAutoStop": false,
 		"Left": false
 	},
-	"316": {
-		"LensesStr": "YYG-RW",
+	"347": {
+		"RouteNumberSetup": "1VG",
+		"LensesStr": "RBY-WR-YW",
 		"Class": "gmod_track_signal",
 		"IsolateSwitches": {
-			"FrontArsName": "358",
+			"SignalName": "DM",
+			"HideDTM": true,
 			"SlowBlinking": true
 		},
 		"SignalType": 0,
-		"Double": false,
-		"Name": "RX354",
+		"Name": "PTDM",
 		"ARSOnly": false,
-		"Angles": "{355.9503 343.3317 0}",
-		"Pos": "[15610.8564 -11432.5654 411.6602]",
-		"DoubleL": false,
+		"Angles": "{0 360 0}",
+		"Pos": "[14563.707 -2058.4951 2867.6543]",
 		"Routes": [
 			{
-				"Lights": "4-24-24-24-1-13-13-3",
-				"NextSignal": "*",
-				"ARSCodes": "00466778"
+				"Lights": 5,
+				"NextSignal": "*"
 			}
 		],
 		"NonAutoStop": false,
-		"Left": true
+		"Left": false
 	},
-	"317": {
+	"348": {
 		"LensesStr": "YY-GR",
 		"Class": "gmod_track_signal",
 		"IsolateSwitches": {
@@ -7497,31 +8240,7 @@
 		"NonAutoStop": false,
 		"Left": false
 	},
-	"318": {
-		"LensesStr": "YY-GR",
-		"Class": "gmod_track_signal",
-		"IsolateSwitches": {
-			"FrontArsName": "282B",
-			"SlowBlinking": true
-		},
-		"SignalType": 1,
-		"Double": false,
-		"Name": "278",
-		"ARSOnly": false,
-		"Angles": "{0.6915 267.4382 0}",
-		"Pos": "[6971.9536 15750.6807 2867.8015]",
-		"DoubleL": false,
-		"Routes": [
-			{
-				"Lights": "4-24-24-24-1-13-3",
-				"NextSignal": "*",
-				"ARSCodes": "004678"
-			}
-		],
-		"NonAutoStop": true,
-		"Left": false
-	},
-	"319": {
+	"349": {
 		"LensesStr": "RYY-GR",
 		"Class": "gmod_track_signal",
 		"IsolateSwitches": {
@@ -7545,7 +8264,31 @@
 		"NonAutoStop": false,
 		"Left": false
 	},
-	"320": {
+	"350": {
+		"LensesStr": "YY-GR",
+		"Class": "gmod_track_signal",
+		"IsolateSwitches": {
+			"FrontArsName": "282B",
+			"SlowBlinking": true
+		},
+		"SignalType": 1,
+		"Double": false,
+		"Name": "278",
+		"ARSOnly": false,
+		"Angles": "{0.6915 267.4382 0}",
+		"Pos": "[6971.9536 15750.6807 2867.8015]",
+		"DoubleL": false,
+		"Routes": [
+			{
+				"Lights": "4-24-24-24-1-13-3",
+				"NextSignal": "*",
+				"ARSCodes": "004678"
+			}
+		],
+		"NonAutoStop": true,
+		"Left": false
+	},
+	"351": {
 		"LensesStr": "",
 		"Class": "gmod_track_signal",
 		"IsolateSwitches": {
@@ -7563,7 +8306,7 @@
 			}
 		]
 	},
-	"321": {
+	"352": {
 		"LensesStr": "YYG-RW",
 		"Class": "gmod_track_signal",
 		"IsolateSwitches": {
@@ -7587,30 +8330,7 @@
 		"NonAutoStop": true,
 		"Left": false
 	},
-	"322": {
-		"RouteNumberSetup": "1VG",
-		"LensesStr": "RBY-WR-YW",
-		"Class": "gmod_track_signal",
-		"IsolateSwitches": {
-			"SignalName": "DM",
-			"HideDTM": true,
-			"SlowBlinking": true
-		},
-		"SignalType": 0,
-		"Name": "PTDM",
-		"ARSOnly": false,
-		"Angles": "{0 360 0}",
-		"Pos": "[14563.707 -2058.4951 2867.6543]",
-		"Routes": [
-			{
-				"Lights": 5,
-				"NextSignal": "*"
-			}
-		],
-		"NonAutoStop": false,
-		"Left": false
-	},
-	"323": {
+	"353": {
 		"RouteNumberSetup": "D",
 		"LensesStr": "BYY-GRW",
 		"Class": "gmod_track_signal",
@@ -7635,7 +8355,7 @@
 		"NonAutoStop": true,
 		"Left": false
 	},
-	"324": {
+	"354": {
 		"LensesStr": "YY-GR",
 		"Class": "gmod_track_signal",
 		"IsolateSwitches": {
@@ -7659,7 +8379,26 @@
 		"NonAutoStop": true,
 		"Left": false
 	},
-	"325": {
+	"355": {
+		"LensesStr": "",
+		"Class": "gmod_track_signal",
+		"IsolateSwitches": {
+			"SlowBlinking": true,
+			"HideDTM": true
+		},
+		"SignalType": 0,
+		"Name": "TC288N",
+		"ARSOnly": true,
+		"Angles": "{0 360 0}",
+		"Pos": "[14563.707 -89.9951 2867.5945]",
+		"Routes": [
+			{
+				"NextSignal": "*"
+			}
+		],
+		"Left": true
+	},
+	"356": {
 		"LensesStr": "",
 		"Class": "gmod_track_signal",
 		"IsolateSwitches": {
@@ -7677,31 +8416,25 @@
 			}
 		]
 	},
-	"326": {
-		"LensesStr": "YYG-RW",
+	"357": {
+		"LensesStr": "",
 		"Class": "gmod_track_signal",
 		"IsolateSwitches": {
-			"FrontArsName": "390",
 			"SlowBlinking": true
 		},
 		"SignalType": 0,
-		"Double": false,
-		"Name": "OL386",
-		"ARSOnly": false,
-		"Angles": "{360 306 0}",
-		"Pos": "[9722.7598 -3378.3586 -1583.2277]",
-		"DoubleL": false,
+		"Name": "TC366",
+		"ARSOnly": true,
+		"Angles": "{0 249.8 0}",
+		"Pos": "[-3657.8848 -14711.0742 -1007.0056]",
 		"Routes": [
 			{
-				"Lights": "4-24-24-1-13-3",
 				"NextSignal": "*",
-				"ARSCodes": "004678"
+				"ARSCodes": "007"
 			}
-		],
-		"NonAutoStop": true,
-		"Left": true
+		]
 	},
-	"327": {
+	"358": {
 		"LensesStr": "RYY-GR",
 		"Class": "gmod_track_signal",
 		"IsolateSwitches": {
@@ -7725,7 +8458,7 @@
 		"NonAutoStop": false,
 		"Left": false
 	},
-	"328": {
+	"359": {
 		"LensesStr": "RY-GR",
 		"Class": "gmod_track_signal",
 		"IsolateSwitches": {
@@ -7749,7 +8482,7 @@
 		"NonAutoStop": false,
 		"Left": true
 	},
-	"329": {
+	"360": {
 		"LensesStr": "",
 		"Class": "gmod_track_signal",
 		"IsolateSwitches": {
@@ -7767,7 +8500,7 @@
 			}
 		]
 	},
-	"330": {
+	"361": {
 		"LensesStr": "YY-GR",
 		"Class": "gmod_track_signal",
 		"IsolateSwitches": {
@@ -7791,25 +8524,31 @@
 		"NonAutoStop": false,
 		"Left": false
 	},
-	"331": {
-		"LensesStr": "",
+	"362": {
+		"LensesStr": "YY-GR",
 		"Class": "gmod_track_signal",
 		"IsolateSwitches": {
+			"FrontArsName": "282A",
 			"SlowBlinking": true
 		},
-		"SignalType": 0,
-		"Name": "TC366",
-		"ARSOnly": true,
-		"Angles": "{0 249.8 0}",
-		"Pos": "[-3657.8848 -14711.0742 -1007.0056]",
+		"SignalType": 1,
+		"Double": false,
+		"Name": "280",
+		"ARSOnly": false,
+		"Angles": "{2.7529 250.8303 0}",
+		"Pos": "[10186.2412 15170.9062 2867.5918]",
+		"DoubleL": false,
 		"Routes": [
 			{
+				"Lights": "4-24-24-24-1-13-3",
 				"NextSignal": "*",
-				"ARSCodes": "007"
+				"ARSCodes": "004678"
 			}
-		]
+		],
+		"NonAutoStop": false,
+		"Left": false
 	},
-	"332": {
+	"363": {
 		"LensesStr": "YY-GR",
 		"Class": "gmod_track_signal",
 		"IsolateSwitches": {
@@ -7833,7 +8572,7 @@
 		"NonAutoStop": false,
 		"Left": false
 	},
-	"333": {
+	"364": {
 		"LensesStr": "",
 		"Class": "gmod_track_signal",
 		"IsolateSwitches": {
@@ -7851,7 +8590,7 @@
 			}
 		]
 	},
-	"334": {
+	"365": {
 		"LensesStr": "YY-GR",
 		"Class": "gmod_track_signal",
 		"IsolateSwitches": {
@@ -7875,7 +8614,7 @@
 		"NonAutoStop": false,
 		"Left": true
 	},
-	"335": {
+	"366": {
 		"LensesStr": "",
 		"Class": "gmod_track_signal",
 		"IsolateSwitches": {
@@ -7893,7 +8632,7 @@
 			}
 		]
 	},
-	"336": {
+	"367": {
 		"LensesStr": "YY-GR",
 		"Class": "gmod_track_signal",
 		"IsolateSwitches": {
@@ -7917,7 +8656,7 @@
 		"NonAutoStop": false,
 		"Left": true
 	},
-	"337": {
+	"368": {
 		"LensesStr": "YYG-RW",
 		"Class": "gmod_track_signal",
 		"IsolateSwitches": {
@@ -7941,7 +8680,7 @@
 		"NonAutoStop": true,
 		"Left": false
 	},
-	"338": {
+	"369": {
 		"LensesStr": "YY-GR",
 		"Class": "gmod_track_signal",
 		"IsolateSwitches": {
@@ -7965,7 +8704,7 @@
 		"NonAutoStop": false,
 		"Left": true
 	},
-	"339": {
+	"370": {
 		"LensesStr": "",
 		"Class": "gmod_track_signal",
 		"IsolateSwitches": {
@@ -7983,7 +8722,7 @@
 			}
 		]
 	},
-	"340": {
+	"371": {
 		"LensesStr": "",
 		"Class": "gmod_track_signal",
 		"IsolateSwitches": {
@@ -8001,31 +8740,7 @@
 			}
 		]
 	},
-	"341": {
-		"LensesStr": "RXX-YYG-RX",
-		"Class": "gmod_track_signal",
-		"IsolateSwitches": {
-			"FrontArsName": "320",
-			"SlowBlinking": true
-		},
-		"SignalType": 0,
-		"Double": false,
-		"Name": "316M",
-		"ARSOnly": false,
-		"Angles": "{0 360 0}",
-		"Pos": "[9579.0234 -4166.2412 838.0093]",
-		"DoubleL": false,
-		"Routes": [
-			{
-				"Lights": "7-57-57-57-4-6",
-				"NextSignal": "*",
-				"ARSCodes": "00446"
-			}
-		],
-		"NonAutoStop": false,
-		"Left": false
-	},
-	"342": {
+	"372": {
 		"LensesStr": "YY-GR",
 		"Class": "gmod_track_signal",
 		"IsolateSwitches": {
@@ -8049,7 +8764,31 @@
 		"NonAutoStop": false,
 		"Left": true
 	},
-	"343": {
+	"373": {
+		"LensesStr": "RXX-YYG-RX",
+		"Class": "gmod_track_signal",
+		"IsolateSwitches": {
+			"FrontArsName": "320",
+			"SlowBlinking": true
+		},
+		"SignalType": 0,
+		"Double": false,
+		"Name": "316M",
+		"ARSOnly": false,
+		"Angles": "{0 360 0}",
+		"Pos": "[9579.0234 -4166.2412 838.0093]",
+		"DoubleL": false,
+		"Routes": [
+			{
+				"Lights": "7-57-57-57-4-6",
+				"NextSignal": "*",
+				"ARSCodes": "00446"
+			}
+		],
+		"NonAutoStop": false,
+		"Left": false
+	},
+	"374": {
 		"LensesStr": "",
 		"Class": "gmod_track_signal",
 		"IsolateSwitches": {
@@ -8067,7 +8806,7 @@
 			}
 		]
 	},
-	"344": {
+	"375": {
 		"LensesStr": "YY-GR",
 		"Class": "gmod_track_signal",
 		"IsolateSwitches": {
@@ -8091,8 +8830,8 @@
 		"NonAutoStop": false,
 		"Left": false
 	},
-	"345": {
-		"RouteNumberSetup": "23",
+	"376": {
+		"RouteNumberSetup": "",
 		"LensesStr": "BW-RW",
 		"Class": "gmod_track_signal",
 		"IsolateSwitches": {
@@ -8114,7 +8853,7 @@
 		"NonAutoStop": true,
 		"Left": false
 	},
-	"346": {
+	"377": {
 		"LensesStr": "YY-GR",
 		"Class": "gmod_track_signal",
 		"IsolateSwitches": {
@@ -8138,26 +8877,7 @@
 		"NonAutoStop": false,
 		"Left": true
 	},
-	"347": {
-		"LensesStr": "",
-		"Class": "gmod_track_signal",
-		"IsolateSwitches": {
-			"SlowBlinking": true,
-			"HideDTM": true
-		},
-		"SignalType": 0,
-		"Name": "TC288N",
-		"ARSOnly": true,
-		"Angles": "{0 360 0}",
-		"Pos": "[14563.707 -89.9951 2867.5945]",
-		"Routes": [
-			{
-				"NextSignal": "*"
-			}
-		],
-		"Left": true
-	},
-	"348": {
+	"378": {
 		"LensesStr": "",
 		"Class": "gmod_track_signal",
 		"IsolateSwitches": {
@@ -8176,7 +8896,7 @@
 		],
 		"Left": true
 	},
-	"349": {
+	"379": {
 		"LensesStr": "YYG-RW",
 		"Class": "gmod_track_signal",
 		"IsolateSwitches": {
@@ -8200,7 +8920,7 @@
 		"NonAutoStop": false,
 		"Left": false
 	},
-	"350": {
+	"380": {
 		"LensesStr": "RYY-GR",
 		"Class": "gmod_track_signal",
 		"IsolateSwitches": {
@@ -8224,7 +8944,25 @@
 		"NonAutoStop": false,
 		"Left": false
 	},
-	"351": {
+	"381": {
+		"LensesStr": "",
+		"Class": "gmod_track_signal",
+		"IsolateSwitches": {
+			"SlowBlinking": true
+		},
+		"SignalType": 0,
+		"Name": "TC300",
+		"ARSOnly": true,
+		"Angles": "{0 270 0}",
+		"Pos": "[-5441.4639 14792.8125 1671.4944]",
+		"Routes": [
+			{
+				"NextSignal": "*",
+				"ARSCodes": "007"
+			}
+		]
+	},
+	"382": {
 		"LensesStr": "YY-GR",
 		"Class": "gmod_track_signal",
 		"IsolateSwitches": {
@@ -8248,7 +8986,7 @@
 		"NonAutoStop": false,
 		"Left": true
 	},
-	"352": {
+	"383": {
 		"LensesStr": "",
 		"Class": "gmod_track_signal",
 		"IsolateSwitches": {
@@ -8266,7 +9004,7 @@
 			}
 		]
 	},
-	"353": {
+	"384": {
 		"LensesStr": "",
 		"Class": "gmod_track_signal",
 		"IsolateSwitches": {
@@ -8284,7 +9022,7 @@
 			}
 		]
 	},
-	"354": {
+	"385": {
 		"LensesStr": "YY-GR",
 		"Class": "gmod_track_signal",
 		"IsolateSwitches": {
@@ -8308,7 +9046,7 @@
 		"NonAutoStop": false,
 		"Left": false
 	},
-	"355": {
+	"386": {
 		"LensesStr": "YY-GR",
 		"Class": "gmod_track_signal",
 		"IsolateSwitches": {
@@ -8332,7 +9070,7 @@
 		"NonAutoStop": true,
 		"Left": false
 	},
-	"356": {
+	"387": {
 		"LensesStr": "YYG-RW",
 		"Class": "gmod_track_signal",
 		"IsolateSwitches": {
@@ -8361,7 +9099,7 @@
 		"NonAutoStop": true,
 		"Left": false
 	},
-	"357": {
+	"388": {
 		"LensesStr": "",
 		"Class": "gmod_track_signal",
 		"IsolateSwitches": {
@@ -8380,7 +9118,7 @@
 		],
 		"Left": true
 	},
-	"358": {
+	"389": {
 		"LensesStr": "",
 		"Class": "gmod_track_signal",
 		"IsolateSwitches": {
@@ -8398,7 +9136,7 @@
 			}
 		]
 	},
-	"359": {
+	"390": {
 		"LensesStr": "BYY-GRW",
 		"Class": "gmod_track_signal",
 		"IsolateSwitches": {
@@ -8422,7 +9160,7 @@
 		"NonAutoStop": true,
 		"Left": false
 	},
-	"360": {
+	"391": {
 		"LensesStr": "YY-GR",
 		"Class": "gmod_track_signal",
 		"IsolateSwitches": {
@@ -8446,7 +9184,7 @@
 		"NonAutoStop": false,
 		"Left": true
 	},
-	"361": {
+	"392": {
 		"RouteNumberSetup": "234D",
 		"LensesStr": "RBY-WR-YW",
 		"Class": "gmod_track_signal",
@@ -8469,7 +9207,7 @@
 		"NonAutoStop": false,
 		"Left": true
 	},
-	"362": {
+	"393": {
 		"LensesStr": "YY-GR",
 		"Class": "gmod_track_signal",
 		"IsolateSwitches": {
@@ -8493,7 +9231,7 @@
 		"NonAutoStop": true,
 		"Left": true
 	},
-	"363": {
+	"394": {
 		"LensesStr": "RYY-GR",
 		"Class": "gmod_track_signal",
 		"IsolateSwitches": {
@@ -8517,7 +9255,7 @@
 		"NonAutoStop": true,
 		"Left": false
 	},
-	"364": {
+	"395": {
 		"LensesStr": "",
 		"Class": "gmod_track_signal",
 		"IsolateSwitches": {
@@ -8535,7 +9273,7 @@
 			}
 		]
 	},
-	"365": {
+	"396": {
 		"LensesStr": "",
 		"Class": "gmod_track_signal",
 		"IsolateSwitches": {
@@ -8553,7 +9291,7 @@
 			}
 		]
 	},
-	"366": {
+	"397": {
 		"LensesStr": "BWR",
 		"Class": "gmod_track_signal",
 		"IsolateSwitches": {
@@ -8575,7 +9313,7 @@
 		"NonAutoStop": false,
 		"Left": false
 	},
-	"367": {
+	"398": {
 		"LensesStr": "XYY-GRX",
 		"Class": "gmod_track_signal",
 		"IsolateSwitches": {
@@ -8599,7 +9337,7 @@
 		"NonAutoStop": false,
 		"Left": true
 	},
-	"368": {
+	"399": {
 		"LensesStr": "RY-GR",
 		"Class": "gmod_track_signal",
 		"IsolateSwitches": {
@@ -8623,7 +9361,7 @@
 		"NonAutoStop": false,
 		"Left": true
 	},
-	"369": {
+	"400": {
 		"LensesStr": "",
 		"Class": "gmod_track_signal",
 		"IsolateSwitches": {
@@ -8641,7 +9379,7 @@
 			}
 		]
 	},
-	"370": {
+	"401": {
 		"LensesStr": "",
 		"Class": "gmod_track_signal",
 		"IsolateSwitches": {
@@ -8660,7 +9398,7 @@
 		],
 		"Left": true
 	},
-	"371": {
+	"402": {
 		"LensesStr": "RBY-YG-RW",
 		"Class": "gmod_track_signal",
 		"IsolateSwitches": {
@@ -8684,7 +9422,7 @@
 		"NonAutoStop": false,
 		"Left": false
 	},
-	"372": {
+	"403": {
 		"LensesStr": "",
 		"Class": "gmod_track_signal",
 		"IsolateSwitches": {
@@ -8702,7 +9440,7 @@
 			}
 		]
 	},
-	"373": {
+	"404": {
 		"LensesStr": "YY-GR",
 		"Class": "gmod_track_signal",
 		"IsolateSwitches": {
@@ -8726,7 +9464,7 @@
 		"NonAutoStop": true,
 		"Left": false
 	},
-	"374": {
+	"405": {
 		"LensesStr": "YG-RW",
 		"Class": "gmod_track_signal",
 		"IsolateSwitches": {
@@ -8750,7 +9488,7 @@
 		"NonAutoStop": true,
 		"Left": true
 	},
-	"375": {
+	"406": {
 		"LensesStr": "",
 		"Class": "gmod_track_signal",
 		"IsolateSwitches": {
@@ -8768,7 +9506,7 @@
 			}
 		]
 	},
-	"376": {
+	"407": {
 		"LensesStr": "",
 		"Class": "gmod_track_signal",
 		"IsolateSwitches": {
@@ -8787,7 +9525,7 @@
 		],
 		"Left": true
 	},
-	"377": {
+	"408": {
 		"LensesStr": "RY-GR",
 		"Class": "gmod_track_signal",
 		"IsolateSwitches": {
@@ -8811,7 +9549,7 @@
 		"NonAutoStop": false,
 		"Left": false
 	},
-	"378": {
+	"409": {
 		"LensesStr": "",
 		"Class": "gmod_track_signal",
 		"IsolateSwitches": {
@@ -8830,7 +9568,7 @@
 		],
 		"Left": true
 	},
-	"379": {
+	"410": {
 		"RouteNumberSetup": "12",
 		"LensesStr": "BYW-RW",
 		"Class": "gmod_track_signal",
@@ -8852,7 +9590,7 @@
 		"NonAutoStop": false,
 		"Left": true
 	},
-	"380": {
+	"411": {
 		"LensesStr": "YY-GR",
 		"Class": "gmod_track_signal",
 		"IsolateSwitches": {
@@ -8873,7 +9611,7 @@
 		"NonAutoStop": false,
 		"Left": false
 	},
-	"381": {
+	"412": {
 		"LensesStr": "YYG-RW",
 		"Class": "gmod_track_signal",
 		"IsolateSwitches": {
@@ -8894,7 +9632,7 @@
 		"NonAutoStop": true,
 		"Left": true
 	},
-	"382": {
+	"413": {
 		"LensesStr": "",
 		"Class": "gmod_track_signal",
 		"IsolateSwitches": {
@@ -8913,7 +9651,7 @@
 		],
 		"Left": true
 	},
-	"383": {
+	"414": {
 		"LensesStr": "",
 		"Class": "gmod_track_signal",
 		"IsolateSwitches": {
@@ -8931,7 +9669,7 @@
 			}
 		]
 	},
-	"384": {
+	"415": {
 		"LensesStr": "",
 		"Class": "gmod_track_signal",
 		"IsolateSwitches": {
@@ -8950,7 +9688,7 @@
 		],
 		"Left": false
 	},
-	"385": {
+	"416": {
 		"LensesStr": "BYY-GRW",
 		"Class": "gmod_track_signal",
 		"IsolateSwitches": {
@@ -8971,7 +9709,7 @@
 		"NonAutoStop": true,
 		"Left": true
 	},
-	"386": {
+	"417": {
 		"LensesStr": "",
 		"Class": "gmod_track_signal",
 		"IsolateSwitches": {
@@ -8990,7 +9728,7 @@
 		],
 		"Left": true
 	},
-	"387": {
+	"418": {
 		"LensesStr": "RBY-YGR-W",
 		"Class": "gmod_track_signal",
 		"IsolateSwitches": {
@@ -9011,7 +9749,7 @@
 		"NonAutoStop": false,
 		"Left": false
 	},
-	"388": {
+	"419": {
 		"LensesStr": "WR-W",
 		"Class": "gmod_track_signal",
 		"IsolateSwitches": {
@@ -9035,7 +9773,7 @@
 		"NonAutoStop": true,
 		"Left": false
 	},
-	"389": {
+	"420": {
 		"LensesStr": "",
 		"Class": "gmod_track_signal",
 		"IsolateSwitches": {
@@ -9054,7 +9792,7 @@
 		],
 		"Left": true
 	},
-	"390": {
+	"421": {
 		"LensesStr": "YY-GR",
 		"Class": "gmod_track_signal",
 		"IsolateSwitches": {
@@ -9078,7 +9816,7 @@
 		"NonAutoStop": false,
 		"Left": false
 	},
-	"391": {
+	"422": {
 		"LensesStr": "YYG-RW",
 		"Class": "gmod_track_signal",
 		"IsolateSwitches": {
@@ -9099,7 +9837,7 @@
 		"NonAutoStop": false,
 		"Left": true
 	},
-	"392": {
+	"423": {
 		"LensesStr": "YY-GR",
 		"Class": "gmod_track_signal",
 		"IsolateSwitches": {
@@ -9123,724 +9861,7 @@
 		"NonAutoStop": true,
 		"Left": true
 	},
-	"393": {
-		"Approve0": false,
-		"RouteNumberSetup": "",
-		"LensesStr": "WR-W",
-		"RouteNumber": "",
-		"TwoToSix": false,
-		"Class": "gmod_track_signal",
-		"IsolateSwitches": [],
-		"SignalType": 1,
-		"PassOcc": false,
-		"Double": false,
-		"Name": "I",
-		"ARSOnly": false,
-		"Angles": "{0 90 0}",
-		"Pos": "[-5970.0181 -1171.4597 193.4154]",
-		"Routes": [
-			{
-				"Emer": false,
-				"NextSignal": "",
-				"ARSCodes": "1",
-				"Repeater": false,
-				"Lights": "2",
-				"Switches": "",
-				"RouteName": "",
-				"Manual": false
-			}
-		],
-		"NonAutoStop": true,
-		"Left": false
-	},
-	"394": {
-		"RouteNumberSetup": "",
-		"LensesStr": "",
-		"Class": "gmod_track_signal",
-		"IsolateSwitches": {
-			"HideDTM": false,
-			"FrontArsName": "3",
-			"SlowBlinking": false
-		},
-		"SignalType": 0,
-		"Name": "MD3T",
-		"ARSOnly": true,
-		"Angles": "{-0 224.9999 0}",
-		"Pos": "[-8570.4375 10353.6387 1742.0844]",
-		"Routes": [
-			{
-				"NextSignal": "*"
-			}
-		],
-		"Left": true
-	},
-	"395": {
-		"RouteNumberSetup": "",
-		"LensesStr": "",
-		"Class": "gmod_track_signal",
-		"IsolateSwitches": {
-			"HideDTM": false,
-			"FrontArsName": "4",
-			"SlowBlinking": false
-		},
-		"SignalType": 0,
-		"Name": "MD4T",
-		"ARSOnly": true,
-		"Angles": "{-0 224.9999 0}",
-		"Pos": "[-8373.7529 10530.542 1742.0844]",
-		"Routes": [
-			{
-				"NextSignal": "*"
-			}
-		],
-		"Left": false
-	},
-	"396": {
-		"RouteNumberSetup": "",
-		"LensesStr": "",
-		"Class": "gmod_track_signal",
-		"IsolateSwitches": {
-			"FrontArsName": "5",
-			"HideDTM": false,
-			"SlowBlinking": false
-		},
-		"SignalType": 0,
-		"Name": "TCMD5N",
-		"ARSOnly": true,
-		"Angles": "{0 33 0}",
-		"Pos": "[-1119.9404 2683.689 1742.1583]",
-		"Routes": [
-			{
-				"NextSignal": "*"
-			}
-		],
-		"Left": true
-	},
-	"397": {
-		"RouteNumberSetup": "",
-		"LensesStr": "",
-		"Class": "gmod_track_signal",
-		"IsolateSwitches": {
-			"HideDTM": true,
-			"FrontArsName": "211",
-			"SlowBlinking": false
-		},
-		"SignalType": 0,
-		"Name": "TC211/",
-		"ARSOnly": true,
-		"Angles": "{0 213 0}",
-		"Pos": "[-1119.8831 2683.6006 1742.1583]",
-		"Routes": [
-			{
-				"NextSignal": "*"
-			}
-		],
-		"Left": false
-	},
-	"398": {
-		"RouteNumberSetup": "",
-		"LensesStr": "",
-		"Class": "gmod_track_signal",
-		"IsolateSwitches": {
-			"HideDTM": true,
-			"FrontArsName": "238S",
-			"SlowBlinking": false
-		},
-		"SignalType": 0,
-		"Name": "TC238S/",
-		"ARSOnly": true,
-		"Angles": "{0 237 0}",
-		"Pos": "[-728.2886 3099.9512 1742.0844]",
-		"Routes": [
-			{
-				"NextSignal": "*"
-			}
-		],
-		"Left": true
-	},
-	"399": {
-		"RouteNumberSetup": "",
-		"LensesStr": "",
-		"Class": "gmod_track_signal",
-		"IsolateSwitches": {
-			"HideDTM": false,
-			"FrontArsName": "6",
-			"SlowBlinking": false
-		},
-		"SignalType": 0,
-		"Name": "TCMD6N",
-		"ARSOnly": true,
-		"Angles": "{-0 57 0}",
-		"Pos": "[-728.0984 3099.8276 1742.0844]",
-		"Routes": [
-			{
-				"NextSignal": "*"
-			}
-		],
-		"Left": false
-	},
-	"400": {
-		"RouteNumberSetup": "",
-		"LensesStr": "",
-		"Class": "gmod_track_signal",
-		"IsolateSwitches": {
-			"FrontArsName": "5",
-			"HideDTM": true,
-			"SlowBlinking": false
-		},
-		"SignalType": 0,
-		"Name": "TCMD5CH",
-		"ARSOnly": true,
-		"Angles": "{-0 225 0}",
-		"Pos": "[-2868.0425 4650.8438 1742.0844]",
-		"Routes": [
-			{
-				"NextSignal": "*"
-			}
-		],
-		"Left": true
-	},
-	"401": {
-		"Approve0": false,
-		"RouteNumberSetup": "12",
-		"LensesStr": "BW-RW",
-		"RouteNumber": "",
-		"TwoToSix": false,
-		"Class": "gmod_track_signal",
-		"IsolateSwitches": {
-			"FrontArsName": "4",
-			"HideDTM": true,
-			"SlowBlinking": true
-		},
-		"SignalType": 0,
-		"PassOcc": false,
-		"Name": "MD2",
-		"ARSOnly": false,
-		"Angles": "{0 45 0}",
-		"Pos": "[-2632.0757 4788.8086 1742.0844]",
-		"Routes": [
-			{
-				"Emer": false,
-				"NextSignal": "",
-				"ARSCodes": "1",
-				"Repeater": false,
-				"Lights": "3",
-				"Manual": false,
-				"RouteName": "",
-				"Switches": ""
-			}
-		],
-		"NonAutoStop": false,
-		"Left": false
-	},
-	"402": {
-		"RouteNumberSetup": "",
-		"LensesStr": "",
-		"Class": "gmod_track_signal",
-		"IsolateSwitches": {
-			"FrontArsName": "6",
-			"HideDTM": false,
-			"SlowBlinking": false
-		},
-		"SignalType": 0,
-		"Name": "TCMD6CH",
-		"ARSOnly": true,
-		"Angles": "{-0 225 0}",
-		"Pos": "[-2680.0527 4836.7856 1742.0844]",
-		"Routes": [
-			{
-				"NextSignal": "*"
-			}
-		],
-		"Left": false
-	},
-	"403": {
-		"RouteNumberSetup": "",
-		"LensesStr": "",
-		"Class": "gmod_track_signal",
-		"IsolateSwitches": {
-			"HideDTM": true,
-			"SlowBlinking": false
-		},
-		"SignalType": 0,
-		"Name": "TCMD5REP",
-		"ARSOnly": true,
-		"Angles": "{-0 32.9999 0}",
-		"Pos": "[-857.1956 2278.7944 1742.5564]",
-		"Routes": [
-			{
-				"Manual": false,
-				"Emer": false,
-				"Repeater": true,
-				"NextSignal": "217"
-			}
-		],
-		"Left": true
-	},
-	"404": {
-		"RouteNumberSetup": "",
-		"LensesStr": "",
-		"Class": "gmod_track_signal",
-		"IsolateSwitches": {
-			"HideDTM": true,
-			"SlowBlinking": false
-		},
-		"SignalType": 0,
-		"Name": "TCMD6REP",
-		"ARSOnly": true,
-		"Angles": "{0 56.9999 0}",
-		"Pos": "[-302.7404 2823.7578 1742.0844]",
-		"Routes": [
-			{
-				"Manual": false,
-				"Emer": false,
-				"Repeater": true,
-				"NextSignal": "TC238SN"
-			}
-		],
-		"Left": false
-	},
-	"405": {
-		"RouteNumberSetup": "",
-		"LensesStr": "WR",
-		"Class": "gmod_track_signal",
-		"IsolateSwitches": {
-			"HideDTM": false,
-			"SlowBlinking": false
-		},
-		"SignalType": 3,
-		"Name": "D6",
-		"ARSOnly": false,
-		"Angles": "{0 273.6135 0}",
-		"Pos": "[3894.6877 160.4554 193.2138]",
-		"Routes": [
-			{
-				"Manual": false,
-				"Repeater": true,
-				"Emer": false,
-				"Lights": "2",
-				"NextSignal": ""
-			}
-		],
-		"NonAutoStop": true,
-		"Left": false
-	},
-	"406": {
-		"RouteNumberSetup": "",
-		"LensesStr": "WR",
-		"Class": "gmod_track_signal",
-		"IsolateSwitches": {
-			"HideDTM": false,
-			"SlowBlinking": false
-		},
-		"SignalType": 3,
-		"Name": "D7",
-		"ARSOnly": false,
-		"Angles": "{-0 270 0}",
-		"Pos": "[3907 -109.3458 193.3304]",
-		"Routes": [
-			{
-				"Manual": false,
-				"Repeater": true,
-				"Emer": false,
-				"Lights": "2",
-				"NextSignal": ""
-			}
-		],
-		"NonAutoStop": true,
-		"Left": false
-	},
-	"407": {
-		"RouteNumberSetup": "",
-		"LensesStr": "WR",
-		"Class": "gmod_track_signal",
-		"IsolateSwitches": {
-			"HideDTM": false,
-			"SlowBlinking": false
-		},
-		"SignalType": 3,
-		"Name": "D8",
-		"ARSOnly": false,
-		"Angles": "{-0 270 0}",
-		"Pos": "[3907 -380.1703 193.1114]",
-		"Routes": [
-			{
-				"Manual": false,
-				"Repeater": true,
-				"Emer": false,
-				"Lights": "2",
-				"NextSignal": ""
-			}
-		],
-		"NonAutoStop": true,
-		"Left": false
-	},
-	"408": {
-		"RouteNumberSetup": "",
-		"LensesStr": "WR",
-		"Class": "gmod_track_signal",
-		"IsolateSwitches": {
-			"HideDTM": false,
-			"SlowBlinking": false
-		},
-		"SignalType": 3,
-		"Name": "D9",
-		"ARSOnly": false,
-		"Angles": "{0 270 0}",
-		"Pos": "[3907 -643.9938 193.3304]",
-		"Routes": [
-			{
-				"Manual": false,
-				"Repeater": true,
-				"Emer": false,
-				"Lights": "2",
-				"NextSignal": ""
-			}
-		],
-		"NonAutoStop": true,
-		"Left": false
-	},
-	"409": {
-		"RouteNumberSetup": "",
-		"LensesStr": "WR",
-		"Class": "gmod_track_signal",
-		"IsolateSwitches": {
-			"HideDTM": false,
-			"SlowBlinking": false
-		},
-		"SignalType": 3,
-		"Name": "D10",
-		"ARSOnly": false,
-		"Angles": "{0 270 0}",
-		"Pos": "[3907 -908.9938 193.3594]",
-		"Routes": [
-			{
-				"Manual": false,
-				"Repeater": true,
-				"Emer": false,
-				"Lights": "2",
-				"NextSignal": ""
-			}
-		],
-		"NonAutoStop": true,
-		"Left": false
-	},
-	"410": {
-		"RouteNumberSetup": "",
-		"LensesStr": "WR",
-		"Class": "gmod_track_signal",
-		"IsolateSwitches": {
-			"SlowBlinking": false,
-			"HideDTM": false
-		},
-		"SignalType": 3,
-		"Name": "D11",
-		"ARSOnly": false,
-		"Angles": "{-0 270 0}",
-		"Pos": "[3907 -1403.0062 193.1784]",
-		"Routes": [
-			{
-				"Repeater": true,
-				"Manual": false,
-				"Emer": false,
-				"Lights": "2",
-				"NextSignal": ""
-			}
-		],
-		"NonAutoStop": true,
-		"Left": false
-	},
-	"411": {
-		"RouteNumberSetup": "",
-		"LensesStr": "WR",
-		"Class": "gmod_track_signal",
-		"IsolateSwitches": {
-			"SlowBlinking": false,
-			"HideDTM": false
-		},
-		"SignalType": 3,
-		"Name": "D12",
-		"ARSOnly": false,
-		"Angles": "{-0 270 0}",
-		"Pos": "[3907 -1665.9938 193.1784]",
-		"Routes": [
-			{
-				"Repeater": true,
-				"Manual": false,
-				"Emer": false,
-				"Lights": "2",
-				"NextSignal": ""
-			}
-		],
-		"NonAutoStop": true,
-		"Left": false
-	},
-	"412": {
-		"RouteNumberSetup": "",
-		"LensesStr": "WR",
-		"Class": "gmod_track_signal",
-		"IsolateSwitches": {
-			"SlowBlinking": false,
-			"HideDTM": false
-		},
-		"SignalType": 3,
-		"Name": "D13",
-		"ARSOnly": false,
-		"Angles": "{-0 270 0}",
-		"Pos": "[3907 -1928.9814 193.0667]",
-		"Routes": [
-			{
-				"Repeater": true,
-				"Manual": false,
-				"Emer": false,
-				"Lights": "2",
-				"NextSignal": ""
-			}
-		],
-		"NonAutoStop": true,
-		"Left": false
-	},
-	"413": {
-		"RouteNumberSetup": "",
-		"LensesStr": "WR",
-		"Class": "gmod_track_signal",
-		"IsolateSwitches": {
-			"SlowBlinking": false,
-			"HideDTM": false
-		},
-		"SignalType": 3,
-		"Name": "D14",
-		"ARSOnly": false,
-		"Angles": "{-0 270 0}",
-		"Pos": "[3907 -2195.0193 193.3304]",
-		"Routes": [
-			{
-				"Repeater": true,
-				"Manual": false,
-				"Emer": false,
-				"Lights": "2",
-				"NextSignal": ""
-			}
-		],
-		"NonAutoStop": true,
-		"Left": false
-	},
-	"414": {
-		"RouteNumberSetup": "",
-		"LensesStr": "WR",
-		"Class": "gmod_track_signal",
-		"IsolateSwitches": {
-			"SlowBlinking": false,
-			"HideDTM": false
-		},
-		"SignalType": 3,
-		"Name": "D15",
-		"ARSOnly": false,
-		"Angles": "{0 270 0}",
-		"Pos": "[3907 -2459.8862 193.3305]",
-		"Routes": [
-			{
-				"Repeater": true,
-				"Manual": false,
-				"Emer": false,
-				"Lights": "2",
-				"NextSignal": ""
-			}
-		],
-		"NonAutoStop": true,
-		"Left": false
-	},
-	"415": {
-		"RouteNumberSetup": "",
-		"LensesStr": "WR",
-		"Class": "gmod_track_signal",
-		"IsolateSwitches": {
-			"SlowBlinking": false,
-			"HideDTM": false
-		},
-		"SignalType": 3,
-		"Name": "D16",
-		"ARSOnly": false,
-		"Angles": "{0 270 0}",
-		"Pos": "[3907 -3008.0063 193.3304]",
-		"Routes": [
-			{
-				"Repeater": true,
-				"Manual": false,
-				"Emer": false,
-				"Lights": "2",
-				"NextSignal": ""
-			}
-		],
-		"NonAutoStop": true,
-		"Left": false
-	},
-	"416": {
-		"RouteNumberSetup": "",
-		"LensesStr": "WR",
-		"Class": "gmod_track_signal",
-		"IsolateSwitches": {
-			"HideDTM": false,
-			"SlowBlinking": false
-		},
-		"SignalType": 3,
-		"Name": "D1",
-		"ARSOnly": false,
-		"Angles": "{0.3189 269.9994 0}",
-		"Pos": "[2929 1961.2222 193.1685]",
-		"Routes": [
-			{
-				"Manual": false,
-				"Repeater": true,
-				"Emer": false,
-				"Lights": "2",
-				"NextSignal": ""
-			}
-		],
-		"NonAutoStop": true,
-		"Left": false
-	},
-	"417": {
-		"RouteNumberSetup": "",
-		"LensesStr": "WR",
-		"Class": "gmod_track_signal",
-		"IsolateSwitches": {
-			"HideDTM": false,
-			"SlowBlinking": false
-		},
-		"SignalType": 3,
-		"Name": "D2",
-		"ARSOnly": false,
-		"Angles": "{0.3189 269.9994 0}",
-		"Pos": "[2929 1694.6196 193.4845]",
-		"Routes": [
-			{
-				"Manual": false,
-				"Repeater": true,
-				"Emer": false,
-				"Lights": "2",
-				"NextSignal": ""
-			}
-		],
-		"NonAutoStop": true,
-		"Left": false
-	},
-	"418": {
-		"RouteNumberSetup": "",
-		"LensesStr": "WR",
-		"Class": "gmod_track_signal",
-		"IsolateSwitches": {
-			"HideDTM": false,
-			"SlowBlinking": false
-		},
-		"SignalType": 3,
-		"Name": "D3",
-		"ARSOnly": false,
-		"Angles": "{0 270 0}",
-		"Pos": "[2929 1427.6763 193.3304]",
-		"Routes": [
-			{
-				"Manual": false,
-				"Repeater": true,
-				"Emer": false,
-				"Lights": "2",
-				"NextSignal": ""
-			}
-		],
-		"NonAutoStop": true,
-		"Left": false
-	},
-	"419": {
-		"RouteNumberSetup": "",
-		"LensesStr": "WR",
-		"Class": "gmod_track_signal",
-		"IsolateSwitches": {
-			"HideDTM": false,
-			"SlowBlinking": false
-		},
-		"SignalType": 3,
-		"Name": "D4",
-		"ARSOnly": false,
-		"Angles": "{359.9208 270 0}",
-		"Pos": "[2929 1159.8599 192.7514]",
-		"Routes": [
-			{
-				"Manual": false,
-				"Repeater": true,
-				"Emer": false,
-				"Lights": "2",
-				"NextSignal": ""
-			}
-		],
-		"NonAutoStop": true,
-		"Left": false
-	},
-	"420": {
-		"RouteNumberSetup": "",
-		"LensesStr": "WR",
-		"Class": "gmod_track_signal",
-		"IsolateSwitches": {
-			"HideDTM": false,
-			"SlowBlinking": false
-		},
-		"SignalType": 3,
-		"Name": "D5",
-		"ARSOnly": false,
-		"Angles": "{0 270 0}",
-		"Pos": "[2929 896.0063 193.3304]",
-		"Routes": [
-			{
-				"Manual": false,
-				"Repeater": true,
-				"Emer": false,
-				"Lights": "2",
-				"NextSignal": ""
-			}
-		],
-		"NonAutoStop": true,
-		"Left": false
-	},
-	"421": {
-		"LensesStr": "",
-		"Class": "gmod_track_signal",
-		"IsolateSwitches": {
-			"SlowBlinking": true,
-			"FrontArsName": "263SA"
-		},
-		"SignalType": 0,
-		"Name": "TC263SA/",
-		"ARSOnly": true,
-		"Angles": "{0 347.5 0}",
-		"Pos": "[14069.1152 -6005.5508 2867.6243]",
-		"Routes": [
-			{
-				"NextSignal": "*",
-				"ARSCodes": "1"
-			}
-		]
-	},
-	"422": {
-		"LensesStr": "",
-		"Class": "gmod_track_signal",
-		"IsolateSwitches": {
-			"HideDTM": true,
-			"FrontArsName": "516",
-			"SlowBlinking": true
-		},
-		"SignalType": 0,
-		"Name": "TC516/",
-		"ARSOnly": true,
-		"Angles": "{0 167.5 0}",
-		"Pos": "[14069.0957 -6005.6406 2867.6243]",
-		"Routes": [
-			{
-				"NextSignal": "*",
-				"ARSCodes": "1"
-			}
-		],
-		"Left": true
-	},
-	"423": {
+	"424": {
 		"LensesStr": "",
 		"Class": "gmod_track_signal",
 		"IsolateSwitches": {
@@ -9858,7 +9879,7 @@
 			}
 		]
 	},
-	"424": {
+	"425": {
 		"LensesStr": "",
 		"Class": "gmod_track_signal",
 		"IsolateSwitches": {
@@ -9876,12 +9897,12 @@
 			}
 		]
 	},
-	"425": {
+	"426": {
 		"LensesStr": "RBY-YG-RW",
 		"Class": "gmod_track_signal",
 		"IsolateSwitches": {
-			"SlowBlinking": true,
-			"FrontArsName": "4"
+			"FrontArsName": "4",
+			"SlowBlinking": true
 		},
 		"SignalType": 0,
 		"Double": false,
@@ -9900,7 +9921,7 @@
 		"NonAutoStop": false,
 		"Left": false
 	},
-	"426": {
+	"427": {
 		"LensesStr": "",
 		"Class": "gmod_track_signal",
 		"IsolateSwitches": {
@@ -9918,12 +9939,12 @@
 			}
 		]
 	},
-	"427": {
+	"428": {
 		"LensesStr": "RY-GR",
 		"Class": "gmod_track_signal",
 		"IsolateSwitches": {
-			"SlowBlinking": true,
-			"FrontArsName": "12A"
+			"FrontArsName": "12A",
+			"SlowBlinking": true
 		},
 		"SignalType": 0,
 		"Double": false,
@@ -9942,12 +9963,12 @@
 		"NonAutoStop": false,
 		"Left": false
 	},
-	"428": {
+	"429": {
 		"LensesStr": "YY-GR",
 		"Class": "gmod_track_signal",
 		"IsolateSwitches": {
-			"SlowBlinking": true,
-			"FrontArsName": "14A"
+			"FrontArsName": "14A",
+			"SlowBlinking": true
 		},
 		"SignalType": 0,
 		"Double": false,
@@ -9966,12 +9987,12 @@
 		"NonAutoStop": true,
 		"Left": false
 	},
-	"429": {
+	"430": {
 		"LensesStr": "YG-RW",
 		"Class": "gmod_track_signal",
 		"IsolateSwitches": {
-			"SlowBlinking": true,
-			"FrontArsName": "16A"
+			"FrontArsName": "16A",
+			"SlowBlinking": true
 		},
 		"SignalType": 0,
 		"Double": false,
@@ -9990,12 +10011,12 @@
 		"NonAutoStop": true,
 		"Left": true
 	},
-	"430": {
+	"431": {
 		"LensesStr": "",
 		"Class": "gmod_track_signal",
 		"IsolateSwitches": {
-			"HideDTM": true,
-			"SlowBlinking": true
+			"SlowBlinking": true,
+			"HideDTM": true
 		},
 		"SignalType": 0,
 		"Name": "TC14N",
@@ -10009,7 +10030,7 @@
 		],
 		"Left": true
 	},
-	"431": {
+	"432": {
 		"LensesStr": "",
 		"Class": "gmod_track_signal",
 		"IsolateSwitches": {
@@ -10027,13 +10048,13 @@
 			}
 		]
 	},
-	"432": {
+	"433": {
 		"RouteNumberSetup": "12",
 		"LensesStr": "BWY-YY-RW",
 		"Class": "gmod_track_signal",
 		"IsolateSwitches": {
-			"HideDTM": true,
-			"SlowBlinking": true
+			"SlowBlinking": true,
+			"HideDTM": true
 		},
 		"SignalType": 0,
 		"Name": "OK2",
@@ -10049,12 +10070,12 @@
 		"NonAutoStop": false,
 		"Left": false
 	},
-	"433": {
+	"434": {
 		"LensesStr": "BYY-GRW",
 		"Class": "gmod_track_signal",
 		"IsolateSwitches": {
-			"HideDTM": true,
-			"SlowBlinking": true
+			"SlowBlinking": true,
+			"HideDTM": true
 		},
 		"SignalType": 0,
 		"Name": "OK6",
@@ -10070,12 +10091,12 @@
 		"NonAutoStop": false,
 		"Left": true
 	},
-	"434": {
+	"435": {
 		"LensesStr": "YYG-RW",
 		"Class": "gmod_track_signal",
 		"IsolateSwitches": {
-			"HideDTM": true,
-			"SlowBlinking": true
+			"SlowBlinking": true,
+			"HideDTM": true
 		},
 		"SignalType": 0,
 		"Name": "OK4",
@@ -10091,12 +10112,12 @@
 		"NonAutoStop": false,
 		"Left": true
 	},
-	"435": {
+	"436": {
 		"LensesStr": "YYG-RW",
 		"Class": "gmod_track_signal",
 		"IsolateSwitches": {
-			"HideDTM": true,
-			"SlowBlinking": true
+			"SlowBlinking": true,
+			"HideDTM": true
 		},
 		"SignalType": 0,
 		"Name": "OK8",
@@ -10112,12 +10133,12 @@
 		"NonAutoStop": false,
 		"Left": true
 	},
-	"436": {
+	"437": {
 		"LensesStr": "YY-GR",
 		"Class": "gmod_track_signal",
 		"IsolateSwitches": {
-			"HideDTM": true,
-			"SlowBlinking": true
+			"SlowBlinking": true,
+			"HideDTM": true
 		},
 		"SignalType": 0,
 		"Name": "12",
@@ -10133,12 +10154,12 @@
 		"NonAutoStop": false,
 		"Left": false
 	},
-	"437": {
+	"438": {
 		"LensesStr": "",
 		"Class": "gmod_track_signal",
 		"IsolateSwitches": {
-			"HideDTM": true,
-			"SlowBlinking": true
+			"SlowBlinking": true,
+			"HideDTM": true
 		},
 		"SignalType": 0,
 		"Name": "TC6N",
@@ -10152,12 +10173,12 @@
 		],
 		"Left": true
 	},
-	"438": {
+	"439": {
 		"LensesStr": "",
 		"Class": "gmod_track_signal",
 		"IsolateSwitches": {
-			"HideDTM": true,
-			"SlowBlinking": true
+			"SlowBlinking": true,
+			"HideDTM": true
 		},
 		"SignalType": 0,
 		"Name": "TC18N",
@@ -10171,12 +10192,12 @@
 		],
 		"Left": true
 	},
-	"439": {
+	"440": {
 		"LensesStr": "",
 		"Class": "gmod_track_signal",
 		"IsolateSwitches": {
-			"HideDTM": true,
-			"SlowBlinking": true
+			"SlowBlinking": true,
+			"HideDTM": true
 		},
 		"SignalType": 0,
 		"Name": "TC12N",
@@ -10190,12 +10211,12 @@
 		],
 		"Left": true
 	},
-	"440": {
+	"441": {
 		"LensesStr": "WR-W",
 		"Class": "gmod_track_signal",
 		"IsolateSwitches": {
-			"SlowBlinking": true,
-			"FrontArsName": "18"
+			"FrontArsName": "18",
+			"SlowBlinking": true
 		},
 		"SignalType": 1,
 		"Double": false,
@@ -10214,12 +10235,12 @@
 		"NonAutoStop": true,
 		"Left": false
 	},
-	"441": {
+	"442": {
 		"LensesStr": "YY-GR",
 		"Class": "gmod_track_signal",
 		"IsolateSwitches": {
-			"HideDTM": true,
-			"SlowBlinking": true
+			"SlowBlinking": true,
+			"HideDTM": true
 		},
 		"SignalType": 0,
 		"Name": "10",
@@ -10235,7 +10256,7 @@
 		"NonAutoStop": false,
 		"Left": false
 	},
-	"442": {
+	"443": {
 		"LensesStr": "",
 		"Class": "gmod_track_signal",
 		"IsolateSwitches": {
@@ -10253,12 +10274,12 @@
 			}
 		]
 	},
-	"443": {
+	"444": {
 		"LensesStr": "RBY-YGR-W",
 		"Class": "gmod_track_signal",
 		"IsolateSwitches": {
-			"HideDTM": true,
-			"SlowBlinking": true
+			"SlowBlinking": true,
+			"HideDTM": true
 		},
 		"SignalType": 1,
 		"Name": "E2M",
@@ -10274,7 +10295,7 @@
 		"NonAutoStop": false,
 		"Left": false
 	},
-	"444": {
+	"445": {
 		"LensesStr": "",
 		"Class": "gmod_track_signal",
 		"IsolateSwitches": {
@@ -10292,12 +10313,12 @@
 			}
 		]
 	},
-	"445": {
+	"446": {
 		"LensesStr": "YY-GR",
 		"Class": "gmod_track_signal",
 		"IsolateSwitches": {
-			"SlowBlinking": true,
-			"FrontArsName": "14"
+			"FrontArsName": "14",
+			"SlowBlinking": true
 		},
 		"SignalType": 0,
 		"Double": false,
@@ -10316,12 +10337,12 @@
 		"NonAutoStop": true,
 		"Left": true
 	},
-	"446": {
+	"447": {
 		"LensesStr": "",
 		"Class": "gmod_track_signal",
 		"IsolateSwitches": {
-			"HideDTM": true,
-			"SlowBlinking": true
+			"SlowBlinking": true,
+			"HideDTM": true
 		},
 		"SignalType": 0,
 		"Name": "TC16N",
@@ -10334,25 +10355,6 @@
 			}
 		],
 		"Left": true
-	},
-	"447": {
-		"LensesStr": "",
-		"Class": "gmod_track_signal",
-		"IsolateSwitches": {
-			"SlowBlinking": true
-		},
-		"SignalType": 0,
-		"Name": "TC338/",
-		"ARSOnly": true,
-		"Angles": "{0 270 0}",
-		"Pos": "[-7375.6001 -953.4211 193.6553]",
-		"Routes": [
-			{
-				"NextSignal": "*",
-				"ARSCodes": "004"
-			}
-		],
-		"Left": false
 	},
 	"448": {
 		"Approve0": false,
@@ -10376,11 +10378,11 @@
 				"Emer": false,
 				"NextSignal": "",
 				"ARSCodes": "1",
-				"Manual": false,
+				"Repeater": false,
 				"Lights": "2",
-				"RouteName": "",
+				"Manual": false,
 				"Switches": "",
-				"Repeater": false
+				"RouteName": ""
 			}
 		],
 		"NonAutoStop": true,
@@ -10394,8 +10396,8 @@
 		"TwoToSix": false,
 		"Class": "gmod_track_signal",
 		"IsolateSwitches": {
-			"HideDTM": false,
-			"SlowBlinking": true
+			"SlowBlinking": true,
+			"HideDTM": false
 		},
 		"SignalType": 1,
 		"PassOcc": false,
@@ -10411,9 +10413,9 @@
 				"ARSCodes": "1",
 				"Manual": false,
 				"Lights": "2",
-				"Repeater": false,
 				"RouteName": "",
-				"Switches": ""
+				"Switches": "",
+				"Repeater": false
 			}
 		],
 		"NonAutoStop": true,
