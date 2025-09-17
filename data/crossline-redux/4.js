@@ -50,6 +50,7 @@ lines['crossline-redux']['4'] = [
             { x: 1597.3, name: '4СП', limit: 0 },
             { x: 1597.3 + 36, name: '6СП', limit: 0 },
             { x: 1597.3 + 36 + 36, name: '12СП', limit: 0 },
+            { x: 1597.3 + 36 + 36 + 36, name: '14СП', limit: 0 },
         ],
         signals: [
             { joint: '8', name: 'В2м', lenses: 'RBY-YG-Rw', autostop: 3, guard: 60, y: '12', g: 'NEXT_g' },
