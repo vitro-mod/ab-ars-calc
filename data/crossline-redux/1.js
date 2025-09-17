@@ -554,6 +554,7 @@ lines['crossline-redux']['1'] = [
             { joint: '413', name: 'МЛ-417', lenses: 'YYG-Rw', wall: true, guard: 60, service: 35, autostop: 1, yg: '417с', shift: 12.5 },
             { joint: '417с', name: 'МЛ-419', gmod: { RouteNumberSetup: '134' }, lenses: 'BYW-Rw', guard: 35, autostop: 1 },
             { joint: '411', name: 'ОП', gmod: { name: 'МЛ-ОП' }, lenses: 'ZR', row: -3, back: true, left: true, guard: 35, autostop: 3 },
+            { joint: '419', name: 'Е', gmod: { name: 'МЛ-Е' }, lenses: 'BWR', back: true, left: true, autostop: 3 },
         ],
     },
     {

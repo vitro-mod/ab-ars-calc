@@ -16,7 +16,8 @@ lines['crossline-redux']['2'] = [
             1665: 'T',
         },
         joints: [
-            { x: 77 - 75 - 62.5 - 37.5, name: '424', limit: 70 },
+            { x: 77 - 75 - 62.5 - 50 - 150, name: '426', limit: 70 },
+            { x: 77 - 75 - 62.5 - 50, name: '424', limit: 70 },
             { x: 77 - 75 - 62.5, name: '422', limit: 70 },
             { x: 77 - 75, name: '420', limit: 60 },
             { x: 77, name: '418', limit: 60, later: { 60: 1 } },
@@ -36,6 +37,7 @@ lines['crossline-redux']['2'] = [
             { x: 74.5 + 1765 + 75 + 87.5, name: '398а', limit: 0 },
         ],
         signals: [
+            { joint: '424', name: 'Г', gmod: { name: 'МЛ-Г' }, lenses: 'BW-Rw', autostop: 3, guard: 60 },
             { joint: '422', name: '418', lenses: 'YY-GR', guard: 80, autostop: 3, yg: '418' },
             { joint: '418', name: '416', lenses: 'YY-GR', guard: 35, autostop: 3, y: '416б', g: 'NEXT_y' },
             { joint: '416б', name: '414', lenses: 'YY-GR', guard: 80, autostop: 3, y: '414', g: 'NEXT_y' },
