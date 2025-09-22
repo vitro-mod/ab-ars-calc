@@ -432,7 +432,7 @@ lines['crossline-redux']['1'] = [
             { x: 1988 + 69.4 - 75 - 75 + 37.5 - 1, name: '373', limit: 60, bothDirections: true },
             { x: 1988 + 69.4 - 75 + 12.5 + 12.5, name: '375', limit: 60, bothDirections: true },
             { x: 1988 + 69.4 + 12.5, name: '377', limit: 40, bothDirections: true },
-            { x: 1988 + 69.4 + 75, name: '379', limit: 0 },
+            { x: 1988 + 69.4 + 75 + 11.5, name: '379', limit: 0 },
             { x: 1988 + 69.4 + 75 + 87.5, name: '379а', limit: 0 },
         ],
         signals: [
@@ -470,7 +470,7 @@ lines['crossline-redux']['1'] = [
         joints: [
             { x: 69.4 - 62.5 + 12.5, name: '375', limit: 0 },
             { x: 69.4 + 12.5, name: '377', limit: 60 },
-            { x: 69.4 + 75, name: '379', limit: 70 },
+            { x: 69.4 + 75 + 11.5, name: '379', limit: 70 },
             { x: 69.4 + 75 + 87.5, name: '379а', limit: 70 },
             // { x: 1938 + 67 - 75 - 75 - 75 - 87.5 - 100 - 100 - 300 - 300 - 300 - 300, name: '377_', limit: 80 },
             { x: 1938 + 67 - 75 - 75 - 75 - 87.5 - 100 - 100 - 300 - 300 - 300 - 25, name: '381', limit: 80 },
