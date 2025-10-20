@@ -1,0 +1,610 @@
+[
+	{
+		"Type": 3,
+		"Right": false,
+		"Angles": "{0 315 0}",
+		"Pos": "[1366.1417 1223.348 1747.6573]",
+		"Model": "models/metrostroi/signals/autodrive/doska5.mdl"
+	},
+	{
+		"Type": 6,
+		"DistanceToOPV": 117.7,
+		"Angles": "{0 315 0}",
+		"UPPS": true,
+		"Pos": "[5787.9048 -2980.3594 1752.6311]",
+		"Model": "models/metrostroi/upps.mdl"
+	},
+	{
+		"Type": 6,
+		"DistanceToOPV": 128.3,
+		"Angles": "{0 0 0}",
+		"UPPS": true,
+		"Pos": "[5854.5605 15097.6846 2083.5657]",
+		"Model": "models/metrostroi/upps.mdl"
+	},
+	{
+		"Type": 6,
+		"DistanceToOPV": 112,
+		"Angles": "{0 90 0}",
+		"UPPS": true,
+		"Pos": "[14193.9824 5600.9927 2898.6255]",
+		"Model": "models/metrostroi/upps.mdl"
+	},
+	{
+		"Type": 6,
+		"DistanceToOPV": 126,
+		"Angles": "{0 270 0}",
+		"UPPS": true,
+		"Pos": "[14688.1162 -1458.0083 2898.5657]",
+		"Model": "models/metrostroi/upps.mdl"
+	},
+	{
+		"Type": 6,
+		"DistanceToOPV": 114.3,
+		"Angles": "{0 135.0184 339}",
+		"UPPS": true,
+		"Pos": "[384.0005 704.9019 1769.7791]",
+		"Model": "models/metrostroi/upps.mdl"
+	},
+	{
+		"Type": 6,
+		"DistanceToOPV": 117.9245,
+		"Angles": "{0 120 0}",
+		"UPPS": true,
+		"Pos": "[-33.9507 9881.7246 1681.103]",
+		"Model": "models/metrostroi/upps.mdl"
+	},
+	{
+		"Type": 6,
+		"DistanceToOPV": 117.9245,
+		"Angles": "{0 300 0}",
+		"UPPS": true,
+		"Pos": "[4532.4053 4979.4766 1681.103]",
+		"Model": "models/metrostroi/upps.mdl"
+	},
+	{
+		"Type": 6,
+		"DistanceToOPV": 130,
+		"Angles": "{0 270 0}",
+		"UPPS": true,
+		"Pos": "[10368.7471 -3571.8359 848.5079]",
+		"Model": "models/metrostroi/upps.mdl"
+	},
+	{
+		"Type": 6,
+		"DistanceToOPV": 129.8,
+		"Angles": "{0 90 0}",
+		"UPPS": true,
+		"Pos": "[9461.4697 3725.1177 848.5079]",
+		"Model": "models/metrostroi/upps.mdl"
+	},
+	{
+		"Type": 6,
+		"DistanceToOPV": 114.3,
+		"Angles": "{0 225 0}",
+		"UPPS": true,
+		"Pos": "[-2267.9473 -9584.7832 -397.6801]",
+		"Model": "models/metrostroi/upps.mdl"
+	},
+	{
+		"Type": 6,
+		"DistanceToOPV": 113.8,
+		"Angles": "{0 45 0}",
+		"UPPS": true,
+		"Pos": "[1311.7764 -4328.667 -397.6801]",
+		"Model": "models/metrostroi/upps.mdl"
+	},
+	{
+		"Type": 3,
+		"Right": true,
+		"Angles": "{0 340 0}",
+		"Pos": "[-1612.082 -11306.5713 253.9503]",
+		"Model": "models/metrostroi/signals/autodrive/doska5.mdl"
+	},
+	{
+		"Type": 3,
+		"Right": true,
+		"Angles": "{0 160 0}",
+		"Pos": "[3512.3525 -13561.2021 254.1194]",
+		"Model": "models/metrostroi/signals/autodrive/doska5.mdl"
+	},
+	{
+		"Type": 6,
+		"DistanceToOPV": 117.4,
+		"Angles": "{0 160 0}",
+		"UPPS": true,
+		"Pos": "[-2225.3267 -11508.7607 279.0406]",
+		"Model": "models/metrostroi/upps.mdl"
+	},
+	{
+		"Type": 6,
+		"DistanceToOPV": 117.3,
+		"Angles": "{0 340 0}",
+		"UPPS": true,
+		"Pos": "[4121.02 -13359.0234 278.8715]",
+		"Model": "models/metrostroi/upps.mdl"
+	},
+	{
+		"Type": 6,
+		"DistanceToOPV": 119.2,
+		"Angles": "{0 180 0}",
+		"UPPS": true,
+		"Pos": "[917.832 -16321.4053 -975.3293]",
+		"Model": "models/metrostroi/upps.mdl"
+	},
+	{
+		"Type": 6,
+		"DistanceToOPV": 121.7,
+		"Angles": "{0 0 0}",
+		"UPPS": true,
+		"Pos": "[7543.6377 -15422.9287 -975.3293]",
+		"Model": "models/metrostroi/upps.mdl"
+	},
+	{
+		"Type": 6,
+		"DistanceToOPV": 116.0377,
+		"Angles": "{0 216 0}",
+		"UPPS": true,
+		"Pos": "[-1484.7202 -12550.2334 -1502.8734]",
+		"Model": "models/metrostroi/upps.mdl"
+	},
+	{
+		"Type": 6,
+		"DistanceToOPV": 115.8,
+		"Angles": "{0 35.9994 0}",
+		"UPPS": true,
+		"Pos": "[3178.6963 -7983.8584 -1502.8734]",
+		"Model": "models/metrostroi/upps.mdl"
+	},
+	{
+		"Type": 3,
+		"Angles": "{0 135.0184 0}",
+		"Pos": "[4712.3071 -3363.301 1747.4824]",
+		"Model": "models/metrostroi/signals/autodrive/doska5.mdl"
+	},
+	{
+		"Type": 4,
+		"Angles": "{0 225.0184 0}",
+		"Pos": "[373.6899 707.3345 1872.4824]",
+		"Model": "models/mus/metro/station_marker_4.mdl"
+	},
+	{
+		"Type": 4,
+		"Angles": "{0 225.0184 0}",
+		"Pos": "[4068.7939 -2992.551 1872.4824]",
+		"Model": "models/mus/metro/station_marker_4.mdl"
+	},
+	{
+		"Type": 4,
+		"Angles": "{0 45 0}",
+		"Pos": "[2007.2684 854.6581 1872.6573]",
+		"Model": "models/mus/metro/station_marker_4.mdl"
+	},
+	{
+		"Type": 4,
+		"Angles": "{0 45 0}",
+		"Pos": "[5699.7729 -2839.7607 1872.6573]",
+		"Model": "models/mus/metro/station_marker_4.mdl"
+	},
+	{
+		"Type": 4,
+		"Angles": "{0 270 0}",
+		"Pos": "[-1317.3135 14098.4902 2183.5945]",
+		"Model": "models/mus/metro/station_marker_4.mdl"
+	},
+	{
+		"Type": 4,
+		"Angles": "{0 90 0}",
+		"Pos": "[5453.9473 15098 2182.5945]",
+		"Model": "models/mus/metro/station_marker_4.mdl"
+	},
+	{
+		"Type": 4,
+		"Angles": "{0 0 0}",
+		"Pos": "[14683.7061 -1303.9146 2997.5945]",
+		"Model": "models/mus/metro/station_marker_4.mdl"
+	},
+	{
+		"Type": 4,
+		"Angles": "{0 210 0}",
+		"Pos": "[2643.0649 5188.0293 1800.6044]",
+		"Model": "models/mus/metro/station_marker_4.mdl"
+	},
+	{
+		"Type": 4,
+		"Angles": "{0 30 0}",
+		"Pos": "[1854.4882 9674.7305 1800.6044]",
+		"Model": "models/mus/metro/station_marker_4.mdl"
+	},
+	{
+		"Type": 4,
+		"Angles": "{0 30 0}",
+		"Pos": "[4526.0469 5033.8374 1794.7697]",
+		"Model": "models/mus/metro/station_marker_4.mdl"
+	},
+	{
+		"Type": 4,
+		"Angles": "{0 210 0}",
+		"Pos": "[-37.9968 9828.8701 1794.7697]",
+		"Model": "models/mus/metro/station_marker_4.mdl"
+	},
+	{
+		"Type": 4,
+		"Angles": "{0 180 0}",
+		"Pos": "[9461.5635 3732.501 968.0093]",
+		"Model": "models/mus/metro/station_marker_4.mdl"
+	},
+	{
+		"Type": 4,
+		"Angles": "{0 0 0}",
+		"Pos": "[10368.7695 -3570.7688 968.0093]",
+		"Model": "models/mus/metro/station_marker_4.mdl"
+	},
+	{
+		"Type": 4,
+		"Angles": "{0 0 0}",
+		"Pos": "[10374.8359 2454.0044 968.0093]",
+		"Model": "models/mus/metro/station_marker_4.mdl"
+	},
+	{
+		"Type": 4,
+		"Angles": "{0 180 0}",
+		"Pos": "[9458.5303 -2304.5066 968.0093]",
+		"Model": "models/mus/metro/station_marker_4.mdl"
+	},
+	{
+		"Type": 4,
+		"Angles": "{0 315 0}",
+		"Pos": "[1430.6033 -5922.9844 -278.1787]",
+		"Model": "models/mus/metro/station_marker_4.mdl"
+	},
+	{
+		"Type": 4,
+		"Angles": "{0 135 0}",
+		"Pos": "[-2376.6636 -7977.4404 -278.1787]",
+		"Model": "models/mus/metro/station_marker_4.mdl"
+	},
+	{
+		"Type": 4,
+		"Angles": "{0 135 0}",
+		"Pos": "[1269.8672 -4330.9082 -278.1787]",
+		"Model": "models/mus/metro/station_marker_4.mdl"
+	},
+	{
+		"Type": 4,
+		"Angles": "{0 315 0}",
+		"Pos": "[-2214.5583 -9567.3496 -278.1787]",
+		"Model": "models/mus/metro/station_marker_4.mdl"
+	},
+	{
+		"Type": 4,
+		"Angles": "{0 250 0}",
+		"Pos": "[-2077.3901 -11592.4531 379.1194]",
+		"Model": "models/mus/metro/station_marker_4.mdl"
+	},
+	{
+		"Type": 4,
+		"Angles": "{0 70 0}",
+		"Pos": "[4168.1118 -13344.6387 378.9503]",
+		"Model": "models/mus/metro/station_marker_4.mdl"
+	},
+	{
+		"Type": 4,
+		"Angles": "{0 270 0}",
+		"Pos": "[981.9404 -16331.1816 -875.2506]",
+		"Model": "models/mus/metro/station_marker_4.mdl"
+	},
+	{
+		"Type": 4,
+		"Angles": "{0 90 0}",
+		"Pos": "[7346.6885 -15423.6045 -875.2506]",
+		"Model": "models/mus/metro/station_marker_4.mdl"
+	},
+	{
+		"Type": 4,
+		"Angles": "{0 90 0}",
+		"Pos": "[1943.2432 -15423.6045 -875.2506]",
+		"Model": "models/mus/metro/station_marker_4.mdl"
+	},
+	{
+		"Type": 4,
+		"Angles": "{0 270 0}",
+		"Pos": "[6391.8179 -16330.6445 -875.2506]",
+		"Model": "models/mus/metro/station_marker_4.mdl"
+	},
+	{
+		"Type": 4,
+		"Angles": "{0 306 0}",
+		"Pos": "[2811.3254 -9446.1504 -1402.7947]",
+		"Model": "models/mus/metro/station_marker_4.mdl"
+	},
+	{
+		"Type": 4,
+		"Angles": "{0 125.9994 0}",
+		"Pos": "[-1112.668 -11085.7627 -1402.7947]",
+		"Model": "models/mus/metro/station_marker_4.mdl"
+	},
+	{
+		"Type": 4,
+		"Angles": "{0 125.9994 0}",
+		"Pos": "[3228.3906 -7946.7158 -1402.7947]",
+		"Model": "models/mus/metro/station_marker_4.mdl"
+	},
+	{
+		"Type": 4,
+		"Angles": "{0 306 0}",
+		"Pos": "[-1527.6846 -12582.3506 -1402.7947]",
+		"Model": "models/mus/metro/station_marker_4.mdl"
+	},
+	{
+		"Type": 3,
+		"Right": true,
+		"Angles": "{0 90 0}",
+		"Pos": "[14231.3945 -204.3775 2872.6543]",
+		"Model": "models/metrostroi/signals/autodrive/doska5.mdl"
+	},
+	{
+		"Type": 3,
+		"Right": true,
+		"Angles": "{0 270 0}",
+		"Pos": "[14629.707 5077.5923 2872.5945]",
+		"Model": "models/metrostroi/signals/autodrive/doska5.mdl"
+	},
+	{
+		"Type": 3,
+		"Right": false,
+		"Angles": "{0 180 0}",
+		"Pos": "[4951.2339 14294 2058.5945]",
+		"Model": "models/metrostroi/signals/autodrive/doska5.mdl"
+	},
+	{
+		"Type": 3,
+		"Right": false,
+		"Angles": "{0 0 0}",
+		"Pos": "[-810.3625 14912 2057.5945]",
+		"Model": "models/metrostroi/signals/autodrive/doska5.mdl"
+	},
+	{
+		"Type": 3,
+		"Right": false,
+		"Angles": "{0 120 0}",
+		"Pos": "[3158.1572 4660.1577 1675.6044]",
+		"Model": "models/metrostroi/signals/autodrive/doska5.mdl"
+	},
+	{
+		"Type": 3,
+		"Right": false,
+		"Angles": "{0 300 0}",
+		"Pos": "[1338.6663 10203.8652 1675.6044]",
+		"Model": "models/metrostroi/signals/autodrive/doska5.mdl"
+	},
+	{
+		"Type": 3,
+		"Right": false,
+		"Angles": "{0 270 0}",
+		"Pos": "[10188.8359 3181.0244 843.0093]",
+		"Model": "models/metrostroi/signals/autodrive/doska5.mdl"
+	},
+	{
+		"Type": 3,
+		"Right": false,
+		"Angles": "{0 90 0}",
+		"Pos": "[9644.5303 -3021.2136 843.0093]",
+		"Model": "models/metrostroi/signals/autodrive/doska5.mdl"
+	},
+	{
+		"Type": 3,
+		"Right": false,
+		"Angles": "{0 225 0}",
+		"Pos": "[1796.7758 -5281.959 -403.1787]",
+		"Model": "models/metrostroi/signals/autodrive/doska5.mdl"
+	},
+	{
+		"Type": 3,
+		"Right": false,
+		"Angles": "{0 45 0}",
+		"Pos": "[-2740.9961 -8615.8271 -403.1787]",
+		"Model": "models/metrostroi/signals/autodrive/doska5.mdl"
+	},
+	{
+		"Type": 3,
+		"Right": false,
+		"Angles": "{0 180 0}",
+		"Pos": "[7103.0918 -16147.7939 -1000.2506]",
+		"Model": "models/metrostroi/signals/autodrive/doska5.mdl"
+	},
+	{
+		"Type": 3,
+		"Right": false,
+		"Angles": "{0 0 0}",
+		"Pos": "[1237.8414 -15603.3643 -1000.2506]",
+		"Model": "models/metrostroi/signals/autodrive/doska5.mdl"
+	},
+	{
+		"Type": 3,
+		"Right": false,
+		"Angles": "{0 216 0}",
+		"Pos": "[3271.1677 -8867.3047 -1527.7947]",
+		"Model": "models/metrostroi/signals/autodrive/doska5.mdl"
+	},
+	{
+		"Type": 3,
+		"Right": false,
+		"Angles": "{0 35.9994 0}",
+		"Pos": "[-1566.6074 -11660.3105 -1527.7947]",
+		"Model": "models/metrostroi/signals/autodrive/doska5.mdl"
+	},
+	{
+		"WTime": false,
+		"DriveMode": false,
+		"RKPos": false,
+		"SBPPType": 1,
+		"Type": 7,
+		"DistanceToOPV": 117,
+		"RightDoors": false,
+		"Angles": "{89.9808 126.0107 0}",
+		"Pos": "[3460.4011 -8077.396 -1487.7871]",
+		"StationPath": false,
+		"Model": "models/metrostroi/signals/autodrive/rfid.mdl",
+		"StationID": false
+	},
+	{
+		"WTime": false,
+		"DriveMode": false,
+		"RKPos": false,
+		"SBPPType": 1,
+		"Type": 7,
+		"DistanceToOPV": 126,
+		"RightDoors": false,
+		"Angles": "{89.9473 90.0607 0}",
+		"Pos": "[7863.7251 -15662.3135 -960.2847]",
+		"StationPath": false,
+		"Model": "models/metrostroi/signals/autodrive/rfid.mdl",
+		"StationID": false
+	},
+	{
+		"WTime": 27.7358,
+		"DriveMode": 3,
+		"RKPos": false,
+		"SBPPType": 3,
+		"Type": 7,
+		"Angles": "{90 90 0}",
+		"Pos": "[1154.2761 -15657.2588 -959.5498]",
+		"StationPath": 2,
+		"Model": "models/metrostroi/signals/autodrive/rfid.mdl",
+		"StationID": 108
+	},
+	{
+		"WTime": false,
+		"DriveMode": false,
+		"RKPos": false,
+		"SBPPType": 2,
+		"Type": 7,
+		"DistanceToOPV": 15,
+		"RightDoors": false,
+		"Angles": "{90 125.9994 0}",
+		"Pos": "[-873.2099 -11223.1562 -1490.7716]",
+		"StationPath": 2,
+		"Model": "models/metrostroi/signals/autodrive/rfid.mdl",
+		"StationID": 109
+	},
+	{
+		"WTime": 53.7736,
+		"DriveMode": 3,
+		"RKPos": false,
+		"SBPPType": 3,
+		"Type": 7,
+		"Angles": "{90 125.9994 0}",
+		"Pos": "[-1598.1241 -11749.8262 -1490.7716]",
+		"StationPath": 2,
+		"Model": "models/metrostroi/signals/autodrive/rfid.mdl",
+		"StationID": 109
+	},
+	{
+		"WTime": false,
+		"DriveMode": false,
+		"RKPos": false,
+		"SBPPType": 2,
+		"Type": 7,
+		"DistanceToOPV": 15,
+		"RightDoors": false,
+		"Angles": "{90 90 0}",
+		"Pos": "[2009.7488 -15657.2588 -963.2275]",
+		"StationPath": 2,
+		"Model": "models/metrostroi/signals/autodrive/rfid.mdl",
+		"StationID": 108
+	},
+	{
+		"WTime": false,
+		"DriveMode": false,
+		"RKPos": false,
+		"SBPPType": 2,
+		"Type": 7,
+		"IsDeadlock": false,
+		"DistanceToOPV": 15,
+		"RightDoors": false,
+		"Angles": "{90 306 0}",
+		"Pos": "[2620.1836 -9273.6562 -1490.7716]",
+		"StationPath": 1,
+		"Model": "models/metrostroi/signals/autodrive/rfid.mdl",
+		"StationID": 109
+	},
+	{
+		"WTime": false,
+		"DriveMode": false,
+		"RKPos": false,
+		"SBPPType": 1,
+		"Type": 7,
+		"IsDeadlock": false,
+		"DistanceToOPV": 121,
+		"RightDoors": false,
+		"Angles": "{89.9274 36.0697 89.9973}",
+		"Pos": "[-1879.6686 -12540.5342 -1491.7102]",
+		"StationPath": false,
+		"Model": "models/metrostroi/signals/autodrive/rfid.mdl",
+		"StationID": false
+	},
+	{
+		"WTime": 10,
+		"DriveMode": 2,
+		"RKPos": false,
+		"SBPPType": 3,
+		"Type": 7,
+		"IsDeadlock": false,
+		"Angles": "{90 306 0}",
+		"Pos": "[3287.4417 -8788.8643 -1490.7716]",
+		"StationPath": 1,
+		"Model": "models/metrostroi/signals/autodrive/rfid.mdl",
+		"StationID": 109
+	},
+	{
+		"Type": 4,
+		"Angles": "{0 180.07 0}",
+		"Pos": "[14190.0469 6532.5322 2979.9526]",
+		"Model": "models/mus/metro/station_marker_4.mdl"
+	},
+	{
+		"Type": 3,
+		"Angles": "{0 240 0}",
+		"Pos": "[-9792.626 2097.0078 -2530.7346]",
+		"Model": "models/metrostroi/signals/autodrive/doska5.mdl"
+	},
+	{
+		"Type": 3,
+		"Angles": "{0 60 0}",
+		"Pos": "[-12930.96 -2252.7207 -2530.7346]",
+		"Model": "models/metrostroi/signals/autodrive/doska5.mdl"
+	},
+	{
+		"Type": 4,
+		"Angles": "{0 330 0}",
+		"Pos": "[-10067.6875 1254.8553 -2405.7346]",
+		"Model": "models/mus/metro/station_marker_4.mdl"
+	},
+	{
+		"Type": 4,
+		"Angles": "{0 330 0}",
+		"Pos": "[-12699.1748 -3307.2256 -2405.7346]",
+		"Model": "models/mus/metro/station_marker_4.mdl"
+	},
+	{
+		"Type": 4,
+		"Angles": "{0 149.9999 0}",
+		"Pos": "[-10265.6895 2731.554 -2405.7346]",
+		"Model": "models/mus/metro/station_marker_4.mdl"
+	},
+	{
+		"Type": 4,
+		"Angles": "{0 150 0}",
+		"Pos": "[-12645.3662 -1396.3158 -2405.7346]",
+		"Model": "models/mus/metro/station_marker_4.mdl"
+	},
+	{
+		"Type": 6,
+		"DistanceToOPV": 119.0234,
+		"Angles": "{0 80 333.6038}",
+		"UPPS": true,
+		"Pos": "[-11684.3008 8414.957 -1526.7371]",
+		"Model": "models/metrostroi/upps.mdl"
+	}
+]

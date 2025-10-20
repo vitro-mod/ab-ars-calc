@@ -14,16 +14,16 @@
 	},
 	{
 		"TrackID": 6,
-		"LampZOffset": 0,
+		"LampZOffset": 40,
 		"Pos": "[7590.957 624.6179 1679.7451]",
 		"TrackX": 5565.42041015625,
 		"Angles": "{360 350.0417 0}",
 		"AdjacentSignalName": "TC289S",
-		"SensorXOffset": 0,
+		"SensorXOffset": 40,
 		"Name": "FS291",
 		"RequiredSpeed": 40,
-		"SensorZOffset": 0,
-		"LampXOffset": 0
+		"SensorZOffset": 40,
+		"LampXOffset": -55
 	},
 	{
 		"TrackID": 6,
@@ -40,16 +40,16 @@
 	},
 	{
 		"TrackID": 6,
-		"LampZOffset": 0,
+		"LampZOffset": 20,
 		"Pos": "[-9239.3516 2923.3076 -2526.2346]",
 		"TrackX": 18260.291015625,
 		"Angles": "{0 60 0}",
 		"AdjacentSignalName": "ML419",
-		"SensorXOffset": 0,
+		"SensorXOffset": 18.5,
 		"Name": "FS417S",
 		"RequiredSpeed": 35,
-		"SensorZOffset": 0,
-		"LampXOffset": 0
+		"SensorZOffset": 20,
+		"LampXOffset": -12
 	},
 	{
 		"TrackID": 6,
@@ -66,29 +66,29 @@
 	},
 	{
 		"TrackID": 6,
-		"LampZOffset": 0,
+		"LampZOffset": -7,
 		"Pos": "[2902.2981 4971.3193 1680.1044]",
 		"TrackX": 5439.18505859375,
 		"Angles": "{-0 300 0}",
 		"AdjacentSignalName": "TC285S",
-		"SensorXOffset": 0,
+		"SensorXOffset": 21,
 		"Name": "FS287S",
 		"RequiredSpeed": 35,
-		"SensorZOffset": 0,
-		"LampXOffset": 0
+		"SensorZOffset": 40,
+		"LampXOffset": -7
 	},
 	{
 		"TrackID": 6,
-		"LampZOffset": 0,
+		"LampZOffset": -5,
 		"Pos": "[-10256.0176 1162.391 -2526.2346]",
 		"TrackX": 18221.5546875,
 		"Angles": "{0 60 0}",
 		"AdjacentSignalName": "TC415",
-		"SensorXOffset": 0,
+		"SensorXOffset": 18.5,
 		"Name": "FS415S",
 		"RequiredSpeed": 30,
-		"SensorZOffset": 0,
-		"LampXOffset": 0
+		"SensorZOffset": 20,
+		"LampXOffset": -6
 	},
 	{
 		"TrackID": 6,
@@ -105,29 +105,29 @@
 	},
 	{
 		"TrackID": 6,
-		"LampZOffset": 0,
+		"LampZOffset": -7,
 		"Pos": "[1582.5786 7257.1406 1680.1044]",
 		"TrackX": 5388.90380859375,
 		"Angles": "{-0 300 0}",
 		"AdjacentSignalName": "TC285",
-		"SensorXOffset": 0,
+		"SensorXOffset": 21,
 		"Name": "FS285S",
 		"RequiredSpeed": 35,
-		"SensorZOffset": 0,
-		"LampXOffset": 0
+		"SensorZOffset": 40,
+		"LampXOffset": -7
 	},
 	{
 		"TrackID": 6,
-		"LampZOffset": 0,
+		"LampZOffset": 40,
 		"Pos": "[14131.0088 3230.5557 1595.3851]",
 		"TrackX": 5704.40234375,
 		"Angles": "{0.9623 45.7766 0}",
 		"AdjacentSignalName": "TC291A",
-		"SensorXOffset": 0,
+		"SensorXOffset": 40,
 		"Name": "FS291B",
 		"RequiredSpeed": 46,
-		"SensorZOffset": 0,
-		"LampXOffset": 0
+		"SensorZOffset": 40,
+		"LampXOffset": -55
 	},
 	{
 		"TrackID": 6,
@@ -144,29 +144,29 @@
 	},
 	{
 		"TrackID": 6,
-		"LampZOffset": 0,
+		"LampZOffset": 40,
 		"Pos": "[10858 1077.6921 1660.3167]",
 		"TrackX": 5629.40234375,
 		"Angles": "{0.4502 25.4693 0}",
 		"AdjacentSignalName": "TC291",
-		"SensorXOffset": 0,
+		"SensorXOffset": 40,
 		"Name": "FS291A",
 		"RequiredSpeed": 46,
-		"SensorZOffset": 0,
-		"LampXOffset": 0
+		"SensorZOffset": 40,
+		"LampXOffset": -55
 	},
 	{
 		"TrackID": 6,
-		"LampZOffset": 0,
+		"LampZOffset": 40,
 		"Pos": "[4369.25 2662.624 1680.0477]",
 		"TrackX": 5491.408203125,
 		"Angles": "{359.9592 309.7999 0}",
 		"AdjacentSignalName": "291M",
-		"SensorXOffset": 0,
+		"SensorXOffset": 40,
 		"Name": "FS289S",
 		"RequiredSpeed": 44,
-		"SensorZOffset": 0,
-		"LampXOffset": 0
+		"SensorZOffset": 40,
+		"LampXOffset": -55
 	},
 	{
 		"TrackID": 6,
@@ -196,16 +196,16 @@
 	},
 	{
 		"TrackID": 7,
-		"LampZOffset": 0,
+		"LampZOffset": 35,
 		"Pos": "[366.6069 2313.8525 1751.9663]",
 		"TrackX": 18051.92578125,
 		"Angles": "{-0 134.9991 0}",
 		"AdjacentSignalName": "MD236G",
-		"SensorXOffset": 0,
+		"SensorXOffset": 21,
 		"Name": "FS238S",
 		"RequiredSpeed": 35,
-		"SensorZOffset": 0,
-		"LampXOffset": 0
+		"SensorZOffset": 35,
+		"LampXOffset": -70
 	},
 	{
 		"TrackID": 7,
@@ -236,19 +236,6 @@
 	{
 		"TrackID": 7,
 		"LampZOffset": 0,
-		"Pos": "[-7309.105 14976.8125 2062.4744]",
-		"TrackX": 16582.548828125,
-		"Angles": "{0 180 0}",
-		"AdjacentSignalName": "TC256S",
-		"SensorXOffset": 0,
-		"Name": "FS254",
-		"RequiredSpeed": 44,
-		"SensorZOffset": 0,
-		"LampXOffset": 0
-	},
-	{
-		"TrackID": 7,
-		"LampZOffset": 0,
 		"Pos": "[-1671.5342 4354.2852 1751.9724]",
 		"TrackX": 18106.8671875,
 		"Angles": "{0 135 0}",
@@ -261,16 +248,29 @@
 	},
 	{
 		"TrackID": 7,
-		"LampZOffset": 0,
+		"LampZOffset": -5,
 		"Pos": "[1805.5728 877.2549 1752.1573]",
 		"TrackX": 18013.19140625,
 		"Angles": "{-0 135 0}",
 		"AdjacentSignalName": "TC240",
-		"SensorXOffset": 0,
+		"SensorXOffset": 25.5,
 		"Name": "FS240S",
 		"RequiredSpeed": 30,
-		"SensorZOffset": 0,
-		"LampXOffset": 0
+		"SensorZOffset": 40,
+		"LampXOffset": -7
+	},
+	{
+		"TrackID": 7,
+		"LampZOffset": 40,
+		"Pos": "[-7309.105 14976.8125 2062.4744]",
+		"TrackX": 16582.548828125,
+		"Angles": "{0 180 0}",
+		"AdjacentSignalName": "TC256S",
+		"SensorXOffset": 40,
+		"Name": "FS254",
+		"RequiredSpeed": 44,
+		"SensorZOffset": 40,
+		"LampXOffset": -55
 	},
 	{
 		"TrackID": 7,
@@ -279,8 +279,21 @@
 		"TrackX": 16403.9453125,
 		"Angles": "{-0 180 0}",
 		"AdjacentSignalName": "TC260",
-		"SensorXOffset": 0,
+		"SensorXOffset": 4.5,
 		"Name": "FS260S",
+		"RequiredSpeed": 30,
+		"SensorZOffset": 40,
+		"LampXOffset": 0
+	},
+	{
+		"TrackID": 7,
+		"LampZOffset": 0,
+		"Pos": "[14563.707 2195.0408 2877.0945]",
+		"TrackX": 14228.484375,
+		"Angles": "{-0 90 0}",
+		"AdjacentSignalName": "TC288",
+		"SensorXOffset": 0,
+		"Name": "FS288S",
 		"RequiredSpeed": 30,
 		"SensorZOffset": 0,
 		"LampXOffset": 0
@@ -301,19 +314,6 @@
 	{
 		"TrackID": 7,
 		"LampZOffset": 0,
-		"Pos": "[14563.707 2195.0408 2877.0945]",
-		"TrackX": 14228.484375,
-		"Angles": "{-0 90 0}",
-		"AdjacentSignalName": "TC288",
-		"SensorXOffset": 0,
-		"Name": "FS288S",
-		"RequiredSpeed": 30,
-		"SensorZOffset": 0,
-		"LampXOffset": 0
-	},
-	{
-		"TrackID": 7,
-		"LampZOffset": 0,
 		"Pos": "[14563.707 4293.1997 2877.0945]",
 		"TrackX": 14268.4541015625,
 		"Angles": "{-0 90 0}",
@@ -326,16 +326,16 @@
 	},
 	{
 		"TrackID": 7,
-		"LampZOffset": 0,
+		"LampZOffset": 40,
 		"Pos": "[-3372.1091 14976.8125 2062.4744]",
 		"TrackX": 16507.548828125,
 		"Angles": "{0 180 0}",
 		"AdjacentSignalName": "254M",
-		"SensorXOffset": 0,
+		"SensorXOffset": 40,
 		"Name": "FS256S",
 		"RequiredSpeed": 44,
-		"SensorZOffset": 0,
-		"LampXOffset": 0
+		"SensorZOffset": 40,
+		"LampXOffset": -55
 	},
 	{
 		"TrackID": 7,
@@ -344,10 +344,10 @@
 		"TrackX": 16443.916015625,
 		"Angles": "{-0 180 0}",
 		"AdjacentSignalName": "TC260S",
-		"SensorXOffset": 0,
+		"SensorXOffset": 4.5,
 		"Name": "FS258S",
 		"RequiredSpeed": 40,
-		"SensorZOffset": 0,
+		"SensorZOffset": 40,
 		"LampXOffset": 0
 	},
 	{

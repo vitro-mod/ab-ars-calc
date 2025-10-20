@@ -1,5 +1,85 @@
 [
 	{
+		"Pos": "[-5493.1768 -7424.833 -249.7426]",
+		"Type": "Autostop",
+		"Angles": "{-0 165 0}",
+		"Name": "A15",
+		"Config": {
+			"Type": "electric",
+			"SignalName": "15"
+		}
+	},
+	{
+		"Pos": "[-9886.5723 -12732.5586 -68.6678]",
+		"Type": "Autostop",
+		"Angles": "{3.421 76.913 0}",
+		"Name": "A17",
+		"Config": {
+			"Type": "electric",
+			"SignalName": "17"
+		}
+	},
+	{
+		"Pos": "[-15234.4648 -6750.6055 44.7191]",
+		"Type": "Autostop",
+		"Angles": "{0.1709 7.1008 0}",
+		"Name": "AA1",
+		"Config": {
+			"Type": "electric",
+			"SignalName": "A1"
+		}
+	},
+	{
+		"Pos": "[11219.2783 4303.2134 -313.6814]",
+		"Type": "Autostop",
+		"Angles": "{360 135 0}",
+		"Name": "AOK3",
+		"Config": {
+			"Type": "electric",
+			"SignalName": "OK3"
+		}
+	},
+	{
+		"Pos": "[13554.1641 11972.6768 -226.5334]",
+		"Type": "Autostop",
+		"Angles": "{4.8117 198.2653 0}",
+		"Name": "AOK5",
+		"Config": {
+			"Type": "electric",
+			"SignalName": "OK5"
+		}
+	},
+	{
+		"Pos": "[-4919.6416 -8543.2012 -200.7252]",
+		"Type": "Autostop",
+		"Angles": "{360 165 0}",
+		"Name": "A16",
+		"Config": {
+			"Type": "electric",
+			"SignalName": "16"
+		}
+	},
+	{
+		"Pos": "[-15630.1064 -7720.5737 44.6637]",
+		"Type": "Autostop",
+		"Angles": "{0.0428 17.098 0}",
+		"Name": "AA2",
+		"Config": {
+			"Type": "electric",
+			"SignalName": "A2"
+		}
+	},
+	{
+		"Pos": "[-9313.0342 -13928.9697 42.2463]",
+		"Type": "Autostop",
+		"Angles": "{2.9112 76.9118 0}",
+		"Name": "A18",
+		"Config": {
+			"Type": "electric",
+			"SignalName": "18"
+		}
+	},
+	{
 		"Pos": "[-14293.6904 -2824.5911 -193.0389]",
 		"Type": "Autostop",
 		"Angles": "{0.0834 180.3938 0}",
@@ -110,16 +190,6 @@
 		}
 	},
 	{
-		"Pos": "[-9809.8945 -8636.0527 29.2085]",
-		"Type": "Autostop",
-		"Angles": "{358.0518 248.533 0}",
-		"Name": "A337",
-		"Config": {
-			"Type": "electric",
-			"SignalName": "337"
-		}
-	},
-	{
 		"Pos": "[-6334.2876 -15034.2852 -1433.3978]",
 		"Type": "Autostop",
 		"Angles": "{355.8437 280.0869 0}",
@@ -157,6 +227,16 @@
 		"Config": {
 			"Type": "electric",
 			"SignalName": "339"
+		}
+	},
+	{
+		"Pos": "[-9809.8945 -8636.0527 29.2085]",
+		"Type": "Autostop",
+		"Angles": "{358.0518 248.533 0}",
+		"Name": "A337",
+		"Config": {
+			"Type": "electric",
+			"SignalName": "337"
 		}
 	},
 	{
@@ -217,26 +297,6 @@
 		"Config": {
 			"Type": "electric",
 			"SignalName": "402"
-		}
-	},
-	{
-		"Pos": "[12081.2637 13613.7002 -1891.1418]",
-		"Type": "Autostop",
-		"Angles": "{5.1302 248.4921 0}",
-		"Name": "A390M",
-		"Config": {
-			"Type": "electric",
-			"SignalName": "390M"
-		}
-	},
-	{
-		"Pos": "[14565.6055 -5995.4976 2877.2944]",
-		"Type": "Autostop",
-		"Angles": "{-0 360 0}",
-		"Name": "APT286",
-		"Config": {
-			"Type": "electric",
-			"SignalName": "PT286"
 		}
 	},
 	{
@@ -390,6 +450,26 @@
 		}
 	},
 	{
+		"Pos": "[14563.707 6495.8818 2877.0945]",
+		"Type": "Autostop",
+		"Angles": "{0 360 0}",
+		"Name": "A282M",
+		"Config": {
+			"Type": "electric",
+			"SignalName": "282M"
+		}
+	},
+	{
+		"Pos": "[15435.4619 8667.2031 2123.5474]",
+		"Type": "Autostop",
+		"Angles": "{358.8197 7.5329 0}",
+		"Name": "A262",
+		"Config": {
+			"Type": "electric",
+			"SignalName": "262"
+		}
+	},
+	{
 		"Pos": "[6976.1128 14978.207 2063.1443]",
 		"Type": "Autostop",
 		"Angles": "{-0 90 0}",
@@ -420,16 +500,6 @@
 		}
 	},
 	{
-		"Pos": "[15435.4619 8667.2031 2123.5474]",
-		"Type": "Autostop",
-		"Angles": "{358.8197 7.5329 0}",
-		"Name": "A262",
-		"Config": {
-			"Type": "electric",
-			"SignalName": "262"
-		}
-	},
-	{
 		"Pos": "[15557.4121 3424.9902 2226.3855]",
 		"Type": "Autostop",
 		"Angles": "{0 0 0}",
@@ -450,13 +520,13 @@
 		}
 	},
 	{
-		"Pos": "[14563.707 6495.8818 2877.0945]",
+		"Pos": "[12081.2637 13613.7002 -1891.1418]",
 		"Type": "Autostop",
-		"Angles": "{0 360 0}",
-		"Name": "A282M",
+		"Angles": "{5.1302 248.4921 0}",
+		"Name": "A390M",
 		"Config": {
 			"Type": "electric",
-			"SignalName": "282M"
+			"SignalName": "390M"
 		}
 	},
 	{
@@ -470,6 +540,16 @@
 		}
 	},
 	{
+		"Pos": "[14565.6055 -5995.4976 2877.2944]",
+		"Type": "Autostop",
+		"Angles": "{-0 360 0}",
+		"Name": "APT286",
+		"Config": {
+			"Type": "electric",
+			"SignalName": "PT286"
+		}
+	},
+	{
 		"Pos": "[12127.9736 -13854.0566 2864.3213]",
 		"Type": "Autostop",
 		"Angles": "{356.2033 310.8755 0}",
@@ -477,6 +557,16 @@
 		"Config": {
 			"Type": "electric",
 			"SignalName": "PT290"
+		}
+	},
+	{
+		"Pos": "[13034.2852 -14593.1836 369.1843]",
+		"Type": "Autostop",
+		"Angles": "{5.8608 115.3866 0}",
+		"Name": "ARX352",
+		"Config": {
+			"Type": "electric",
+			"SignalName": "RX352"
 		}
 	},
 	{
@@ -497,96 +587,6 @@
 		"Config": {
 			"Type": "electric",
 			"SignalName": "382"
-		}
-	},
-	{
-		"Pos": "[13034.2852 -14593.1836 369.1843]",
-		"Type": "Autostop",
-		"Angles": "{5.8608 115.3866 0}",
-		"Name": "ARX352",
-		"Config": {
-			"Type": "electric",
-			"SignalName": "RX352"
-		}
-	},
-	{
-		"Pos": "[-5493.1768 -7424.833 -249.7426]",
-		"Type": "Autostop",
-		"Angles": "{-0 165 0}",
-		"Name": "A15",
-		"Config": {
-			"Type": "electric",
-			"SignalName": "15"
-		}
-	},
-	{
-		"Pos": "[-9886.5723 -12732.5586 -68.6678]",
-		"Type": "Autostop",
-		"Angles": "{3.421 76.913 0}",
-		"Name": "A17",
-		"Config": {
-			"Type": "electric",
-			"SignalName": "17"
-		}
-	},
-	{
-		"Pos": "[-15234.4648 -6750.6055 44.7191]",
-		"Type": "Autostop",
-		"Angles": "{0.1709 7.1008 0}",
-		"Name": "AA1",
-		"Config": {
-			"Type": "electric",
-			"SignalName": "A1"
-		}
-	},
-	{
-		"Pos": "[11219.2783 4303.2134 -313.6814]",
-		"Type": "Autostop",
-		"Angles": "{360 135 0}",
-		"Name": "AOK3",
-		"Config": {
-			"Type": "electric",
-			"SignalName": "OK3"
-		}
-	},
-	{
-		"Pos": "[13554.1641 11972.6768 -226.5334]",
-		"Type": "Autostop",
-		"Angles": "{4.8117 198.2653 0}",
-		"Name": "AOK5",
-		"Config": {
-			"Type": "electric",
-			"SignalName": "OK5"
-		}
-	},
-	{
-		"Pos": "[-4919.6416 -8543.2012 -200.7252]",
-		"Type": "Autostop",
-		"Angles": "{360 165 0}",
-		"Name": "A16",
-		"Config": {
-			"Type": "electric",
-			"SignalName": "16"
-		}
-	},
-	{
-		"Pos": "[-15630.1064 -7720.5737 44.6637]",
-		"Type": "Autostop",
-		"Angles": "{0.0428 17.098 0}",
-		"Name": "AA2",
-		"Config": {
-			"Type": "electric",
-			"SignalName": "A2"
-		}
-	},
-	{
-		"Pos": "[-9313.0342 -13928.9697 42.2463]",
-		"Type": "Autostop",
-		"Angles": "{2.9112 76.9118 0}",
-		"Name": "A18",
-		"Config": {
-			"Type": "electric",
-			"SignalName": "18"
 		}
 	}
 ]
