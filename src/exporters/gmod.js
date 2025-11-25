@@ -134,6 +134,16 @@ function signals() {
                 signals[name].go = '0010';
                 signals[name].wo = '1000';
                 break;
+            case 'ZYGRZ':
+            case 'ZYGRw':
+                signals[name].def = '0000';
+                signals[name].ro = '0001';
+                signals[name].ry = '0101';
+                signals[name].ya = '0010';
+                signals[name].yo = '0100';
+                signals[name].yg = '0110';
+                signals[name].go = '0010';
+                break;
             case 'WyYYGRw':
                 signals[name].def = '000000';
                 signals[name].ro = '000001';
