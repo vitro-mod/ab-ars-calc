@@ -96,6 +96,10 @@ function placeSignal(position, angles, options)
     }
 
     if R50_MODE then
+        ent.IsolateSwitches = ent.IsolateSwitches or {}
+    end
+
+    if R50_MODE then
         ent.IsolateSwitches.FrontArsName = options.FrontArsName
         ent.IsolateSwitches.SlowBlinking = true
     end
@@ -204,6 +208,6 @@ concommand.Add( "metrostroi_signal_import", function(ply, args)
 end )
 
 importSignalData("signals-crossline-redux-1.json", 6)
-importSignalData("signals-crossline-redux-2.json", 7)
-importSignalData("signals-crossline-redux-3.json", 4)
-importSignalData("signals-crossline-redux-4.json", 5)
+-- importSignalData("signals-crossline-redux-2.json", 7)
+-- importSignalData("signals-crossline-redux-3.json", 4)
+-- importSignalData("signals-crossline-redux-4.json", 5)
