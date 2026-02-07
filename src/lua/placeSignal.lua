@@ -1,4 +1,5 @@
-R50_MODE = true
+R50_MODE = false
+RAYS = false
 
 function getSignalTrackRerailTrace(trackID, x, isBack)
     local downVector = Vector(0, 0, -300)
@@ -181,10 +182,12 @@ function importSignalData(fileName, trackID)
             continue
         end
 
-        if R50_MODE and signal.IsAutostop then
+        if signal.IsAutostop then
+            if not R50_MODE then continue end
             local position, angles = getAutostopTrackPositionAngles(rerailTrace)
             placeAutostop(position, angles, signal)
         elseif signal.IsRay then
+            if not RAYS then continue end
             local position, angles = getRayTrackPositionAngles(rerailTrace)
             placeRay(position, angles, signal, trackID, signal.x)
         else
