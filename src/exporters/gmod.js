@@ -450,6 +450,9 @@ function trackPeregon() {
             };
 
             if (el.gmod) {
+                if (el.gmod.Routes && el.gmod.Routes[0]) {
+                    Object.assign(el.gmod.Routes[0], result[joint + '_back'].Routes[0]);
+                }
                 Object.assign(result[joint + '_back'], el.gmod);
                 if (el.gmod.name) {
                     result[joint + '_back'].SignalName = rtl(el.name).replaceAll('-', '').toUpperCase();
@@ -493,6 +496,9 @@ function trackPeregon() {
         }
 
         if (el.gmod) {
+            if (el.gmod.Routes && el.gmod.Routes[0]) {
+                Object.assign(el.gmod.Routes[0], result[joint].Routes[0]);
+            }
             Object.assign(result[joint], el.gmod);
             if (el.gmod.name) {
                 result[joint].SignalName = rtl(el.name).replaceAll('-', '').toUpperCase();
