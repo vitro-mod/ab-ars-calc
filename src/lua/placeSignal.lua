@@ -100,13 +100,7 @@ function placeSignal(position, angles, options)
     ent.Left = options.Left
     ent.NonAutoStop = options.NonAutoStop
     ent.RouteNumberSetup = options.RouteNumberSetup
-    ent.Routes = {
-        {
-            NextSignal = "*",
-            ARSCodes = options.ARSCodes,
-            Lights = options.Lights,
-        },
-    }
+    ent.Routes = options.Routes
 
     if R50_MODE then
         ent.IsolateSwitches = ent.IsolateSwitches or {}

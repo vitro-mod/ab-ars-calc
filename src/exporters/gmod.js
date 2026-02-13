@@ -381,8 +381,14 @@ function trackPeregon() {
             const ARSOnly = true;
             const LensesStr = '';
             const SignalType = 0;
+            const Routes = [
+                {
+                    NextSignal: '*',
+                    ARSCodes: ARSCodes,
+                },
+            ];
 
-            result[origName] = { x, ARSCodes, Name, ARSOnly, LensesStr, SignalType };
+            result[origName] = { x, Routes, Name, ARSOnly, LensesStr, SignalType };
         }
 
         if (el.vksCalc && i) {
@@ -434,7 +440,12 @@ function trackPeregon() {
                 SignalType: el.macht ? 1 : 0,
                 Left: !el.left ? true : false,
                 Back: true,
-                Lights: redLense,
+                Routes: [
+                    {
+                        NextSignal: '*',
+                        Lights: redLense,
+                    }
+                ],
                 NonAutoStop: !el.autostop,
             };
 
@@ -443,7 +454,7 @@ function trackPeregon() {
                 if (el.gmod.name) {
                     result[joint + '_back'].SignalName = rtl(el.name).replaceAll('-', '').toUpperCase();
                     if (result[joint + '_back'].SignalName === 'DOP') {
-                        result[joint + '_back'].Lights = '';
+                        result[joint + '_back'].Routes[0].Lights = '';
                     }
                 }
             }
@@ -475,7 +486,7 @@ function trackPeregon() {
         if (el.double) {
             result[joint].Name += el.doubleL ? '/' : '//';
         }
-        result[joint].Lights = ~lenses.indexOf('YGR') ? lightsCode(el) : (hasYR ? `${redLense}-${redLense}${redLense - 2}` : `${redLense}`);
+        result[joint].Routes[0].Lights = ~lenses.indexOf('YGR') ? lightsCode(el) : (hasYR ? `${redLense}-${redLense}${redLense - 2}` : `${redLense}`);
         result[joint].NonAutoStop = !el.autostop;
         if (el.wall) {
             result[joint].Invisible = true;
