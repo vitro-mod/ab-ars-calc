@@ -591,8 +591,7 @@ function rtl(gmodRc) {
 //     });
 // });
 
-function exportTrackSignals(track) {
-    const TIMEOUT = 250;
+async function exportTrackSignals(track) {
 
     const query = Object.fromEntries(document.location.search.slice(1).split('&').map(el => el.split('=')));
     const line = query.line;
@@ -611,23 +610,19 @@ function exportTrackSignals(track) {
     const count = lines[line][track].length;
     const result = {};
 
-    function exportPeregonSignals(i) {
-        setTimeout(() => {
-            const a = new App();
-            a.init(line, track, i, map).then(() => {
-                Object.assign(result, trackPeregon());
-            })
-        }, i * TIMEOUT);
+    async function exportPeregonSignals(i) {
+        const a = new App();
+        await a.init(line, track, i, map, true);
+        return trackPeregon();
     }
 
     for (let i = 0; i < count - 1; i++) {
-        exportPeregonSignals(i);
+        const peregon = await exportPeregonSignals(i);
+        Object.assign(result, peregon);
     }
 
-    setTimeout(() => {
-        console.log(JSON.stringify(result));
-        downloadJSON(result, `signals-${line}-${track}.json`);
-    }, count * TIMEOUT);
+    console.log(JSON.stringify(result));
+    downloadJSON(result, `signals-${line}-${track}.json`);
 }
 
 function downloadJSON(data, filename) {
