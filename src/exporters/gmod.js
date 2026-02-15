@@ -374,22 +374,22 @@ function trackPeregon() {
     peregon.joints.forEach((el, i, arr) => {
         const origName = rtl(el.gmod?.name ?? el.name);
         const x = station1X + el.x;
-        if (i) {
-            const ARSCode = arsCode(el);
-            const ARSCodes = ARSCode === 'N' ? '1' : ARSCode;
-            const Name = ('TC' + rtl(arr[i - 1].name)).toUpperCase();
-            const ARSOnly = true;
-            const LensesStr = '';
-            const SignalType = 0;
-            const Routes = [
-                {
-                    NextSignal: '*',
-                    ARSCodes: ARSCodes,
-                },
-            ];
+        if (!i) return;
 
-            result[origName] = { x, Routes, Name, ARSOnly, LensesStr, SignalType };
-        }
+        const ARSCode = arsCode(el);
+        const ARSCodes = ARSCode === 'N' ? '1' : ARSCode;
+        const Name = ('TC' + rtl(arr[i - 1].name)).toUpperCase();
+        const ARSOnly = true;
+        const LensesStr = '';
+        const SignalType = 0;
+        const Routes = [
+            {
+                NextSignal: '*',
+                ARSCodes: ARSCodes,
+            },
+        ];
+
+        result[origName] = { x, Routes, Name, ARSOnly, LensesStr, SignalType };
 
         if (el.vksCalc && i) {
             result[origName + '_ray'] = {
