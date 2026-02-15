@@ -405,6 +405,10 @@ function trackPeregon() {
             result[origName].Left = true;
         }
 
+        if (el.gmod) {
+            Object.assign(result[origName], el.gmod);
+        }
+
         if (el.bothDirections || el.back) {
             if (i && el.back) {
                 // delete result[origName];
