@@ -1,0 +1,7 @@
+#stationName, #nextStationName {
+    cursor: pointer;
+}
+
+#stationName:hover, #nextStationName:hover {
+    text-decoration: underline;
+}

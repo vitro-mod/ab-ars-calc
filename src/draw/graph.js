@@ -62,7 +62,11 @@ class DrawGraph extends Draw {
             text.add(this.two.makeText(i, axisT - 5, this.graphY - i * this.Ky, { alignment: 'right' }));
         }
 
-        if (this.peregon.name) text.add(this.two.makeText(this.peregon.name, this.offsetX, 7));
+        if (this.peregon.name) {
+            const stationNameText = this.two.makeText(this.peregon.name, this.offsetX, 7);
+            stationNameText.id = 'stationName';
+            text.add(stationNameText);
+        }
         this.two.makeCircle(this.offsetX, 35, 15, 4);
         this.two.makeArcSegment(this.offsetX, 35, 9, 15, Math.PI / 2, 3 * Math.PI / 2, 16).fill = 'black';
         this.two.makeArcSegment(this.offsetX, 35, 0, 9, 3 * Math.PI / 2, 5 * Math.PI / 2, 16).fill = 'black';
@@ -70,7 +74,11 @@ class DrawGraph extends Draw {
         this.two.makeLine(this.offsetX + 15 + 25, 33, this.offsetX + 15 + 40, 35);
         this.two.makeText(`${this.peregon.trackLength}м.`, this.offsetX + 60, 35, { alignment: 'left' });
 
-        if (nextPeregon.name) text.add(this.two.makeText(nextPeregon.name, this.offsetX + this.peregon.trackLength * this.K, 7));
+        if (nextPeregon.name) {
+            const nextStationNameText = this.two.makeText(nextPeregon.name, this.offsetX + this.peregon.trackLength * this.K, 7);
+            nextStationNameText.id = 'nextStationName';
+            text.add(nextStationNameText);
+        }
         this.two.makeCircle(this.offsetX + this.peregon.trackLength * this.K, 35, 15, 4);
         this.two.makeArcSegment(this.offsetX + this.peregon.trackLength * this.K, 35, 9, 15, Math.PI / 2, 3 * Math.PI / 2, 16).fill = 'black';
         this.two.makeArcSegment(this.offsetX + this.peregon.trackLength * this.K, 35, 0, 9, 3 * Math.PI / 2, 5 * Math.PI / 2, 16).fill = 'black';
