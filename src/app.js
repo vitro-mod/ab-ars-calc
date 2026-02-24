@@ -1,6 +1,6 @@
 class App {
 
-    async init(line, track, n, paImport) {
+    async init(line, track, n, paImport, noTimeoutDraw) {
         const peregon = lines[line][track][Number(n) || 0];
         const nextPeregon = lines[line][track][Number(n) + 1 || 1];
 
@@ -35,25 +35,27 @@ class App {
         const drawTrack = new DrawTrack(two, peregon, offsetX, K, Ky);
         drawTrack.drawPeregon().position.x = offsetX;
 
-        setTimeout(() => {
-            drawGraph.drawVelocity(peregonCalc, trainHalf).position.x = offsetX;
-            two.update();
-        }, 0);
+        if (!noTimeoutDraw) {
+            setTimeout(() => {
+                drawGraph.drawVelocity(peregonCalc, trainHalf).position.x = offsetX;
+                two.update();
+            }, 0);
 
-        setTimeout(() => {
-            drawGraph.drawTime(peregonCalc, trainHalf).position.x = offsetX;
-            two.update();
-        }, 0);
+            setTimeout(() => {
+                drawGraph.drawTime(peregonCalc, trainHalf).position.x = offsetX;
+                two.update();
+            }, 0);
 
-        setTimeout(() => {
-            drawGraph.drawTime(peregonCalc, -trainHalf).position.x = offsetX;
-            two.update();
-        }, 0);
+            setTimeout(() => {
+                drawGraph.drawTime(peregonCalc, -trainHalf).position.x = offsetX;
+                two.update();
+            }, 0);
 
-        setTimeout(() => {
-            drawGraph.drawTime(peregonCalc, trainHalf, this.interval).position.x = offsetX;
-            two.update();
-        }, 0);
+            setTimeout(() => {
+                drawGraph.drawTime(peregonCalc, trainHalf, this.interval).position.x = offsetX;
+                two.update();
+            }, 0);
+        }
 
         const prevLeng = this.trackLength;
         const prevTime = peregonCalc[peregonCalc.length - 1].Tk;
@@ -65,15 +67,17 @@ class App {
         drawTrack.setPeregon(nextPeregon);
         drawTrack.drawPeregon().position.x = offsetX + prevLeng * K;
 
-        setTimeout(() => {
-            drawGraph.drawVelocity(nextPeregonCalc, prevLeng - trainHalf).position.x = offsetX;
-            two.update();
-        }, 0);
+        if (!noTimeoutDraw) {
+            setTimeout(() => {
+                drawGraph.drawVelocity(nextPeregonCalc, prevLeng - trainHalf).position.x = offsetX;
+                two.update();
+            }, 0);
 
-        setTimeout(() => {
-            drawGraph.drawTime(nextPeregonCalc, prevLeng - trainHalf, prevTime).position.x = offsetX;
-            two.update();
-        }, 0);
+            setTimeout(() => {
+                drawGraph.drawTime(nextPeregonCalc, prevLeng - trainHalf, prevTime).position.x = offsetX;
+                two.update();
+            }, 0);
+        }
 
         this.loadPeregon(peregon);
 

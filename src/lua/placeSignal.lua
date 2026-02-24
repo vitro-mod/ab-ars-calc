@@ -1,4 +1,6 @@
-R50_MODE = true
+R50_MODE = false
+RAYS = false
+NEW_ERA = true
 
 function getSignalTrackRerailTrace(trackID, x, isBack)
     local downVector = Vector(0, 0, -300)
@@ -61,6 +63,17 @@ function getAutostopTrackPositionAngles(rerailTrace)
     return position, angles
 end
 
+function getAutostopNewEraTrackPositionAngles(rerailTrace)
+    if not rerailTrace then
+        print("Rerail trace is nil")
+        return
+    end
+
+    local position = rerailTrace.centerpos - Vector(0, 0, 9.5)
+    local angles = rerailTrace.right:GetNegated():Angle()
+    return position, angles
+end
+
 function getRayTrackPositionAngles(rerailTrace)
     if not rerailTrace then
         print("Rerail trace is nil")
@@ -87,13 +100,7 @@ function placeSignal(position, angles, options)
     ent.Left = options.Left
     ent.NonAutoStop = options.NonAutoStop
     ent.RouteNumberSetup = options.RouteNumberSetup
-    ent.Routes = {
-        {
-            NextSignal = "*",
-            ARSCodes = options.ARSCodes,
-            Lights = options.Lights,
-        },
-    }
+    ent.Routes = options.Routes
 
     if R50_MODE then
         ent.IsolateSwitches = ent.IsolateSwitches or {}
@@ -138,6 +145,17 @@ function placeAutostop(position, angles, options)
     ent:Spawn()
 end
 
+function placeAutostopNewEra(position, angles, options)
+    local ent = ents.Create("gmod_track_autostop")
+    ent:SetPos(position)
+    ent:SetAngles(angles)
+    ent.SignalLink = options.SignalName or ""
+    ent.MaxSpeed = 0
+    ent.Type = 1
+
+    ent:Spawn()
+end
+
 function placeRay(position, angles, options, trackID, trackX)
     local ent = ents.Create("gmod_vitromod_ray")
     ent:SetPos(position)
@@ -162,6 +180,11 @@ function importSignalData(fileName, trackID)
         if signal and signal.TrackPosition and signal.TrackPosition.path.id == trackID then v:Remove() end
     end
 
+    for k, v in pairs(ents.FindByClass("gmod_track_autostop")) do
+        local signal = v.Sig
+        if signal and signal.TrackPosition and signal.TrackPosition.path.id == trackID then v:Remove() end
+    end
+
     for k, v in pairs(ents.FindByClass("gmod_track_signal")) do
         if v.TrackPosition and v.TrackPosition.path.id == trackID then v:Remove() end
     end
@@ -181,10 +204,16 @@ function importSignalData(fileName, trackID)
             continue
         end
 
-        if R50_MODE and signal.IsAutostop then
-            local position, angles = getAutostopTrackPositionAngles(rerailTrace)
-            placeAutostop(position, angles, signal)
+        if signal.IsAutostop then
+            if R50_MODE then
+                local position, angles = getAutostopTrackPositionAngles(rerailTrace)
+                placeAutostop(position, angles, signal)
+            elseif NEW_ERA then
+                local position, angles = getAutostopNewEraTrackPositionAngles(rerailTrace)
+                placeAutostopNewEra(position, angles, signal)
+            end
         elseif signal.IsRay then
+            if not RAYS then continue end
             local position, angles = getRayTrackPositionAngles(rerailTrace)
             placeRay(position, angles, signal, trackID, signal.x)
         else

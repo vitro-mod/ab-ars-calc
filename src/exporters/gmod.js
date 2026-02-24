@@ -374,16 +374,22 @@ function trackPeregon() {
     peregon.joints.forEach((el, i, arr) => {
         const origName = rtl(el.gmod?.name ?? el.name);
         const x = station1X + el.x;
-        if (i) {
-            const ARSCode = arsCode(el);
-            const ARSCodes = ARSCode === 'N' ? '1' : ARSCode;
-            const Name = ('TC' + rtl(arr[i - 1].name)).toUpperCase();
-            const ARSOnly = true;
-            const LensesStr = '';
-            const SignalType = 0;
+        if (!i) return;
 
-            result[origName] = { x, ARSCodes, Name, ARSOnly, LensesStr, SignalType };
-        }
+        const ARSCode = arsCode(el);
+        const ARSCodes = ARSCode === 'N' ? '1' : ARSCode;
+        const Name = ('TC' + rtl(arr[i - 1].name)).toUpperCase();
+        const ARSOnly = true;
+        const LensesStr = '';
+        const SignalType = 0;
+        const Routes = [
+            {
+                NextSignal: '*',
+                ARSCodes: ARSCodes,
+            },
+        ];
+
+        result[origName] = { x, Routes, Name, ARSOnly, LensesStr, SignalType };
 
         if (el.vksCalc && i) {
             result[origName + '_ray'] = {
@@ -397,6 +403,10 @@ function trackPeregon() {
 
         if (el.left) {
             result[origName].Left = true;
+        }
+
+        if (el.gmod) {
+            Object.assign(result[origName], el.gmod);
         }
 
         if (el.bothDirections || el.back) {
@@ -434,16 +444,24 @@ function trackPeregon() {
                 SignalType: el.macht ? 1 : 0,
                 Left: !el.left ? true : false,
                 Back: true,
-                Lights: redLense,
+                Routes: [
+                    {
+                        NextSignal: '*',
+                        Lights: redLense,
+                    }
+                ],
                 NonAutoStop: !el.autostop,
             };
 
             if (el.gmod) {
+                if (el.gmod.Routes && el.gmod.Routes[0]) {
+                    Object.assign(el.gmod.Routes[0], result[joint + '_back'].Routes[0]);
+                }
                 Object.assign(result[joint + '_back'], el.gmod);
                 if (el.gmod.name) {
                     result[joint + '_back'].SignalName = rtl(el.name).replaceAll('-', '').toUpperCase();
                     if (result[joint + '_back'].SignalName === 'DOP') {
-                        result[joint + '_back'].Lights = '';
+                        result[joint + '_back'].Routes[0].Lights = '';
                     }
                 }
             }
@@ -475,13 +493,16 @@ function trackPeregon() {
         if (el.double) {
             result[joint].Name += el.doubleL ? '/' : '//';
         }
-        result[joint].Lights = ~lenses.indexOf('YGR') ? lightsCode(el) : (hasYR ? `${redLense}-${redLense}${redLense - 2}` : `${redLense}`);
+        result[joint].Routes[0].Lights = ~lenses.indexOf('YGR') ? lightsCode(el) : (hasYR ? `${redLense}-${redLense}${redLense - 2}` : `${redLense}`);
         result[joint].NonAutoStop = !el.autostop;
         if (el.wall) {
             result[joint].Invisible = true;
         }
 
         if (el.gmod) {
+            if (el.gmod.Routes && el.gmod.Routes[0]) {
+                Object.assign(el.gmod.Routes[0], result[joint].Routes[0]);
+            }
             Object.assign(result[joint], el.gmod);
             if (el.gmod.name) {
                 result[joint].SignalName = rtl(el.name).replaceAll('-', '').toUpperCase();
@@ -574,8 +595,7 @@ function rtl(gmodRc) {
 //     });
 // });
 
-function exportTrackSignals(track) {
-    const TIMEOUT = 250;
+async function exportTrackSignals(track) {
 
     const query = Object.fromEntries(document.location.search.slice(1).split('&').map(el => el.split('=')));
     const line = query.line;
@@ -594,23 +614,19 @@ function exportTrackSignals(track) {
     const count = lines[line][track].length;
     const result = {};
 
-    function exportPeregonSignals(i) {
-        setTimeout(() => {
-            const a = new App();
-            a.init(line, track, i, map).then(() => {
-                Object.assign(result, trackPeregon());
-            })
-        }, i * TIMEOUT);
+    async function exportPeregonSignals(i) {
+        const a = new App();
+        await a.init(line, track, i, map, true);
+        return trackPeregon();
     }
 
     for (let i = 0; i < count - 1; i++) {
-        exportPeregonSignals(i);
+        const peregon = await exportPeregonSignals(i);
+        Object.assign(result, peregon);
     }
 
-    setTimeout(() => {
-        console.log(JSON.stringify(result));
-        downloadJSON(result, `signals-${line}-${track}.json`);
-    }, count * TIMEOUT);
+    console.log(JSON.stringify(result));
+    downloadJSON(result, `signals-${line}-${track}.json`);
 }
 
 function downloadJSON(data, filename) {
