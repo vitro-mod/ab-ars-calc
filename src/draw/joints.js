@@ -40,6 +40,11 @@ class DrawJoints extends Draw {
 
             group.add(joint, textGroup, lengText, dash, code);
 
+            const cra = this.peregon.joints[i].cra;
+            if (cra) {
+                group.add(this.drawCra(this.x(x), cra));
+            }
+
             let arsS = this.peregon.joints[i].arsCalc;
 
             if (!arsS) continue;
@@ -142,5 +147,16 @@ class DrawJoints extends Draw {
         const arrow = this.drawArrow(this.x(nextJointX), y, this.x(nextJointX), y);
 
         return this.two.makeGroup(line, dashedLine, circle, arrow);
+    }
+
+    drawCra(x, craObj) {
+        const y = this.trackY - 35;
+
+        const line1 = this.two.makeLine(x, y - 15, x, y + 15);
+        const circle = this.two.makeCircle(x, y, 1.5).fill = '#000';
+        const arrow1 = this.drawArrow(x, y, x - 30, y);
+        const arrow2 = this.drawArrow(x, y, x + 30, y);
+
+        // return this.two.makeGroup(line1);
     }
 }
