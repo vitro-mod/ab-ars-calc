@@ -17,7 +17,7 @@ class App {
         const tractionCalculator = new TractionCalculator();
         tractionCalculator.setPeregon(peregon);
         const peregonCalc = tractionCalculator.calc(this.stepNum);
-
+        console.log(peregonCalc);
         const K = 1;
         const Ky = K * 3;
 
