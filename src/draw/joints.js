@@ -128,6 +128,9 @@ class DrawJoints extends Draw {
         const ray = this.drawRay(x + l);
         const y = vf;
         const vFactText = this.two.makeText(`Vф=${vf}км/ч`, this.x(x + l) + 4, this.graphY - y * this.Ky, { size: 10, alignment: 'left' });
+        if (vf < v) {
+            vFactText.fill = 'red';
+        }
         const vAssumedText = this.two.makeText(`Vр=${v}км/ч`, this.x(x + l) + 4, this.graphY + 12 - y * this.Ky, { size: 10, alignment: 'left' });
         const sText = this.two.makeText(`S=${l.toFixed(2)}+${s.toFixed(2)}=${Math.floor((l + s + 1.38))}`, this.x(x + l) + 4, this.graphY + 24 - y * this.Ky, { size: 10, alignment: 'left' });
         const vksDash = this.two.makeLine(this.x(x + l), this.graphY, this.x(x + l), 0);
