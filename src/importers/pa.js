@@ -22,10 +22,9 @@ async function importTrackPlanProfile(name, track, n, peregon, nextPeregon) {
     console.log(paths[track]);
 
     const gmTrack = paths[track][0].TrackPath;
-    const planRes = await fetch(`/data/metrostroi_data/plan_${name}_${gmTrack}.json`);
-    const plan = await planRes.json();
-    const profRes = await fetch(`/data/metrostroi_data/prof_${name}_${gmTrack}.json`);
-    const prof = await profRes.json();
+
+    const { plan, prof } = await getPlanProfileFromTrack(name, gmTrack);
+
     console.log(plan);
     console.log(prof);
 

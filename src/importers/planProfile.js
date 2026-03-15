@@ -190,9 +190,16 @@ function getProfile(path) {
     return filteredProfile;
 }
 
-function savePlanProfile(trackNum = 4) {
-    if (typeof Metrostroi === "undefined" || typeof Metrostroi.GetTrackPaths !== "function") return null;
-    const paths = Metrostroi.GetTrackPaths();
+async function getPlanProfileFromTrack(name, trackNum) {
+    if (!name || !trackNum) {
+        console.error("Track name and number must be provided");
+        return null;
+    }
+    const trackRes = await fetch(`/data/metrostroi_data/track_${name}.txt`);
+    const trackPaths = await trackRes.json();
+
+    const paths = trackPaths.map(parseGmodVectors);
+
     if (!paths) return null;
 
     const trackIndex = Math.max(0, Number(trackNum) - 1);
@@ -200,15 +207,21 @@ function savePlanProfile(trackNum = 4) {
     if (!trackPath) return null;
 
     const plan = getPlan(trackPath);
-    const profile = getProfile(trackPath);
+    const prof = getProfile(trackPath);
 
-    return { plan, profile };
+    return { plan, prof };
+}
+
+// each entry is '[-293.579 2835.5242 1853.5847]' string, need to parse it into { x: -293.579, y: 2835.5242, z: 1853.5847 } object
+function parseGmodVectors(track) {
+    return track.map(entry => {
+        const [x, y, z] = entry.slice(1, -1).split(' ').map(Number);
+        return { x, y, z };
+    });
 }
 
 const planProfileApi = {
-    getPlan,
-    getProfile,
-    savePlanProfile,
+    getPlanProfileFromTrack,
 };
 
 if (typeof module !== "undefined" && module.exports) {
