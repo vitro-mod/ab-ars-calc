@@ -446,8 +446,8 @@ lines['crossline-redux']['1'] = [
             { joint: '369', name: 'ОЛ-375', lenses: 'BYY-GRw', guard: 65, service: 35, shift: 20, autostop: 1, y: '375', g: 'NEXT_yg' },
             { joint: '373', name: 'ОЛ-377', lenses: 'YYG-Rw', wall: true, guard: 60, shift: 20, service: 35, autostop: 1, yg: '377', gmod: { HeadsXOffset: 30.5 } },
             { joint: '377', name: 'ОЛ-379м', gmod: { RouteNumberSetup: '13' }, lenses: 'x', guard: 35, autostop: 1 },
-            { joint: '371', name: 'ОП', gmod: { name: 'ОЛ-ОП' }, lenses: 'ZR', back: true, left: true, guard: 35, autostop: 3 },
-            { joint: '379', name: 'ДОП', gmod: { name: 'ОЛ-ДОП' }, lenses: 'ZZr', back: true, left: true, guard: 35, autostop: 3 },
+            { joint: '371', name: 'ОП', gmod: { name: 'ОЛ-ОП' }, lenses: 'ZR', back: true, left: true, autostop: 3 },
+            { joint: '379', name: 'ДОП', gmod: { name: 'ОЛ-ДОП' }, lenses: 'ZZr', back: true, left: true, autostop: 3 },
         ],
         mks: [
             { x: 569.9 + 61.5, name: '19МК' },
