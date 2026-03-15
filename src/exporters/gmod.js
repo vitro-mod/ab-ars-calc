@@ -343,24 +343,28 @@ function lightsCode(signal) {
 
     signal.calc.sequence.push(lastIndication);
 
-    const ygrIndex = signal.lenses.replaceAll('-', '').toUpperCase().indexOf('YGR');
+    lens = signal.lenses.replaceAll('-', '').toUpperCase()
+    const RIndex = lens.lastIndexOf('R') + 1;
+    const YIndex = lens.indexOf('Y') + 1;
+    const Y2Index = (lens.split('Y').length - 1) > 1 ? lens.indexOf('Y', YIndex) + 1: YIndex;
+    const GIndex = lens.indexOf('G') + 1;
 
     if (!signal.noRY) {
         signal.calc.lightsArray = signal.calc.sequence.map((el) => {
-            if (el === 'r') return `${ygrIndex + 3}`;
-            if (el === 'yr') return `${ygrIndex + 1}${ygrIndex + 3}`;
-            if (el === 'y') return `${ygrIndex}`;
-            if (el === 'yg') return `${ygrIndex}${ygrIndex + 2}`;
-            if (el === 'g') return `${ygrIndex + 2}`;
+            if (el === 'r') return `${RIndex}`;
+            if (el === 'yr') return `${RIndex}${Y2Index}`;
+            if (el === 'y') return `${YIndex}`;
+            if (el === 'yg') return `${YIndex}${GIndex}`;
+            if (el === 'g') return `${GIndex}`;
             return el;
         });
     } else {
         signal.calc.lightsArray = signal.calc.sequence.map((el) => {
-            if (el === 'r') return `${ygrIndex + 3}`;
-            if (el === 'yr') return `${ygrIndex + 3}`;
-            if (el === 'y') return `${ygrIndex + 1}`;
-            if (el === 'yg') return `${ygrIndex + 1}${ygrIndex + 2}`;
-            if (el === 'g') return `${ygrIndex + 2}`;
+            if (el === 'r') return `${RIndex}`;
+            if (el === 'yr') return `${RIndex}`;
+            if (el === 'y') return `${YIndex}`;
+            if (el === 'yg') return `${YIndex}${GIndex}`;
+            if (el === 'g') return `${GIndex}`;
         });
     }
 
@@ -407,6 +411,12 @@ function trackPeregon() {
 
         if (el.gmod) {
             Object.assign(result[origName], el.gmod);
+            if (!result[origName].Routes[0].ARSCodes) {
+                result[origName].Routes[0].ARSCodes = ARSCodes;
+            }
+            if (!result[origName].Routes[0].NextSignal) {
+                result[origName].Routes[0].NextSignal = "*";
+            }
         }
 
         if (el.bothDirections || el.back) {
@@ -493,7 +503,6 @@ function trackPeregon() {
         if (el.double) {
             result[joint].Name += el.doubleL ? '/' : '//';
         }
-        result[joint].Routes[0].Lights = ~lenses.indexOf('YGR') ? lightsCode(el) : (hasYR ? `${redLense}-${redLense}${redLense - 2}` : `${redLense}`);
         result[joint].NonAutoStop = !el.autostop;
         if (el.wall) {
             result[joint].Invisible = true;
@@ -508,6 +517,10 @@ function trackPeregon() {
                 result[joint].SignalName = rtl(el.name).replaceAll('-', '').toUpperCase();
             }
         }
+
+        if (!result[joint].Routes[0].Lights) {
+                result[joint].Routes[0].Lights = (lenses.includes('R') && lenses.includes('G')) ? lightsCode(el) : (hasYR ? `${redLense}-${redLense}${redLense - 2}` : `${redLense}`);
+            }
 
         if (el.autostop && el.shift && Math.abs(el.shift) > 0) {
             result[joint].NonAutoStop = true;
@@ -579,7 +592,8 @@ function rtl(gmodRc) {
         .replaceAll('Ф', 'F')
         .replaceAll('Х', 'H')
         .replaceAll('Ц', 'C')
-        .replaceAll('Ч', 'X');
+        .replaceAll('Ч', 'X')
+        .replaceAll('Я', 'Q');
 }
 
 
