@@ -1,3 +1,5 @@
+const IS_OLD_ARS = false;
+
 const stepLength = 1;
 
 const wagonLength = 19.16;
