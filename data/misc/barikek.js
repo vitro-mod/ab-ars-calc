@@ -1,3 +1,5 @@
+wagonCount = 8;
+trainHalf = wagonLength * wagonCount / 2;
 var lines = lines || {};
 lines['barikek'] = lines['barikek'] || {};
 lines['barikek']['1'] = [
@@ -29,17 +31,17 @@ lines['barikek']['1'] = [
         },
         modes: {
             0: 'H',
-            55: '0',
-            530: 'P345',
+            70: '0',
+            493: 'P345',
             1145: '0',
-            1240: 'T',
+            1239: 'T',
         },
         modes: {
             0: 'H',
-            110: '0',
-            530: 'P345',
+            130: '0',
+            493: 'P345',
             1145: '0',
-            1204: 'T',
+            1203: 'T',
         },
         joints: [
             { x: 82, name: '333с' },
@@ -67,10 +69,10 @@ lines['barikek']['1'] = [
             { joint: '331б', name: '327', lenses: 'YY-GR', autostop: 3, guard: 79, y: '327', g: 'NEXT_y' },
             { joint: '329', name: '325', lenses: 'RYY-GR', autostop: 3, guard: 79, y: '325', yg: 'NEXT_y' },
             { joint: '327', name: '323', lenses: 'YY-GR', autostop: 3, guard: 65, y: '325а/323', yg: 'NEXT_y' },
-            { joint: '325', name: '321', lenses: 'YY-GR', double: true, autostop: 3, shift: 20, guard: 65, y: '323/321', yg: 'NEXT_y' },
-            { joint: '325а/323', name: '319', lenses: 'YY-GR', double: true, autostop: 1, shift: 15, guard: 65, y: '321/319', yg: 'NEXT_y' },
-            { joint: '323/321', name: '317', lenses: 'YY-GR', double: true, autostop: 1, shift: 20, guard: 62, y: '319с/317с', yg: 'NEXT_y' },
-            { joint: '321/319', name: '315', lenses: 'YY-GR', double: true, autostop: 1, shift: 20, guard: 65, y: '317с/315с', yg: 'NEXT_y' },
+            { joint: '325', name: '321', lenses: 'YY-GR', left: true, double: true, autostop: 3, shift: 20, guard: 65, y: '323/321', yg: 'NEXT_y' },
+            { joint: '325а/323', name: '319', lenses: 'YY-GR', left: true, double: true, autostop: 1, shift: 15, guard: 65, y: '321/319', yg: 'NEXT_y' },
+            { joint: '323/321', name: '317', lenses: 'YY-GR', left: true, double: true, autostop: 1, shift: 20, guard: 62, y: '319с/317с', yg: 'NEXT_y' },
+            { joint: '321/319', name: '315', lenses: 'YY-GR', left: true, double: true, autostop: 1, shift: 20, guard: 65, y: '317с/315с', yg: 'NEXT_y' },
             { joint: '319/317', name: '313', lenses: 'YY-GR', wall: true, autostop: 1, shift: 20, guard: 65, y: '315с-313с/313с', yg: '311-309' },
             { joint: '315с-313с/313с', name: 'Бр-311', lenses: 'x', autostop: 3, guard: 35 },
         ],
@@ -80,10 +82,10 @@ lines['barikek']['1'] = [
             { joint: '331б', name: '327', lenses: 'YY-GR', autostop: 3, guard: 79, y: '327', g: 'NEXT_y' },
             { joint: '329', name: '325', lenses: 'RYY-GR', autostop: 3, guard: 79, y: '325а/323', yg: 'NEXT_y' },
             { joint: '327', name: '323', lenses: 'YY-GR', autostop: 3, guard: 85, y: '323/321', yg: 'NEXT_y' },
-            { joint: '325', name: '321', lenses: 'YY-GR', double: true, autostop: 3, shift: 20, guard: 82, y: '321/319', yg: 'NEXT_y' },
-            { joint: '325а/323', name: '319', lenses: 'YY-GR', double: true, autostop: 1, shift: 15, guard: 76, y: '319с/317с', yg: 'NEXT_y' },
-            { joint: '323/321', name: '317', lenses: 'YY-GR', double: true, autostop: 1, shift: 20, guard: 75, y: '317с/315с', yg: 'NEXT_y' },
-            { joint: '321/319', name: '315', lenses: 'YY-GR', double: true, autostop: 1, shift: 20, guard: 75, y: '315с-313с/313с', yg: 'NEXT_y' },
+            { joint: '325', name: '321', lenses: 'YY-GR', left: true, double: true, autostop: 3, shift: 20, guard: 82, y: '321/319', yg: 'NEXT_y' },
+            { joint: '325а/323', name: '319', lenses: 'YY-GR', left: true, double: true, autostop: 1, shift: 15, guard: 76, y: '319с/317с', yg: 'NEXT_y' },
+            { joint: '323/321', name: '317', lenses: 'YY-GR', left: true, double: true, autostop: 1, shift: 20, guard: 75, y: '317с/315с', yg: 'NEXT_y' },
+            { joint: '321/319', name: '315', lenses: 'YY-GR', left: true, double: true, autostop: 1, shift: 20, guard: 75, y: '315с-313с/313с', yg: 'NEXT_y' },
             { joint: '319/317', name: '313', lenses: 'YY-GR', wall: true, autostop: 1, shift: 20, guard: 84, y: '315с-313с/313с', yg: '311-309' },
             { joint: '315с-313с/313с', name: 'Бр-311', lenses: 'x', autostop: 3, guard: 35 },
         ],
