@@ -2,7 +2,7 @@
 	"markers": [
 		{
 			"PAWrongPath": true,
-			"TrackPath": 2,
+			"TrackPath": 1,
 			"TrackX": 12110.9422,
 			"PAStationRightDoors": true,
 			"PALastStation": true,
@@ -33,7 +33,7 @@
 		},
 		{
 			"PAWrongPath": false,
-			"TrackPath": 2,
+			"TrackPath": 1,
 			"PAStationHasSwtiches": true,
 			"PADeadlockEnd": 233,
 			"TrackX": 10978.457,
@@ -68,7 +68,7 @@
 		},
 		{
 			"PAWrongPath": false,
-			"TrackPath": 2,
+			"TrackPath": 1,
 			"PADeadlockEnd": false,
 			"TrackX": 7238.5514,
 			"PAStationRightDoors": true,
@@ -86,7 +86,7 @@
 		},
 		{
 			"PAWrongPath": true,
-			"TrackPath": 2,
+			"TrackPath": 1,
 			"PAStationHasSwtiches": true,
 			"PADeadlockEnd": 189,
 			"TrackX": 2898.729,
@@ -140,7 +140,7 @@
 		},
 		{
 			"PAWrongPath": false,
-			"TrackPath": 2,
+			"TrackPath": 1,
 			"PAStationHasSwtiches": true,
 			"PADeadlockEnd": false,
 			"TrackX": 427.6755,
@@ -168,7 +168,7 @@
 			"PAType": 1
 		},
 		{
-			"TrackPath": 2,
+			"TrackPath": 1,
 			"TrackX": 4619.9909,
 			"PAStationID": 704,
 			"PAStationPath": 2,
@@ -178,7 +178,7 @@
 			"PAType": 1
 		},
 		{
-			"TrackPath": 2,
+			"TrackPath": 1,
 			"TrackX": 8798.6826,
 			"PAStationRightDoors": true,
 			"PAStationID": 702,
