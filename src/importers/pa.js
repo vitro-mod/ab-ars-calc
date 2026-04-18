@@ -48,28 +48,28 @@ async function importTrackPlanProfile(name, track, n, peregon, nextPeregon) {
     const planBeginEnd = findBeginEnd(plan, station1X, station2X);
     const planBegin = planBeginEnd.begin;
     const planEnd = planBeginEnd.end;
-    const peregonPlan = buildPeregonPlan(plan, planBegin, planEnd, station1X);
+    const peregonPlan = buildPeregonPlan(plan, planBegin, planEnd, station1X, station2X);
     peregon.curves = peregonPlan;
 
     const nextPlanBeginEnd = findBeginEnd(plan, station2X, X3);
     const nextPlanBegin = nextPlanBeginEnd.begin;
     const nextPlanEnd = nextPlanBeginEnd.end;
     if (nextPlanBegin != null && nextPlanEnd != null) {
-        const nextPeregonPlan = buildPeregonPlan(plan, nextPlanBegin, nextPlanEnd, station2X);
+        const nextPeregonPlan = buildPeregonPlan(plan, nextPlanBegin, nextPlanEnd, station2X, X3);
         nextPeregon.curves = nextPeregonPlan;
     }
 
     const profBeginEnd = findBeginEnd(prof, station1X, station2X);
     const profBegin = profBeginEnd.begin;
     const profEnd = profBeginEnd.end;
-    const peregonProf = buildPeregonProf(prof, profBegin, profEnd, station1X);
+    const peregonProf = buildPeregonProf(prof, profBegin, profEnd, station1X, station2X);
     peregon.slopes = peregonProf;
 
     const nextProfBeginEnd = findBeginEnd(prof, station2X, X3);
     const nextProfBegin = nextProfBeginEnd.begin;
     const nextProfEnd = nextProfBeginEnd.end;
     if (nextProfBegin != null && nextProfEnd != null) {
-        const nextPeregonProf = buildPeregonProf(prof, nextProfBegin, nextProfEnd, station2X);
+        const nextPeregonProf = buildPeregonProf(prof, nextProfBegin, nextProfEnd, station2X, X3);
         nextPeregon.slopes = nextPeregonProf;
     }
 
@@ -162,11 +162,13 @@ function findBeginEnd(planOrProf, station1X, station2X) {
     return { begin, end };
 }
 
-function buildPeregonPlan(plan, begin, end, station1X) {
+function buildPeregonPlan(plan, begin, end, station1X, station2X) {
+    const trackLength = station2X - station1X;
     if (begin < 0) begin = 0;
     const peregonPlan = {};
     for (let i = begin; i <= end; i++) {
         const x = Math.round(plan[i].ordinate - station1X > 0 ? plan[i].ordinate - station1X : 0);
+        if (x >= trackLength) return peregonPlan;
         const radius = plan[i].elementType === 'straight' ? 0 : Math.round(plan[i].radius);
         const sign = plan[i].elementType === 'left' ? -1 : 1;
         peregonPlan[x] = radius * sign;
@@ -175,12 +177,13 @@ function buildPeregonPlan(plan, begin, end, station1X) {
     return peregonPlan;
 }
 
-function buildPeregonProf(prof, begin, end, station1X) {
-
+function buildPeregonProf(prof, begin, end, station1X, station2X) {
+    const trackLength = station2X - station1X;
     if (begin < 0) begin = 0;
     const peregonProf = {};
     for (let i = begin; i <= end; i++) {
         const x = Math.round(prof[i].ordinate - station1X > 0 ? prof[i].ordinate - station1X : 0);
+        if (x >= trackLength) return peregonProf;
         const slope = Math.round(prof[i].slope * 1000);
         peregonProf[x] = slope;
         // console.log(i, x, prof[i], slope);
