@@ -127,7 +127,7 @@ class DrawSignals extends Draw {
 
         let group = this.two.makeGroup();
 
-        for (let i = 0; i < this.peregon.signals.length; i++) {
+        for (let i = 0; i < this.peregon.signals?.length; i++) {
 
             const signal = this.peregon.signals[i];
 

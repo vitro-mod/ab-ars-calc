@@ -8,7 +8,7 @@ class ArsCalculator {
     }
 
     calc() {
-        for (let i = 0; i < this.peregon.joints.length; i++) {
+        for (let i = 0; i < this.peregon.joints?.length; i++) {
             let x = this.peregon.joints[i].x;
             let arsS = arsSteps.map(el => {
                 // console.log(this.peregon.joints[i].name, x, el, stepFn(this.peregon.slopes, x), stepFn(this.peregon.slopes, Number(stepFnNext(this.peregon.slopes, x)) + 1), Number(stepFnNext(this.peregon.slopes, x)) - x)

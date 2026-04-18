@@ -8,7 +8,7 @@ class SignalCalculator {
     }
 
     calc() {
-        for (let i = 0; i < this.peregon.signals.length; i++) {
+        for (let i = 0; i < this.peregon.signals?.length; i++) {
             const signal = this.peregon.signals[i];
 
             if ('joint' in signal) {
@@ -68,7 +68,7 @@ class SignalCalculator {
         }
 
 
-        for (let i = 0; i < this.peregon.signals.length; i++) {
+        for (let i = 0; i < this.peregon.signals?.length; i++) {
 
             const signal = this.peregon.signals[i];
 
