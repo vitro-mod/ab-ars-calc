@@ -75,6 +75,8 @@ async function importTrackPlanProfile(name, track, n, peregon, nextPeregon) {
 
     filterSlopesSharp(peregon);
     filterSlopesSharp(nextPeregon);
+    filterSlopesSharp(peregon);
+    filterSlopesSharp(nextPeregon);
 
     console.log(peregon, nextPeregon)
 
