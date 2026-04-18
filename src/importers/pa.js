@@ -38,7 +38,7 @@ async function importTrackPlanProfile(name, track, n, peregon, nextPeregon) {
 
     const station1X = paths[track][Number(n)].TrackX - trainHalf;
     const station2X = paths[track][Number(n) + 1].TrackX - trainHalf;
-    const X3 = station1X + (peregon.joints.at(-1)?.x || ((station2X - station1X) + 300));
+    const X3 = station1X + (peregon.joints?.at(-1)?.x || ((station2X - station1X) + 300));
     console.log(`Station 1X: ${station1X}`);
     console.log(`Station 2X: ${station2X}`);
     console.log(`X3: ${X3}`);

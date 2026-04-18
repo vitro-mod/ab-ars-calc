@@ -1,7 +1,7 @@
 class DrawJoints extends Draw {
 
     drawJoints() {
-        for (let i = 0; i < this.peregon.joints.length; i++) {
+        for (let i = 0; i < this.peregon.joints?.length; i++) {
             const group = this.two.makeGroup();
 
             let x = this.peregon.joints[i].x;

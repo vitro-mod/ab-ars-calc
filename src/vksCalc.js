@@ -7,7 +7,7 @@ class VksCalculator {
     }
 
     calc() {
-        for (let i = 0; i < this.peregon.joints.length; i++) {
+        for (let i = 0; i < this.peregon.joints?.length; i++) {
             const joint = this.peregon.joints[i];
             if (!joint?.vks) continue;
             if (joint.vks.prev) {
