@@ -3,25 +3,16 @@ lines['m3'] = lines['m3'] || {};
 lines['m3']['2'] = [
     {
         name: 'Kőbánya-Kispest',
-        trackLength: 1431,
         arsAllSteps: true,
         arsDrawBreakpoint: 6,
         tStay: 30,
-        K: 1.5,
-        curves: {
-            0: 0,
-        },
-        slopes: {
-            0: 0,
-            935: -60,
-            1152: 0,
-        },
+        K: 1,
         modes: {
             0: 'H',
             200: '0',
-            935: 'P-59',
-            1152: '0',
-            1342: 'T',
+            935: 'P450',
+            1052: '0',
+            1320: 'T',
         },
         joints: [
             { x: 62.5 + 4.2+12.5, name: '152', limit: 0 },
@@ -54,19 +45,10 @@ lines['m3']['2'] = [
     },
     {
         name: 'Határ út',
-        trackLength: 896,
         arsAllSteps: true,
         arsDrawBreakpoint: 6,
         tStay: 30,
         K: 1,
-        curves: {
-            0: 0,
-        },
-        slopes: {
-            0: 0,
-            317: -52,
-            593: 0,
-        },
         modes: {
             0: 'H',
             200: '0',
@@ -77,153 +59,90 @@ lines['m3']['2'] = [
     },
     {
         name: 'Pöttyös utca',
-        trackLength: 405,
         arsAllSteps: true,
         arsDrawBreakpoint: 6,
         tStay: 30,
         K: 1,
-        curves: {
-            0: 0,
-        },
-        slopes: {
-            0: 0,
-        },
         modes: {
             // 0: 'H',
         },
     },
     {
         name: 'Ecseri út',
-        trackLength: 979,
         arsAllSteps: true,
         arsDrawBreakpoint: 6,
         tStay: 30,
         K: 1,
-        curves: {
-            0: 0,
-        },
-        slopes: {
-            0: 0,
-        },
         modes: {
             // 0: 'H',
         },
     },
     {
         name: 'Népliget',
-        trackLength: 1246,
         arsAllSteps: true,
         arsDrawBreakpoint: 6,
         tStay: 30,
         K: 1,
-        curves: {
-            0: 0,
-        },
-        slopes: {
-            0: 0,
-        },
         modes: {
             // 0: 'H',
         },
     },
     {
         name: 'Nagyvárad tér',
-        trackLength: 2015,
         arsAllSteps: true,
         arsDrawBreakpoint: 6,
         tStay: 30,
         K: 1,
-        curves: {
-            0: 0,
-        },
-        slopes: {
-            0: 0,
-        },
         modes: {
             // 0: 'H',
         },
     },
     {
         name: 'Klinikák',
-        trackLength: 393,
         arsAllSteps: true,
         arsDrawBreakpoint: 6,
         tStay: 30,
         K: 1,
-        curves: {
-            0: 0,
-        },
-        slopes: {
-            0: 0,
-        },
         modes: {
             // 0: 'H',
         },
     },
     {
         name: 'Corvin-negyed',
-        trackLength: 1739,
         arsAllSteps: true,
         arsDrawBreakpoint: 6,
         tStay: 30,
         K: 1,
-        curves: {
-            0: 0,
-        },
-        slopes: {
-            0: 0,
-        },
         modes: {
             // 0: 'H',
         },
     },
     {
         name: 'Kálvin tér',
-        trackLength: 703,
         arsAllSteps: true,
         arsDrawBreakpoint: 6,
         tStay: 30,
         K: 1,
-        curves: {
-            0: 0,
-        },
-        slopes: {
-            0: 0,
-        },
         modes: {
             // 0: 'H',
         },
     },
     {
         name: 'Ferenciek tere',
-        trackLength: 901,
         arsAllSteps: true,
         arsDrawBreakpoint: 6,
         tStay: 30,
         K: 1,
-        curves: {
-            0: 0,
-        },
-        slopes: {
-            0: 0,
-        },
         modes: {
             // 0: 'H',
         },
     },
     {
         name: 'Deák Ferenc tér',
-        trackLength: 260,
         arsAllSteps: true,
         arsDrawBreakpoint: 6,
         tStay: 30,
         K: 1,
-        curves: {
-            0: 0,
-        },
-        slopes: {
-            0: 0,
-        },
         modes: {
             // 0: 'H',
         },
