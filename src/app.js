@@ -5,6 +5,10 @@ class App {
         const peregon = lineTrack[Number(n) || 0];
         const nextPeregon = lineTrack[Number(n) + 1 || 1];
 
+        const lineConfig = lines[line]['config'] || {};
+        wagonCount = lineConfig.wagonCount ?? wagonCount;
+        trainHalf = wagonLength * wagonCount / 2;
+
         window.peregon = peregon;
         window.nextPeregon = nextPeregon;
 

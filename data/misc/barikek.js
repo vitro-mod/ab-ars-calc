@@ -1,7 +1,8 @@
-wagonCount = 8;
-trainHalf = wagonLength * wagonCount / 2;
 var lines = lines || {};
 lines['barikek'] = lines['barikek'] || {};
+lines['barikek']['config'] = {
+    wagonCount: 8,
+};
 lines['barikek']['1'] = [
     {
         name: 'Улица 1905 года',
